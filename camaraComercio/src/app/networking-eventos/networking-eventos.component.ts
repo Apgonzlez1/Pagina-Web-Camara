@@ -2,10 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-networking-eventos',
-  imports: [],
+  standalone: true,
   templateUrl: './networking-eventos.component.html',
-  styleUrl: './networking-eventos.component.css'
+  styleUrls: ['./networking-eventos.component.css']
 })
-export class NetworkingEventosComponent {
-
-}
+export class NetworkingEventosComponent {}

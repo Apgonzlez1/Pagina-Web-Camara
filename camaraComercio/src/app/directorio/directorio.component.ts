@@ -35,21 +35,35 @@ export class DirectorioComponent {
       sector: 'Tecnología'
     },
     {
-      name: 'Empresa A',
+      name: 'Empresa uno',
       description: 'Líder en manufactura y producción industrial.',
       logo: 'assets/logo1.png',
       website: 'https://empresa-a.com',
       sector: 'Manufactura'
     },
     {
-      name: 'Empresa B',
+      name: 'Empresa dos',
       description: 'Especialista en logística y distribución.',
       logo: 'assets/logo2.png',
       website: 'https://empresa-b.com',
       sector: 'Logística'
     },
     {
-      name: 'Empresa C',
+      name: 'Empresa tres',
+      description: 'Proveedor de tecnología avanzada.',
+      logo: 'assets/logo3.png',
+      website: 'https://empresa-c.com',
+      sector: 'Tecnología'
+    },
+    {
+      name: 'Empresa A',
+      description: 'Especialista en logística y distribución.',
+      logo: 'assets/logo2.png',
+      website: 'https://empresa-b.com',
+      sector: 'Logística'
+    },
+    {
+      name: 'Empresa BC',
       description: 'Proveedor de tecnología avanzada.',
       logo: 'assets/logo3.png',
       website: 'https://empresa-c.com',

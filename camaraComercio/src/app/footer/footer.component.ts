@@ -9,6 +9,9 @@ import { MatIconModule } from '@angular/material/icon';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css']
 })
+
+
+
 export class FooterComponent {
   redes = [
     { nombre: 'Facebook', icono: 'fa-brands fa-facebook', url: 'https://www.facebook.com' },
@@ -16,6 +19,8 @@ export class FooterComponent {
     { nombre: 'TikTok', icono: 'fa-brands fa-tiktok', url: 'https://www.tiktok.com' },
     { nombre: 'YouTube', icono: 'fa-brands fa-youtube', url: 'https://www.youtube.com' }
   ];
+
+
 
   whatsappUrl = 'https://wa.me/1234567890'; // Cambia con el número de WhatsApp de la Cámara
 }

@@ -1,69 +1,80 @@
 .footer {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 20px 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .social-icons {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .social-icons a {
-    color: white;
-    font-size: 24px;
-    transition: 0.3s;
-  }
-  
-  .social-icons a:hover {
-    color: #f4b400;
-  }
-  
-  .whatsapp-button a {
-    background-color: #25D366;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 16px;
-  }
-  
-  .whatsapp-button i {
-    font-size: 20px;
-  }
-  
-  @media (max-width: 600px) {
-    .social-icons {
-      flex-direction: column;
-    }
-  }
-  footer
-  .whatsapp-button img {
-    width: 100%;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #005792;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 40px;
-  }
-  
-  .social-links {
-    margin-top: 10px;
-  }
-  
-  .social-links a img {
-    width: 30px;
-    margin: 0 5px;
-  }
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1;
+  margin: 10px;
+}
+
+h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icons a {
+  font-size: 18px;
+  color: #fff;
+}
+
+
+footer .whatsapp-button img {
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  background-color: #005792;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a img {
+  width: 30px;
+  margin: 0 5px;
+}

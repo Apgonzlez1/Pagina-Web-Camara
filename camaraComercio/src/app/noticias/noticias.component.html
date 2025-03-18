@@ -1,1 +1,14 @@
-<p>noticias works!</p>
+<section class="noticias">
+    <h2>Noticias y Blog</h2>
+    <div class="contenedor-noticias">
+      <div *ngFor="let noticia of noticias" class="tarjeta">
+        <img [src]="noticia.imagen" [alt]="noticia.titulo">
+        <div class="contenido">
+          <h3>{{ noticia.titulo }}</h3>
+          <p>{{ noticia.descripcion }}</p>
+          <a [href]="noticia.enlace">Leer más</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  

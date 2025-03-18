@@ -1,45 +1,37 @@
 .section {
-    padding: 20px;
-    background-color: #000;
-    color: #fff;
-  }
-  
-  .section-title {
-    font-size: 24px;
-    color: #0088cc;
-  }
-  
-  .service-card {
-    background-color: #010002;
-    margin: 15px 0;
-    padding: 15px;
-    border-radius: 8px;
-  }
-  
-  .service-card h3 {
-    color: #003573;
-  }
-  
-  .service-card ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  .service-card ul li {
-    margin: 8px 0;
-  }
-  
-  .btn {
-    background-color: #0088cc;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn:hover {
-    background-color: #005a88;
-  }
-  
+  max-width: 1200px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+}
+
+.service-card mat-card {
+  width: 300px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+mat-card img {
+  height: 180px;
+  object-fit: cover;
+}
+
+mat-card-title {
+  font-size: 20px;
+  color: #0056b3;
+}
+
+mat-card-content {
+  font-size: 14px;
+  color: #555;
+}

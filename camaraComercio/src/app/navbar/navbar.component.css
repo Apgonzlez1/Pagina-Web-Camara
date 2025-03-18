@@ -1,5 +1,31 @@
-.navbar {
-    position: relative;
-    z-index: 1000;
-  }
-  
+/* Fondo con el color del footer */
+.custom-navbar {
+  background-color: #f8f9fa !important; /* Ajusta este color según tu footer */
+  padding: 15px 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes del logo */
+.custom-navbar .navbar-brand img {
+  height: 60px;
+}
+
+/* Estilos para los enlaces */
+.custom-navbar .nav-link {
+  color: #001f3f !important; /* Azul marino */
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+  color: #0056b3 !important;
+}
+
+/* Ajuste del botón responsive */
+.navbar-toggler {
+  border: none;
+  outline: none;
+}

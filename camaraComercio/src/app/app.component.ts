@@ -4,11 +4,19 @@ import { NetworkingEventosComponent } from './networking-eventos/networking-even
 import { ServiciosComponent } from './servicios/servicios.component';
 import { BolsaEmpleoComponent } from './bolsa-empleo/bolsa-empleo.component';
 import { RouterOutlet } from '@angular/router';
+import { FooterComponent } from './footer/footer.component'; // <-- Importa el footer
 
 @Component({
   selector: 'app-root',
-  standalone: true, // IMPORTANTE: Angular standalone components
-  imports: [RouterOutlet, NavbarComponent, NetworkingEventosComponent, ServiciosComponent, BolsaEmpleoComponent],
+  standalone: true,
+  imports: [
+    RouterOutlet, 
+    NavbarComponent, 
+    NetworkingEventosComponent, 
+    ServiciosComponent, 
+    BolsaEmpleoComponent,
+    FooterComponent // <-- Agrega el footer aquí
+  ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

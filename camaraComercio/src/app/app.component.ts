@@ -5,6 +5,9 @@ import { ServiciosComponent } from './servicios/servicios.component';
 import { BolsaEmpleoComponent } from './bolsa-empleo/bolsa-empleo.component';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from './footer/footer.component'; // <-- Importa el footer
+import { AfiliacionComponent } from './afiliacion/afiliacion.component';
+import { DirectorioComponent } from './directorio/directorio.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +18,9 @@ import { FooterComponent } from './footer/footer.component'; // <-- Importa el f
     NetworkingEventosComponent, 
     ServiciosComponent, 
     BolsaEmpleoComponent,
+    AfiliacionComponent,
+    DirectorioComponent,
+    ContactoComponent,
     FooterComponent // <-- Agrega el footer aquí
   ],
   templateUrl: './app.component.html',

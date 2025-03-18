@@ -10,7 +10,7 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./inicio.component.css']
 })
 export class InicioComponent {
-  backgroundImage: string = 'logo2.png'; // Cambia esto dinámicamente si es necesario
+  backgroundImage: string = 'assets/logoli.png'; // Cambia esto dinámicamente si es necesario
   
 
   // Método para cambiar el fondo dinámicamente
@@ -25,22 +25,22 @@ export class InicioComponent {
     equipoDirectivo: [
       { 
         cargo: "Presidente Ejecutivo", 
-        foto: "perfil2.jpg", 
+        foto: "assets/perfil2.jpg", 
         funciones: ["Gestionar inversiones", "Cumplimiento normativo", "Impulsar la modernización industrial"] 
       },
       { 
         cargo: "Vicepresidente Ejecutivo", 
-        foto: "perfil2.jpg", 
+        foto: "assets/perfil2.jpg", 
         funciones: ["Responsable de comercio exterior", "Fomentar la creación de nuevas industrias"] 
       },
       { 
         cargo: "Secretario", 
-        foto: "perfil2.jpg", 
+        foto: "assets/perfil2.jpg", 
         funciones: ["Funciones secretariales", "Atención al público"] 
       },
       { 
         cargo: "Tesorero", 
-        foto: "perfil2.jpg", 
+        foto: "assets/perfil2.jpg", 
         funciones: ["Gestión de presupuestos"] 
       }
     ]

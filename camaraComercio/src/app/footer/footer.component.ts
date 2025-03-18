@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
-import { NgFor } from '@angular/common';
-imports: [MatIconModule] // Elimina NgFor si no se usa aquí
+
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [MatIconModule, NgFor],
+  imports: [MatIconModule], // Agregar NgFor si se usa *ngFor en el HTML
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css']
 })

@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { NgFor } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @Component({
   selector: 'app-servicios',
   standalone: true,
-  imports: [NgFor, MatCardModule, SlickCarouselModule],
+  imports: [ MatCardModule, SlickCarouselModule],
   templateUrl: './servicios.component.html',
   styleUrls: ['./servicios.component.css']
 })

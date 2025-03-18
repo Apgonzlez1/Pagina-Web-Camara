@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router'; // ✅ Importa RouterModule
 
 @Component({
   selector: 'app-navbar',
-  standalone: true,  // Asegúrate de que sea standalone
+  standalone: true,
+  imports: [CommonModule, RouterModule], // ✅ Asegúrate de importar RouterModule
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })

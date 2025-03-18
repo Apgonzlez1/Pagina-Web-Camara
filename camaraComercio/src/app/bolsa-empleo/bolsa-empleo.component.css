@@ -1,0 +1,47 @@
+/* Sección destacada con imagen */
+.hero {
+   
+    background-size: cover;
+    padding: 120px 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .cta-section {
+    background: #0056b3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .btn-primary {
+    background: white;
+    color: #0056b3;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .info-section {
+    padding: 40px 0;
+    background: #f8f9fa;
+  }
+  
+  .info-image {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .achievements {
+    text-align: center;
+    padding: 30px;
+    background: #e3f2fd;
+    font-size: 18px;
+  }
+  

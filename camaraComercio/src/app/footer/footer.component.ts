@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { NgFor } from '@angular/common';
+imports: [MatIconModule] // Elimina NgFor si no se usa aquí
 
 @Component({
   selector: 'app-footer',

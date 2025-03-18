@@ -1,1 +1,33 @@
-<p>directorio works!</p>
+<header>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="assets/logo.png" alt="Logo de la Cámara" class="logo" />
+        <span class="company-name">Cámara de Industrias</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#" class="nav-button">Inicio</a></li>
+        <li><a href="#" class="nav-button">Afiliación</a></li>
+        <li><a href="#" class="nav-button">Empresas</a></li>
+        <li><a href="#" class="nav-button">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="content">
+    <h2>Directorio de Empresas</h2>
+    <input type="text" class="search-bar" placeholder="Buscar por sector industrial..." [(ngModel)]="searchQuery" (input)="filterCompanies()">
+  
+    <div class="companies-container">
+      <div class="card" *ngFor="let company of filteredCompanies">
+        <img [src]="company.logo" alt="Logo de {{ company.name }}" class="company-logo">
+        <h4>{{ company.name }}</h4>
+        <p>{{ company.description }}</p>
+        <button class="btn" (click)="goToCompanyWebsite(company.website)">Visitar</button>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 Cámara de Industrias. Todos los derechos reservados.</p>
+  </footer>
+  

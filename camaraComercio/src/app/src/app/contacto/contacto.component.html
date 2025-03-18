@@ -1,1 +1,77 @@
-<p>contacto works!</p>
+<header>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="assets/logo.png" alt="Logo" class="logo" />
+        <span class="company-name">Cámara de Industrias</span>
+      </div>
+      <ul class="nav-links">
+        <li><a routerLink="/">Inicio</a></li>
+        <li><a routerLink="/afiliacion">Afiliación</a></li>
+        <li><a routerLink="/empresas">Empresas</a></li>
+        <li><a routerLink="/contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="contact-section">
+    <h2>Contacto</h2>
+  
+    <div class="contact-info">
+      <div class="info-item">
+        <img src="assets/icono3.png" alt="Ubicación" />
+        <p>
+          <a href="https://www.google.com.ec/maps/dir//QR6X%2B54P+ESTACION+DE+SERVICIO+PEGOCENTRO,+Av.+de+los+Colonos,+Santo+Domingo/"
+            target="_blank">
+            Avenida de los Colonos, Santo Domingo
+          </a>
+        </p>
+      </div>
+      <div class="info-item">
+        <img src="assets/icono4.png" alt="Teléfono" />
+        <p>+593 99 998 9256</p>
+      </div>
+      <div class="info-item">
+        <img src="assets/icono5.png" alt="Correo" />
+        <p>info&#64;camaradeindustrias.com</p>
+      </div>
+    </div>
+  
+    <!-- Mapa interactivo -->
+    <div class="map-container">
+      <iframe width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d997.295782370617!2d-79.152186!3d-0.239538!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5470024cc90e5%3A0x6368f20c4e0635c6!2sCámara%20de%20Industrias!5e0!3m2!1ses!2sec!4v1710612345678">
+      </iframe>
+    </div>
+  
+    <!-- Formulario de contacto -->
+    <h3>Envíanos un mensaje</h3>
+    <form (ngSubmit)="submitForm()" class="contact-form">
+      <input type="text" [(ngModel)]="contactForm.name" name="name" placeholder="Tu Nombre" required />
+      <input type="email" [(ngModel)]="contactForm.email" name="email" placeholder="Tu Correo" required />
+      <textarea [(ngModel)]="contactForm.message" name="message" placeholder="Tu Mensaje" required></textarea>
+      <button type="submit">Enviar Mensaje</button>
+    </form>
+  </section>
+  
+  <!-- Botón flotante de WhatsApp -->
+  <div class="whatsapp-button" (click)="openWhatsApp()">
+    <img src="assets/icono.png" alt="WhatsApp">
+  </div>
+  
+  <!-- Redes Sociales -->
+  <footer>
+    <p>&copy; 2025 Cámara de Industrias. Todos los derechos reservados.</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/camaradeindustriasstodgo/" target="_blank">
+        <img src="assets/icono1.png" alt="Instagram">
+      </a>
+      <a href="https://api.whatsapp.com/send/?phone=593999989256&text&type=phone_number&app_absent=0" target="_blank">
+        <img src="assets/icono.png" alt="WhatsApp">
+      </a>
+      <a href="https://www.facebook.com/camaradeindustriasstodgo/" target="_blank">
+        <img src="assets/icono2.png" alt="Facebook">
+      </a>
+    </div>
+  </footer>
+  

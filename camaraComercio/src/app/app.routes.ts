@@ -7,6 +7,7 @@ import { BolsaEmpleoComponent } from './bolsa-empleo/bolsa-empleo.component';
 import { AfiliacionComponent } from './afiliacion/afiliacion.component';
 import { DirectorioComponent } from './directorio/directorio.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { EventosComponent } from './eventos/eventos.component';
 
 export const routes: Routes = [
   { path: '', component: InicioComponent }, // Ahora 'Inicio' es la página principal
@@ -17,5 +18,6 @@ export const routes: Routes = [
   { path: 'afiliacion', component: AfiliacionComponent },
   { path: 'directorio', component: DirectorioComponent },
   { path: 'contacto', component: ContactoComponent },
+  { path: 'eventos', component: EventosComponent }
 
 ];

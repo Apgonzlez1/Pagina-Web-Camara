@@ -5,8 +5,11 @@
       <div class="row">
         <div class="col-md-8">
           <h2 class="featured-title">Networking y Eventos</h2>
-          <p>Descubre los principales encuentros empresariales, foros y espacios de coworking en Santo Domingo.</p>
-          <a href="#" class="btn btn-dark">Ver más</a>
+          <hr>
+          <p>En un mundo empresarial en constante evolución, las conexiones estratégicas son clave para el crecimiento y la 
+            innovación. Nuestros espacios de networking y eventos están diseñados para fomentar la colaboración entre empresarios, 
+            emprendedores y profesionales de diversas industrias.  </p>
+            <button class="btn btn-dark" [routerLink]="['/eventos']">Ver más</button>
         </div>
         <div class="col-md-4">
           <div class="featured-thumbnail">Imagen</div>
@@ -14,25 +17,33 @@
       </div>
     </div>
 
-    <!-- Tarjetas secundarias -->
-    <div class="row mt-4">
-      <div class="col-md-6">
-        <div class="event-card">
-          <h3>Encuentros Empresariales y Ruedas de Negocios</h3>
-          <p>Participa en reuniones estratégicas con empresarios y emprendedores.</p>
-          <a href="#" class="btn btn-outline-dark">Leer más</a>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="event-card">
-          <h3>Foros y Congresos</h3>
-          <p>Eventos clave de la industria en Santo Domingo.</p>
-          <a href="#" class="btn btn-outline-dark">Leer más</a>
-        </div>
-      </div>
+    <!-- Tarjetas de eventos -->
+<div class="row mt-4">
+  <div class="col-md-4">
+    <div class="event-card">
+      <h3>Encuentros Empresariales y Ruedas de Negocios</h3>
+      <img src="assets/evento1.jpg" alt="Encuentros Empresariales" class="event-image">
+      <p>Oportunidad para generar alianzas estratégicas, expandir redes de contacto y fortalecer el ecosistema empresarial de Santo Domingo.</p>
     </div>
-     <!-- Sección de contenido tipo blog -->
-     <div class="row mt-5">
+  </div>
+  <div class="col-md-4">
+    <div class="event-card">
+      <h3>Foros y Congresos</h3>
+      <img src="assets/evento2.jpg" alt="Foros y Congresos" class="event-image">
+      <p>Espacios de discusión con expertos del sector industrial, tendencias del mercado y políticas económicas que impactan a la región.</p>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="event-card">
+      <h3>Visitas Industriales</h3>
+      <img src="assets/evento3.jpg" alt="Visitas Industriales" class="event-image">
+      <p>Conoce de primera mano los procesos de producción, innovación y calidad en empresas líderes de la provincia.</p>
+    </div>
+  </div>
+</div>
+
+    <!-- Sección de contenido tipo blog -->
+    <div class="row mt-5">
       <div class="col-md-8">
         <article class="blog-post">
           <h3>Oportunidades de Networking</h3>
@@ -55,4 +66,8 @@
       </div>
     </div>
   </div>
+<!-- 📲 Botón flotante de WhatsApp -->
+<div class="whatsapp-button" (click)="openWhatsApp()">
+  <img src="assets/icono.png" alt="WhatsApp">
+</div>  
 </section>

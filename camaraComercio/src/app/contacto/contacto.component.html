@@ -1,51 +1,55 @@
-
-  <section class="contact-section">
+<section class="contact-section">
+  <div class="contact-card">
     <h2>Contacto</h2>
-  
-    <div class="contact-info">
-      <div class="info-item">
-        <img src="assets/icono3.png" alt="Ubicación" />
-        <p>
-          <a href="https://www.google.com.ec/maps/dir//QR6X%2B54P+ESTACION+DE+SERVICIO+PEGOCENTRO,+Av.+de+los+Colonos,+Santo+Domingo/"
-            target="_blank">
-            Avenida de los Colonos, Santo Domingo
-          </a>
-        </p>
-      </div>
-      <div class="info-item">
-        <img src="assets/icono4.png" alt="Teléfono" />
-        <p>+593 99 998 9256</p>
-      </div>
-      <div class="info-item">
-        <img src="assets/icono5.png" alt="Correo" />
-        <p>info&#64;camaradeindustrias.com</p>
-      </div>
-    </div>
-  
-    <!-- Mapa interactivo -->
-    <div class="map-container">
-      <iframe width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d997.295782370617!2d-79.152186!3d-0.239538!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5470024cc90e5%3A0x6368f20c4e0635c6!2sCámara%20de%20Industrias!5e0!3m2!1ses!2sec!4v1710612345678">
-      </iframe>
-    </div>
-  
-    <!-- Formulario de contacto -->
-    <h3>Envíanos un mensaje</h3>
-    <form (ngSubmit)="submitForm()" class="contact-form">
-      <input type="text" [(ngModel)]="contactForm.name" name="name" placeholder="Tu Nombre" required />
-      <input type="email" [(ngModel)]="contactForm.email" name="email" placeholder="Tu Correo" required />
-      <textarea [(ngModel)]="contactForm.message" name="message" placeholder="Tu Mensaje" required></textarea>
-      <button type="submit">Enviar Mensaje</button>
-    </form>
-  </section>
-  
-  <!-- Botón flotante de WhatsApp -->
-  <div class="whatsapp-button" (click)="openWhatsApp()">
-    <img src="assets/icono.png" alt="WhatsApp">
 
+    <div class="contact-container">
+      <!-- 🏠 Información de Contacto -->
+      <div class="contact-info">
+        <div class="info-item">
+          <img src="assets/icono3.png" alt="Ubicación" />
+          <p>
+            <a href="https://www.google.com.ec/maps/dir//QR6X%2B54P+ESTACION+DE+SERVICIO+PEGOCENTRO,+Av.+de+los+Colonos,+Santo+Domingo/" 
+              target="_blank">
+              Avenida de los Colonos, Santo Domingo
+            </a>
+          </p>
+        </div>
+        <div class="info-item">
+          <img src="assets/icono4.png" alt="Teléfono" />
+          <p>+593 99 998 9256</p>
+        </div>
+        <div class="info-item">
+          <img src="assets/icono5.png" alt="Correo" />
+          <p>info&#64;camaradeindustrias.com</p>
+        </div>
+      </div>
+
+      <!-- 🗺️ Mapa y Formulario en 2 Columnas -->
+      <div class="contact-grid">
+        <!-- 📍 Mapa Interactivo -->
+        <div class="map-container">
+          <iframe width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d997.295782370617!2d-79.152186!3d-0.239538!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5470024cc90e5%3A0x6368f20c4e0635c6!2sCámara%20de%20Industrias!5e0!3m2!1ses!2sec!4v1710612345678">
+          </iframe>
+        </div>
+
+        <!-- 📝 Formulario de Contacto -->
+        <div class="form-container">
+          <h3>Envíanos un mensaje</h3>
+          <form (ngSubmit)="submitForm()" class="contact-form">
+            <input type="text" [(ngModel)]="contactForm.name" name="name" placeholder="Tu Nombre" required />
+            <input type="email" [(ngModel)]="contactForm.email" name="email" placeholder="Tu Correo" required />
+            <textarea [(ngModel)]="contactForm.message" name="message" placeholder="Tu Mensaje" required></textarea>
+            <button type="submit">Enviar Mensaje</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
-  
-  <!-- Redes Sociales -->
-  
-  
+</section>
+
+<!-- 📲 Botón flotante de WhatsApp -->
+<div class="whatsapp-button" (click)="openWhatsApp()">
+  <img src="assets/icono.png" alt="WhatsApp">
+</div>

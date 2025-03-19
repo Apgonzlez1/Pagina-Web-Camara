@@ -20,7 +20,6 @@ export class FooterComponent {
     { nombre: 'YouTube', icono: 'fa-brands fa-youtube', url: 'https://www.youtube.com' }
   ];
 
-
-
   whatsappUrl = 'https://wa.me/1234567890'; // Cambia con el número de WhatsApp de la Cámara
+
 }

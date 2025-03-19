@@ -1,0 +1,131 @@
+/* Contenedor Principal */
+.eventos-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Buscador */
+.buscador {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.buscador-input {
+  width: 80%;
+  padding: 10px;
+  border: 2px solid #6b3fa0;
+  border-radius: 5px;
+}
+
+.buscador-btn {
+  background: #6b3fa0;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Layout: Secciones en columnas */
+.eventos-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columnas */
+  gap: 30px;
+}
+
+/* Secciones */
+.seccion-eventos,
+.seccion-networking {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+.titulo {
+  font-size: 1.8em;
+  color: #6b3fa0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Grid de Eventos: 2 tarjetas por fila */
+.eventos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  gap: 20px;
+}
+
+/* Tarjeta de Evento */
+.evento-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Imagen de Evento */
+.evento-imagen {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+/* Información del Evento */
+.evento-info {
+  padding: 15px;
+  flex-grow: 1;
+}
+
+.evento-nombre {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.evento-lugar, .evento-fecha {
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Botón */
+.btn-ver-evento {
+  background: #6b3fa0;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 90%;
+}
+
+.btn-ver-evento:hover {
+  background: #532b80;
+}
+
+/* 🔹 RESPONSIVE */
+@media (max-width: 1024px) {
+  .eventos-layout {
+    grid-template-columns: 1fr; /* Pasa a 1 columna en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 768px) {
+  .eventos-grid {
+    grid-template-columns: 1fr; /* Pasa a 1 tarjeta por fila */
+  }
+}
+
+@media (max-width: 480px) {
+  .evento-imagen {
+    max-height: 150px;
+  }
+}

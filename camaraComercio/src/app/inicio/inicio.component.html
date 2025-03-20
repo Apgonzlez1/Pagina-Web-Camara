@@ -1,47 +1,51 @@
-<section class="main-banner" [ngStyle]="{'background-image': 'url(' + backgroundImage + ')'}">
+<section class="main-banner"
+  [ngStyle]="{'background-image': 'url(' + backgroundImage + ')', 'background-size': 'cover', 'background-position': 'center'}">
   <div class="overlay">
-  <h1>Bienvenidos a la Cámara de Industriales y Producción de Santo Domingo</h1>
+    <h1>Bienvenidos a la Cámara de Industriales y Producción de Santo Domingo</h1>
   </div>
 </section>
 
+
 <section class="quienes-somos">
   <div class="container">
-    <h1>Quiénes Somos</h1>
-    
-    <div class="historia">
-      <h2>Nuestra Historia</h2>
-      <p>{{ quienesSomos.historia }}</p>
-    </div>
 
-    <div class="mision-vision">
-      <div class="mision">
-        <h2>Misión</h2>
+    <h1 class="titulo-seccion">Quiénes Somos</h1>
+
+    <!-- 📌 Sección 1: Historia, Misión y Visión en tarjetas interactivas -->
+    <div class="info-grid">
+      <div class="info-card">
+        <h2>📜 Nuestra Historia</h2>
+        <p>{{ quienesSomos.historia }}</p>
+      </div>
+      <div class="info-card">
+        <h2>🚀 Misión</h2>
         <p>{{ quienesSomos.mision }}</p>
       </div>
-      <div class="vision">
-        <h2>Visión</h2>
+      <div class="info-card">
+        <h2>🌍 Visión</h2>
         <p>{{ quienesSomos.vision }}</p>
       </div>
     </div>
-
-    <div class="valores">
-      <h2>Valores</h2>
-      <ul>
-        <li *ngFor="let valor of quienesSomos.valores">{{ valor }}</li>
-      </ul>
-    </div>
-
+    
+    <!-- 🔹 Equipo Directivo -->
     <div class="galeria">
-      <h2>Equipo Directivo</h2>
+      <h2>🤝 Equipo Directivo</h2>
+      <br>
       <div class="contenedor-miembros">
         <div *ngFor="let miembro of quienesSomos.equipoDirectivo" class="tarjeta">
-          <img [src]="miembro.foto" [alt]="miembro.cargo" width="200" height="200">
-          <h3>{{ miembro.cargo }}</h3>
-          <ul>
-            <li *ngFor="let funcion of miembro.funciones">{{ funcion }}</li>
-          </ul>
+          <img [src]="miembro.foto" [alt]="miembro.cargo">
+          <div class="tarjeta-info">
+            <h3>{{ miembro.cargo }}</h3>
+            <ul>
+              <li *ngFor="let funcion of miembro.funciones">{{ funcion }}</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+<!-- 📲 Botón flotante de WhatsApp -->
+<div class="whatsapp-button" (click)="openWhatsApp()">
+  <img src="assets/icono.png" alt="WhatsApp">
+</div>

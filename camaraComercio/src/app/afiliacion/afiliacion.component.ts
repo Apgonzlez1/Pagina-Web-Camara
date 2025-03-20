@@ -34,4 +34,8 @@ export class AfiliacionComponent {
 
     // Aquí puedes llamar a un servicio para enviar los datos al backend
   }
+
+  openWhatsApp() {
+    window.open('https://api.whatsapp.com/send/?phone=593999989256&text&type=phone_number&app_absent=0', '_blank');
+  }
 }

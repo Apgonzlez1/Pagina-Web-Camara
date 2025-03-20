@@ -16,6 +16,7 @@ export class DirectorioComponent {
     {
       name: 'Empresa A',
       description: 'Líder en manufactura y producción industrial.',
+      contact: '+593 999 123 456',
       logo: 'assets/logo1.png',
       website: 'https://empresa-a.com',
       sector: 'Manufactura'
@@ -23,6 +24,7 @@ export class DirectorioComponent {
     {
       name: 'Empresa B',
       description: 'Especialista en logística y distribución.',
+      contact: 'contacto@empresa-b.com',
       logo: 'assets/logo2.png',
       website: 'https://empresa-b.com',
       sector: 'Logística'
@@ -30,6 +32,7 @@ export class DirectorioComponent {
     {
       name: 'Empresa C',
       description: 'Proveedor de tecnología avanzada.',
+      contact: '+593 987 654 321',
       logo: 'assets/logo3.png',
       website: 'https://empresa-c.com',
       sector: 'Tecnología'
@@ -37,6 +40,7 @@ export class DirectorioComponent {
     {
       name: 'Empresa uno',
       description: 'Líder en manufactura y producción industrial.',
+      contact: 'info@empresa-uno.com',
       logo: 'assets/logo1.png',
       website: 'https://empresa-a.com',
       sector: 'Manufactura'
@@ -44,6 +48,7 @@ export class DirectorioComponent {
     {
       name: 'Empresa dos',
       description: 'Especialista en logística y distribución.',
+      contact: '+593 555 666 777',
       logo: 'assets/logo2.png',
       website: 'https://empresa-b.com',
       sector: 'Logística'
@@ -51,6 +56,7 @@ export class DirectorioComponent {
     {
       name: 'Empresa tres',
       description: 'Proveedor de tecnología avanzada.',
+      contact: 'empresa3@tech.com',
       logo: 'assets/logo3.png',
       website: 'https://empresa-c.com',
       sector: 'Tecnología'
@@ -58,6 +64,7 @@ export class DirectorioComponent {
     {
       name: 'Empresa A',
       description: 'Especialista en logística y distribución.',
+      contact: '+593 333 222 111',
       logo: 'assets/logo2.png',
       website: 'https://empresa-b.com',
       sector: 'Logística'
@@ -65,11 +72,13 @@ export class DirectorioComponent {
     {
       name: 'Empresa BC',
       description: 'Proveedor de tecnología avanzada.',
+      contact: 'info@empresabc.com',
       logo: 'assets/logo3.png',
       website: 'https://empresa-c.com',
       sector: 'Tecnología'
     }
   ];
+  
 
   filteredCompanies = [...this.companies];
 

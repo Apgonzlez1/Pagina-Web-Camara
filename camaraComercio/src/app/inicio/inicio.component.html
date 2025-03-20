@@ -5,10 +5,8 @@
   </div>
 </section>
 
-
 <section class="quienes-somos">
   <div class="container">
-
     <h1 class="titulo-seccion">Quiénes Somos</h1>
 
     <!-- 📌 Sección 1: Historia, Misión y Visión en tarjetas interactivas -->
@@ -26,7 +24,7 @@
         <p>{{ quienesSomos.vision }}</p>
       </div>
     </div>
-    
+
     <!-- 🔹 Equipo Directivo -->
     <div class="galeria">
       <h2>🤝 Equipo Directivo</h2>
@@ -45,7 +43,13 @@
     </div>
   </div>
 </section>
+
 <!-- 📲 Botón flotante de WhatsApp -->
 <div class="whatsapp-button" (click)="openWhatsApp()">
   <img src="assets/icono.png" alt="WhatsApp">
+</div>
+
+<!-- 🔝 Botón flotante para volver al inicio -->
+<div class="scroll-to-top" (click)="scrollToTop()" *ngIf="showScrollButton">
+  ⬆️
 </div>

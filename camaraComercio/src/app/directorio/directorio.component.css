@@ -118,9 +118,9 @@
 }
 /* 🌟 Estilo para destacar las primeras 3 empresas */
 .top-company {
-  background: linear-gradient(135deg, #e4be23, #d3d071de); /* Fondo dorado */
+ 
   color: white;
-  border: 3px solid #ffcc00;
+  
   transform: scale(1.05); /* Tamaño ligeramente más grande */
   box-shadow: 0 8px 16px rgba(255, 165, 0, 0.3); /* Sombra dorada */
   position: relative;

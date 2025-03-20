@@ -1,11 +1,41 @@
-/* Contenedor Principal */
+/* 📌 Contenedor Principal */
 .eventos-container {
   max-width: 1200px;
   margin: auto;
   padding: 20px;
 }
 
-/* Buscador */
+/* 🎯 Sección de Eventos Emblemáticos */
+.eventos-emblematicos {
+  text-align: center;
+  padding: 30px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* 🔘 Botones de Eventos Emblemáticos */
+.botones-eventos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-emblematico {
+  background: #00748a;
+  color: white;
+  padding: 12px 18px;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-emblematico:hover {
+  background: #00556b;
+}
+
+/* 🔎 Buscador */
 .buscador {
   display: flex;
   justify-content: center;
@@ -15,26 +45,18 @@
 .buscador-input {
   width: 80%;
   padding: 10px;
-  border: 2px solid #6b3fa0;
+  border: 2px solid #00748a;
   border-radius: 5px;
 }
 
-.buscador-btn {
-  background: #6b3fa0;
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-}
-
-/* Layout: Secciones en columnas */
+/* 📌 Layout: Secciones en columnas */
 .eventos-layout {
   display: grid;
   grid-template-columns: 1fr 1fr; /* 2 columnas */
   gap: 30px;
 }
 
-/* Secciones */
+/* 🔹 Secciones */
 .seccion-eventos,
 .seccion-networking {
   padding: 20px;
@@ -43,22 +65,22 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Títulos */
+/* 🏷️ Títulos */
 .titulo {
   font-size: 1.8em;
-  color: #6b3fa0;
+  color: #00748a;
   text-align: center;
   margin-bottom: 20px;
 }
 
-/* Grid de Eventos: 2 tarjetas por fila */
+/* 🎭 Grid de Eventos: 2 tarjetas por fila */
 .eventos-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
-/* Tarjeta de Evento */
+/* 🎟️ Tarjeta de Evento */
 .evento-card {
   background: white;
   border-radius: 10px;
@@ -70,7 +92,7 @@
   height: 100%;
 }
 
-/* Imagen de Evento */
+/* 🖼️ Imagen de Evento */
 .evento-imagen {
   width: 100%;
   height: auto;
@@ -78,7 +100,7 @@
   object-fit: cover;
 }
 
-/* Información del Evento */
+/* 📋 Información del Evento */
 .evento-info {
   padding: 15px;
   flex-grow: 1;
@@ -90,14 +112,15 @@
   margin-bottom: 5px;
 }
 
-.evento-lugar, .evento-fecha {
+.evento-lugar,
+.evento-fecha {
   font-size: 0.9em;
   color: #555;
 }
 
-/* Botón */
+/* 🎟️ Botón */
 .btn-ver-evento {
-  background: #6b3fa0;
+  background: #00748a;
   color: white;
   border: none;
   padding: 10px;
@@ -108,10 +131,10 @@
 }
 
 .btn-ver-evento:hover {
-  background: #532b80;
+  background: #00556b;
 }
 
-/* 🔹 RESPONSIVE */
+/* 📱 RESPONSIVE */
 @media (max-width: 1024px) {
   .eventos-layout {
     grid-template-columns: 1fr; /* Pasa a 1 columna en pantallas pequeñas */
@@ -128,4 +151,30 @@
   .evento-imagen {
     max-height: 150px;
   }
+}
+
+/* 📲 Botón de WhatsApp */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.whatsapp-button:hover {
+  background: #1ebe5d;
+}
+
+.whatsapp-button img {
+  width: 35px;
+  height: 35px;
 }

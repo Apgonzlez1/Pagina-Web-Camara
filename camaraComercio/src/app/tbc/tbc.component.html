@@ -1,0 +1,55 @@
+<section class="tbc-banner" [ngStyle]="{'background-image': 'url(' + backgroundImage + ')'}">
+  <div class="overlay">
+    <h1>Tsáchila Business Convention (TBC)</h1>
+    <p>Fomentando conexiones empresariales y oportunidades de negocio</p>
+  </div>
+</section>
+
+<section class="tbc-content">
+  <div class="container">
+    <div class="tbc-layout">
+      <!-- 📌 Sección Izquierda: Descripción -->
+      <div class="tbc-text">
+        <h2>¿Qué es la TBC?</h2>
+        <hr>
+        <br>
+        <p>
+          La <strong>Tsáchila Business Convention</strong> es un evento anual organizado por la Cámara de Industrias y Producción de Santo Domingo, 
+          en conjunto con el Gobierno Provincial de Santo Domingo de los Tsáchilas. Diseñado para ofrecer <strong>aprendizaje, networking y oportunidades de negocio</strong> en un espacio dinámico y estratégico.
+        </p>
+        <p>
+          Empresarios, compradores nacionales e internacionales y exportadores tienen la oportunidad de <strong>cerrar negocios, expandir mercados y fortalecer sus redes comerciales</strong>, promoviendo el crecimiento del sector industrial y agrocomercial.
+        </p>
+      </div>
+
+      <!-- 📌 Sección Derecha: Tarjetas -->
+      <div class="tbc-grid">
+        <div class="tbc-card">
+          <h3>🌍 Macrorrueda de Negocios</h3>
+          <p>
+            Un espacio exclusivo donde empresarios, compradores nacionales e internacionales y exportadores pueden conectar estratégicamente con nuevos socios comerciales.
+          </p>
+        </div>
+
+        <div class="tbc-card">
+          <h3>📚 Formación Empresarial</h3>
+          <p>
+            Charlas, conferencias y paneles con expertos en comercio exterior, innovación empresarial y crecimiento industrial.
+          </p>
+        </div>
+
+        <div class="tbc-card">
+          <h3>🤝 Networking y Negociaciones</h3>
+          <p>
+            Oportunidad única para generar conexiones valiosas con empresarios, proveedores y compradores de la región y el país.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 📲 Botón flotante de WhatsApp -->
+<div class="whatsapp-button" (click)="openWhatsApp()">
+  <img src="assets/icono.png" alt="WhatsApp">
+</div>

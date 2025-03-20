@@ -8,9 +8,11 @@ import { AfiliacionComponent } from './afiliacion/afiliacion.component';
 import { DirectorioComponent } from './directorio/directorio.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { EventosComponent } from './eventos/eventos.component';
+import { TefComponent } from './tef/tef.component';  // 🔹 Importar TEF
+import { TbcComponent } from './tbc/tbc.component';  // 🔹 Importar TBC
 
 export const routes: Routes = [
-  { path: '', component: InicioComponent }, // Ahora 'Inicio' es la página principal
+  { path: '', component: InicioComponent },
   { path: 'noticias', component: NoticiasComponent },
   { path: 'networking-y-eventos', component: NetworkingEventosComponent },
   { path: 'servicios', component: ServiciosComponent },
@@ -18,6 +20,7 @@ export const routes: Routes = [
   { path: 'afiliacion', component: AfiliacionComponent },
   { path: 'directorio', component: DirectorioComponent },
   { path: 'contacto', component: ContactoComponent },
-  { path: 'eventos', component: EventosComponent }
-
+  { path: 'eventos', component: EventosComponent },
+  { path: 'tef', component: TefComponent },  // 🔹 Agregar ruta para TEF
+  { path: 'tbc', component: TbcComponent }   // 🔹 Agregar ruta para TBC
 ];

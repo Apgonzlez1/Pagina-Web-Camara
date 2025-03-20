@@ -1,12 +1,21 @@
 <div class="eventos-container">
-  <!-- Buscador -->
+  <!-- 🔹 Sección de Eventos Emblemáticos -->
+  <section class="eventos-emblematicos">
+    <h2 class="titulo">🌟 Eventos Emblemáticos</h2>
+    <div class="botones-eventos">
+      <a [routerLink]="['/tef']" class="btn-emblematico">📊 TEF</a>
+      <a [routerLink]="['/tbc']" class="btn-emblematico">🚀 TBC</a>
+
+    </div>
+  </section>
+
+  <!-- 🔎 Buscador -->
   <div class="buscador">
-    <input type="text" placeholder="¿Qué evento buscas?" class="buscador-input">
-    
+    <input type="text" placeholder="🔍 ¿Qué evento buscas?" class="buscador-input">
   </div>
 
   <div class="eventos-layout">
-    <!-- 🔹 Columna Izquierda - Eventos -->
+    <!-- 🎭 Columna Izquierda - Eventos -->
     <section class="seccion-eventos">
       <h2 class="titulo">Eventos</h2>
       <div class="eventos-grid">
@@ -32,7 +41,7 @@
       </div>
     </section>
 
-    <!-- 🔹 Columna Derecha - Networking y Negocios -->
+    <!-- 🤝 Columna Derecha - Networking y Negocios -->
     <section class="seccion-networking">
       <h2 class="titulo">Networking y Negocios</h2>
       <div class="eventos-grid">
@@ -58,4 +67,7 @@
       </div>
     </section>
   </div>
+</div>
+<div class="whatsapp-button" (click)="openWhatsApp()">
+  <img src="assets/icono.png" alt="WhatsApp">
 </div>

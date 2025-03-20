@@ -10,7 +10,7 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./inicio.component.css']
 })
 export class InicioComponent {
-  backgroundImage: string = 'assets/logoli.png'; // Cambia esto dinámicamente si es necesario
+  backgroundImage: string = 'assets/inicio.jpg'; // Cambia esto dinámicamente si es necesario
   
 
   // Método para cambiar el fondo dinámicamente

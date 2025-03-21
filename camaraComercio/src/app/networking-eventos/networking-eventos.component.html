@@ -2,20 +2,25 @@
   <div class="container">
     <!-- Tarjeta destacada -->
     <div class="featured-event">
-      <div class="row">
-        <div class="col-md-8">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
           <h2 class="featured-title">Networking y Eventos</h2>
           <hr>
-          <p>En un mundo empresarial en constante evolución, las conexiones estratégicas son clave para el crecimiento y la 
+          <p>
+            En un mundo empresarial en constante evolución, las conexiones estratégicas son clave para el crecimiento y la 
             innovación. Nuestros espacios de networking y eventos están diseñados para fomentar la colaboración entre empresarios, 
-            emprendedores y profesionales de diversas industrias.  </p>
-            <button class="btn btn-dark" [routerLink]="['/eventos']">Ver más</button>
+            emprendedores y profesionales de diversas industrias.
+          </p>
+          <button class="btn btn-primary mb-2" [routerLink]="['/eventos']">Ver Todos los Eventos</button>
         </div>
-        <div class="col-md-4">
-          <div class="featured-thumbnail">Imagen</div>
+        <div class="col-lg-4 d-flex flex-column align-items-center">
+          <h2 class="text-center featured-title">Eventos Emblemáticos</h2>
+          <a [routerLink]="['/tef']" class="btn btn-primary mb-2">Tsachila Economic Forum (TEF)</a>
+          <a [routerLink]="['/tbc']" class="btn btn-primary mb-2">Tsachila Business Convention (TBC)</a>
         </div>
       </div>
     </div>
+    
 
     <!-- Tarjetas de eventos -->
 <div class="row mt-4">

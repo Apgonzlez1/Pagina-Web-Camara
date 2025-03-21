@@ -1,73 +1,47 @@
-<div class="eventos-container">
-  <!-- 🔹 Sección de Eventos Emblemáticos -->
-  <section class="eventos-emblematicos">
-    <h2 class="titulo">🌟 Eventos Emblemáticos</h2>
-    <div class="botones-eventos">
-      <a [routerLink]="['/tef']" class="btn-emblematico">📊 TEF</a>
-      <a [routerLink]="['/tbc']" class="btn-emblematico">🚀 TBC</a>
-
+<div class="container mt-4">
+  <h2 class="text-center">Eventos Emblemáticos</h2>
+<br>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <img src="assets/logo Tsachila Economic.jpg" class="card-img-top" alt="Logo TEF">
+        <div class="card-body">
+          <h5 class="card-title">Tsáchila Economic Forum (TEF)</h5>
+          <p class="card-text">Nuestro gremio, en afán de promover las tendencias mundiales emergentes dentro de la cadena de valor del sector industrial, ha organizado el ECONOMIC TSÁCHILA FORUM IV Edition.</p>
+          <a [routerLink]="['/tef']" class="btn btn-primary">📊 Más Información</a>
+        </div>
+      </div>
     </div>
-  </section>
 
-  <!-- 🔎 Buscador -->
-  <div class="buscador">
-    <input type="text" placeholder="🔍 ¿Qué evento buscas?" class="buscador-input">
-  </div>
-
-  <div class="eventos-layout">
-    <!-- 🎭 Columna Izquierda - Eventos -->
-    <section class="seccion-eventos">
-      <h2 class="titulo">Eventos</h2>
-      <div class="eventos-grid">
-        <div class="evento-card">
-          <img src="assets/evento1.jpg" alt="LOVE UP" class="evento-imagen">
-          <div class="evento-info">
-            <h3 class="evento-nombre">LOVE UP</h3>
-            <p class="evento-lugar"><i class="fas fa-map-marker-alt"></i> Machala</p>
-            <p class="evento-fecha"><i class="fas fa-calendar-alt"></i> 1 de Marzo 2025</p>
-          </div>
-          <button class="btn-ver-evento">Más Información</button>
-        </div>
-
-        <div class="evento-card">
-          <img src="assets/evento2.jpg" alt="Dragonland" class="evento-imagen">
-          <div class="evento-info">
-            <h3 class="evento-nombre">Dragonland & Dinosaurios</h3>
-            <p class="evento-lugar"><i class="fas fa-map-marker-alt"></i> Quito</p>
-            <p class="evento-fecha"><i class="fas fa-calendar-alt"></i> 6 de Marzo 2025</p>
-          </div>
-          <button class="btn-ver-evento">Más Información</button>
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <img src="assets/LOGO_TSÁCHILA Business.jpg" class="card-img-top" alt="Logo TBC">
+        <div class="card-body">
+          <h5 class="card-title">Tsáchila Business Convention (TBC)</h5>
+          <p class="card-text">Evento anual Tsáchila Business Convention, un evento de la Cámara de Industrias y Producción de Santo Domingo en conjunto con el Gobierno Provincial de Santo Domingo de los Tsáchilas.</p>
+          <a [routerLink]="['/tbc']" class="btn btn-primary">🚀 Más Información</a>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <!-- 🤝 Columna Derecha - Networking y Negocios -->
-    <section class="seccion-networking">
-      <h2 class="titulo">Networking y Negocios</h2>
-      <div class="eventos-grid">
-        <div class="evento-card">
-          <img src="assets/eventos.jpg" alt="Foro Empresarial" class="evento-imagen">
-          <div class="evento-info">
-            <h3 class="evento-nombre">Foro Empresarial</h3>
-            <p class="evento-lugar"><i class="fas fa-map-marker-alt"></i> Centro de Convenciones</p>
-            <p class="evento-fecha"><i class="fas fa-calendar-alt"></i> 20 de Marzo 2025</p>
-          </div>
-          <button class="btn-ver-evento">Más Información</button>
-        </div>
+<br>
+  <div class="buscador text-center my-4">
+    <div class="directory-header">
+    <h2 class="featured-title">Networking y Eventos</h2> <input [(ngModel)]="searchText" type="text" class="form-control w-50 mx-auto" placeholder="🔍 Buscar evento...">
+  </div></div>
 
-        <div class="evento-card">
-          <img src="assets/congresos.jpg" alt="Conferencia Innovación" class="evento-imagen">
-          <div class="evento-info">
-            <h3 class="evento-nombre">Conferencia Innovación</h3>
-            <p class="evento-lugar"><i class="fas fa-map-marker-alt"></i> Auditorio Nacional</p>
-            <p class="evento-fecha"><i class="fas fa-calendar-alt"></i> 10 de Abril 2025</p>
-          </div>
-          <button class="btn-ver-evento">Más Información</button>
+  <div class="row">
+    <div class="col-md-4 col-lg-3 mt-4" *ngFor="let evento of filteredEventos">
+      <div class="card shadow-sm">
+        <img [src]="evento.imagen" class="card-img-top" alt="{{evento.nombre}}">
+        <div class="card-body">
+          <h5 class="card-title">{{evento.nombre}}</h5>
+          <p><i class="fas fa-map-marker-alt"></i> {{evento.lugar}}</p>
+          <p><i class="fas fa-calendar-alt"></i> {{evento.fecha}}</p>
+          <button class="btn btn-info">Más Información</button>
         </div>
       </div>
-    </section>
+    </div>
   </div>
-</div>
-<div class="whatsapp-button" (click)="openWhatsApp()">
-  <img src="assets/icono.png" alt="WhatsApp">
 </div>

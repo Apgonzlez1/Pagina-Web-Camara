@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
+
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -30,6 +31,7 @@ export class InicioComponent {
   }
 
   // Datos de la sección "Quiénes Somos"
+
   quienesSomos = {
     historia: "La Cámara de Industriales y Producción de Santo Domingo se fundó con el objetivo de organizar a los diferentes entes productivos de la región. Desde su creación, ha promovido la unión de los socios y ha representado activamente sus intereses, fomentando el desarrollo y progreso industrial en la región.",
     mision: "Propiciar la productividad y desarrollo regional de la Cámara de Industrias como institución líder de los gremios industriales y de producción, con representación proactiva ante el Estado. Buscamos fortalecer la investigación, el emprendimiento, la competitividad e innovación empresarial para generar empleo y bienestar social.",

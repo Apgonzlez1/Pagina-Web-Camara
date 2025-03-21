@@ -1,4 +1,6 @@
 <section class="content">
+  <img src="assets/fondo1.jpg" class="background-image" alt="Fondo">
+  
   <div class="directory-header">
     <h2>Directorio de Empresas</h2>
     <input 
@@ -10,16 +12,24 @@
   </div>
 
   <div class="companies-container">
-    <div class="company-card" *ngFor="let company of filteredCompanies">
+    <div class="company-card" 
+         *ngFor="let company of filteredCompanies; let i = index" 
+         [ngClass]="{'top-company': i < 3}">
+  
+      <!-- Insignia de empresa destacada -->
+      <div *ngIf="i < 3" class="top-badge">⭐ Top Empresa</div>
+  
       <img [src]="company.logo" alt="Logo de {{ company.name }}" class="company-logo">
+      
       <div class="company-info">
         <h4>{{ company.name }}</h4>
         <p>{{ company.description }}</p>
+        <p class="company-contact"> {{ company.contact }}</p>
       </div>
+      
       <button class="btn-visit" (click)="goToCompanyWebsite(company.website)">Visitar</button>
     </div>
   </div>
-</section>
 
 <!-- 📲 Botón flotante de WhatsApp -->
 <div class="whatsapp-button" (click)="openWhatsApp()">

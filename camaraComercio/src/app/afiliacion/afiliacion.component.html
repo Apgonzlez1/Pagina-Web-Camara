@@ -1,84 +1,98 @@
+<div class="container mt-5">
+  <!-- Logo y Título -->
+  <div class="text-center mb-4">
+  
+    <h2>Afiliación</h2>
+   
+  </div>
 
-  
-  <section>
-    <div class="logo-container text-center">
-      <img src="assets/logo.png" alt="Logo de la Cámara de Industrias" class="logo" />
+  <div class="row d-flex justify-content-center">
+    <!-- Beneficios de ser miembro -->
+    <div class="col-md-7 mb-4">
+      <div class="card shadow-lg">
+        <div class="card-body">
+          <h3 class="text-center mb-3">Beneficios de ser miembro</h3>
+          <p>Únete a la Cámara de Industrias y Producción de Santo Domingo y accede a múltiples beneficios.</p>
+          <div id="benefitsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/beneficio1.jpg" class="d-block w-100" alt="Asesorías especializadas">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Asesorías especializadas</h5>
+                  <p>Accede a expertos en el sector industrial para mejorar tu empresa.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/beneficio2.png" class="d-block w-100" alt="Mayor visibilidad">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Mayor visibilidad</h5>
+                  <p>Tu empresa será reconocida en el sector industrial con nuestro respaldo.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/beneficio3.jpg" class="d-block w-100" alt="Eventos y networking">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Eventos y networking</h5>
+                  <p>Conéctate con empresarios y potenciales clientes en eventos exclusivos.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#benefitsCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#benefitsCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+            <!-- Mensaje de información adicional -->
+  <p class="text-center mt-3">Para más información, contacta a la Cámara para detalles sobre costos y requisitos adicionales.</p>
+        </div>
+      </div>
     </div>
-  
-    <h2 class="text-center">Afiliación</h2>
-    <p class="text-center">Únete a la Cámara de Industrias y Producción de Santo Domingo y accede a múltiples beneficios.</p>
-  
-    <h3 class="text-center">Beneficios de ser miembro</h3>
-  
-    <div id="benefitsCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="assets/beneficio1.jpg" class="d-block w-100" alt="Asesorías especializadas">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Asesorías especializadas</h5>
-            <p>Accede a expertos en el sector industrial para mejorar tu empresa.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/beneficio2.png" class="d-block w-100" alt="Mayor visibilidad">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Mayor visibilidad</h5>
-            <p>Tu empresa será reconocida en el sector industrial con nuestro respaldo.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/beneficio3.jpg" class="d-block w-100" alt="Eventos y networking">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Eventos y networking</h5>
-            <p>Conéctate con empresarios y potenciales clientes en eventos exclusivos.</p>
-          </div>
+
+    <!-- Requisitos para afiliarse -->
+    <div class="col-md-5 mb-4">
+      <div class="card shadow-lg">
+        <div class="card-body">
+          <h3 class="text-center mb-3">Requisitos para afiliarse</h3>
+          <p class="text-center">La documentación y los costos están disponibles a continuación. Llena el formulario para unirte a nuestra comunidad.</p>
+          <form #inscriptionForm="ngForm" (ngSubmit)="submitForm()">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nombre Completo</label>
+              <input type="text" id="name" name="name" [(ngModel)]="name" required class="form-control" placeholder="Ingresa tu nombre completo">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" id="email" name="email" [(ngModel)]="email" required class="form-control" placeholder="Ingresa tu correo electrónico">
+            </div>
+            <div class="mb-3">
+              <label for="company" class="form-label">Nombre de la Empresa</label>
+              <input type="text" id="company" name="company" [(ngModel)]="company" required class="form-control" placeholder="Ingresa el nombre de tu empresa">
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Número de Teléfono</label>
+              <input type="text" id="phone" name="phone" [(ngModel)]="phone" required class="form-control" placeholder="Ingresa tu número de teléfono">
+            </div>
+            <div class="mb-3">
+              <label for="document" class="form-label">Adjunta tu Documentación</label>
+              <input type="file" id="document" name="document" (change)="onFileSelected($event)" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary w-100" [disabled]="!inscriptionForm.form.valid">
+              Enviar Inscripción
+            </button>
+          </form>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#benefitsCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#benefitsCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
-      </button>
     </div>
-  
-    <h3 class="text-center mt-4">Requisitos para afiliarse</h3>
-    <p class="text-center">La documentación y los costos están disponibles a continuación. Llena el formulario para unirte a nuestra comunidad.</p>
-  
-    <form #inscriptionForm="ngForm" (ngSubmit)="submitForm()">
-      <div class="mb-3">
-        <label for="name" class="form-label">Nombre Completo</label>
-        <input type="text" id="name" name="name" [(ngModel)]="name" required class="form-control" placeholder="Ingresa tu nombre completo">
-      </div>
-    
-      <div class="mb-3">
-        <label for="email" class="form-label">Correo Electrónico</label>
-        <input type="email" id="email" name="email" [(ngModel)]="email" required class="form-control" placeholder="Ingresa tu correo electrónico">
-      </div>
-    
-      <div class="mb-3">
-        <label for="company" class="form-label">Nombre de la Empresa</label>
-        <input type="text" id="company" name="company" [(ngModel)]="company" required class="form-control" placeholder="Ingresa el nombre de tu empresa">
-      </div>
-    
-      <div class="mb-3">
-        <label for="phone" class="form-label">Número de Teléfono</label>
-        <input type="text" id="phone" name="phone" [(ngModel)]="phone" required class="form-control" placeholder="Ingresa tu número de teléfono">
-      </div>
-    
-      <div class="mb-3">
-        <label for="document" class="form-label">Adjunta tu Documentación</label>
-        <input type="file" id="document" name="document" (change)="onFileSelected($event)" class="form-control">
-      </div>
-    
-      <button type="submit" class="btn btn-primary w-100" [disabled]="!inscriptionForm.form.valid">
-        Enviar Inscripción
-      </button>
-    </form>
-  
-    <p class="text-center mt-3">Para más información, contacta a la Cámara para detalles sobre costos y requisitos adicionales.</p>
-  </section>
-  
- 
+  </div>
+
+
+
+<!-- 📲 Botón flotante de WhatsApp -->
+<div class="whatsapp-button" (click)="openWhatsApp()">
+  <img src="assets/icono.png" alt="WhatsApp">
+</div>
+</div>
+

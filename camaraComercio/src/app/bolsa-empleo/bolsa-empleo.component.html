@@ -1,39 +1,54 @@
 <section class="employment-section">
-  <!-- Sección destacada con imagen -->
-  <div class="hero">
-    <div class="hero-content">
+  <!-- 🔹 Sección principal con imagen de fondo -->
+  <section class="main-banner" [ngStyle]="{'background-image': 'url(' + backgroundImage + ')'}">
+    <div class="overlay">
       <h1>Bolsa de Empleo Industrial</h1>
       <p>Conectamos empresas del sector industrial con talento calificado.</p>
+      <a href="#" class="btn btn-primary">Ver Vacantes</a>
+
     </div>
-  </div>
-
-  <!-- Sección de acceso rápido -->
-  <div class="cta-section">
-    <h2>Accede a la Bolsa de Empleo Industrial</h2>
-    <a href="#" class="btn btn-primary">Ingresar aquí</a>
-  </div>
-
-  <!-- Sección informativa -->
-  <div class="info-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <img src="" alt="Personas buscando empleo" class="info-image">
-        </div>
-        <div class="col-md-6">
-          <p>Facilitamos la conexión entre empresas y profesionales del sector manufacturero, permitiendo la publicación de vacantes y la postulación en línea.</p>
-          <p>🔹 Publicación de vacantes en el sector industrial.</p>
-          <p>🔹 Acceso exclusivo para empresas y postulantes.</p>
-          <p>🔹 Capacitación en empleabilidad y manufactura.</p>
-          <p>📩 Contacto: <a href="mailto:empleo@industria.com">empleo.com</a></p>
-        </div>
+  </section>
+  <!-- 🔹 Sección de logros -->
+  <div class="achievements">
+    <h3>🎯 En el último año logramos:</h3>
+    <div class="achievements-grid">
+      <div class="achievement-card">
+        <h2>+500</h2>
+        <p>Empresas conectadas</p>
+      </div>
+      <div class="achievement-card">
+        <h2>+10,000</h2>
+        <p>Postulaciones recibidas</p>
+      </div>
+      <div class="achievement-card">
+        <h2>+50</h2>
+        <p>Capacitaciones impartidas</p>
       </div>
     </div>
   </div>
 
-  <!-- Sección de logros -->
-  <div class="achievements">
-    <h3>En el último año logramos:</h3>
-    <p><strong>+500 empresas</strong> conectadas con talento industrial.</p>
+  <!-- 🔹 Sección informativa -->
+  <div class="info-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="assets/congresos.jpg" alt="Personas buscando empleo" class="info-image">
+        </div>
+        <div class="col-md-6">
+          <h3>¿Qué ofrecemos?</h3>
+          <ul class="info-list">
+            <li>✅ Publicación de vacantes en el sector industrial.</li>
+            <li>✅ Acceso exclusivo para empresas y postulantes.</li>
+            <li>✅ Capacitación en empleabilidad y manufactura.</li>
+            <li> 📩 <strong>Contacto:</strong> <a href="mailto:empleo@industria.com">empleoindustria.com</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
   </div>
 </section>
+<!-- 📲 Botón flotante de WhatsApp -->
+<div class="whatsapp-button" (click)="openWhatsApp()">
+  <img src="assets/icono.png" alt="WhatsApp">
+</div>

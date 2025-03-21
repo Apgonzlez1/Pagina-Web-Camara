@@ -1,63 +1,58 @@
 <section class="services-section">
   <div class="container">
-    
-    <!-- Sección destacada -->
-    <div class="featured-service">
-      <div class="row">
-        <div class="col-md-8">
-          <h2 class="featured-title">Nuestros Servicios</h2>
-          <p>Ofrecemos asesoría, apoyo empresarial, comercio internacional e innovación tecnológica para impulsar la industria.</p>
-          <a href="#" class="btn btn-dark">Descubre más</a>
-        </div>
-        <div class="col-md-4">
-          <div class="featured-thumbnail">Imagen</div>
-        </div>
-      </div>
+
+    <!-- ✅ Sección de Introducción -->
+    <div class="services-header">
+      <h2 class="section-title">Nuestros Servicios</h2>
+      <p class="section-description">
+        Brindamos soluciones innovadoras en asesoría empresarial, comercio internacional e innovación tecnológica 
+        para impulsar el crecimiento de la industria.
+      </p>
     </div>
 
-    <!-- Tarjetas de servicios -->
-    <div class="row mt-4">
-      
-      <!-- Asesoría y Apoyo Empresarial -->
-      <div class="col-md-4">
-        <div class="service-card">
-          <h3>Asesoría y Apoyo Empresarial</h3>
-          <ul>
-            <li>Consultoría en normativas industriales y ambientales.</li>
-            <li>Capacitación en manufactura y digitalización.</li>
-            <li>Acceso a financiamiento y créditos industriales.</li>
-          </ul>
-          <a href="#" class="btn btn-outline-dark">Más información</a>
+    <!-- ✅ Tarjetas de Servicios -->
+    <div class="services-grid">
+
+      <!-- 🔹 Asesoría y Apoyo Empresarial -->
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-briefcase"></i>
         </div>
+        <h3 class="service-title">Asesoría y Apoyo Empresarial</h3>
+        <p class="service-description">
+          Consultoría en normativas, capacitación en manufactura y acceso a financiamiento.
+        </p>
+        <a href="#" class="service-link">Ver más</a>
       </div>
 
-      <!-- Comercio y Expansión Internacional -->
-      <div class="col-md-4">
-        <div class="service-card">
-          <h3>Comercio y Expansión Internacional</h3>
-          <ul>
-            <li>Tratados de libre comercio y exportación.</li>
-            <li>Enlaces con cámaras de comercio internacionales.</li>
-            <li>Ferias y misiones comerciales.</li>
-          </ul>
-          <a href="#" class="btn btn-outline-dark">Más información</a>
+      <!-- 🔹 Comercio y Expansión Internacional -->
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-globe"></i>
         </div>
+        <h3 class="service-title">Comercio y Expansión Internacional</h3>
+        <p class="service-description">
+          Facilitamos tratados de libre comercio, enlaces internacionales y ferias comerciales.
+        </p>
+        <a href="#" class="service-link">Ver más</a>
       </div>
 
-      <!-- Innovación y Tecnología -->
-      <div class="col-md-4">
-        <div class="service-card">
-          <h3>Innovación y Tecnología</h3>
-          <ul>
-            <li>Industria 4.0: Automatización e inteligencia artificial.</li>
-            <li>Sostenibilidad industrial y economía circular.</li>
-            <li>Proyectos de eficiencia energética y energías renovables.</li>
-          </ul>
-          <a href="#" class="btn btn-outline-dark">Más información</a>
+      <!-- 🔹 Innovación y Tecnología -->
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-microchip"></i>
         </div>
+        <h3 class="service-title">Innovación y Tecnología</h3>
+        <p class="service-description">
+          Implementamos automatización, sostenibilidad y proyectos de eficiencia energética.
+        </p>
+        <a href="#" class="service-link">Ver más</a>
       </div>
 
     </div>
-
   </div>
 </section>
+<!-- 📲 Botón flotante de WhatsApp -->
+<div class="whatsapp-button" (click)="openWhatsApp()">
+  <img src="assets/icono.png" alt="WhatsApp">
+</div>

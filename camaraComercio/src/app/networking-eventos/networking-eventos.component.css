@@ -1,82 +1,119 @@
 .networking-section {
-    padding: 40px 0;
-  }
-  
-  .featured-event {
-    background-color: #f8f9fa;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .featured-title {
-    font-size: 28px;
-    font-weight: bold;
-    color: #001f3f;
-  }
-  
-  .featured-thumbnail {
-    background-color: #6c757d;
-    color: white;
-    text-align: center;
-    padding: 50px;
-    border-radius: 8px;
-  }
-  
-  .event-card {
-    background-color: white;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    transition: 0.3s ease;
-  }
-  
-  .event-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  .event-card h3 {
-    font-size: 20px;
-    color: #001f3f;
-  }
-  
-  .event-card p {
-    color: #555;
-  }
-  
-  .blog-post {
-    background: white;
-    padding: 20px;
-    border-left: 4px solid #001f3f;
-  }
-  
-  .blockquote {
-    font-style: italic;
-    color: #555;
-    margin: 20px 0;
-    padding-left: 15px;
-    border-left: 3px solid #001f3f;
-  }
-  
-  .blog-sidebar {
-    background: #f8f9fa;
-    padding: 20px;
-    border-radius: 8px;
-  }
-  
-  .blog-sidebar ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .blog-sidebar ul li {
-    margin-bottom: 10px;
-  }
-  
-  .blog-sidebar ul li a {
-    text-decoration: none;
-    color: #001f3f;
-    font-weight: bold;
-  }
-  
+  padding: 40px 0;
+}
+
+.featured-event {
+  padding: 40px 20px;
+  background-color: #f8f9fa; /* Color de fondo opcional */
+  border-radius: 10px;
+}
+
+.featured-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.btn-primary {
+  width: 100%; /* Asegura que los botones tengan el mismo tamaño */
+  max-width: 250px;
+  text-align: center;
+}
+
+.featured-thumbnail {
+  background-color: #6c757d;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  border-radius: 8px;
+}
+
+.event-card {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  text-align: center;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.event-card h3 {
+  font-size: 20px;
+  color: #001f3f;
+}
+
+.event-card p {
+  color: #555;
+}
+
+.event-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.blog-post {
+  background: white;
+  padding: 20px;
+  border-left: 4px solid #001f3f;
+}
+
+.blockquote {
+  font-style: italic;
+  color: #555;
+  margin: 20px 0;
+  padding-left: 15px;
+  border-left: 3px solid #001f3f;
+}
+
+.blog-sidebar {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.blog-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.blog-sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.blog-sidebar ul li a {
+  text-decoration: none;
+  color: #001f3f;
+  font-weight: bold;
+}
+
+/* 📲 Botón de WhatsApp */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.whatsapp-button:hover {
+  background: #1ebe5d;
+}
+
+.whatsapp-button img {
+  width: 35px;
+  height: 35px;
+}

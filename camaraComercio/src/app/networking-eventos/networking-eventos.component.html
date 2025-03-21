@@ -3,9 +3,10 @@
     <!-- Tarjeta destacada -->
     <div class="featured-event">
       <div class="row align-items-center">
-        <div class="col-lg-8">
+        <!-- 📌 Sección de Texto -->
+        <div class="col-lg-4 text-center text-lg-start">
           <h2 class="featured-title">Networking y Eventos</h2>
-          <hr>
+          <hr class="custom-divider">
           <p>
             En un mundo empresarial en constante evolución, las conexiones estratégicas son clave para el crecimiento y la 
             innovación. Nuestros espacios de networking y eventos están diseñados para fomentar la colaboración entre empresarios, 
@@ -13,46 +14,78 @@
           </p>
           <button class="btn btn-primary mb-2" [routerLink]="['/eventos']">Ver Todos los Eventos</button>
         </div>
-        <div class="col-lg-4 d-flex flex-column align-items-center">
-          <h2 class="text-center featured-title">Eventos Emblemáticos</h2>
-          <a [routerLink]="['/tef']" class="btn btn-primary mb-2">Tsachila Economic Forum (TEF)</a>
-          <a [routerLink]="['/tbc']" class="btn btn-primary mb-2">Tsachila Business Convention (TBC)</a>
+    
+        <!-- 📌 Sección de Eventos -->
+        <div class="col-lg-8 d-flex flex-column align-items-center">
+          <h2 class="text-center featured-title">Eventos Principales</h2>
+          <br>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="card event-card">
+                <div class="image-container">
+                  <img src="assets/logo Tsachila Economic.jpg" class="card-img-top" alt="Logo TEF">
+                </div>
+                <div class="card-body text-center">
+                  <a [routerLink]="['/tef']" class="btn btn-primary">Tsáchila Economic Forum (TEF)</a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-md-6">
+              <div class="card event-card">
+                <div class="image-container">
+                  <img src="assets/LOGO_TSÁCHILA Business.jpg" class="card-img-top" alt="Logo TBC">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title"></h5>
+                  <a [routerLink]="['/tbc']" class="btn btn-primary">Tsáchila Business Convention (TBC)</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    
 
     <!-- Tarjetas de eventos -->
 <div class="row mt-4">
-  <div class="col-md-4">
-    <div class="event-card">
-      <h3>Encuentros Empresariales y Ruedas de Negocios</h3>
-      <img src="assets/evento1.jpg" alt="Encuentros Empresariales" class="event-image">
+  <div class="col-md-4 d-flex">
+    <div class="event-card flex-grow-1">
+      <div class="image-container">
+        <img src="assets/evento1.jpg" alt="Encuentros Empresariales" class="event-image">
+      </div>
+      <h3>Seminarios y Capacitaciones</h3>
       <p>Oportunidad para generar alianzas estratégicas, expandir redes de contacto y fortalecer el ecosistema empresarial de Santo Domingo.</p>
     </div>
   </div>
-  <div class="col-md-4">
-    <div class="event-card">
-      <h3>Foros y Congresos</h3>
-      <img src="assets/evento2.jpg" alt="Foros y Congresos" class="event-image">
+  <div class="col-md-4 d-flex">
+    <div class="event-card flex-grow-1">
+      <div class="image-container">
+        <img src="assets/evento2.jpg" alt="Foros y Congresos" class="event-image">
+      </div>
+      <h3>Eventos Cooperativos</h3>
       <p>Espacios de discusión con expertos del sector industrial, tendencias del mercado y políticas económicas que impactan a la región.</p>
     </div>
   </div>
-  <div class="col-md-4">
-    <div class="event-card">
-      <h3>Visitas Industriales</h3>
-      <img src="assets/evento3.jpg" alt="Visitas Industriales" class="event-image">
+  <div class="col-md-4 d-flex">
+    <div class="event-card flex-grow-1">
+      <div class="image-container">
+        <img src="assets/evento3.jpg" alt="Visitas Industriales" class="event-image">
+      </div>
+      <h3>Networking y Enlaces Comerciales</h3>
       <p>Conoce de primera mano los procesos de producción, innovación y calidad en empresas líderes de la provincia.</p>
     </div>
   </div>
 </div>
+
 
     <!-- Sección de contenido tipo blog -->
     <div class="row mt-5">
       <div class="col-md-8">
         <article class="blog-post">
           <h3>Oportunidades de Networking</h3>
-          <p>El networking es una herramienta poderosa para el crecimiento empresarial. Conoce los eventos más importantes en la industria.</p>
+          <p>El networking es una herramienta poderosa para el crecimiento empresarial. Conoce los eventos más
+            importantes en la industria.</p>
           <blockquote class="blockquote">
             <p>"El éxito en los negocios se basa en las relaciones que construyes."</p>
           </blockquote>
@@ -61,7 +94,7 @@
       </div>
       <div class="col-md-4">
         <aside class="blog-sidebar">
-          <h4>Eventos Recientes</h4>
+          <h4>Proximos Eventos</h4>
           <ul>
             <li><a href="#">Networking Empresarial - Marzo 2025</a></li>
             <li><a href="#">Foro de Innovación - Febrero 2025</a></li>
@@ -71,8 +104,8 @@
       </div>
     </div>
   </div>
-<!-- 📲 Botón flotante de WhatsApp -->
-<div class="whatsapp-button" (click)="openWhatsApp()">
-  <img src="assets/icono.png" alt="WhatsApp">
-</div>  
+  <!-- 📲 Botón flotante de WhatsApp -->
+  <div class="whatsapp-button" (click)="openWhatsApp()">
+    <img src="assets/icono.png" alt="WhatsApp">
+  </div>
 </section>

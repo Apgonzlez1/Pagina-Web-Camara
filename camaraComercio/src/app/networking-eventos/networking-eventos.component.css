@@ -1,46 +1,66 @@
+/* 📌 Sección Networking */
 .networking-section {
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
-.featured-event {
-  padding: 40px 20px;
-  background-color: #f8f9fa; /* Color de fondo opcional */
-  border-radius: 10px;
-}
-
-.featured-title {
-  font-size: 24px;
-  font-weight: bold;
-}
-
+/* 📌 Botón primario */
 .btn-primary {
-  width: 100%; /* Asegura que los botones tengan el mismo tamaño */
+  width: 100%;
   max-width: 250px;
   text-align: center;
+  background: #00748a;
+  border: none;
+  padding: 10px 20px;
+  transition: background 0.3s ease;
 }
 
+.btn-primary:hover {
+  background: #00556b;
+}
+
+/* 📌 Miniatura destacada */
 .featured-thumbnail {
   background-color: #6c757d;
   color: white;
   text-align: center;
-  padding: 50px;
+  padding: 40px;
   border-radius: 8px;
 }
 
+/* 📌 Tarjetas de eventos */
 .event-card {
   background-color: white;
   padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  transition: 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .event-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
+/* 📌 Imagen dentro de la tarjeta */
+.image-container {
+  width: 100%;
+  height: 180px; /* Altura uniforme */
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.event-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantiene proporción y llena el contenedor */
+}
+
+/* 📌 Títulos y texto en tarjetas */
 .event-card h3 {
   font-size: 20px;
   color: #001f3f;
@@ -50,19 +70,14 @@
   color: #555;
 }
 
-.event-image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
+/* 📌 Estilos de blog */
 .blog-post {
   background: white;
   padding: 20px;
   border-left: 4px solid #001f3f;
 }
 
+/* 📌 Bloques de cita */
 .blockquote {
   font-style: italic;
   color: #555;
@@ -71,6 +86,7 @@
   border-left: 3px solid #001f3f;
 }
 
+/* 📌 Barra lateral del blog */
 .blog-sidebar {
   background: #f8f9fa;
   padding: 20px;
@@ -92,7 +108,7 @@
   font-weight: bold;
 }
 
-/* 📲 Botón de WhatsApp */
+/* 📌 Botón de WhatsApp */
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
@@ -116,4 +132,59 @@
 .whatsapp-button img {
   width: 35px;
   height: 35px;
+}
+
+/* 📌 Contenedor principal */
+.featured-event {
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 📌 Título destacado */
+.featured-title {
+  font-size: 2rem;
+  color: #00556b;
+  font-weight: bold;
+}
+
+/* 📌 Separador */
+.custom-divider {
+  width: 60%;
+  height: 4px;
+  background: #00748a;
+  border: none;
+  margin: 10px auto;
+}
+
+/* 📌 Responsividad */
+@media (max-width: 1024px) {
+  .featured-event {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .featured-title {
+    font-size: 1.8rem;
+  }
+
+  .custom-divider {
+    width: 80%;
+  }
+
+  .btn-primary {
+    width: 100%;
+  }
+
+  .event-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .event-card {
+    margin-bottom: 20px;
+  }
 }

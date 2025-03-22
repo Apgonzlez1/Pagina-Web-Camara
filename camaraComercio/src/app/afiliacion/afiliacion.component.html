@@ -1,17 +1,59 @@
 <div class="container mt-5">
-  <!-- Logo y Título -->
-  <div class="text-center mb-4">
   
-    <h2>Afiliación</h2>
-   
-  </div>
+  <!-- Logo y Título -->
+ 
+  <section class="content">
+    <img src="assets/fondo1.jpg" class="background-image" alt="Fondo">
+    
+    <div class="directory-header">
+      <h3>Directorio de Empresas</h3>
+      <input 
+        type="text" 
+        class="search-bar" 
+        placeholder="Buscar por sector industrial..." 
+        [(ngModel)]="searchQuery" 
+        (input)="filterCompanies()">
+    </div>
+  
+    <!-- Nueva grilla de empresas -->
+    <div class="companies-grid">
+      <div class="company-box" *ngFor="let company of filteredCompanies; let i = index">
+        
+        <!-- Logo de la empresa más destacado -->
+        <div class="logo-container">
+          <img [src]="company.logo" alt="Logo de {{ company.name }}" class="company-logo-large">
+        </div>
+
+        <div class="company-info">
+          <h4>{{ company.name }}</h4>
+         
+        
+          <!-- 📩 Botón de contacto por correo -->
+          <button class="btn-contact" (click)="sendEmail(company.contact)">
+            ✉️ Contactar
+          </button>
+        
+          <button class="btn-visit" (click)="goToCompanyWebsite(company.website)">
+            🌐 Visitar
+          </button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- 📲 Botón flotante de WhatsApp -->
+    <div class="whatsapp-button" (click)="openWhatsApp()">
+      <img src="assets/icono.png" alt="WhatsApp">
+    </div>
+  </section>
+  
+  
 
   <div class="row d-flex justify-content-center">
     <!-- Beneficios de ser miembro -->
     <div class="col-md-7 mb-4">
       <div class="card shadow-lg">
         <div class="card-body">
-          <h3 class="text-center mb-3">Beneficios de ser miembro</h3>
+          <h3 class="text-center mb-3">Beneficios de ser Socios</h3>
           <p>Únete a la Cámara de Industrias y Producción de Santo Domingo y accede a múltiples beneficios.</p>
           <div id="benefitsCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -95,4 +137,3 @@
   <img src="assets/icono.png" alt="WhatsApp">
 </div>
 </div>
-

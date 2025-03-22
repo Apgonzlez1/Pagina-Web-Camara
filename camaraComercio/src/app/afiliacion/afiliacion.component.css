@@ -24,17 +24,205 @@
   height: 35px;
 }
 
-
+/* 🎠 Carrusel */
 .carousel-item img {
   height: 300px;
   object-fit: cover;
 }
 
+/* 📌 Ajuste general de las tarjetas */
 .card {
   border: none;
   border-radius: 10px;
+  background: rgba(255, 255, 255, 0.85); /* Más transparencia */
+  box-shadow: none; /* Sin sombras fuertes */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Borde sutil */
 }
 
-.logo {
-  max-width: 200px;
+/* 📌 Fondo con menos opacidad para resaltar el logo */
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2; /* Más transparencia */
+  z-index: -1;
 }
+
+/* 📌 Contenedor de la grilla de empresas */
+.companies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adaptable */
+  gap: 15px; /* Menos espacio entre tarjetas */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* 📌 Cada empresa en su caja */
+.company-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8); /* Más transparente */
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+  max-width: 200px; /* Más pequeñas */
+}
+
+/* 🎨 Efecto hover */
+.company-box:hover {
+  transform: scale(1.03);
+  background: rgba(240, 240, 255, 0.9);
+}
+
+/* 📌 Contenedor del logo */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+/* 📌 Logo de empresa más pequeño */
+.company-logo-large {
+  width: 70px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* 📌 Información de la empresa */
+.company-info h4 {
+  font-size: 1.1rem;
+  color: #222;
+  margin: 5px 0;
+}
+
+.company-info p {
+  font-size: 0.85rem;
+  color: #555;
+  margin: 3px 0;
+}
+
+.company-contact {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* 📌 Botón de visitar empresa */
+.btn-visit {
+  background: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 0.85rem;
+}
+
+.btn-visit:hover {
+  background: #0056b3;
+}
+
+/* 📌 Ajustes a la barra de búsqueda */
+.search-bar {
+  width: 250px;
+  padding: 8px;
+  font-size: 0.9rem;
+  border: none;
+  border-bottom: 2px solid #007bff; /* Solo línea inferior */
+  background: transparent; /* Fondo transparente */
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* 🎯 Efecto al hacer clic */
+.search-bar:focus {
+  border-color: #0056b3;
+  box-shadow: none;
+}
+
+/* 📌 Contenedor del encabezado */
+.directory-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Menos espacio */
+  background: rgba(255, 255, 255, 0.5); /* Más transparente */
+  border-bottom: 2px solid rgba(0, 123, 255, 0.3); /* Sutil pero visible */
+  border-radius: 8px;
+}
+
+/* 📌 Título del directorio */
+.directory-header h3 {
+  font-size: 1.2rem; /* Más pequeño */
+  color: #333;
+  margin: 0;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Suave sombra */
+}
+
+/* 📌 Barra de búsqueda */
+.search-bar {
+  width: 230px;
+  padding: 6px;
+  font-size: 0.9rem;
+  border: none;
+  border-bottom: 2px solid #007bff; /* Resalta más */
+  background: rgba(255, 255, 255, 0.7); /* Semi-transparente */
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  border-radius: 4px;
+  text-align: center; /* Centrado */
+}
+
+/* 🎯 Efecto al hacer clic */
+.search-bar:focus {
+  border-color: #0056b3;
+  background: rgba(255, 255, 255, 1); /* Más sólido al enfocar */
+  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.4);
+}
+
+/* 📌 Ajustes responsivos */
+@media (max-width: 768px) {
+  .directory-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .search-bar {
+    margin-top: 8px;
+    width: 90%;
+  }
+}
+/* 📩 Botón de contacto por correo */
+.btn-contact {
+  background: #98c0d1; /* Naranja llamativo */
+  color: rgb(43, 42, 42);
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-contact:hover {
+  background: #e64a19; /* Oscurecido en hover */
+}
+
+

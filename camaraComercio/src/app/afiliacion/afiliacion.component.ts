@@ -15,17 +15,50 @@ export class AfiliacionComponent {
   company: string = '';
   phone: string = '';
   document: File | null = null;
-  sendEmail(email: string) {
-    window.location.href = `mailto:${email}`;
+  searchQuery: string = '';
+  showAllCompanies: boolean = false;
+
+  companies = Array.from({ length: 51 }, (_, i) => ({
+    name: `Empresa ${i + 1}`,
+    contact: `contacto@empresa${i + 1}.com`,
+    logo: `assets/logo${(i % 6) + 1}.png`,
+    website: `https://empresa${i + 1}.com`,
+    sector: ['Manufactura', 'Logística', 'Tecnología', 'Finanzas', 'Construcción', 'Salud'][i % 6]
+  }));
+  
+
+  filteredCompanies = [...this.companies];
+  visibleCompanies = this.filteredCompanies.slice(0, 4);
+
+  filterCompanies() {
+    const query = this.searchQuery.toLowerCase();
+    this.filteredCompanies = this.companies.filter(company =>
+      company.name.toLowerCase().includes(query) ||
+      company.sector.toLowerCase().includes(query)
+    );
+    this.visibleCompanies = this.showAllCompanies ? this.filteredCompanies : this.filteredCompanies.slice(0, 4);
+  }
+  
+
+  toggleShowAll() {
+    this.showAllCompanies = !this.showAllCompanies;
+    this.visibleCompanies = this.showAllCompanies ? this.filteredCompanies : this.filteredCompanies.slice(0, 4);
   }
 
-  onFileSelected(event: any) {
-    const file = event.target.files[0];
-    if (file) {
-      this.document = file;
+  sendEmail(email: string) {
+    if (email) {
+      window.location.href = `mailto:${email}`;
+    } else {
+      alert("Esta empresa no tiene correo disponible.");
     }
   }
 
+  goToCompanyWebsite(url: string) {
+    window.open(url, '_blank');
+  }
+  openWhatsApp() {
+    window.open('https://api.whatsapp.com/send/?phone=593999989256&text&type=phone_number&app_absent=0', '_blank');
+  }
   submitForm() {
     console.log('Formulario enviado:', {
       name: this.name,
@@ -34,90 +67,11 @@ export class AfiliacionComponent {
       phone: this.phone,
       document: this.document
     });
-
-    // Aquí puedes llamar a un servicio para enviar los datos al backend
+}
+onFileSelected(event: any) {
+  const file = event.target.files[0];
+  if (file) {
+    this.document = file;
   }
-  searchQuery: string = '';
-
-  companies = [
-    {
-      name: 'Empresa A',
-      contact: 'contacto@empresa-b.com',
-      logo: 'assets/logo1.png',
-      website: 'https://empresa-a.com',
-      sector: 'Manufactura'
-    },
-    {
-      name: 'Empresa B',
-      contact: 'contacto@empresa-b.com',
-      logo: 'assets/logo2.png',
-      website: 'https://empresa-b.com',
-      sector: 'Logística'
-    },
-    {
-      name: 'Empresa C',
-      contact: 'contacto@empresa-b.com',
-      logo: 'assets/logo3.png',
-      website: 'https://empresa-c.com',
-      sector: 'Tecnología'
-    },
-    {
-      name: 'Empresa uno',
-      
-      contact: 'info@empresa-uno.com',
-      logo: 'assets/logo1.png',
-      website: 'https://empresa-a.com',
-      sector: 'Manufactura'
-    },
-    {
-      name: 'Empresa dos',
-      
-      contact: 'contacto@empresa-b.com',
-      logo: 'assets/logo2.png',
-      website: 'https://empresa-b.com',
-      sector: 'Logística'
-    },
-    {
-      name: 'Empresa tres',
-  
-      contact: 'empresa3@tech.com',
-      logo: 'assets/logo3.png',
-      website: 'https://empresa-c.com',
-      sector: 'Tecnología'
-    },
-    {
-      name: 'Empresa A',
-      contact: 'contacto@empresa-b.com',
-      logo: 'assets/logo2.png',
-      website: 'https://empresa-b.com',
-      sector: 'Logística'
-    },
-    {
-      name: 'Empresa BC',
-     
-      contact: 'info@empresabc.com',
-      logo: 'assets/logo3.png',
-      website: 'https://empresa-c.com',
-      sector: 'Tecnología'
-    }
-  ];
-  
-
-  filteredCompanies = [...this.companies];
-
-  filterCompanies() {
-    const query = this.searchQuery.toLowerCase();
-    this.filteredCompanies = this.companies.filter(company =>
-      company.name.toLowerCase().includes(query) ||
-      company.sector.toLowerCase().includes(query)
-    );
-  }
-
-  goToCompanyWebsite(url: string) {
-    window.open(url, '_blank');
-  }
-
-  openWhatsApp() {
-    window.open('https://api.whatsapp.com/send/?phone=593999989256&text&type=phone_number&app_absent=0', '_blank');
-  }
+}
 }

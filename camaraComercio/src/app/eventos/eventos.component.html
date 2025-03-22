@@ -1,19 +1,22 @@
 <div class="container mt-4">
-<br>
   <div class="buscador text-center my-4">
     <div class="directory-header">
-    <h2 class="featured-title">Networking y Eventos</h2> <input [(ngModel)]="searchText" type="text" class="form-control w-50 mx-auto" placeholder="🔍 Buscar evento...">
-  </div></div>
+      <h2 class="featured-title">🌐 Networking y Eventos</h2>
+      <input [(ngModel)]="searchText" type="text" class="form-control search-input" placeholder="🔍 Buscar evento...">
+    </div>
+  </div>
 
   <div class="row">
-    <div class="col-md-4 col-lg-3 mt-4" *ngFor="let evento of filteredEventos">
-      <div class="card shadow-sm">
-        <img [src]="evento.imagen" class="card-img-top" alt="{{evento.nombre}}">
+    <div class="col-md-6 col-lg-4 col-xl-3 mt-4" *ngFor="let evento of filteredEventos">
+      <div class="card event-card">
+        <div class="image-container">
+          <img [src]="evento.imagen" class="card-img-top" alt="{{evento.nombre}}">
+        </div>
         <div class="card-body">
           <h5 class="card-title">{{evento.nombre}}</h5>
-          <p><i class="fas fa-map-marker-alt"></i> {{evento.lugar}}</p>
-          <p><i class="fas fa-calendar-alt"></i> {{evento.fecha}}</p>
-          <button class="btn btn-info">Más Información</button>
+          <p class="event-location"><i class="fas fa-map-marker-alt"></i> {{evento.lugar}}</p>
+          <p class="event-date"><i class="fas fa-calendar-alt"></i> {{evento.fecha}}</p>
+          <button class="btn btn-primary w-100">Más Información</button>
         </div>
       </div>
     </div>

@@ -1,40 +1,108 @@
-.card {
-  transition: transform 0.3s ease-in-out;
-  border-radius: 15px;
-  overflow: hidden;
+/* 📌 Estilo para el buscador */
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
-.card:hover {
+.search-input:focus {
+  border-color: #00748a;
+  box-shadow: 0 2px 8px rgba(0, 116, 138, 0.3);
+}
+
+/* 📌 Diseño de las tarjetas */
+.event-card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* 📌 Imagen dentro de la tarjeta */
+.image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover .image-container img {
   transform: scale(1.05);
 }
 
-.card img {
-  height: 350px;
-  object-fit: cover;
+/* 📌 Títulos y texto */
+.card-title {
+  font-size: 18px;
+  color: #001f3f;
+  font-weight: bold;
 }
 
-.buscador input {
-  padding: 10px;
-  border-radius: 25px;
-  border: 2px solid #ddd;
-  outline: none;
+.event-location, .event-date {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
 }
 
-.buscador input:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+/* 📌 Botón de información */
+.btn-primary {
+  background: #00748a;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
 }
 
-.directory-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
+.btn-primary:hover {
+  background: #00556b;
 }
 
-.directory-header h2 {
-  font-size: 26px;
-  color: #333;
-  margin: 0;
+/* 📌 Responsividad */
+@media (max-width: 768px) {
+  .search-input {
+    max-width: 100%;
+  }
+
+  .event-card {
+    margin-bottom: 20px;
+  }
+
+  .image-container {
+    height: 180px;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .image-container {
+    height: 150px;
+  }
+
+  .event-location, .event-date {
+    font-size: 12px;
+  }
+
+  .btn-primary {
+    font-size: 14px;
+  }
 }

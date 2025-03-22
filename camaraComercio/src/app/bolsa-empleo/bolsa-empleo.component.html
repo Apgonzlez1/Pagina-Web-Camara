@@ -1,38 +1,38 @@
-<section class="employment-section">
-  <!-- 🔹 Sección principal con imagen de fondo -->
-  <section class="main-banner" [ngStyle]="{'background-image': 'url(' + backgroundImage + ')'}">
-    <div class="overlay">
-      <h1>Bolsa de Empleo Industrial</h1>
-      <p>Conectamos empresas del sector industrial con talento calificado.</p>
-      <a href="#" class="btn btn-primary">Ver Vacantes</a>
+<!-- Banner principal con la imagen de fondo -->
+<div class="main-banner" [ngStyle]="{'background-image': 'url(' + backgroundImage + ')'}">
+  <h1 class="banner-title align-self-end">Bienvenidos a la Bolsa de Empleo</h1>
+</div>
 
-    </div>
-  </section>
-  <!-- 🔹 Sección de logros -->
+<!-- Sección principal de la página -->
+<div class="employment-section">
+
+  <!-- Sección de logros -->
   <div class="achievements">
-    <h3>🎯 En el último año logramos:</h3>
+    <h2>Logros Recientes</h2>
     <div class="achievements-grid">
       <div class="achievement-card">
-        <h2>+500</h2>
-        <p>Empresas conectadas</p>
+        <h2>200+</h2>
+        <p>Vacantes publicadas</p>
       </div>
       <div class="achievement-card">
-        <h2>+10,000</h2>
-        <p>Postulaciones recibidas</p>
+        <h2>150+</h2>
+        <p>Empresas asociadas</p>
       </div>
       <div class="achievement-card">
-        <h2>+50</h2>
-        <p>Capacitaciones impartidas</p>
+        <h2>50+</h2>
+        <p>Candidatos contratados</p>
       </div>
     </div>
   </div>
 
+  <!-- Sección informativa -->
   <!-- 🔹 Sección informativa -->
   <div class="info-section">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
           <img src="assets/congresos.jpg" alt="Personas buscando empleo" class="info-image">
+
         </div>
         <div class="col-md-6">
           <h3>¿Qué ofrecemos?</h3>
@@ -41,14 +41,43 @@
             <li>✅ Acceso exclusivo para empresas y postulantes.</li>
             <li>✅ Capacitación en empleabilidad y manufactura.</li>
             <li> 📩 <strong>Contacto:</strong> <a href="mailto:empleo@industria.com">empleoindustria.com</a></li>
+            <!-- Botón para abrir el formulario -->
+            <button (click)="openForm()" class="btn-primary-banner">Abrir Formulario</button>
           </ul>
-
         </div>
       </div>
     </div>
   </div>
-</section>
-<!-- 📲 Botón flotante de WhatsApp -->
+
+  <!-- Sección de formulario visible cuando showForm es true -->
+  <div class="form-container" *ngIf="showForm">
+    <h2>Formulario de Vacante</h2>
+
+    <!-- Formulario -->
+    <form (ngSubmit)="submitForm()">
+      <label for="vacante">Seleccione tipo de vacante</label>
+      <select id="vacante" name="vacante" required>
+        <option value="empleo">Bolsa de empleo</option>
+        <option value="practicas">Bolsa de prácticas profesionales</option>
+        <option value="vinculacion">Bolsa de vinculación con la sociedad</option>
+        <option value="proyectos">Proyectos</option>
+      </select>
+
+      <label for="area">Área de interés</label>
+      <input type="text" id="area" name="area" required>
+
+      <label for="cv">Cargar CV</label>
+      <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+
+      <button type="submit" >Enviar</button>
+    </form>
+
+    <!-- Botón para cerrar el formulario -->
+    <button (click)="closeForm()" class="btn-primary-banner">Cerrar</button>
+  </div>
+</div>
+
+<!-- Botón de WhatsApp en la página -->
 <div class="whatsapp-button" (click)="openWhatsApp()">
-  <img src="assets/icono.png" alt="WhatsApp">
+  <img src="assets/whatsapp-icon.png" alt="WhatsApp">
 </div>

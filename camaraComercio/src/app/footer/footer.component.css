@@ -1,76 +1,130 @@
-.footer {
-  background: #333;
-  color: #fff;
-  padding: 20px 0;
-  font-size: 14px;
+/* 🎨 Fondo con degradado */
+footer {
+  background: #f4f4f4;
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
-.container {
+/* 📌 Estilo de las columnas en el footer */
+footer .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
-.row {
+footer .row {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.col {
+/* Columna de ¿Qué hacemos? */
+footer .col {
   flex: 1;
-  margin: 10px;
+  min-width: 250px;
 }
 
-h6 {
+/* Título de las columnas */
+footer h6 {
+  font-size: 1.2rem;
+  color: #004c7a;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-ul {
+/* Listas de las columnas */
+footer ul {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
 }
 
-ul li {
-  margin-bottom: 5px;
+footer ul li {
+  margin: 5px 0;
 }
 
-a {
-  color: #fff;
-  text-decoration: none;
+/* Redes sociales */
+footer .social-links a {
+  margin: 0 10px;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.social-icons a {
-  font-size: 18px;
-  color: #fff;
-}
-
-
-footer .whatsapp-button img {
-  width: 100%;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-}
-
-.social-links {
-  margin-top: 10px;
-}
-
-.social-links a img {
+footer .social-links img {
   width: 30px;
-  margin: 0 5px;
+  height: 30px;
+  transition: transform 0.3s ease;
 }
+
+footer .social-links img:hover {
+  transform: scale(1.1);
+}
+
+/* Contacto */
+footer p {
+  margin-bottom: 8px;
+}
+
+footer p strong {
+  font-weight: bold;
+}
+
+/* Mapa */
+footer .map-container {
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* ⚙️ RESPONSIVE - PARA DISPOSITIVOS PEQUEÑOS Y MEDIANOS */
+@media (max-width: 768px) {
+
+  /* Ajustar el layout de las columnas */
+  footer .row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Las redes sociales deben ser más pequeñas en móviles */
+  footer .social-links img {
+    width: 25px;
+    height: 25px;
+  }
+
+  footer .col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+
+/* ⚙️ RESPONSIVE - PARA DISPOSITIVOS MUY PEQUEÑOS */
+@media (max-width: 480px) {
+
+  footer h6 {
+    font-size: 1rem;
+  }
+
+  footer p {
+    font-size: 0.85rem;
+  }
+
+  footer .social-links img {
+    width: 20px;
+    height: 20px;
+  }
+
+  footer .whatsapp-button {
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+  }
+
+  footer .whatsapp-button img {
+    width: 30px;
+    height: 30px;
+  }
+}
+

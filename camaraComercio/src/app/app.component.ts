@@ -8,7 +8,8 @@ import { FooterComponent } from './footer/footer.component'; // <-- Importa el f
 import { AfiliacionComponent } from './afiliacion/afiliacion.component';
 import { DirectorioComponent } from './directorio/directorio.component';
 import { ContactoComponent } from './contacto/contacto.component';
-import { InicioComponent } from './inicio/inicio.component';
+
+
 
 @Component({
   selector: 'app-root',
@@ -22,7 +23,6 @@ import { InicioComponent } from './inicio/inicio.component';
     AfiliacionComponent,
     DirectorioComponent,
     ContactoComponent,
-
     FooterComponent // <-- Agrega el footer aquí
   ],
   templateUrl: './app.component.html',

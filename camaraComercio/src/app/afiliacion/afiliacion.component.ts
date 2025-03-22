@@ -18,14 +18,15 @@ export class AfiliacionComponent {
   searchQuery: string = '';
   showAllCompanies: boolean = false;
 
+  private logoFormats = ['jpg', 'png', 'jpeg'];
+  
   companies = Array.from({ length: 51 }, (_, i) => ({
     name: `Empresa ${i + 1}`,
     contact: `contacto@empresa${i + 1}.com`,
-    logo: `assets/logo${(i % 6) + 1}.png`,
+    logo: `assets/logo${i + 1}.${this.logoFormats[i % this.logoFormats.length]}`,
     website: `https://empresa${i + 1}.com`,
     sector: ['Manufactura', 'Logística', 'Tecnología', 'Finanzas', 'Construcción', 'Salud'][i % 6]
   }));
-  
 
   filteredCompanies = [...this.companies];
   visibleCompanies = this.filteredCompanies.slice(0, 4);
@@ -38,7 +39,6 @@ export class AfiliacionComponent {
     );
     this.visibleCompanies = this.showAllCompanies ? this.filteredCompanies : this.filteredCompanies.slice(0, 4);
   }
-  
 
   toggleShowAll() {
     this.showAllCompanies = !this.showAllCompanies;

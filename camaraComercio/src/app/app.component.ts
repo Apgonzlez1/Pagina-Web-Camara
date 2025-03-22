@@ -8,7 +8,7 @@ import { FooterComponent } from './footer/footer.component'; // <-- Importa el f
 import { AfiliacionComponent } from './afiliacion/afiliacion.component';
 import { DirectorioComponent } from './directorio/directorio.component';
 import { ContactoComponent } from './contacto/contacto.component';
-import { HttpClientModule } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-root',
@@ -22,7 +22,6 @@ import { HttpClientModule } from '@angular/common/http';
     AfiliacionComponent,
     DirectorioComponent,
     ContactoComponent,
-    HttpClientModule,
     FooterComponent // <-- Agrega el footer aquí
   ],
   templateUrl: './app.component.html',

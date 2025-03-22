@@ -1,310 +1,259 @@
 {
-    "Hoja1": [
+    "empresas": [
         {
-            "Unnamed: 0": 1,
-            "Nombre ": "FGENTERPRISE S.A.",
+            "nombre": "FGENTERPRISE S.A.",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 2,
-            "Nombre ": "FRUGALP S.A.",
+            "nombre": "FRUGALP S.A.",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 3,
-            "Nombre ": "LACTEOS LA POLACA GUSTALAC S.A.",
+            "nombre": "LACTEOS LA POLACA GUSTALAC S.A.",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 4,
-            "Nombre ": "BURNEO EXPORT",
+            "nombre": "BURNEO EXPORT",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 5,
-            "Nombre ": "HOTEL GOLDEN VISTA",
+            "nombre": "HOTEL GOLDEN VISTA",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 6,
-            "Nombre ": "INDUSTRIA DE CAUCHO Y ACERO VITERI INCAVIT S.A.",
+            "nombre": "INDUSTRIA DE CAUCHO Y ACERO VITERI INCAVIT S.A.",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 7,
-            "Nombre ": "RHINOPLAST S.A.",
+            "nombre": "RHINOPLAST S.A.",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 8,
-            "Nombre ": "3 A.N.G. ADMINISTRACION DE NEGOCIOS GERENCIALES CIA. LTDA.",
+            "nombre": "3 A.N.G. ADMINISTRACION DE NEGOCIOS GERENCIALES CIA. LTDA.",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 9,
-            "Nombre ": "DISMAELEC",
+            "nombre": "DISMAELEC",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 10,
-            "Nombre ": "SANFERJUST CIA.LTDA.",
+            "nombre": "SANFERJUST CIA.LTDA.",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 11,
-            "Nombre ": "PROCESADORA NACIONAL DE ALIMENTOS C.A. PRONACA",
+            "nombre": "PROCESADORA NACIONAL DE ALIMENTOS C.A. PRONACA",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 12,
-            "Nombre ": "DISSOL",
+            "nombre": "DISSOL",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 13,
-            "Nombre ": "SCANNEREXPRESS SEGURIDAD INTEGRADA CIA. LTDA.",
+            "nombre": "SCANNEREXPRESS SEGURIDAD INTEGRADA CIA. LTDA.",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 14,
-            "Nombre ": "AGROEXPORTADORA ECUASPICES-CORP CIA.LTDA",
+            "nombre": "AGROEXPORTADORA ECUASPICES-CORP CIA.LTDA",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 15,
-            "Nombre ": "HOTEL CASINO ZARACAY CIA. LTDA.",
+            "nombre": "HOTEL CASINO ZARACAY CIA. LTDA.",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 16,
-            "Nombre ": "BLACK BRAND",
+            "nombre": "BLACK BRAND",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 17,
-            "Nombre ": "BAR RESTAURANTE LA PIEDRA",
+            "nombre": "BAR RESTAURANTE LA PIEDRA",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 18,
-            "Nombre ": "ABAPEC DISTRIBUCIONES",
+            "nombre": "ABAPEC DISTRIBUCIONES",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 19,
-            "Nombre ": "IMPORTADORA SERGIO",
+            "nombre": "IMPORTADORA SERGIO",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 20,
-            "Nombre ": "CORPORACION LOPEZ VILLAGOMEZ CIA. LTDA.",
+            "nombre": "CORPORACION LOPEZ VILLAGOMEZ CIA. LTDA.",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 21,
-            "Nombre ": "TROPICALEXPOR SA",
+            "nombre": "TROPICALEXPOR SA",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 22,
-            "Nombre ": "TAIMEC CIA.LTDA.",
+            "nombre": "TAIMEC CIA.LTDA.",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 23,
-            "Nombre ": "COVERTOSA COVERTURA TOTAL S.A.",
+            "nombre": "COVERTOSA COVERTURA TOTAL S.A.",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 24,
-            "Nombre ": "COPETO CIA. LTDA.",
+            "nombre": "COPETO CIA. LTDA.",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 25,
-            "Nombre ": "WORKTRYMEC ELECTROMECANICA CIA LTDA",
+            "nombre": "WORKTRYMEC ELECTROMECANICA CIA LTDA",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 26,
-            "Nombre ": "EMPROSERVIS CIA. LTDA",
+            "nombre": "EMPROSERVIS CIA. LTDA",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 27,
-            "Nombre ": "CORPROSEG CA AGENCIA ASESORA PRODUCTORA DE SEGUROS",
+            "nombre": "CORPROSEG CA AGENCIA ASESORA PRODUCTORA DE SEGUROS",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 28,
-            "Nombre ": "MEGAPROELEC CIA LTDA",
+            "nombre": "MEGAPROELEC CIA LTDA",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 29,
-            "Nombre ": "CRITERIUM CRITERIA & FINANCIAL CIA LTDA",
+            "nombre": "CRITERIUM CRITERIA & FINANCIAL CIA LTDA",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 30,
-            "Nombre ": "CAMPUESA S.A",
+            "nombre": "CAMPUESA S.A",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 31,
-            "Nombre ": "AGENCIA DE PUBLICIDAD, MARKETING DIGITAL Y MEDIOS GS360 COMUNICACIÓ N INTEGRAL S.A.S.",
+            "nombre": "AGENCIA DE PUBLICIDAD, MARKETING DIGITAL Y MEDIOS GS360 COMUNICACION INTEGRAL S.A.S.",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 32,
-            "Nombre ": "PUNTO MADERA ESPINOZA LUGO WOODPOINT CIA LTDA",
+            "nombre": "PUNTO MADERA ESPINOZA LUGO WOODPOINT CIA LTDA",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 33,
-            "Nombre ": "D - ORLAND- CASVIMOR CIA. LTDA.",
+            "nombre": "D - ORLAND- CASVIMOR CIA. LTDA.",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 34,
-            "Nombre ": "IMPORTADORA CASTRO",
+            "nombre": "IMPORTADORA CASTRO",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 35,
-            "Nombre ": "BALSEBOT CORP",
+            "nombre": "BALSEBOT CORP",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 36,
-            "Nombre ": "KUBIEC S.A",
+            "nombre": "KUBIEC S.A",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 37,
-            "Nombre ": "COMPAÑÍA AMBIENTAL GREENCOAST NOGTAC C.L",
+            "nombre": "COMPAÑÍA AMBIENTAL GREENCOAST NOGTAC C.L",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 38,
-            "Nombre ": "BANCO PROCREDIT",
+            "nombre": "BANCO PROCREDIT",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 39,
-            "Nombre ": "CERAMICAS AL COSTO",
+            "nombre": "CERAMICAS AL COSTO",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 40,
-            "Nombre ": "CONCRETHOR S.A.S",
+            "nombre": "CONCRETHOR S.A.S",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 41,
-            "Nombre ": "CORP SARCH S.A.S.",
+            "nombre": "CORP SARCH S.A.S.",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 42,
-            "Nombre ": "ELECTROCENTER",
+            "nombre": "ELECTROCENTER",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 43,
-            "Nombre ": "GREEN PLATINUM S.A.",
+            "nombre": "GREEN PLATINUM S.A.",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 44,
-            "Nombre ": "IMPORTCEN",
+            "nombre": "IMPORTCEN",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 45,
-            "Nombre ": "JORGE CUENCA AGRESTE",
+            "nombre": "JORGE CUENCA AGRESTE",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 46,
-            "Nombre ": "LOVERSOFT -SAP",
+            "nombre": "LOVERSOFT -SAP",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 47,
-            "Nombre ": "LUBRIFER",
+            "nombre": "LUBRIFER",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 48,
-            "Nombre ": "TRAMACO",
+            "nombre": "TRAMACO",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 49,
-            "Nombre ": "SYSTENWORK - CONTAMATIC",
+            "nombre": "SYSTENWORK - CONTAMATIC",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 50,
-            "Nombre ": "DISLICOR",
+            "nombre": "DISLICOR",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         },
         {
-            "Unnamed: 0": 51,
-            "Nombre ": "AGROTORCA",
+            "nombre": "AGROTORCA",
             "correo": "info@gmail.com",
-            "sitio web": "www.infor.com"
+            "sitio_web": "www.infor.com"
         }
     ]
 }

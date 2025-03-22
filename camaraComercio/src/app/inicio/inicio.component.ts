@@ -82,9 +82,9 @@ export class InicioComponent implements OnInit {
     valores: ["Innovación", "Sostenibilidad", "Competitividad", "Ética"],
     equipoDirectivo: [
       { 
-        cargo: "Presidente Ejecutivo", 
-        foto: "assets/perfil2.jpg", 
-        funciones: ["Gestionar inversiones", "Cumplimiento normativo", "Impulsar la modernización industrial"] 
+        cargo: "Presidenta de la Cámara de Industrias y Producción", 
+        foto: "assets/PresidentaCIP.jpg", 
+        funciones: ["Magaly Marcela García Sánchez", "mgarcia@ecuaspices.com"]
       },
       { 
         cargo: "Vicepresidente Ejecutivo", 

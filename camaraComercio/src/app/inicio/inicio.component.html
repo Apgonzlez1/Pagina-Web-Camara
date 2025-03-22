@@ -12,7 +12,7 @@
     </div>
     <!-- Imagen del nombre del evento -->
     <div class="event-name-img">
-      <img src="assets/logoTEF.jpg" alt="Nombre del Evento">
+      <img src="assets/bannnerevento.png" alt="Nombre del Evento">
     </div>
   </div>
 </section>
@@ -64,43 +64,7 @@
     </div>
   </div>
 </section>
-<script>
-  function startCountdown(targetDate) {
-    const countdownElement = document.getElementById("countdown");
-    
-    if (!countdownElement) {
-      console.error("Elemento con ID 'countdown' no encontrado.");
-      return;
-    }
 
-    function updateCountdown() {
-      const now = new Date().getTime();
-      const distance = targetDate - now;
-
-      if (distance < 0) {
-        countdownElement.innerHTML = "¡El evento ha comenzado!";
-        clearInterval(interval);
-        return;
-      }
-
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      countdownElement.innerHTML = `${days}D | ${hours}H | ${minutes}M | ${seconds}S`;
-    }
-
-    updateCountdown(); // Primera actualización inmediata
-    let interval = setInterval(updateCountdown, 1000); // Se ejecuta cada segundo
-  }
-
-  document.addEventListener("DOMContentLoaded", function() {
-    console.log("Script cargado correctamente.");
-    const eventDate = new Date("2025-04-01T00:00:00").getTime(); // Ajusta la fecha aquí
-    startCountdown(eventDate);
-  });
-</script>
 
 <!-- 📲 Botón flotante de WhatsApp -->
 <div class="whatsapp-button" (click)="openWhatsApp()">

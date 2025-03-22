@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router'; // 
+import { Router, RouterModule } from '@angular/router'; // 
 @Component({
   selector: 'app-noticias',
   imports: [CommonModule, RouterModule], //
@@ -13,21 +13,20 @@ export class NoticiasComponent {
       titulo: "Nuevas Regulaciones para la Industria",
       descripcion: "El gobierno anuncia nuevas normativas que afectarán la producción y exportación.",
       imagen: "assets/noticias.jpg",
-      enlace: "#"
+      enlace: "/noticias-detalle/noticia1"  // Cambiamos a la nueva ruta
     },
     {
       titulo: "Caso de Éxito: Empresa Local Crece un 200%",
       descripcion: "Una empresa de manufactura en Santo Domingo ha logrado expandirse con éxito.",
       imagen: "assets/noticias.jpg",
-      enlace: "#"
+      enlace: "/noticias-detalle/noticia2"  // Cambiamos a la nueva ruta
     },
     {
       titulo: "Innovación en el Sector Industrial",
       descripcion: "Descubre cómo las nuevas tecnologías están cambiando la producción en la región.",
       imagen: "assets/noticias.jpg",
-      enlace: "#"
+      enlace: "/noticias-detalle/noticia3"  // Cambiamos a la nueva ruta
     }
-    
   ];
 
   openWhatsApp() {

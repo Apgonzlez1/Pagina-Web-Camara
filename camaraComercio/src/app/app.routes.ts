@@ -10,10 +10,16 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { EventosComponent } from './eventos/eventos.component';
 import { TefComponent } from './tef/tef.component';  // 🔹 Importar TEF
 import { TbcComponent } from './tbc/tbc.component';  // 🔹 Importar TBC
+import { Noticia1Component } from './noticias-detalle/noticia1/noticia1.component';
+import { Noticia2Component } from './noticias-detalle/noticia2/noticia2.component';
+import { Noticia3Component } from './noticias-detalle/noticia3/noticia3.component';
 
 export const routes: Routes = [
   { path: '', component: InicioComponent },
   { path: 'noticias', component: NoticiasComponent },
+  { path: 'noticias-detalle/noticia1', component: Noticia1Component }, 
+  { path: 'noticias-detalle/noticia2', component: Noticia2Component }, 
+  { path: 'noticias-detalle/noticia3', component: Noticia3Component }, 
   { path: 'networking-y-eventos', component: NetworkingEventosComponent },
   { path: 'servicios', component: ServiciosComponent },
   { path: 'bolsa-empleo', component: BolsaEmpleoComponent },

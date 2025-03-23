@@ -8,13 +8,14 @@
 /* Ajustes del logo */
 .custom-navbar .navbar-brand img {
   height: 90px;
-  width: 300px;
+  width: auto;
+  max-width: 100%;
 }
 
 /* Estilos para los enlaces */
 .custom-navbar .nav-link {
   color: #001f3f !important; /* Azul marino */
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   transition: color 0.3s ease;
 }
@@ -29,4 +30,48 @@
 .navbar-toggler {
   border: none;
   outline: none;
+}
+
+/* 🌟 Estilos para cuando el navbar es responsive (pantallas pequeñas) */
+@media (max-width: 991px) {
+  /* Logo más pequeño en pantallas pequeñas */
+  .custom-navbar .navbar-brand img {
+    height: 60px;
+    width: auto;
+  }
+
+  /* Los enlaces se agrupan verticalmente */
+  .navbar-nav {
+    text-align: center; /* Centrar los elementos en el menú */
+  }
+
+  .navbar-nav .nav-item {
+    margin: 10px 0; /* Espaciado entre los elementos del menú */
+  }
+
+  /* Ajuste para el menú cuando está desplegado */
+  .collapse.navbar-collapse {
+    background-color: #f8f9fa; /* Asegura que el fondo se mantenga igual */
+    padding: 10px 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Asegurar que los enlaces en el menú responsive tengan un buen padding */
+  .navbar-nav .nav-link {
+    font-size: 10px;
+    padding: 5px 5px;
+  }
+}
+
+/* 🌟 Estilos adicionales para pantallas muy pequeñas (móviles pequeños) */
+@media (max-width: 576px) {
+  /* Logo aún más pequeño en pantallas muy pequeñas */
+  .custom-navbar .navbar-brand img {
+    height: 50px;
+  }
+
+  /* Ajustar el tamaño de los enlaces para pantallas pequeñas */
+  .custom-navbar .nav-link {
+    font-size: 10px;
+  }
 }

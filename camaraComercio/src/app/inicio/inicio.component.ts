@@ -11,7 +11,7 @@ import { isPlatformBrowser } from '@angular/common';
   styleUrls: ['./inicio.component.css']
 })
 export class InicioComponent implements OnInit {
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
 
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
@@ -81,27 +81,46 @@ export class InicioComponent implements OnInit {
     vision: "Posicionar a nuestra institución como un ente influyente, eficiente y organizado a nivel regional, convirtiéndose en un referente dentro del desarrollo nacional a mediano plazo, promoviendo la competitividad empresarial y la cooperación con el Estado.",
     valores: ["Innovación", "Sostenibilidad", "Competitividad", "Ética"],
     equipoDirectivo: [
-      { 
-        cargo: "Presidenta de la Cámara de Industrias y Producción", 
-        foto: "assets/PresidentaCIP.jpg", 
-        funciones: ["Magaly Marcela García Sánchez", "mgarcia@ecuaspices.com"]
+      {
+        nombre: "NOGALES JAMI EDGAR ORLANDO",
+        cargo: "Socio Fundador",
+        foto: "assets/Edgar_Nogales.jpg",
+        correo: "edgnog@hotmail.com"
       },
-      { 
-        cargo: "Vicepresidente Ejecutivo", 
-        foto: "assets/perfil2.jpg", 
-        funciones: ["Responsable de comercio exterior", "Fomentar la creación de nuevas industrias"] 
+      {
+        nombre: "QUEZADA CABRERA MARCOS VINICIO",
+        cargo: "Vicepresidente",
+        foto: "assets/perfil2.jpg",
+        funciones: ["Responsable de comercio exterior", "Fomentar la creación de nuevas industrias"],
+        correo: "gerencia@hotelgoldenvista.com.ec"
       },
-      { 
-        cargo: "Secretario", 
-        foto: "assets/perfil2.jpg", 
-        funciones: ["Funciones secretariales", "Atención al público"] 
+      {
+        nombre: "ALDEAN JARAMILLO JUAN FRANCISCO",
+        cargo: "Director Comercial",
+        foto: "assets/perfil2.jpg",
+        correo: "aldeanf@gmail.com"
       },
-      { 
-        cargo: "Tesorero", 
-        foto: "assets/perfil2.jpg", 
-        funciones: ["Gestión de presupuestos"] 
+      {
+        nombre: "VILLACIS BALAREZO JORGE ISRAEL",
+        cargo: "Director Industrial",
+        foto: "assets/perfil2.jpg",
+        correo: "Jivb2020@hotmail.com"
+      },
+      
+      {
+        nombre: "CEVALLOS ASTUDILLO ÁNGEL FERNANDO",
+        cargo: "Socio Colaborador",
+        foto: "assets/perfil2.jpg",
+        correo: "angel_cevallos832002@hotmail.com"
+      },
+      {
+        nombre: "ARAÚZ ZAMBRANO MARÍA JOSÉ",
+        cargo: "Coordinadora Ejecutiva",
+        foto: "assets/perfil2.jpg",
+        correo: "coordinacionejecutiva@industriassdt.org"
       }
     ]
+    
   };
 
   openWhatsApp() {

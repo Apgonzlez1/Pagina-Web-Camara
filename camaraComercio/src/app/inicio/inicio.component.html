@@ -8,7 +8,9 @@
       <!-- Contador regresivo con animación -->
       <div id="countdown" class="countdown-animation">Cargando contador...</div>
       <!-- Botón para inscribirse -->
-      <button onclick="window.open('https://docs.google.com/forms/d/1G87IGCYOGStTYYIdzijZiaXJxoAXpd4iMXhv9XqCMsI/edit', '_blank')">Inscribirse a este evento</button>
+      <button
+        onclick="window.open('https://docs.google.com/forms/d/1G87IGCYOGStTYYIdzijZiaXJxoAXpd4iMXhv9XqCMsI/edit', '_blank')">Inscribirse
+        a este evento</button>
     </div>
     <!-- Imagen del nombre del evento -->
     <div class="event-name-img">
@@ -19,7 +21,7 @@
 
 
 <section class="main-banner"
-  [ngStyle]="{'background-image': 'url(' + backgroundImage + ')', 'background-size': 'cover', 'background-position': 'center'}">
+  [ngStyle]="{'background-image': 'url(' + backgroundImage + ')', 'background-size': 'cover', 'background-position': 'top'}">
   <div class="overlay">
     <h1>Bienvenidos a la Cámara de Industrias y Producción de Santo Domingo</h1>
   </div>
@@ -46,18 +48,36 @@
       </div>
     </div>
 
+
+
     <!-- 🔹 Equipo Directivo -->
     <div class="galeria">
-      <h2>🤝 Equipo Directivo</h2>
-      <br>
+
+      <!-- Tarjeta destacada -->
+      <div class="featured-event">
+        <div class="row">
+          <div class="col-md-4">
+            <div><img src="assets/PresidentaCIP.jpg" alt="Presidenta"></div>
+          </div>
+          <div class="col-md-8 ">
+            <h2 class="featured-title" style="text-align: center;">GARCÍA SÁNCHEZ MAGALY MARCELA</h2>
+            <h3 style="text-align: center;"><strong>Presidente</strong></h3>
+            <p><strong>Internacional Business | Broker de especias y productos agrícolas</strong></p>
+            <p><strong>Presidente de la Cámara de Industrias de Santo Domingo</strong></p>
+            <p><strong>CEO de Ecuaspices</strong></p>
+            <p><strong>Profesora Universitaria</strong></p>
+            <p><strong>Correo:</strong> mgarcia&#64;ecuaspices.com</p>
+          </div>
+        </div>
+      </div>
+      <h2 style="margin-top: 30px; margin-bottom: 20px;">🤝 Equipo</h2>
       <div class="contenedor-miembros">
         <div *ngFor="let miembro of quienesSomos.equipoDirectivo" class="tarjeta">
           <img [src]="miembro.foto" [alt]="miembro.cargo">
           <div class="tarjeta-info">
-            <h3>{{ miembro.cargo }}</h3>
-            <ul>
-              <li *ngFor="let funcion of miembro.funciones">{{ funcion }}</li>
-            </ul>
+            <h3>{{ miembro.nombre }}</h3>
+            <h4>{{ miembro.cargo }}</h4>
+            <p><strong>Correo:</strong> <a [href]="'mailto:' + miembro.correo">{{ miembro.correo }}</a></p>
           </div>
         </div>
       </div>

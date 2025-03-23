@@ -51,7 +51,13 @@
 
 
     <!-- 🔹 Equipo Directivo -->
-    <div class="galeria">
+    <div class="galeria"><hr>
+      <h1 class="titulo-seccion">Conoce a nuestra Presidenta y equipo</h1> 
+      <p class="descripcion-seccion">
+        En esta sección te presentamos a la presidenta de la Cámara de Industrias y Producción de Santo Domingo, Magaly Marcela
+        García Sánchez, quien lidera con visión y compromiso. Además, te invitamos a conocer al equipo directivo que la
+        acompaña en esta labor, cada uno de ellos con un rol crucial para el éxito de nuestra organización.
+      </p>
 
       <!-- Tarjeta destacada -->
       <div class="featured-event">
@@ -68,9 +74,13 @@
             <p><strong>Profesora Universitaria</strong></p>
             <p><strong>Correo:</strong> mgarcia&#64;ecuaspices.com</p>
           </div>
-        </div>
+        </div> 
       </div>
-      <h2 style="margin-top: 30px; margin-bottom: 20px;">🤝 Equipo</h2>
+      <h2 style="margin-top: 30px; margin-bottom: 20px;">Equipo</h2> 
+<p class="descripcion-equipo">
+  El éxito de nuestra organización no solo depende de la visión de nuestra presidenta, sino también del trabajo conjunto de un equipo comprometido y altamente capacitado. A continuación, te presentamos a los miembros del equipo directivo que, junto a la presidenta, hacen posible el desarrollo y crecimiento de la Cámara de Industrias de Santo Domingo.
+</p>
+
       <div class="contenedor-miembros">
         <div *ngFor="let miembro of quienesSomos.equipoDirectivo" class="tarjeta">
           <img [src]="miembro.foto" [alt]="miembro.cargo">

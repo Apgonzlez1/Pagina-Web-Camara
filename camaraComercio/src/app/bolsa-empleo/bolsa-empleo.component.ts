@@ -10,18 +10,49 @@ import { CommonModule } from '@angular/common';
 })
 export class BolsaEmpleoComponent {
   backgroundImage = 'assets/fondo.jpg';
-
-  // Estado del formulario
   showForm = false;
+  successMessage = '';
 
-  // Método para abrir el formulario
+
   openForm() {
     this.showForm = true;
   }
 
-  // Método para cerrar el formulario
   closeForm() {
     this.showForm = false;
+    this.successMessage = ''; // Borra el mensaje al cerrar
+  }
+  enviarFormulario(event: Event) {
+    event.preventDefault(); // Evita la redirección a Formspree
+
+    const form = event.target as HTMLFormElement;
+    const formData = new FormData(form);
+
+    // Convertir FormData a un objeto JSON
+    const jsonData: { [key: string]: string } = {};
+    formData.forEach((value, key) => {
+      jsonData[key] = value.toString();
+    });
+
+    fetch("https://formspree.io/f/mldjbjqg", {
+      method: "POST",
+      body: JSON.stringify(jsonData), // Enviar como JSON
+      headers: { 
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      }
+    })
+    .then(response => {
+      if (response.ok) {
+        alert("Formulario enviado correctamente");
+        form.reset(); // Limpia el formulario
+      } else {
+        alert("Hubo un error al enviar el formulario");
+      }
+    })
+    .catch(error => {
+      alert("Error de conexión, intenta nuevamente.");
+    });
   }
 
   openWhatsApp() {

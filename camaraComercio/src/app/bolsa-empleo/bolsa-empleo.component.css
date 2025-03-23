@@ -26,30 +26,33 @@
 /* Estilos para la sección principal de logros */
 .achievements {
   background-color: #00748a;  /* Fondo azul */
-  padding: 20px 20px;
+  padding: 10px;
   color: white;
   text-align: center;
 }
 
 .achievements h2 {
   font-size: 2.5rem;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .achievements-grid {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
+  padding: 5px;
 }
 
 .achievement-card {
   background: white;
   color: #00748a;
-  padding: 10px;
+  padding: 8px;
   border-radius: 10px;
-  width: 200px;
+  width: 100%;
+  max-width: 250px; /* Limita el tamaño en pantallas grandes */
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Sombra sutil */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .achievement-card h2 {
@@ -224,6 +227,10 @@ button[type="submit"]:hover {
     text-align: center;
   }
 
+  .col-md-6 {
+    width: 100%;
+  }
+
   .info-image {
     width: 80%;
     margin: 0 auto;
@@ -231,10 +238,80 @@ button[type="submit"]:hover {
 
   .achievements-grid {
     flex-direction: column;
+    gap: 10px;
   }
 
   .form-container {
     width: 90%;
     padding: 20px;
+  }
+
+  .form-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .info-list li {
+    font-size: 1rem;
+  }
+
+  .banner-title {
+    font-size: 2.5rem;
+    padding: 10px;
+  }
+
+  .cv-message p {
+    font-size: 0.9rem;
+  }
+
+  .cv-message a {
+    font-size: 0.95rem;
+  }
+
+  .achievement-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .achievement-card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsive para pantallas más grandes */
+@media (min-width: 769px) {
+  .cv-message {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .achievements-grid {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+/* Ajustes adicionales para pantallas pequeñas */
+@media (max-width: 768px) {
+  .achievements-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .achievement-card {
+    width: 90%;
+    height: 20%;
+
+  }
+}
+
+/* Mejor ajuste para móviles */
+@media (max-width: 576px) {
+  .achievements-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .achievement-card {
+    width: 90%;
+    max-width: 300px;
   }
 }

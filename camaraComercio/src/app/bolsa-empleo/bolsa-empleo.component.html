@@ -8,7 +8,7 @@
 
   <!-- Sección de logros -->
   <div class="achievements">
-    <h2>Logros Recientes</h2>
+    <h2>🎯 En el último año logramos:</h2>
     <div class="achievements-grid">
       <div class="achievement-card">
         <h2>200+</h2>
@@ -26,7 +26,6 @@
   </div>
 
   <!-- Sección informativa -->
-  <!-- 🔹 Sección informativa -->
   <div class="info-section">
     <div class="container">
       <div class="row">
@@ -49,35 +48,73 @@
     </div>
   </div>
 
-  <!-- Sección de formulario visible cuando showForm es true -->
+  <!-- Formulario visible cuando showForm es true -->
   <div class="form-container" *ngIf="showForm">
     <h2>Formulario de Vacante</h2>
 
-    <!-- Formulario -->
-    <form (ngSubmit)="submitForm()">
+    <form (submit)="enviarFormulario($event)" enctype="multipart/form-data">
+      <!-- Nombre o Institución -->
+      <label for="nombre">Nombre o Institución</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <!-- Filtros -->
+      <div class="filter-options">
+        <label>
+          <input type="checkbox" name="Tiempo_Completo"> Tiempo Completo
+        </label>
+        <label>
+          <input type="checkbox" name="Independiente"> Independiente
+        </label>
+        <label>
+          <input type="checkbox" name="Prácticas"> Prácticas
+        </label>
+        <label>
+          <input type="checkbox" name="Medio_Tiempo"> Medio Tiempo
+        </label>
+        <label>
+          <input type="checkbox" name="Temporal"> Temporal
+        </label>
+      </div>
+
+      <!-- Tipo de vacante -->
       <label for="vacante">Seleccione tipo de vacante</label>
       <select id="vacante" name="vacante" required>
-        <option value="empleo">Bolsa de empleo</option>
-        <option value="practicas">Bolsa de prácticas profesionales</option>
-        <option value="vinculacion">Bolsa de vinculación con la sociedad</option>
-        <option value="proyectos">Proyectos</option>
+        <option value="Empleo">Bolsa de empleo</option>
+        <option value="Practicas_Profesionales">Bolsa de prácticas profesionales</option>
+        <option value="Vinculacion_Social">Bolsa de vinculación con la sociedad</option>
+        <option value="Proyectos">Proyectos</option>
       </select>
 
+      <!-- Área de interés -->
       <label for="area">Área de interés</label>
       <input type="text" id="area" name="area" required>
 
-      <label for="cv">Cargar CV</label>
-      <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+      <!-- Mensaje debajo del formulario -->
+      <div class="cv-message">
+        <p>
+          Si estás interesado, por favor envía tu CV actualizado a
+        <p>
+          <strong>Correo: </strong>coordinacionejecutiva&#64;industriassdt.org <br>
+          Presidencia&#64;industriassdt.org .
+        </p>
+      </div>
 
-      <button type="submit" >Enviar</button>
+      <!-- Botón de envío -->
+      <button type="submit">Enviar</button>
     </form>
+
+    <!-- Mensaje de éxito -->
+    <p *ngIf="successMessage" class="success-message">{{ successMessage }}</p>
 
     <!-- Botón para cerrar el formulario -->
     <button (click)="closeForm()" class="btn-primary-banner">Cerrar</button>
   </div>
+
+<!-- 📲 Botón flotante de WhatsApp -->
+<div class="whatsapp-button" (click)="openWhatsApp()">
+  <img src="assets/icono.png" alt="WhatsApp">
 </div>
 
-<!-- Botón de WhatsApp en la página -->
-<div class="whatsapp-button" (click)="openWhatsApp()">
-  <img src="assets/whatsapp.png" alt="WhatsApp">
+
 </div>
+

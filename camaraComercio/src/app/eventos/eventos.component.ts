@@ -28,4 +28,5 @@ export class EventosComponent {
       evento.nombre.toLowerCase().includes(this.searchText.toLowerCase())
     );
   }
+
 }

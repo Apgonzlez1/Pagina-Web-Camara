@@ -11,7 +11,16 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./networking-eventos.component.css']
 })
 export class NetworkingEventosComponent {
-  openWhatsApp() {
+
+
+  // Método a ejecutar al hacer clic en el botón de inscripción
+  inscribirse(): void {
+    // Aquí puedes redirigir a la página de inscripción o ejecutar la lógica necesaria
+    console.log('Redirigiendo a la inscripción del evento...');
+    // Por ejemplo, usando el router:
+    // this.router.navigate(['/inscripcion-evento']);
+    
+  }  openWhatsApp() {
     window.open('https://api.whatsapp.com/send/?phone=593999989256&text&type=phone_number&app_absent=0', '_blank');
   }
 }

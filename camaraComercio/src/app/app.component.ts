@@ -9,6 +9,8 @@ import { AfiliacionComponent } from './afiliacion/afiliacion.component';
 import { DirectorioComponent } from './directorio/directorio.component';
 import { ContactoComponent } from './contacto/contacto.component';
 
+
+
 @Component({
   selector: 'app-root',
   standalone: true,

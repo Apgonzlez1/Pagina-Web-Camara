@@ -1,3 +1,23 @@
+<!-- Banner dinámico para el evento -->
+<section class="event-banner">
+  <div class="banner-content">
+    <!-- Información del evento -->
+    <div class="event-info">
+      <h1>Tsáchila Economic Fórum IV Edition #TEF2025</h1>
+      <p>¡No te pierdas esta oportunidad única de crecimiento y colaboración! ¡Te esperamos!</p>
+      <!-- Contador regresivo con animación -->
+      <div id="countdown" class="countdown-animation">Cargando contador...</div>
+      <!-- Botón para inscribirse -->
+      <button (click)="inscribirse()">Inscribirse a este evento</button>
+    </div>
+    <!-- Imagen del nombre del evento -->
+    <div class="event-name-img">
+      <img src="assets/bannnerevento.png" alt="Nombre del Evento">
+    </div>
+  </div>
+</section>
+
+
 <section class="main-banner"
   [ngStyle]="{'background-image': 'url(' + backgroundImage + ')', 'background-size': 'cover', 'background-position': 'center'}">
   <div class="overlay">
@@ -44,6 +64,7 @@
     </div>
   </div>
 </section>
+
 
 <!-- 📲 Botón flotante de WhatsApp -->
 <div class="whatsapp-button" (click)="openWhatsApp()">

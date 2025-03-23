@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener } from '@angular/core';
-
+import { Component, HostListener, OnInit, Inject, PLATFORM_ID } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-inicio',
@@ -10,7 +10,50 @@ import { RouterModule } from '@angular/router';
   templateUrl: './inicio.component.html',
   styleUrls: ['./inicio.component.css']
 })
-export class InicioComponent {
+export class InicioComponent implements OnInit {
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
+  ngOnInit(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      this.startCountdown(new Date("2025-06-19T00:00:00").getTime());
+    }
+  }
+
+  startCountdown(targetDate: number): void {
+    const countdownElement = document.getElementById("countdown");
+
+    if (!countdownElement) {
+      console.error("Elemento con ID 'countdown' no encontrado.");
+      return;
+    }
+
+    const interval = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance < 0) {
+        countdownElement.innerHTML = "¡El evento ha comenzado!";
+        clearInterval(interval);
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdownElement.innerHTML = `${days}D | ${hours}H | ${minutes}M | ${seconds}S`;
+    }, 1000);
+  }
+
+
+  // Método a ejecutar al hacer clic en el botón de inscripción
+  inscribirse(): void {
+    // Aquí puedes redirigir a la página de inscripción o ejecutar la lógica necesaria
+    console.log('Redirigiendo a la inscripción del evento...');
+    // Por ejemplo, usando el router:
+    // this.router.navigate(['/inscripcion-evento']);
+  }
   backgroundImage: string = 'assets/inicio.jpg'; // Imagen de fondo
   showScrollButton = false; // Controla la visibilidad del botón flotante
 
@@ -39,9 +82,9 @@ export class InicioComponent {
     valores: ["Innovación", "Sostenibilidad", "Competitividad", "Ética"],
     equipoDirectivo: [
       { 
-        cargo: "Presidente Ejecutivo", 
-        foto: "assets/perfil2.jpg", 
-        funciones: ["Gestionar inversiones", "Cumplimiento normativo", "Impulsar la modernización industrial"] 
+        cargo: "Presidenta de la Cámara de Industrias y Producción", 
+        foto: "assets/PresidentaCIP.jpg", 
+        funciones: ["Magaly Marcela García Sánchez", "mgarcia@ecuaspices.com"]
       },
       { 
         cargo: "Vicepresidente Ejecutivo", 

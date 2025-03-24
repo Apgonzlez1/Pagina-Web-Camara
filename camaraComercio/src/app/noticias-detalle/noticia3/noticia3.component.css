@@ -117,6 +117,24 @@ body {
   .boton-leer-mas:hover {
     background-color: #0056b3;
   }
+     /* Estilos de la galeria de img */
+     .galeria-imagenes {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+      margin-top: 20px;
+    }
+    
+    .galeria-imagenes img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      transition: transform 0.3s ease;
+    }
+    
+    .galeria-imagenes img:hover {
+      transform: scale(1.05);
+    }
     /* 📲 Botón de WhatsApp */
 .whatsapp-button {
     position: fixed;

@@ -77,8 +77,8 @@ export class InicioComponent implements OnInit {
 
   quienesSomos = {
     historia: "La Cámara de Industriales y Producción de Santo Domingo se fundó con el objetivo de organizar a los diferentes entes productivos de la región. Desde su creación, ha promovido la unión de los socios y ha representado activamente sus intereses, fomentando el desarrollo y progreso industrial en la región.",
-    mision: "Propiciar la productividad y desarrollo regional de la Cámara de Industrias como institución líder de los gremios industriales y de producción, con representación proactiva ante el Estado. Buscamos fortalecer la investigación, el emprendimiento, la competitividad e innovación empresarial para generar empleo y bienestar social.",
-    vision: "Posicionar a nuestra institución como un ente influyente, eficiente y organizado a nivel regional, convirtiéndose en un referente dentro del desarrollo nacional a mediano plazo, promoviendo la competitividad empresarial y la cooperación con el Estado.",
+    mision: "Propiciar la productividad y desarrollo regional de la Cámara de Industrias como institución que lidere a los gremios industriales y de producción, con representación proactiva del sistema ante el Estado, a través del fortalecimiento en investigación, emprendimiento, desarrollo, formalización, competitividad e innovación empresarial buscando siempre la generación de empleo y el bienestar social.",
+    vision: "Posicionar a nuestra institución como un ente influyente, eficiente y organizado a nivel regional, convirtiéndose en un referente dentro del desarrollo nacional a mediano plazo, siendo promotora de la competitividad de los empresarios, gremios y el Estado..",
     valores: ["Innovación", "Sostenibilidad", "Competitividad", "Ética"],
     equipoDirectivo: [
       {

@@ -13,9 +13,11 @@ import { TbcComponent } from './tbc/tbc.component';  // 🔹 Importar TBC
 import { Noticia1Component } from './noticias-detalle/noticia1/noticia1.component';
 import { Noticia2Component } from './noticias-detalle/noticia2/noticia2.component';
 import { Noticia3Component } from './noticias-detalle/noticia3/noticia3.component';
+import { NoticiasfacebookComponent } from './noticiasfacebook/noticiasfacebook.component';
 
 export const routes: Routes = [
   { path: '', component: InicioComponent },
+  { path: 'noticiasfacebook', component: NoticiasfacebookComponent },
   { path: 'noticias', component: NoticiasComponent },
   { path: 'noticias-detalle/noticia1', component: Noticia1Component }, 
   { path: 'noticias-detalle/noticia2', component: Noticia2Component }, 

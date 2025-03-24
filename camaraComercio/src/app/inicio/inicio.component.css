@@ -448,3 +448,111 @@
     margin-right: auto;
   }
   
+/* ========================
+     SECCIÓN DE EQUIPO
+   ======================== */
+   .icono-usuario{
+    font-size: 3rem;
+    
+  }
+
+   .contenedor-miembros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+  }
+  
+  .tarjeta-equipo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 380px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+  }
+  
+  .tarjeta-equipo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .tarjeta-equipo img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px;
+    object-position: center;
+  }
+  
+  .tarjeta-info {
+    margin-top: 15px;
+  }
+  
+  .tarjeta-info h3 {
+    font-size: 1.5rem;
+    color: #00748a;
+    margin-bottom: 8px;
+  }
+  
+  .tarjeta-info p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 12px;
+  }
+  
+  .tarjeta-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .tarjeta-info li {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  /* Botón de Ver Más para cada miembro */
+  .btn-toggle {
+    background: #00748a;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn-toggle:hover {
+    background: #00556b;
+    transform: scale(1.05);
+  }
+  
+  /* ========================
+       RESPONSIVE EQUIPO
+     ======================== */
+  
+  @media (max-width: 1024px) {
+    .contenedor-miembros {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .tarjeta-equipo {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .tarjeta-equipo {
+      max-width: 100%;
+    }
+  }

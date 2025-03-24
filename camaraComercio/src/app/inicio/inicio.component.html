@@ -1,4 +1,6 @@
 <!-- Banner dinámico para el evento -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 <section class="event-banner">
   <div class="banner-content">
     <!-- Información del evento -->
@@ -49,7 +51,7 @@
     <!-- 🔹 Equipo Directivo -->
     <div class="galeria">
       <hr>
-      <h1 class="titulo-seccion">Conoce a nuestra Presidenta y equipo</h1>
+      <h1 class="titulo-seccion">Conoce a Nuestra Presidenta, Socio Fundador y Equipo</h1>
       <p class="descripcion-seccion">
         En esta sección te presentamos a la presidenta de la Cámara de Industrias y Producción de Santo Domingo, Magaly
         Marcela
@@ -74,17 +76,40 @@
           </div>
         </div>
       </div>
-      <h2 style="margin-top: 30px; margin-bottom: 20px;">Equipo</h2>
-      <p class="descripcion-equipo">
-        El éxito de nuestra organización no solo depende de la visión de nuestra presidenta, sino también del trabajo
-        conjunto de un equipo comprometido y altamente capacitado. A continuación, te presentamos a los miembros del
-        equipo directivo que, junto a la presidenta, hacen posible el desarrollo y crecimiento de la Cámara de
-        Industrias de Santo Domingo.
-      </p>
-
-      <div class="contenedor-miembros">
-        <div *ngFor="let miembro of quienesSomos.equipoDirectivo" class="tarjeta">
-          <img [src]="miembro.foto" [alt]="miembro.cargo">
+      <div class="featured-event">
+        <div class="row">
+          <div class="col-md-4">
+            <div><img src="assets/Edgar_Nogales.jpg" alt="Fundador"></div>
+          </div>
+          <div class="col-md-8 ">
+            <h2 class="featured-title" style="text-align: center;">NOGALES JAMI EDGAR ORLANDO</h2>
+            <h3 style="text-align: center;"><strong>Socio Fundador</strong></h3>
+            <p><strong>Fundador de la Cámara de Industrias de Santo Domingo</strong></p>
+            <p><strong>Correo:</strong> edgnog&#64;hotmail.com </p>
+          </div>
+        </div>
+      </div>
+      <h2 style="margin-top: 30px; margin-bottom: 20px;" class="featured-title">
+        Equipo
+        <button class="btn-toggle" (click)="mostrarEquipo = !mostrarEquipo">
+          <i class="fas" [ngClass]="{'fa-plus': !mostrarEquipo, 'fa-minus': mostrarEquipo}"></i>
+        </button>
+      </h2>
+      
+    
+      
+      <!-- Tarjetas de los miembros, ocultas hasta que se presione el botón -->
+      <div class="contenedor-miembros" *ngIf="mostrarEquipo">
+        <p class="descripcion-equipo">
+          El éxito de nuestra organización no solo depende de la visión de nuestra presidenta, sino también del trabajo
+          conjunto de un equipo comprometido y altamente capacitado. A continuación, te presentamos a los miembros del
+          equipo directivo que, junto a la presidenta, hacen posible el desarrollo y crecimiento de la Cámara de
+          Industrias de Santo Domingo.
+        </p>
+        <div *ngFor="let miembro of quienesSomos.equipoDirectivo" class="tarjeta-equipo">
+          <div class="icono-usuario">
+            <i class="fas fa-user-circle"></i>
+          </div>
           <div class="tarjeta-info">
             <h3>{{ miembro.nombre }}</h3>
             <h4>{{ miembro.cargo }}</h4>
@@ -92,6 +117,8 @@
           </div>
         </div>
       </div>
+      
+
     </div>
   </div>
 </section>

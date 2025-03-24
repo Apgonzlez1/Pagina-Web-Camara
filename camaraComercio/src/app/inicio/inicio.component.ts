@@ -11,6 +11,8 @@ import { isPlatformBrowser } from '@angular/common';
   styleUrls: ['./inicio.component.css']
 })
 export class InicioComponent implements OnInit {
+  mostrarEquipo = false;
+
   constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
 
   ngOnInit(): void {
@@ -81,12 +83,7 @@ export class InicioComponent implements OnInit {
     vision: "Posicionar a nuestra institución como un ente influyente, eficiente y organizado a nivel regional, convirtiéndose en un referente dentro del desarrollo nacional a mediano plazo, siendo promotora de la competitividad de los empresarios, gremios y el Estado..",
     valores: ["Innovación", "Sostenibilidad", "Competitividad", "Ética"],
     equipoDirectivo: [
-      {
-        nombre: "NOGALES JAMI EDGAR ORLANDO",
-        cargo: "Socio Fundador",
-        foto: "assets/Edgar_Nogales.jpg",
-        correo: "edgnog@hotmail.com"
-      },
+
       {
         nombre: "QUEZADA CABRERA MARCOS VINICIO",
         cargo: "Vicepresidente",

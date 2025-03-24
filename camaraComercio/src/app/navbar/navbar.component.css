@@ -58,7 +58,7 @@
 
   /* Asegurar que los enlaces en el menú responsive tengan un buen padding */
   .navbar-nav .nav-link {
-    font-size: 10px;
+    font-size: 16px;
     padding: 5px 5px;
   }
 }
@@ -72,6 +72,6 @@
 
   /* Ajustar el tamaño de los enlaces para pantallas pequeñas */
   .custom-navbar .nav-link {
-    font-size: 10px;
+    font-size: 15px;
   }
 }

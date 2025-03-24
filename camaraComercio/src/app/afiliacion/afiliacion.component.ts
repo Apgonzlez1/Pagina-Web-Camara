@@ -18,6 +18,9 @@ export class AfiliacionComponent {
   searchQuery: string = '';
   showAllCompanies: boolean = false;
 
+    // Agrega esta propiedad
+    showForm: boolean = false;
+
   companies = [
     { name: 'FGENTERPRISE S.A.', contact: 'info@gmail.com', logo: 'assets/logos/logo1.jpg', website: 'www.infor.com', sector: 'Manufactura' },
     { name: 'FRUGALP S.A.', contact: 'info@gmail.com', logo: 'assets/logos/logo2.jpg', website: 'www.infor.com', sector: 'Logística' },
@@ -111,5 +114,13 @@ export class AfiliacionComponent {
     if (file) {
       this.document = file;
     }
+  }
+
+  openForm() {
+    this.showForm = true;
+  }
+
+  closeForm() {
+    this.showForm = false;
   }
 }

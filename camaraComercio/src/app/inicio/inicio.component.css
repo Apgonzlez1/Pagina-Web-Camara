@@ -1,6 +1,37 @@
 /* ========================
    ESTILOS GENERALES
    ======================== */
+
+   .titulo a {
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+    font-weight: bold;
+    color: #00d4ff; /* Color base llamativo */
+    position: relative;
+    transition: color 0.3s;
+  }
+  
+  .titulo a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #45f4fd, #00d4ff, #007bff, #4b0082);
+    transition: transform 0.3s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  
+  .titulo a:hover {
+    color: #45f4fd; /* Cambia de color al pasar el mouse */
+  }
+  
+  .titulo a:hover::after {
+    transform: scaleX(1);
+  }
+  
+
    body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -215,9 +246,8 @@
      BANNER DINÁMICO
      ======================== */
   .event-banner {
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    background: linear-gradient(135deg, #1e3c72, #2a5298, #4c8cbb, #76b2e9);
     background-size: 200% 200%;
-    animation: gradientAnimation 15s ease infinite;
     color: white;
     padding: 40px;
     overflow: hidden;
@@ -286,7 +316,7 @@
   }
   
   .event-info button {
-    background-color: #ff5722;
+    background-color: #00d4ff;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -298,7 +328,7 @@
   }
   
   .event-info button:hover {
-    background-color: #e64a19;
+    background-color: #007bff;
     transform: scale(1.05);
   }
   

@@ -1,0 +1,29 @@
+.fb-iframe-container {
+    max-width: 800px; /* Asegúrate de que coincida con el 'width' de la URL del plugin */
+    margin: 0 auto;   /* Centra horizontalmente el contenedor en la página */
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden; /* Para que no se muestre scroll adicional */
+    display: flex;    /* Activa flexbox */
+    justify-content: center; /* Centra horizontalmente el iframe */
+    align-items: center; /* Centra verticalmente el iframe */
+    height: 600px;    /* Altura del contenedor */
+}
+
+.fb-iframe-container iframe {
+    width: 100%;      /* El iframe se ajustará al 100% del contenedor */
+    height: 100%;     /* Altura ajustable al contenedor */
+    border: none;
+}
+
+/* 📌 Título destacado */
+.featured-title {
+    font-size: 2rem;
+    color: #00556b;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}

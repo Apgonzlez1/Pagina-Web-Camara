@@ -2,24 +2,32 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <section class="event-banner">
-  <div class="banner-content">
-    <!-- Información del evento -->
-    <div class="event-info">
-      <h1 class="titulo">Tsáchila Economic Fórum IV Edition <a [routerLink]="['/tef']">TEF2025</a></h1>
+  <h1 class="titulo-general">Próximos Eventos</h1>
+  <div class="banner-content grid-layout">
+    <!-- Evento TEF2025 -->
+    <div class="event-column">
+      <h2 class="titulo">Tsáchila Economic Fórum IV Edition <a [routerLink]="['/tef']">TEF2025</a></h2>
       <p>¡No te pierdas esta oportunidad única de crecimiento y colaboración! ¡Te esperamos!</p>
-      <!-- Contador regresivo con animación -->
-      <div id="countdown" class="countdown-animation">Cargando contador...</div>
-      <!-- Botón para inscribirse -->
-      <button
-        onclick="window.open('https://docs.google.com/forms/d/1G87IGCYOGStTYYIdzijZiaXJxoAXpd4iMXhv9XqCMsI/edit', '_blank')">Inscribirse
-        a este evento</button>
+      <div id="countdown-tef" class="countdown-animation">Cargando contador...</div><br>
+      <button onclick="window.open('https://docs.google.com/forms/d/1G87IGCYOGStTYYIdzijZiaXJxoAXpd4iMXhv9XqCMsI/edit', '_blank')">
+        Inscribirse a este evento
+      </button>
+   
     </div>
-    <!-- Imagen del nombre del evento -->
-    <div class="event-name-img">
-      <img src="assets/bannnerevento.png" alt="Nombre del Evento">
+    
+    <!-- Evento TBC2025 -->
+    <div class="event-column">
+      <h2 class="titulo">Tsáchila Business Convention <a [routerLink]="['/tbc']">TBC2025</a></h2>
+      <p>¡Únete al mayor encuentro empresarial del año y crea nuevas oportunidades de negocio!</p>
+      <div id="countdown-tbc" class="countdown-animation">Cargando contador...</div><br>
+      <button onclick="window.open('https://docs.google.com/forms/d/1G87IGCYOGStTYYIdzijZiaXJxoAXpd4iMXhv9XqCMsI/edit', '_blank')">
+        Inscribirse a este evento
+      </button>
+      
     </div>
   </div>
 </section>
+
 
 <section class="main-banner"
   [ngStyle]="{'background-image': 'url(' + backgroundImage + ')', 'background-size': 'cover', 'background-position': 'top'}">

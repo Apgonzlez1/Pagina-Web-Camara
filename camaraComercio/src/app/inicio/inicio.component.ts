@@ -13,19 +13,20 @@ import { isPlatformBrowser } from '@angular/common';
 export class InicioComponent implements OnInit {
   mostrarEquipo = false;
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
-      this.startCountdown(new Date("2025-06-19T00:00:00").getTime());
+      this.startCountdown('countdown-tef', new Date("2025-06-19T00:00:00").getTime());
+      this.startCountdown('countdown-tbc', new Date("2025-10-23T00:00:00").getTime()); // Fecha para TBC2025
     }
   }
 
-  startCountdown(targetDate: number): void {
-    const countdownElement = document.getElementById("countdown");
+  startCountdown(elementId: string, targetDate: number): void {
+    const countdownElement = document.getElementById(elementId);
 
     if (!countdownElement) {
-      console.error("Elemento con ID 'countdown' no encontrado.");
+      console.error(`Elemento con ID '${elementId}' no encontrado.`);
       return;
     }
 

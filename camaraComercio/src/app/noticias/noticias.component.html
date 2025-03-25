@@ -2,17 +2,16 @@
   <h2>Noticias</h2>
   <div class="contenedor-noticias">
     <div *ngFor="let noticia of noticias" class="tarjeta">
-      <img [src]="noticia.imagen" [alt]="noticia.titulo">
+      <img [src]="noticia.imagen" [alt]="noticia.titulo" class="imagen-noticia">
       <div class="contenido">
         <h3>{{ noticia.titulo }}</h3>
         <p>{{ noticia.descripcion }}</p>
-        <a [routerLink]="noticia.enlace">Leer más</a>
+        <a [routerLink]="noticia.enlace" class="leer-mas">Leer más</a>
       </div>
     </div>
   </div>
 </section>
 
-  
 <!-- 📲 Botón flotante de WhatsApp -->
 <div class="whatsapp-button" (click)="openWhatsApp()">
   <img src="assets/icono.png" alt="WhatsApp">

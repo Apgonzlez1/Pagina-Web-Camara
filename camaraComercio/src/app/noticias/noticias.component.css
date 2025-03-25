@@ -1,92 +1,137 @@
+/* 📰 Sección de Noticias */
 .noticias {
-    text-align: center;
-    padding: 50px 20px;
-    background: #f9f9f9;
-  }
-  
-  .noticias h2 {
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 30px;
-  }
-  
-  .contenedor-noticias {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    justify-items: center;
-  }
-  
-  .tarjeta {
-    width: 100%;
-    max-width: 350px;
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
-  }
-  
-  .tarjeta:hover {
-    transform: translateY(-5px);
-  }
-  
-  .tarjeta img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .contenido {
-    padding: 20px;
-  }
-  
-  .contenido h3 {
-    font-size: 20px;
-    color: #444;
-    margin-bottom: 10px;
-  }
-  
-  .contenido p {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 15px;
-  }
-  
-  .contenido a {
-    display: inline-block;
-    text-decoration: none;
-    color: #007BFF;
-    font-weight: bold;
-    transition: color 0.3s;
-  }
-  
-  .contenido a:hover {
-    color: #0056b3;
-  }
-  
-  /* 📲 Botón de WhatsApp */
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+}
+
+.noticias h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #004c7a;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Contenedor de noticias */
+.contenedor-noticias {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Tarjetas de noticias */
+.tarjeta {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.imagen-noticia {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.imagen-noticia:hover {
+  transform: scale(1.05);
+}
+
+.contenido {
+  padding: 20px;
+}
+
+.contenido h3 {
+  font-size: 1.2rem;
+  color: #004c7a;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.contenido p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.leer-mas {
+  color: #004c7a;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid #004c7a;
+  padding: 8px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.leer-mas:hover {
+  background-color: #004c7a;
+  color: #fff;
+}
+
+/* 📲 Botón flotante de WhatsApp */
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 60px;
-  height: 60px;
-  background: #25d366;
+  background-color: #25d366;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
   cursor: pointer;
-  transition: 0.3s;
-}
-
-.whatsapp-button:hover {
-  background: #1ebe5d;
 }
 
 .whatsapp-button img {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+}
+
+/* ⚙️ RESPONSIVE - Para dispositivos pequeños y medianos */
+@media (max-width: 768px) {
+  .noticias h2 {
+    font-size: 1.8rem;
+  }
+
+  .contenedor-noticias {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .tarjeta {
+    margin-bottom: 20px;
+  }
+}
+
+/* ⚙️ RESPONSIVE - Para dispositivos muy pequeños */
+@media (max-width: 480px) {
+  .noticias h2 {
+    font-size: 1.5rem;
+  }
+
+  .contenedor-noticias {
+    grid-template-columns: 1fr;
+  }
+
+  .whatsapp-button {
+    bottom: 15px;
+    right: 15px;
+    padding: 12px;
+  }
+
+  .whatsapp-button img {
+    width: 25px;
+    height: 25px;
+  }
 }

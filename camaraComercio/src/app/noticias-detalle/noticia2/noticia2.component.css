@@ -1,162 +1,221 @@
-/* Estilos generales */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    margin: 0;
-    padding: 0;
+/* 🎨 Título principal de la noticia */
+.titulo-principal {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #004c7a;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+/* 📅 Fecha y ciudad */
+.fecha-ciudad {
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* 🖼 Galería de imágenes */
+.galeria-imagenes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.galeria-imagenes img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.galeria-imagenes img:hover {
+  transform: scale(1.05);
+}
+
+/* 📝 Contenido de la noticia */
+.contenido p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.contenido b {
+  font-weight: bold;
+  color: #004c7a;
+}
+
+.contenido a {
+  color: #004c7a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contenido a:hover {
+  text-decoration: underline;
+}
+
+/* 📚 Noticias relacionadas */
+.titulo-noticias {
+  font-size: 2rem;
+  color: #004c7a;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Contenedor de noticias relacionadas */
+.contenedor-noticias {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Estilo de las tarjetas de noticias */
+.tarjeta {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.imagen-noticia {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.imagen-noticia:hover {
+  transform: scale(1.05);
+}
+
+.contenido {
+  padding: 20px;
+}
+
+.fecha-noticia {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.titulo-noticia {
+  font-size: 1.2rem;
+  color: #004c7a;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.descripcion-noticia {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.boton-leer-mas {
+  color: #004c7a;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid #004c7a;
+  padding: 8px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.boton-leer-mas:hover {
+  background-color: #004c7a;
+  color: #fff;
+}
+
+/* 📲 Botón flotante de WhatsApp */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  border-radius: 50%;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.whatsapp-button img {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+}
+
+/* ⚙️ RESPONSIVE - Para dispositivos pequeños y medianos */
+@media (max-width: 768px) {
+  /* Galería de imágenes */
+  .galeria-imagenes {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
-  
-  /* Estilo de la noticia principal */
-  .noticia-detalle {
-    max-width: 800px;
-    margin: 40px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
+
   .titulo-principal {
     font-size: 2rem;
-    color: #222;
   }
-  
+
   .fecha-ciudad {
     font-size: 0.9rem;
-    color: #777;
-    margin-bottom: 15px;
   }
-  
-  .imagen-container img {
-    width: 100%;
-    max-height: 300px;
-    object-fit: cover;
-    border-radius: 8px;
+
+  .contenido p {
+    font-size: 1rem;
   }
-  
-  .contenido {
-    text-align: left;
-    padding: 15px;
-  }
-  
-  /* Sección de noticias relacionadas */
-  .noticias-relacionadas {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 20px;
-    text-align: center;
-  }
-  
+
   .titulo-noticias {
     font-size: 1.8rem;
-    margin-bottom: 20px;
-    color: #333;
   }
-  
+
+  /* Noticias relacionadas */
   .contenedor-noticias {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap; /* Para que se ajuste en pantallas pequeñas */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
-  
+
   .tarjeta {
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 300px;
-    text-align: left;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
   }
-  
-  .tarjeta:hover {
-    transform: translateY(-5px);
+}
+
+/* ⚙️ RESPONSIVE - Para dispositivos muy pequeños */
+@media (max-width: 480px) {
+  .titulo-principal {
+    font-size: 1.5rem;
   }
-  
-  .imagen-noticia {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-  }
-  
-  .contenido {
-    padding: 15px;
-  }
-  
-  .fecha-noticia {
+
+  .contenido p {
     font-size: 0.9rem;
-    color: #777;
-    margin-bottom: 5px;
   }
-  
-  .titulo-noticia {
-    font-size: 1.2rem;
-    margin-bottom: 8px;
-    color: #222;
+
+  .titulo-noticias {
+    font-size: 1.5rem;
   }
-  
-  .descripcion-noticia {
-    font-size: 0.95rem;
-    color: #555;
-    margin-bottom: 10px;
+
+  .whatsapp-button {
+    bottom: 15px;
+    right: 15px;
+    padding: 12px;
   }
-  
-  .boton-leer-mas {
-    display: inline-block;
-    padding: 8px 12px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s;
-  }
-  
-  .boton-leer-mas:hover {
-    background-color: #0056b3;
-  }
-   /* Estilos de la galeria de img */
-   .galeria-imagenes {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
-    margin-top: 20px;
-  }
-  
-  .galeria-imagenes img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    transition: transform 0.3s ease;
-  }
-  
-  .galeria-imagenes img:hover {
-    transform: scale(1.05);
-  }
-    /* 📲 Botón de WhatsApp */
-.whatsapp-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    background: #25d366;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  .whatsapp-button:hover {
-    background: #1ebe5d;
-  }
-  
+
   .whatsapp-button img {
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
   }
+}

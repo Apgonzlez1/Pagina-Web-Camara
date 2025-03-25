@@ -20,7 +20,7 @@
         <img [src]="company.logo" class="card-img-top" alt="Logo de {{ company.name }}">
         <div class="card-body">
           <h5 class="card-title">{{ company.name }}</h5>
-          <a href="#" class="btn btn-primary" (click)="sendEmail(company.contact)">Contactar</a>
+          <a href="#" class="btn btn-primary-banner" (click)="sendEmail(company.contact)">Contactar</a>
           <a href="#" class="btn btn-secondary" (click)="goToCompanyWebsite(company.website)">Visitar</a>
         </div>
       </div>
@@ -112,9 +112,10 @@
         </p>
 
         <!-- Botón de envío -->
-        <button type="submit" class="btn btn-primary w-100 py-2" [disabled]="!inscriptionForm.form.valid">
+        <button type="submit" class="btn btn-primary-banner w-100 py-2" [disabled]="!inscriptionForm.form.valid">
           Enviar Inscripción
         </button> <br> <!-- Botón para cerrar el formulario -->
+        <!-- Botón para cerrar el formulario -->
         <button (click)="closeForm()" class="btn-primary-banner">Cerrar</button>
       </form>
     </div>

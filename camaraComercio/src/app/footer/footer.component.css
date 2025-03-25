@@ -97,6 +97,11 @@ footer .map-container {
   footer p {
     font-size: 0.9rem;
   }
+
+  /* Espaciado adicional para que no se vea muy apretado */
+  footer h6 {
+    font-size: 1rem;
+  }
 }
 
 /* ⚙️ RESPONSIVE - PARA DISPOSITIVOS MUY PEQUEÑOS */
@@ -108,11 +113,13 @@ footer .map-container {
 
   footer p {
     font-size: 0.85rem;
+    margin-bottom: 10px; /* Más espacio entre párrafos */
   }
 
   footer .social-links img {
     width: 20px;
     height: 20px;
+    margin: 5px; /* Añadí más margen entre los iconos */
   }
 
   footer .whatsapp-button {
@@ -126,5 +133,13 @@ footer .map-container {
     width: 30px;
     height: 30px;
   }
-}
 
+  /* Reducir el espaciado en dispositivos pequeños */
+  footer .map-container {
+    height: 200px;
+  }
+
+  footer .social-links {
+    justify-content: center; /* Centrado de los iconos */
+  }
+}

@@ -25,7 +25,8 @@
   bottom: 20px;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fondo oscuro semitransparente */
   color: white;
   padding: 15px;
 }
@@ -47,46 +48,45 @@
 }
 
 /* 📌 Contenido */
-.tbc-content {
-  padding: 60px 20px;
+.tef-content {
+  padding: 60px 10px;
   background: #f5f5f5;
 }
 
 /* 📌 Contenedor de dos columnas */
-.tbc-layout {
+.tef-layout {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 40px;
-  flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
 }
 
 /* 📌 Sección Izquierda (Texto) */
-.tbc-text {
+.tef-text {
   width: 50%;
 }
 
-.tbc-text h2 {
+.tef-text h2 {
   font-size: 2.5rem;
   color: #00556b;
   margin-bottom: 20px;
 }
 
-.tbc-text p {
+.tef-text p {
   font-size: 1.1rem;
   color: #333;
   margin-bottom: 15px;
 }
 
 /* 📌 Sección Derecha (Tarjetas) */
-.tbc-grid {
+.tef-grid {
   width: 50%;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.tbc-card {
+.tef-card {
   background: white;
   padding: 25px;
   border-radius: 12px;
@@ -95,17 +95,17 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.tbc-card h3 {
+.tef-card h3 {
   font-size: 1.5rem;
   color: #00748a;
 }
 
-.tbc-card p {
+.tef-card p {
   font-size: 1rem;
   color: #444;
 }
 
-.tbc-card:hover {
+.tef-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
@@ -137,39 +137,111 @@
 }
 
 /* 📱 RESPONSIVE */
-
-/* Pantallas medianas y grandes */
 @media (max-width: 1024px) {
-  .tbc-layout {
+  .tef-layout {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .tbc-text, .tbc-grid {
+  .tef-text,
+  .tef-grid {
     width: 100%;
   }
 
-  .tbc-banner {
+  .tef-banner {
     height: 60vh;
   }
 }
 
-/* Pantallas más pequeñas */
 @media (max-width: 768px) {
   .carousel-item img {
-    object-position: top center; /* Prioriza la parte superior en móviles */
+    object-position: top center;
+    /* Prioriza la parte superior en móviles */
   }
 
-  .tbc {
-    width: 100%; /* Asegura que ocupe el 100% del contenedor disponible */
-    max-width: 100%; /* Elimina el límite de tamaño en pantallas más pequeñas */
-    margin-bottom: 15px; /* Agrega espacio inferior para separación */
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 8%;
+  }
+
+  .overlay h1 {
+    font-size: 20px;
+  }
+
+  .overlay p {
+    font-size: 14px;
+  }
+
+  .tef-text h2 {
+    font-size: 2rem;
+  }
+
+  .tef-text p {
+    font-size: 1rem;
+  }
+
+  .tef-grid {
+    width: 100%;
+  }
+
+  .tef-card {
+    padding: 15px;
   }
 }
 
-/* Imágenes del contenido con efecto */
-.tbc {
+@media (max-width: 480px) {
+  .tef-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .tef-text p {
+    font-size: 0.9rem;
+  }
+
+  .tef-card {
+    padding: 10px;
+  }
+
+  .tef-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .tef-card p {
+    font-size: 0.9rem;
+  }
+
+  .whatsapp-button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .whatsapp-button img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.float {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+/* Ajustes para el contenedor de texto */
+.tef-text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tef-text-content p {
+  text-align: justify;
+  max-width: 900px;
+  margin-bottom: 20px;
+}
+
+.tef {
   width: 100%; /* Asegura que ocupe el 100% del contenedor disponible */
   max-width: 300px; /* Limita el tamaño máximo a 300px */
   height: auto; /* Hace que la altura sea automática para preservar la proporción de la imagen */
@@ -182,18 +254,24 @@
 }
 
 /* Efecto al pasar el mouse sobre la imagen */
-.tbc:hover {
+.tef:hover {
   transform: scale(1.05); /* Aumenta ligeramente el tamaño */
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Aumenta la sombra al hacer hover */
 }
 
-/* Responsividad para pantallas pequeñas */
+/* Responsividad */
+@media (max-width: 768px) {
+  .tef {
+    max-width: 250px; /* Ajusta el tamaño máximo para pantallas más pequeñas */
+    margin-right: 2; /* Elimina el margen a la derecha en pantallas pequeñas */
+    margin-left: 0;
+    margin-bottom: 2px; /* Reduce el margen inferior */
+  }
+}
+
 @media (max-width: 480px) {
-  .tbc {
+  .tef {
     max-width: 200px; /* Reduce aún más el tamaño máximo en dispositivos muy pequeños */
   }
 }
 
-.float {
-  float: left;
-}

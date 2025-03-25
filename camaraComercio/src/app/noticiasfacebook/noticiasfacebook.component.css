@@ -1,4 +1,5 @@
 .fb-iframe-container {
+<<<<<<< HEAD
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
@@ -9,58 +10,167 @@
     justify-content: center;
     align-items: center;
     height: 850px;
+=======
+  max-width: 800px; /* Asegúrate de que coincida con el 'width' de la URL del plugin */
+  margin: 0 auto;   /* Centra horizontalmente el contenedor en la página */
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden; /* Para que no se muestre scroll adicional */
+  display: flex;    /* Activa flexbox */
+  justify-content: center; /* Centra horizontalmente el iframe */
+  align-items: center; /* Centra verticalmente el iframe */
+  height: 600px;    /* Altura del contenedor */
+>>>>>>> 76d925d (Avance 13.3)
 }
 
+/* Ajustes para el iframe */
 .fb-iframe-container iframe {
-    width: 100%;      /* El iframe se ajustará al 100% del contenedor */
-    height: 100%;     /* Altura ajustable al contenedor */
-    border: none;
-
+  width: 100%;      /* El iframe se ajustará al 100% del contenedor */
+  height: 100%;     /* Altura ajustable al contenedor */
+  border: none;
 }
+
 .iframe {
-    border: none;
-    margin-left: 150px;
-    margin-right: 100px;
-    
+  border: none;
+  margin-left: 150px;
+  margin-right: 100px;
 }
 
 .featured-title {
+<<<<<<< HEAD
     font-size: 2.5rem;
     color: #0d0d0e;
     font-weight: bold;
     text-align: center;
     padding: 15px 0;
     position: relative;
+=======
+  font-size: 2rem;
+  color: #00556b;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+>>>>>>> 76d925d (Avance 13.3)
 }
 
 /* Estilos para el botón de WhatsApp flotante */
 .whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
-  background-color: #25d366;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  transition: 0.3s;
+position: fixed;
+bottom: 20px;
+right: 20px;
+width: 60px;
+height: 60px;
+background-color: #25d366;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+cursor: pointer;
+transition: 0.3s;
 }
 
 .whatsapp-button:hover {
-  background-color: #1ebe5d;
+background-color: #1ebe5d;
 }
 
 .whatsapp-button img {
-  width: 35px;
-  height: 35px;
+width: 35px;
+height: 35px;
 }
 
 /* ✅ Sección general con mejor fondo */
 .contact-section {
+<<<<<<< HEAD
     background: linear-gradient(to bottom, #f5f5f5, #e0e0e0);
     padding: 40px 20px;
 }
+=======
+background: #f5f5f5;
+justify-content: center;
+align-items: center;
+padding: 20px 10px;
+}
+
+/* MEDIA QUERIES para hacer el diseño más responsivo */
+
+/* Dispositivos pequeños (móviles) */
+@media (max-width: 600px) {
+  .fb-iframe-container {
+      height: 300px; /* Ajusta la altura del contenedor en pantallas pequeñas */
+  }
+
+  .featured-title {
+      font-size: 1.5rem; /* Reduce el tamaño del texto */
+  }
+
+  .whatsapp-button {
+      width: 50px; /* Reduce el tamaño del botón en pantallas pequeñas */
+      height: 50px;
+      bottom: 15px;
+      right: 15px;
+  }
+
+  .whatsapp-button img {
+      width: 30px; /* Ajusta el tamaño del ícono del botón */
+      height: 30px;
+  }
+
+  /* Ajustes a la clase iframe para móviles */
+  .iframe {
+      margin-left: 10px; /* Reduce márgenes en móviles */
+      margin-right: 10px;
+  }
+}
+
+/* Dispositivos medianos (tabletas) */
+@media (max-width: 768px) {
+  .fb-iframe-container {
+      height: 400px; /* Ajusta la altura para tablets */
+  }
+
+  .featured-title {
+      font-size: 1.8rem; /* Ajusta el tamaño del texto para tablets */
+  }
+
+  .whatsapp-button {
+      width: 55px; /* Ajusta el tamaño del botón */
+      height: 55px;
+      bottom: 20px;
+      right: 20px;
+  }
+
+  .whatsapp-button img {
+      width: 32px; /* Ajusta el tamaño del ícono del botón */
+      height: 32px;
+  }
+
+  /* Ajustes a la clase iframe para tablets */
+  .iframe {
+      margin-left: 50px; /* Ajusta márgenes en tablets */
+      margin-right: 50px;
+  }
+}
+
+/* Dispositivos grandes (pantallas de escritorio) */
+@media (min-width: 1024px) {
+  .fb-iframe-container {
+      max-width: 800px; /* No excede el tamaño máximo */
+      height: 600px; /* Mantiene una altura fija en pantallas grandes */
+  }
+
+  .featured-title {
+      font-size: 2rem; /* Mantiene el tamaño del texto para escritorios */
+  }
+
+  /* Ajustes a la clase iframe para escritorios */
+  .iframe {
+      margin-left: 150px; /* Mantiene los márgenes grandes en escritorios */
+      margin-right: 100px;
+  }
+}
+>>>>>>> 76d925d (Avance 13.3)

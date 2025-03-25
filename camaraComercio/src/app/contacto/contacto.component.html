@@ -6,8 +6,7 @@
       <!-- 🏠 Información de Contacto -->
       <div class="contact-info">
         <div class="info-item">
-          <img src="assets/icono3.png" alt="Ubicación" />
-          <p>
+          <fa-icon [icon]="icons.mapMarker"></fa-icon>          <p>
             <a href="https://www.google.com.ec/maps/dir//QR6X%2B54P+ESTACION+DE+SERVICIO+PEGOCENTRO,+Av.+de+los+Colonos,+Santo+Domingo/" 
               target="_blank">
               Avenida de los Colonos, Santo Domingo
@@ -15,11 +14,11 @@
           </p>
         </div>
         <div class="info-item">
-          <img src="assets/icono4.png" alt="Teléfono" />
+          <fa-icon [icon]="icons.phone"></fa-icon>
           <p>+593 99 998 9256</p>
         </div>
         <div class="info-item">
-          <img src="assets/icono5.png" alt="Correo" />
+          <fa-icon [icon]="icons.envelope"></fa-icon>
           <p>coordinacionejecutiva&#64;industriassdt.org <br>
             Presidencia&#64;industriassdt.org </p>
         </div>
@@ -38,10 +37,10 @@
         <!-- 📝 Formulario de Contacto -->
         <div class="form-container">
           <h3>Envíanos un mensaje</h3>
-          <form (ngSubmit)="submitForm()" class="contact-form">
-            <input type="text" [(ngModel)]="contactForm.name" name="name" placeholder="Tu Nombre" required />
-            <input type="email" [(ngModel)]="contactForm.email" name="email" placeholder="Tu Correo" required />
-            <textarea [(ngModel)]="contactForm.message" name="message" placeholder="Tu Mensaje" required></textarea>
+          <form (submit)="submitForm($event)" class="contact-form">
+            <input type="text" name="name" placeholder="Tu Nombre" required />
+            <input type="email" name="email" placeholder="Tu Correo" required />
+            <textarea name="message" placeholder="Tu Mensaje" required></textarea>
             <button type="submit">Enviar Mensaje</button>
           </form>
         </div>
@@ -51,6 +50,3 @@
 </section>
 
 <!-- 📲 Botón flotante de WhatsApp -->
-<div class="whatsapp-button" (click)="openWhatsApp()">
-  <img src="assets/icono.png" alt="WhatsApp">
-</div>

@@ -1,57 +1,42 @@
-/* 📌 Banner principal con Carrusel */
-.tef-banner {
-  position: relative;
+/* 📌 Carrusel */
+.carousel img {
   width: 100%;
-  height: 90vh; /* Se aumenta la altura para dar espacio al carrusel */
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  text-align: center;
-  color: white;
+  height: 650px;
+  object-fit: cover;
+  object-position: center;
 }
 
-/* 📌 Carrusel dentro del banner */
-.carousel {
-  position: absolute;
-  left: 40;
-  width: 70%;
-  height: 100%;
-  z-index: 0; /* Mantiene el carrusel detrás del texto */
+.benefitsCarousel {
+  margin-bottom: 2px;
+  margin-top: 20px;
 }
 
-.carousel-inner,
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
 .carousel-item {
-  height: 100%;
+  position: relative;
 }
 
-.carousel-item img {
-  width: 300%;
-  height: 100%;
-  object-fit: cover;  /* Mantiene proporciones sin deformar */
-  object-position: top center; /* Centra mejor la imagen */
-}
-
-
-/* 📌 Texto sobre el carrusel */
 .overlay {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  background: rgba(0, 0, 0, 0.5);
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+  color: white;
   padding: 15px;
-  width: 100%;
-  z-index: 2;
 }
 
 .overlay h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 24px;
   margin-bottom: 10px;
 }
 
 .overlay p {
-  font-size: 1.2rem;
+  font-size: 16px;
 }
 
 /* 📌 Flechas del carrusel */
@@ -62,45 +47,46 @@
 }
 
 /* 📌 Contenido */
-.tef-content {
-  padding: 60px 10px;
+.tbc-content {
+  padding: 60px 20px;
   background: #f5f5f5;
 }
 
 /* 📌 Contenedor de dos columnas */
-.tef-layout {
+.tbc-layout {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 40px;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
 }
 
 /* 📌 Sección Izquierda (Texto) */
-.tef-text {
+.tbc-text {
   width: 50%;
 }
 
-.tef-text h2 {
+.tbc-text h2 {
   font-size: 2.5rem;
   color: #00556b;
   margin-bottom: 20px;
 }
 
-.tef-text p {
+.tbc-text p {
   font-size: 1.1rem;
   color: #333;
   margin-bottom: 15px;
 }
 
 /* 📌 Sección Derecha (Tarjetas) */
-.tef-grid {
+.tbc-grid {
   width: 50%;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.tef-card {
+.tbc-card {
   background: white;
   padding: 25px;
   border-radius: 12px;
@@ -109,17 +95,17 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.tef-card h3 {
+.tbc-card h3 {
   font-size: 1.5rem;
   color: #00748a;
 }
 
-.tef-card p {
+.tbc-card p {
   font-size: 1rem;
   color: #444;
 }
 
-.tef-card:hover {
+.tbc-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
@@ -151,26 +137,61 @@
 }
 
 /* 📱 RESPONSIVE */
+
+/* Pantallas medianas y grandes */
 @media (max-width: 1024px) {
-  .tef-layout {
+  .tbc-layout {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .tef-text, .tef-grid {
+  .tbc-text, .tbc-grid {
     width: 100%;
   }
-  .tef-banner {
+
+  .tbc-banner {
     height: 60vh;
   }
 }
 
+/* Pantallas más pequeñas */
 @media (max-width: 768px) {
   .carousel-item img {
     object-position: top center; /* Prioriza la parte superior en móviles */
   }
 
+  .tbc {
+    width: 100%; /* Asegura que ocupe el 100% del contenedor disponible */
+    max-width: 100%; /* Elimina el límite de tamaño en pantallas más pequeñas */
+    margin-bottom: 15px; /* Agrega espacio inferior para separación */
+  }
+}
+
+/* Imágenes del contenido con efecto */
+.tbc {
+  width: 100%; /* Asegura que ocupe el 100% del contenedor disponible */
+  max-width: 300px; /* Limita el tamaño máximo a 300px */
+  height: auto; /* Hace que la altura sea automática para preservar la proporción de la imagen */
+  margin-right: 18px;
+  margin-bottom: 15px; /* Agrega espacio inferior para separación */
+  border-radius: 12px; /* Bordes más redondeados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Agrega una sombra sutil */
+  object-fit: cover; /* Asegura que la imagen se recorte proporcionalmente para cubrir el contenedor */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añade transición para los efectos de hover */
+}
+
+/* Efecto al pasar el mouse sobre la imagen */
+.tbc:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Aumenta la sombra al hacer hover */
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 480px) {
+  .tbc {
+    max-width: 200px; /* Reduce aún más el tamaño máximo en dispositivos muy pequeños */
+  }
 }
 
 .float {

@@ -31,7 +31,7 @@ export class AfiliacionComponent {
     { name: 'SANFERJUST CIA.LTDA.', contact: 'aldeanf@gmail.com', logo: 'assets/logos/logo10.jpeg', website: 'www.infor.com', sector: 'Comercio' },
     { name: 'PROCESADORA NACIONAL DE ALIMENTOS C.A. PRONACA', contact: 'eszambrano@pronaca.com', logo: 'assets/logos/logo11.jpg', website: 'www.infor.com', sector: 'Alimentos' },
     { name: 'DISSOL', contact: 'jfierro@dissol.com.ec', logo: 'assets/logos/logo12.jpg', website: 'www.infor.com', sector: 'Productos químicos' },
-    { name: 'SCANNEREXPRESS SEGURIDAD INTEGRADA CIA. LTDA.', contact: 'info@gmail.com', logo: 'assets/logos/logo13.png', website: 'www.infor.com', sector: 'Seguridad' },
+    { name: 'SCANNEREXPRESS SEGURIDAD INTEGRADA CIA. LTDA.', contact: 'info@gmail.com', logo: 'assets/logos/logo13.jpg', website: 'www.infor.com', sector: 'Seguridad' },
     { name: 'AGROEXPORTADORA ECUASPICES-CORP CIA.LTDA', contact: 'mgarcia@ecuaspices.com', logo: 'assets/logos/logo14.jpeg', website: 'www.infor.com', sector: 'Agricultura' },
     { name: 'HOTEL CASINO ZARACAY CIA. LTDA.', contact: 'mgabbysilva@hotmail.com', logo: 'assets/logos/logo15.jpg', website: 'www.infor.com', sector: 'Turismo' },
     { name: 'BLACK BRAND', contact: 'designo.murillo@gmail.com', logo: 'assets/logos/logo16.jpg', website: 'www.infor.com', sector: 'Moda' },

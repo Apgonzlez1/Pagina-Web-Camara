@@ -1,35 +1,37 @@
-/* 🎨 Fondo con degradado */
+/* 🎨 Fondo de la sección de contacto */
 .contact-section {
-  background: linear-gradient(135deg, #00748a, #004c7a);
+  background: #f5f5f5;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 60px 20px;
+  padding: 30px 20px;
 }
 
 /* 📌 Tarjeta con sombra */
 .contact-card {
   background: white;
-  max-width: 900px;
+  max-width: 1300px;
   width: 100%;
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
+  margin: auto;
 }
 
 /* 🔹 Título */
 .contact-card h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #004c7a;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  font-weight: 600;
 }
 
 /* 📜 Contenedor General */
 .contact-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
 /* 🏠 Información de Contacto */
@@ -38,69 +40,99 @@
   justify-content: space-around;
   flex-wrap: wrap;
   background: #f4f4f4;
-  padding: 15px;
+  padding: 20px;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .info-item {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
+  margin-bottom: 15px;
 }
 
-.info-item img {
-  width: 30px;
-  height: 30px;
+.info-item fa-icon {
+  font-size: 1.5rem;
+  color: #00748a;
+  transition: transform 0.3s ease;
 }
 
-/* 📍 Mapa y Formulario en 2 Columnas */
+.info-item fa-icon:hover {
+  transform: scale(1.1);
+}
+
+.info-item p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.info-item a {
+  text-decoration: none;
+  color: #00748a;
+  transition: color 0.3s ease;
+}
+
+.info-item a:hover {
+  color: #004c7a;
+}
+
+/* 🗺️ Mapa y Formulario en 2 Columnas */
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 30px;
 }
 
 /* 🗺️ Mapa */
 .map-container {
-  height: 350px;
+  height: 400px;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* 📝 Formulario */
 .form-container {
-  padding: 20px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .form-container h3 {
   color: #00748a;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-weight: 600;
 }
 
 /* 📝 Inputs y Botón */
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 12px;
-  margin-bottom: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  font-size: 1em;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
 }
 
-.contact-form textarea {
-  height: 100px;
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #00748a;
+  outline: none;
 }
 
 .contact-form button {
   background-color: #00748a;
   color: white;
-  padding: 12px;
+  padding: 15px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   width: 100%;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   transition: background 0.3s ease;
 }
 
@@ -113,23 +145,28 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #25d366;
   width: 60px;
   height: 60px;
+  background: #25d366;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.whatsapp-button:hover {
+  background: #1ebe5d;
 }
 
 .whatsapp-button img {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
 }
 
-/* 📱 RESPONSIVE */
+/* 📱 Responsividad para dispositivos pequeños */
 @media (max-width: 768px) {
   .contact-grid {
     grid-template-columns: 1fr;
@@ -142,5 +179,15 @@
   .contact-info {
     flex-direction: column;
     align-items: center;
+  }
+
+  .contact-card {
+    padding: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    font-size: 1rem;
   }
 }

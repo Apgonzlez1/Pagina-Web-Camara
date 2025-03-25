@@ -243,7 +243,7 @@
   }
   
   .event-banner {
-    background: linear-gradient(135deg, #1e3c72, #2a5298, #1698f5);
+    background:  #24346b ;
     color: white;
     padding: 40px;
     text-align: center;
@@ -302,14 +302,24 @@
     background-color: #00d4ff;
     color: white;
     border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+    padding: 12px 25px;
     font-size: 1rem;
-    border-radius: 5px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    animation: pulse 1.5s infinite alternate;
   }
+  
   button:hover {
     background-color: #007bff;
   }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+  }
+  
   @media (max-width: 768px) {
     .grid-layout {
       flex-direction: column;

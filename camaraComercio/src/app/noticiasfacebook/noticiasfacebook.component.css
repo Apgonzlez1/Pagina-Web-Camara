@@ -1,16 +1,4 @@
 .fb-iframe-container {
-<<<<<<< HEAD
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 850px;
-=======
   max-width: 800px; /* Asegúrate de que coincida con el 'width' de la URL del plugin */
   margin: 0 auto;   /* Centra horizontalmente el contenedor en la página */
   margin-bottom: 20px;
@@ -22,8 +10,7 @@
   display: flex;    /* Activa flexbox */
   justify-content: center; /* Centra horizontalmente el iframe */
   align-items: center; /* Centra verticalmente el iframe */
-  height: 600px;    /* Altura del contenedor */
->>>>>>> 76d925d (Avance 13.3)
+  height: 900px;    /* Altura del contenedor */
 }
 
 /* Ajustes para el iframe */
@@ -40,21 +27,12 @@
 }
 
 .featured-title {
-<<<<<<< HEAD
-    font-size: 2.5rem;
-    color: #0d0d0e;
-    font-weight: bold;
-    text-align: center;
-    padding: 15px 0;
-    position: relative;
-=======
   font-size: 2rem;
   color: #00556b;
   font-weight: bold;
   text-align: center;
   padding: 10px;
   margin: 10px;
->>>>>>> 76d925d (Avance 13.3)
 }
 
 /* Estilos para el botón de WhatsApp flotante */
@@ -85,11 +63,6 @@ height: 35px;
 
 /* ✅ Sección general con mejor fondo */
 .contact-section {
-<<<<<<< HEAD
-    background: linear-gradient(to bottom, #f5f5f5, #e0e0e0);
-    padding: 40px 20px;
-}
-=======
 background: #f5f5f5;
 justify-content: center;
 align-items: center;
@@ -173,4 +146,3 @@ padding: 20px 10px;
       margin-right: 100px;
   }
 }
->>>>>>> 76d925d (Avance 13.3)

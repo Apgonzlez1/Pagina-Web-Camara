@@ -1,6 +1,7 @@
 .fb-iframe-container {
     max-width: 800px; /* Asegúrate de que coincida con el 'width' de la URL del plugin */
     margin: 0 auto;   /* Centra horizontalmente el contenedor en la página */
+   
     padding: 10px;
     background-color: #fff;
     border-radius: 8px;
@@ -16,6 +17,12 @@
     width: 100%;      /* El iframe se ajustará al 100% del contenedor */
     height: 100%;     /* Altura ajustable al contenedor */
     border: none;
+ 
+}
+.iframe {
+    border: none;
+    margin-left: 150px;
+    margin-right: 100px;
 }
 
 /* 📌 Título destacado */

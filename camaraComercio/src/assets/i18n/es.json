@@ -228,5 +228,21 @@
     "afiliate": "Afíliate",
     "contactanos": "Contáctanos para más información.",
     "cerrar": "Cerrar"
+  },
+  "contacto": {
+    "titulo": "Contacto",
+    "descripcion": "Ponte en contacto con nosotros para cualquier consulta o información adicional.",
+    "direccion": "Avenida de los Colonos, Santo Domingo",
+    "telefono": "Teléfono",
+    "email1": "Correo de Coordinación Ejecutiva",
+    "email2": "Correo de Presidencia",
+    "formularioTitulo": "Envíanos un mensaje",
+    "nombre": "Tu Nombre",
+    "nombrePlaceholder": "Escribe tu nombre completo",
+    "email": "Tu Correo",
+    "emailPlaceholder": "Escribe tu correo electrónico",
+    "mensaje": "Tu Mensaje",
+    "mensajePlaceholder": "Escribe tu mensaje",
+    "enviar": "Enviar Mensaje"
   }
 }

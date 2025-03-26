@@ -19,6 +19,9 @@
   "mainBanner": {
     "bienvenida": "Bienvenidos a la Cámara de Industrias y Producción de Santo Domingo"
   },
+  "noticias": {
+    "titulo": "📢 Noticias"
+  },
   "quienesSomos": {
     "titulo": "Quiénes Somos",
     "historiaTitulo": "📜 Nuestra Historia",

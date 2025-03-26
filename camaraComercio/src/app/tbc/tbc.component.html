@@ -3,24 +3,24 @@
 <div id="benefitsCarousel" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="2000">
-      <img src="assets/Business1.jpg" class="d-block w-100" alt="Imagen 1">
+      <img src="assets/Business1.jpg" class="d-block w-100" alt="{{ 'tbc.carousel.asesorias' | transloco }}">
       <div class="overlay text-center">
-        <h1>Asesorías Especializadas</h1>
-        <p>Obtén asesoría profesional para mejorar la gestión de tu empresa.</p>
+        <h1>{{ 'tbc.carousel.asesorias' | transloco }}</h1>
+        <p>{{ 'tbc.carousel.asesoriasDescripcion' | transloco }}</p>
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="assets/Business2.jpg" class="d-block w-100" alt="Imagen 2">
+      <img src="assets/Business2.jpg" class="d-block w-100" alt="{{ 'tbc.carousel.visibilidad' | transloco }}">
       <div class="overlay text-center">
-        <h1>Mayor Visibilidad</h1>
-        <p>Aumenta la exposición de tu empresa ante potenciales clientes y aliados.</p>
+        <h1>{{ 'tbc.carousel.visibilidad' | transloco }}</h1>
+        <p>{{ 'tbc.carousel.visibilidadDescripcion' | transloco }}</p>
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="assets/Business3.jpg" class="d-block w-100" alt="Imagen 3">
+      <img src="assets/Business3.jpg" class="d-block w-100" alt="{{ 'tbc.carousel.eventos' | transloco }}">
       <div class="overlay text-center">
-        <h1>Eventos y Networking</h1>
-        <p>Conecta con otros empresarios y expande tu red de contactos.</p>
+        <h1>{{ 'tbc.carousel.eventos' | transloco }}</h1>
+        <p>{{ 'tbc.carousel.eventosDescripcion' | transloco }}</p>
       </div>
     </div>
   </div>
@@ -34,8 +34,8 @@
 
 <!-- Texto debajo del carrusel -->
 <div class="text-center mt-3">
-  <h1>Tsáchila Business Convention (TBC)</h1>
-  <p>Fomentando conexiones empresariales y oportunidades de negocio</p>
+  <h1>{{ 'tbc.titulo' | transloco }}</h1>
+  <p>{{ 'tbc.descripcion' | transloco }}</p>
 </div>
 
 <section class="tbc-content">
@@ -43,36 +43,28 @@
     <div class="tbc-layout">
       <!-- 📌 Sección Izquierda: Descripción -->
       <div class="tbc-text">
-        <h2>¿Qué es la TBC?</h2>
-        <p><img src="assets/LOGO_TSÁCHILA Business.jpg" class="float tbc" alt="Logo TEF"
-          >
-          La <strong>Tsáchila Business Convention</strong> es un evento anual organizado por la Cámara de Industrias y Producción de Santo Domingo, 
-          en conjunto con el Gobierno Provincial de Santo Domingo de los Tsáchilas. Diseñado para ofrecer <strong>aprendizaje, networking y oportunidades de negocio</strong> en un espacio dinámico y estratégico.
-          Empresarios, compradores nacionales e internacionales y exportadores tienen la oportunidad de <strong>cerrar negocios, expandir mercados y fortalecer sus redes comerciales</strong>, promoviendo el crecimiento del sector industrial y agrocomercial.
+        <h2>{{ 'tbc.queEs' | transloco }}</h2>
+        <p>
+          <img src="assets/LOGO_TSÁCHILA Business.jpg" class="float tbc" alt="Logo TBC">
+          {{ 'tbc.descripcionTbc' | transloco }}
         </p>
       </div>
 
       <!-- 📌 Sección Derecha: Tarjetas -->
       <div class="tbc-grid">
         <div class="tbc-card">
-          <h3>🌍 Macrorrueda de Negocios</h3>
-          <p>
-            Un espacio exclusivo donde empresarios, compradores nacionales e internacionales y exportadores pueden conectar estratégicamente con nuevos socios comerciales.
-          </p>
+          <h3>{{ 'tbc.macrorrueda' | transloco }}</h3>
+          <p>{{ 'tbc.macrorruedaDescripcion' | transloco }}</p>
         </div>
 
         <div class="tbc-card">
-          <h3>📚 Formación Empresarial</h3>
-          <p>
-            Charlas, conferencias y paneles con expertos en comercio exterior, innovación empresarial y crecimiento industrial.
-          </p>
+          <h3>{{ 'tbc.formacionEmpresarial' | transloco }}</h3>
+          <p>{{ 'tbc.formacionDescripcion' | transloco }}</p>
         </div>
 
         <div class="tbc-card">
-          <h3>🤝 Networking </h3>
-          <p>
-            Oportunidad única para generar conexiones valiosas con empresarios, proveedores y compradores de la región y el país.
-          </p>
+          <h3>{{ 'tbc.networking' | transloco }}</h3>
+          <p>{{ 'tbc.networkingDescripcion' | transloco }}</p>
         </div>
       </div>
     </div>

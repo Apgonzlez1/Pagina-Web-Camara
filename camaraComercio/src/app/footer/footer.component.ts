@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
-
+import { TranslocoModule } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [MatIconModule], // Agregar NgFor si se usa *ngFor en el HTML
+  imports: [MatIconModule, TranslocoModule], // Agregar NgFor si se usa *ngFor en el HTML
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css']
 })

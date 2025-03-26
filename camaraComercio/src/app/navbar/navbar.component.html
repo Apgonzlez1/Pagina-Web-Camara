@@ -14,29 +14,40 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/']" routerLinkActive="active"
-            [routerLinkActiveOptions]="{ exact: true }">Inicio</a>
+          <a class="nav-link" [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+            {{ 'navbar.inicio' | transloco }}
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/afiliacion']" routerLinkActive="active">Nuestros Socios</a>
+          <a class="nav-link" [routerLink]="['/afiliacion']" routerLinkActive="active">
+            {{ 'navbar.nuestrosSocios' | transloco }}
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/networking-y-eventos']" routerLinkActive="active">Networking y
-            Eventos</a>
+          <a class="nav-link" [routerLink]="['/networking-y-eventos']" routerLinkActive="active">
+            {{ 'navbar.networkingEventos' | transloco }}
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/servicios']" routerLinkActive="active">Servicios</a>
+          <a class="nav-link" [routerLink]="['/servicios']" routerLinkActive="active">
+            {{ 'navbar.servicios' | transloco }}
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/noticiasfacebook']" routerLinkActive="active">Noticias</a>
+          <a class="nav-link" [routerLink]="['/noticiasfacebook']" routerLinkActive="active">
+            {{ 'navbar.noticias' | transloco }}
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/bolsa-empleo']" routerLinkActive="active">Bolsa de Empleo</a>
+          <a class="nav-link" [routerLink]="['/bolsa-empleo']" routerLinkActive="active">
+            {{ 'navbar.bolsaEmpleo' | transloco }}
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/contacto']" routerLinkActive="active">Contacto</a>
+          <a class="nav-link" [routerLink]="['/contacto']" routerLinkActive="active">
+            {{ 'navbar.contacto' | transloco }}
+          </a>
         </li>
-
       </ul>
     </div>
   </div>

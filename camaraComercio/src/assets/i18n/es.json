@@ -132,5 +132,69 @@
     "uneteComunidad": "Únete a nuestra comunidad y amplía tu red de contactos en eventos exclusivos.",
     "proximosEventos": "Próximos Eventos",
     "inscribirseEvento": "Inscribirse a este evento"
+  },
+  "tbc": {
+    "carousel": {
+      "asesorias": "Asesorías Especializadas",
+      "asesoriasDescripcion": "Obtén asesoría profesional para mejorar la gestión de tu empresa.",
+      "visibilidad": "Mayor Visibilidad",
+      "visibilidadDescripcion": "Aumenta la exposición de tu empresa ante potenciales clientes y aliados.",
+      "eventos": "Eventos y Networking",
+      "eventosDescripcion": "Conecta con otros empresarios y expande tu red de contactos."
+    },
+    "titulo": "Tsáchila Business Convention (TBC)",
+    "descripcion": "Fomentando conexiones empresariales y oportunidades de negocio.",
+    "queEs": "¿Qué es la TBC?",
+    "descripcionTbc": "La Tsáchila Business Convention es un evento anual organizado por la Cámara de Industrias y Producción de Santo Domingo, en conjunto con el Gobierno Provincial de Santo Domingo de los Tsáchilas. Diseñado para ofrecer aprendizaje, networking y oportunidades de negocio en un espacio dinámico y estratégico. Empresarios, compradores nacionales e internacionales y exportadores tienen la oportunidad de cerrar negocios, expandir mercados y fortalecer sus redes comerciales, promoviendo el crecimiento del sector industrial y agrocomercial.",
+    "macrorrueda": "🌍 Macrorrueda de Negocios",
+    "macrorruedaDescripcion": "Un espacio exclusivo donde empresarios, compradores nacionales e internacionales y exportadores pueden conectar estratégicamente con nuevos socios comerciales.",
+    "formacionEmpresarial": "📚 Formación Empresarial",
+    "formacionDescripcion": "Charlas, conferencias y paneles con expertos en comercio exterior, innovación empresarial y crecimiento industrial.",
+    "networking": "🤝 Networking",
+    "networkingDescripcion": "Oportunidad única para generar conexiones valiosas con empresarios, proveedores y compradores de la región y el país."
+  },
+  "tef": {
+    "carousel": {
+      "asesorias": "Asesorías Especializadas",
+      "asesoriasDescripcion": "Obtén asesoría profesional para mejorar la gestión de tu empresa.",
+      "visibilidad": "Mayor Visibilidad",
+      "visibilidadDescripcion": "Aumenta la exposición de tu empresa ante potenciales clientes y aliados.",
+      "eventos": "Eventos y Networking",
+      "eventosDescripcion": "Conecta con otros empresarios y expande tu red de contactos.",
+      "eventos2": "Eventos y Networking",
+      "eventos2Descripcion": "Participa en eventos que favorecen el crecimiento y la cooperación empresarial."
+    },
+    "titulo": "Tsáchila Economic Forum (TEF)",
+    "descripcion": "Impulsando la competitividad, eficiencia y responsabilidad empresarial.",
+    "queEs": "¿Qué es el TEF?",
+    "descripcionTef": "El Tsáchila Economic Forum IV Edition es un evento económico de alto nivel inspirado en el Foro de Davos. Su principal objetivo es fortalecer el sector productivo local, impulsando la competitividad, la eficiencia y la responsabilidad empresarial. Este foro atrae a emprendedores y empresarios de todo el país, fomentando la colaboración y el networking. El evento será transmitido en vivo a través de canales digitales y medios de comunicación nacionales, con una proyección de más de 20,000 visualizaciones y 1,200 asistentes, incluyendo 600 empresarios, productores y exportadores agrícolas.",
+    "foroEconómico": "🌍 Foro Económico",
+    "foroEconómicoDescripcion": "Análisis de temas clave como el impacto del Puerto de Chancay en Perú, el contexto político y comercial del nuevo gobierno en Estados Unidos y economías emergentes.",
+    "casosDeExito": "🚀 Casos de Éxito",
+    "casosDeExitoDescripcion": "Presentación de dos casos de éxito nacionales y un tercer caso sobre productos de exportación no tradicionales cultivados en tierras Tsáchilas.",
+    "networking": "🤝 Networking Empresarial & Festival Cultural",
+    "networkingDescripcion": "Espacio B2B para conexiones estratégicas, acompañado de una feria empresarial, parrilla libre y música en vivo."
+  },
+  "navbar": {
+    "inicio": "Inicio",
+    "nuestrosSocios": "Nuestros Socios",
+    "networkingEventos": "Networking y Eventos",
+    "servicios": "Servicios",
+    "noticias": "Noticias",
+    "bolsaEmpleo": "Bolsa de Empleo",
+    "contacto": "Contacto"
+  }, 
+  "footer": {
+    "queHacemos": "¿Qué Hacemos?",
+    "asesoria": "Asesoría en desarrollo empresarial",
+    "gestionProyectos": "Gestión de proyectos industriales",
+    "crecimientoEconomico": "Promoción del crecimiento económico",
+    "capacitacion": "Capacitación y formación empresarial",
+    "inversiones": "Fomento de inversiones y networking",
+    "siguenosRedes": "Síguenos en redes sociales",
+    "nosCuentasProyecto": "¿Nos cuentas tu proyecto?",
+    "ubicacion": "Ubicación",
+    "telefono": "Teléfono",
+    "correo": "Correo"
   }
 }

@@ -3,31 +3,31 @@
 <div id="benefitsCarousel" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="2000">
-      <img src="assets/Forum1.png" class="d-block w-100" alt="Asesorías especializadas">
+      <img src="assets/Forum1.png" class="d-block w-100" alt="{{ 'tef.carousel.asesorias' | transloco }}">
       <div class="overlay text-center">
-        <h1>Asesorías Especializadas</h1>
-        <p>Obtén asesoría profesional para mejorar la gestión de tu empresa.</p>
+        <h1>{{ 'tef.carousel.asesorias' | transloco }}</h1>
+        <p>{{ 'tef.carousel.asesoriasDescripcion' | transloco }}</p>
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="assets/Forum3.png" class="d-block w-100" alt="Mayor visibilidad">
+      <img src="assets/Forum3.png" class="d-block w-100" alt="{{ 'tef.carousel.visibilidad' | transloco }}">
       <div class="overlay text-center">
-        <h1>Mayor Visibilidad</h1>
-        <p>Aumenta la exposición de tu empresa ante potenciales clientes y aliados.</p>
+        <h1>{{ 'tef.carousel.visibilidad' | transloco }}</h1>
+        <p>{{ 'tef.carousel.visibilidadDescripcion' | transloco }}</p>
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="assets/Forum2.png" class="d-block w-100" alt="Eventos y networking">
+      <img src="assets/Forum2.png" class="d-block w-100" alt="{{ 'tef.carousel.eventos' | transloco }}">
       <div class="overlay text-center">
-        <h1>Eventos y Networking</h1>
-        <p>Conecta con otros empresarios y expande tu red de contactos.</p>
+        <h1>{{ 'tef.carousel.eventos' | transloco }}</h1>
+        <p>{{ 'tef.carousel.eventosDescripcion' | transloco }}</p>
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="assets/Forum3.png" class="d-block w-100" alt="Eventos y networking">
+      <img src="assets/Forum3.png" class="d-block w-100" alt="{{ 'tef.carousel.eventos2' | transloco }}">
       <div class="overlay text-center">
-        <h1>Eventos y Networking</h1>
-        <p>Participa en eventos que favorecen el crecimiento y la cooperación empresarial.</p>
+        <h1>{{ 'tef.carousel.eventos2' | transloco }}</h1>
+        <p>{{ 'tef.carousel.eventos2Descripcion' | transloco }}</p>
       </div>
     </div>
   </div>
@@ -38,9 +38,10 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
   </button>
 </div>
-<div class=" text-center mt-3">
-  <h1>Tsáchila Economic Forum (TEF)</h1>
-  <p>Impulsando la competitividad, eficiencia y responsabilidad empresarial</p>
+
+<div class="text-center mt-3">
+  <h1>{{ 'tef.titulo' | transloco }}</h1>
+  <p>{{ 'tef.descripcion' | transloco }}</p>
 </div>
 
 <section class="tef-content">
@@ -49,50 +50,30 @@
       <!-- 📌 Sección Izquierda: Descripción -->
       <div class="tef-text">
         <div class="tef-text-content">
-          <h2>¿Qué es el TEF?</h2>
+          <h2>{{ 'tef.queEs' | transloco }}</h2>
           <hr>
-          <p><img src="assets/logo Tsachila Economic.jpg" class="float tef" alt="Logo TEF">
-            El <strong>Tsáchila Economic Forum IV Edition</strong> es un evento económico de alto nivel inspirado en el
-            Foro de Davos.
-            Su principal objetivo es fortalecer el sector productivo local, impulsando la competitividad, la eficiencia
-            y
-            la responsabilidad empresarial. Este foro atrae a emprendedores y empresarios de todo el país, fomentando la
-            colaboración y el networking.
-            El evento será transmitido en vivo a través de canales digitales y medios de comunicación nacionales,
-            con una proyección de <strong>más de 20.000 visualizaciones</strong> y <strong>1200 asistentes</strong>,
-            incluyendo <strong>600 empresarios, productores y exportadores agrícolas</strong>.
+          <p>
+            <img src="assets/logo Tsachila Economic.jpg" class="float tef" alt="Logo TEF">
+            {{ 'tef.descripcionTef' | transloco }}
           </p>
         </div>
-
       </div>
-
 
       <!-- 📌 Sección Derecha: Tarjetas -->
       <div class="tef-grid">
         <div class="tef-card">
-          <h3>🌍 Foro Económico</h3>
-          <p>
-            Análisis de temas clave como el <strong>Impacto del Puerto de Chancay en Perú</strong>, el contexto político
-            y comercial del nuevo
-            gobierno en Estados Unidos y economías emergentes.
-          </p>
+          <h3>{{ 'tef.foroEconómico' | transloco }}</h3>
+          <p>{{ 'tef.foroEconómicoDescripcion' | transloco }}</p>
         </div>
 
         <div class="tef-card">
-          <h3>🚀 Casos de Éxito</h3>
-          <p>
-            Presentación de <strong>dos casos de éxito nacionales</strong> y un tercer caso sobre productos de
-            exportación no tradicionales
-            cultivados en tierras Tsáchilas.
-          </p>
+          <h3>{{ 'tef.casosDeExito' | transloco }}</h3>
+          <p>{{ 'tef.casosDeExitoDescripcion' | transloco }}</p>
         </div>
 
         <div class="tef-card">
-          <h3>🤝 Networking Empresarial & Festival Cultural</h3>
-          <p>
-            Espacio B2B para conexiones estratégicas, acompañado de una <strong>feria empresarial</strong>, parrilla
-            libre y música en vivo.
-          </p>
+          <h3>{{ 'tef.networking' | transloco }}</h3>
+          <p>{{ 'tef.networkingDescripcion' | transloco }}</p>
         </div>
       </div>
     </div>

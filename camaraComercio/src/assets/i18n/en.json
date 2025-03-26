@@ -83,8 +83,7 @@
     "comercioDescripcion": "We facilitate exports and imports, providing advice on trade agreements and international opportunities.",
     "certificadoTitulo": "Issuance of Certificate of Origin",
     "certificadoDescripcion": "We manage the certification of the origin of products to facilitate international trade."
-  }, 
-
+  },
   "empleo": {
     "logros": "Achievements in the last year:",
     "vacantes": "Job vacancies published",
@@ -133,6 +132,69 @@
     "uneteComunidad": "Join our community and expand your network at exclusive events.",
     "proximosEventos": "Upcoming Events",
     "inscribirseEvento": "Sign up for this event"
+  },
+  "tbc": {
+    "carousel": {
+      "asesorias": "Specialized Consulting",
+      "asesoriasDescripcion": "Get professional advice to improve your company's management.",
+      "visibilidad": "Greater Visibility",
+      "visibilidadDescripcion": "Increase the exposure of your business to potential clients and partners.",
+      "eventos": "Events and Networking",
+      "eventosDescripcion": "Connect with other entrepreneurs and expand your network."
+    },
+    "titulo": "Tsáchila Business Convention (TBC)",
+    "descripcion": "Promoting business connections and business opportunities.",
+    "queEs": "What is TBC?",
+    "descripcionTbc": "The Tsáchila Business Convention is an annual event organized by the Chamber of Industries and Production of Santo Domingo, in collaboration with the Provincial Government of Santo Domingo de los Tsáchilas. It is designed to offer learning, networking, and business opportunities in a dynamic and strategic space. Entrepreneurs, national and international buyers, and exporters have the opportunity to close deals, expand markets, and strengthen their business networks, promoting the growth of the industrial and agri-commercial sector.",
+    "macrorrueda": "🌍 Business Roundtable",
+    "macrorruedaDescripcion": "An exclusive space where entrepreneurs, national and international buyers, and exporters can strategically connect with new business partners.",
+    "formacionEmpresarial": "📚 Business Training",
+    "formacionDescripcion": "Talks, conferences, and panels with experts in foreign trade, business innovation, and industrial growth.",
+    "networking": "🤝 Networking",
+    "networkingDescripcion": "A unique opportunity to generate valuable connections with entrepreneurs, suppliers, and buyers from the region and the country."
+  },
+  "tef": {
+    "carousel": {
+      "asesorias": "Specialized Consulting",
+      "asesoriasDescripcion": "Get professional advice to improve your company's management.",
+      "visibilidad": "Greater Visibility",
+      "visibilidadDescripcion": "Increase the exposure of your business to potential clients and partners.",
+      "eventos": "Events and Networking",
+      "eventosDescripcion": "Connect with other entrepreneurs and expand your network.",
+      "eventos2": "Events and Networking",
+      "eventos2Descripcion": "Participate in events that promote business growth and cooperation."
+    },
+    "titulo": "Tsáchila Economic Forum (TEF)",
+    "descripcion": "Driving business competitiveness, efficiency, and responsibility.",
+    "queEs": "What is the TEF?",
+    "descripcionTef": "The Tsáchila Economic Forum IV Edition is a high-level economic event inspired by the Davos Forum. Its main objective is to strengthen the local productive sector, promoting competitiveness, efficiency, and corporate responsibility. This forum attracts entrepreneurs and businesspeople from across the country, fostering collaboration and networking. The event will be broadcast live through digital channels and national media, with a projected audience of more than 20,000 views and 1,200 attendees, including 600 entrepreneurs, producers, and agricultural exporters.",
+    "foroEconómico": "🌍 Economic Forum",
+    "foroEconómicoDescripcion": "Analysis of key topics such as the impact of the Chancay Port in Peru, the political and commercial context of the new U.S. government, and emerging economies.",
+    "casosDeExito": "🚀 Success Stories",
+    "casosDeExitoDescripcion": "Presentation of two national success stories and a third case on non-traditional export products grown in Tsáchila lands.",
+    "networking": "🤝 Business Networking & Cultural Festival",
+    "networkingDescripcion": "B2B space for strategic connections, accompanied by a business fair, open barbecue, and live music."
+  },
+  "navbar": {
+    "inicio": "Home",
+    "nuestrosSocios": "Our Partners",
+    "networkingEventos": "Networking and Events",
+    "servicios": "Services",
+    "noticias": "News",
+    "bolsaEmpleo": "Job Board",
+    "contacto": "Contact"
+  },
+  "footer": {
+    "queHacemos": "What We Do",
+    "asesoria": "Business development consulting",
+    "gestionProyectos": "Industrial project management",
+    "crecimientoEconomico": "Promotion of economic growth",
+    "capacitacion": "Business training and development",
+    "inversiones": "Promotion of investments and networking",
+    "siguenosRedes": "Follow us on social media",
+    "nosCuentasProyecto": "Tell us about your project",
+    "ubicacion": "Location",
+    "telefono": "Phone",
+    "correo": "Email"
   }
-
 }

@@ -15,7 +15,7 @@
 /* Estilos para los enlaces */
 .custom-navbar .nav-link {
   color: #001f3f !important; /* Azul marino */
-  font-size: 20px;
+  font-size: 19px;
   font-weight: bold;
   transition: color 0.3s ease;
 }

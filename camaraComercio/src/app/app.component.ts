@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NetworkingEventosComponent } from './networking-eventos/networking-eventos.component';
 import { ServiciosComponent } from './servicios/servicios.component';
@@ -8,8 +8,8 @@ import { FooterComponent } from './footer/footer.component'; // <-- Importa el f
 import { AfiliacionComponent } from './afiliacion/afiliacion.component';
 import { DirectorioComponent } from './directorio/directorio.component';
 import { ContactoComponent } from './contacto/contacto.component';
-
-
+import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
+import { AvaliableLanguages } from './transloco-config';
 
 @Component({
   selector: 'app-root',
@@ -23,11 +23,27 @@ import { ContactoComponent } from './contacto/contacto.component';
     AfiliacionComponent,
     DirectorioComponent,
     ContactoComponent,
-    FooterComponent // <-- Agrega el footer aquí
+    FooterComponent,
+    TranslocoModule
+
   ],
+
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  public languages = AvaliableLanguages; // Expose the enum
+
+  constructor(private transloco: TranslocoService) {}
+
+  changeLang(lang: AvaliableLanguages) {
+    this.transloco.setActiveLang(lang);
+  }
+
+  public getLanguage() {
+    return 'languages.' + this.transloco.getActiveLang();
+  }
+
   title = 'camaraComercio';
 }
+

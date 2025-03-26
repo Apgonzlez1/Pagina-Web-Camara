@@ -2,10 +2,11 @@ import { CommonModule } from '@angular/common';
 import { Component, HostListener, OnInit, Inject, PLATFORM_ID } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { isPlatformBrowser } from '@angular/common';
+import { TranslocoModule } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-inicio',
-  imports: [RouterModule, CommonModule],
+  imports: [RouterModule, CommonModule, TranslocoModule],
   standalone: true,
   templateUrl: './inicio.component.html',
   styleUrls: ['./inicio.component.css']
@@ -70,6 +71,11 @@ export class InicioComponent implements OnInit {
   onWindowScroll() {
     this.showScrollButton = window.scrollY > 300; // Aparece cuando el usuario baja 300px
   }
+  // En tu componente (por ejemplo, InicioComponent)
+openForm(url: string): void {
+  window.open(url, '_blank');
+}
+
 
   // Método para regresar al inicio
   scrollToTop() {
@@ -88,33 +94,33 @@ export class InicioComponent implements OnInit {
       {
         nombre: "QUEZADA CABRERA MARCOS VINICIO",
         cargo: "Vicepresidente",
-        foto: "assets/perfil2.jpg",
+
         funciones: ["Responsable de comercio exterior", "Fomentar la creación de nuevas industrias"],
         correo: "gerencia@hotelgoldenvista.com.ec"
       },
       {
         nombre: "ALDEAN JARAMILLO JUAN FRANCISCO",
         cargo: "Director Comercial",
-        foto: "assets/perfil2.jpg",
+
         correo: "aldeanf@gmail.com"
       },
       {
         nombre: "VILLACIS BALAREZO JORGE ISRAEL",
         cargo: "Director Industrial",
-        foto: "assets/perfil2.jpg",
+
         correo: "Jivb2020@hotmail.com"
       },
       
       {
         nombre: "CEVALLOS ASTUDILLO ÁNGEL FERNANDO",
         cargo: "Socio Colaborador",
-        foto: "assets/perfil2.jpg",
+
         correo: "angel_cevallos832002@hotmail.com"
       },
       {
         nombre: "ARAÚZ ZAMBRANO MARÍA JOSÉ",
         cargo: "Coordinadora Ejecutiva",
-        foto: "assets/perfil2.jpg",
+       
         correo: "coordinacionejecutiva@industriassdt.org"
       }
     ]

@@ -1,7 +1,12 @@
 <app-navbar></app-navbar>
+<div class="language-selector">
+  <button (click)="changeLang(languages.ES)">Español</button>
+  <button (click)="changeLang(languages.EN)">English</button>
+</div>
 
 <main>
   <router-outlet></router-outlet>
 </main>
+
 
 <app-footer></app-footer> <!-- Agrega el footer aquí -->

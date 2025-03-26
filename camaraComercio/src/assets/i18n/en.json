@@ -84,46 +84,7 @@
     "certificadoTitulo": "Issuance of Certificate of Origin",
     "certificadoDescripcion": "We manage the certification of the origin of products to facilitate international trade."
   }, 
-  "mainBanner": {
-    "bienvenida": "Welcome to the Employment Exchange"
-  },
-  "achievements": {
-    "titulo": "🎯 In the last year we achieved:",
-    "vacantesPublicadas": "Job openings published",
-    "empresasAsociadas": "Associated companies",
-    "candidatosContratados": "Hired candidates"
-  },
-  "infoSection": {
-    "titulo": "What do we offer?",
-    "oferta1": "✅ Job postings in the industrial sector.",
-    "oferta2": "✅ Exclusive access for companies and applicants.",
-    "oferta3": "✅ Training in employability and manufacturing.",
-    "contacto": "📩 Contact:",
-    "correo": "empleoindustria.com",
-    "abrirFormulario": "Open Form"
-  },
-  "formularioVacante": {
-    "titulo": "Job Vacancy Form",
-    "nombre": "Name or Institution",
-    "filtros": {
-      "tiempoCompleto": "Full-time",
-      "independiente": "Freelance",
-      "practicas": "Internship",
-      "medioTiempo": "Part-time",
-      "temporal": "Temporary"
-    },
-    "tipoVacante": "Select vacancy type",
-    "areaInteres": "Area of interest",
-    "mensajeCV": "Additionally, please send your updated CV to",
-    "correo1": "coordinacionejecutiva@industriassdt.org",
-    "correo2": "Presidencia@industriassdt.org",
-    "enviar": "Submit",
-    "mensajeExito": "Form submitted successfully.",
-    "cerrarFormulario": "Close"
-  },
-  "whatsapp": {
-    "texto": "📲 Floating WhatsApp button"
-  }, 
+
   "empleo": {
     "logros": "Achievements in the last year:",
     "vacantes": "Job vacancies published",

@@ -1,6 +1,6 @@
 <!-- Banner principal con la imagen de fondo -->
 <div class="main-banner" [ngStyle]="{'background-image': 'url(' + backgroundImage + ')'}">
-  <h1 class="banner-title align-self-end">Bienvenidos a la Bolsa de Empleo</h1>
+  <h1 class="banner-title align-self-end">{{ 'mainBanner.bienvenida' | transloco }}</h1>
 </div>
 
 <!-- Sección principal de la página -->
@@ -8,19 +8,19 @@
 
   <!-- Sección de logros -->
   <div class="achievements">
-    <h2>🎯 En el último año logramos:</h2>
+    <h2>🎯 {{ 'empleo.logros' | transloco }}</h2>
     <div class="achievements-grid">
       <div class="achievement-card">
         <h2>200+</h2>
-        <p>Vacantes publicadas</p>
+        <p>{{ 'empleo.vacantes' | transloco }}</p>
       </div>
       <div class="achievement-card">
         <h2>150+</h2>
-        <p>Empresas asociadas</p>
+        <p>{{ 'empleo.empresas' | transloco }}</p>
       </div>
       <div class="achievement-card">
         <h2>50+</h2>
-        <p>Candidatos contratados</p>
+        <p>{{ 'empleo.contratados' | transloco }}</p>
       </div>
     </div>
   </div>
@@ -31,17 +31,15 @@
       <div class="row">
         <div class="col-md-6">
           <img src="assets/congresos.jpg" alt="Personas buscando empleo" class="info-image">
-
         </div>
         <div class="col-md-6">
-          <h3>¿Qué ofrecemos?</h3>
+          <h3>{{ 'empleo.ofrecemosTitulo' | transloco }}</h3>
           <ul class="info-list">
-            <li>✅ Publicación de vacantes en el sector industrial.</li>
-            <li>✅ Acceso exclusivo para empresas y postulantes.</li>
-            <li>✅ Capacitación en empleabilidad y manufactura.</li>
-            <li> 📩 <strong>Contacto:</strong> <a href="mailto:empleo@industria.com">empleoindustria.com</a></li>
-            <!-- Botón para abrir el formulario -->
-            <button (click)="openForm()" class="btn-primary-banner">Abrir Formulario</button>
+            <li>✅ {{ 'empleo.publicacionVacantes' | transloco }}</li>
+            <li>✅ {{ 'empleo.accesoExclusivo' | transloco }}</li>
+            <li>✅ {{ 'empleo.capacitacionEmpleabilidad' | transloco }}</li>
+            <li> 📩 <strong>{{ 'empleo.contacto' | transloco }}:</strong> <a href="mailto:empleo@industria.com">empleoindustria.com</a></li>
+            <button (click)="openForm()" class="btn-primary-banner">{{ 'empleo.abrirFormulario' | transloco }}</button>
           </ul>
         </div>
       </div>
@@ -50,71 +48,57 @@
 
   <!-- Formulario visible cuando showForm es true -->
   <div class="form-container" *ngIf="showForm">
-    <h2>Formulario de Vacante</h2>
+    <h2>{{ 'empleo.formularioVacante' | transloco }}</h2>
 
     <form (submit)="enviarFormulario($event)" enctype="multipart/form-data">
-      <!-- Nombre o Institución -->
-      <label for="nombre">Nombre o Institución</label>
+      <label for="nombre">{{ 'empleo.nombreInstitucion' | transloco }}</label>
       <input type="text" id="nombre" name="nombre" required>
 
-      <!-- Filtros -->
       <div class="filter-options">
         <label>
-          <input type="checkbox" name="Tiempo_Completo"> Tiempo Completo
+          <input type="checkbox" name="Tiempo_Completo">{{ 'empleo.tiempoCompleto' | transloco }}
         </label>
         <label>
-          <input type="checkbox" name="Independiente"> Independiente
+          <input type="checkbox" name="Independiente">{{ 'empleo.independiente' | transloco }}
         </label>
         <label>
-          <input type="checkbox" name="Prácticas"> Prácticas
+          <input type="checkbox" name="Prácticas">{{ 'empleo.practicas' | transloco }}
         </label>
         <label>
-          <input type="checkbox" name="Medio_Tiempo"> Medio Tiempo
+          <input type="checkbox" name="Medio_Tiempo">{{ 'empleo.medioTiempo' | transloco }}
         </label>
         <label>
-          <input type="checkbox" name="Temporal"> Temporal
+          <input type="checkbox" name="Temporal">{{ 'empleo.temporal' | transloco }}
         </label>
       </div>
 
-      <!-- Tipo de vacante -->
-      <label for="vacante">Seleccione tipo de vacante</label>
+      <label for="vacante">{{ 'empleo.tipoVacante' | transloco }}</label>
       <select id="vacante" name="vacante" required>
-        <option value="Empleo">Bolsa de empleo</option>
-        <option value="Practicas_Profesionales">Bolsa de prácticas profesionales</option>
-        <option value="Vinculacion_Social">Bolsa de vinculación con la sociedad</option>
-        <option value="Proyectos">Proyectos</option>
+        <option value="Empleo">{{ 'empleo.bolsaEmpleo' | transloco }}</option>
+        <option value="Practicas_Profesionales">{{ 'empleo.bolsaPracticas' | transloco }}</option>
+        <option value="Vinculacion_Social">{{ 'empleo.bolsaVinculacion' | transloco }}</option>
+        <option value="Proyectos">{{ 'empleo.bolsaProyectos' | transloco }}</option>
       </select>
 
-      <!-- Área de interés -->
-      <label for="area">Área de interés</label>
+      <label for="area">{{ 'empleo.areaInteres' | transloco }}</label>
       <input type="text" id="area" name="area" required>
 
-      <!-- Mensaje debajo del formulario -->
       <div class="cv-message">
-        <p>
-          Adicional, por favor envía tu CV actualizado a
-        <p>
-          <strong>Correo: </strong>coordinacionejecutiva&#64;industriassdt.org <br>
-          Presidencia&#64;industriassdt.org .
-        </p>
+        <p>{{ 'empleo.envioCV' | transloco }}</p>
+        <p><strong>{{ 'empleo.correo' | transloco }}:</strong>coordinacionejecutiva&#64;industriassdt.org <br>Presidencia&#64;industriassdt.org</p>
       </div>
 
-      <!-- Botón de envío -->
-      <button type="submit">Enviar</button>
+      <button type="submit">{{ 'empleo.enviar' | transloco }}</button>
     </form>
 
-    <!-- Mensaje de éxito -->
     <p *ngIf="successMessage" class="success-message">{{ successMessage }}</p>
 
-    <!-- Botón para cerrar el formulario -->
-    <button (click)="closeForm()" class="btn-primary-banner">Cerrar</button>
+    <button (click)="closeForm()" class="btn-primary-banner">{{ 'empleo.cerrar' | transloco }}</button>
   </div>
 
-<!-- 📲 Botón flotante de WhatsApp -->
-<div class="whatsapp-button" (click)="openWhatsApp()">
-  <img src="assets/icono.png" alt="WhatsApp">
+  <!-- 📲 Botón flotante de WhatsApp -->
+  <div class="whatsapp-button" (click)="openWhatsApp()">
+    <img src="assets/icono.png" alt="WhatsApp">
+  </div>
+
 </div>
-
-
-</div>
-

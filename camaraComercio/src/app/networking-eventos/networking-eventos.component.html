@@ -5,43 +5,37 @@
       <div class="row align-items-center">
         <!-- 📌 Sección de Texto -->
         <div class="col-lg-4 text-center text-lg-start">
-          <h2 class="featured-title">Networking y Eventos</h2>
+          <h2 class="featured-title">{{ 'networking.titulo' | transloco }}</h2>
           <hr class="custom-divider">
           <p>
-            En un mundo empresarial en constante evolución, las conexiones estratégicas son clave para el crecimiento y
-            la
-            innovación. Nuestros espacios de networking y eventos están diseñados para fomentar la colaboración entre
-            empresarios,
-            emprendedores y profesionales de diversas industrias.
+            {{ 'networking.descripcion' | transloco }}
           </p>
-          <button class="btn btn-primary mb-2" [routerLink]="['/eventos']">Ver Todos los Eventos</button>
+          <button class="btn btn-primary mb-2" [routerLink]="['/eventos']">{{ 'networking.verEventos' | transloco }}</button>
         </div>
 
         <!-- 📌 Sección de Eventos -->
         <div class="col-lg-8 d-flex flex-column align-items-center">
-          <h2 class="text-center featured-title">Eventos Principales</h2>
+          <h2 class="text-center featured-title">{{ 'networking.eventosPrincipales' | transloco }}</h2>
           <br>
           <div class="row g-4">
             <div class="col-md-6">
               <div class="card event-card">
                 <div class="image-container">
-                  <img src="assets/logo Tsachila Economic.jpg" class="card-img-top" alt="Logo TEF">
+                  <img src="assets/logo Tsachila Economic.jpg" class="card-img-top" alt="{{ 'networking.eventoTef.alt' | transloco }}">
                 </div>
                 <div class="card-body text-center">
-                  <a [routerLink]="['/tef']" class="btn btn-primary">Tsáchila Economic Forum (TEF)</a>
+                  <a [routerLink]="['/tef']" class="btn btn-primary">{{ 'networking.eventoTef' | transloco }}</a>
                 </div>
               </div>
             </div>
 
             <div class="col-md-6">
-
               <div class="card event-card">
                 <div class="image-container">
-                  <img src="assets/LOGO_TSÁCHILA Business.jpg" class="card-img-top" alt="Logo TBC">
+                  <img src="assets/LOGO_TSÁCHILA Business.jpg" class="card-img-top" alt="{{ 'networking.eventoTbc.alt' | transloco }}">
                 </div>
                 <div class="card-body text-center">
-                  <h5 class="card-title"></h5>
-                  <a [routerLink]="['/tbc']" class="btn btn-primary">Tsáchila Business Convention (TBC)</a>
+                  <a [routerLink]="['/tbc']" class="btn btn-primary">{{ 'networking.eventoTbc' | transloco }}</a>
                 </div>
               </div>
             </div>
@@ -52,81 +46,66 @@
 
     <!-- Tarjetas de eventos -->
     <div class="row mt-4">
-      <h2 class="featured-title" style="text-align: center;">Eventos</h2>
+      <h2 class="featured-title" style="text-align: center;">{{ 'networking.eventos' | transloco }}</h2>
       <div class="col-md-4 d-flex">
         <div class="event-card flex-grow-1">
           <div class="image-container">
-            <img src="assets/evento1.jpg" alt="Encuentros Empresariales" class="event-image">
+            <img src="assets/evento1.jpg" alt="{{ 'networking.seminarios.alt' | transloco }}" class="event-image">
           </div>
-          <h3>📚 Seminarios y Capacitaciones</h3>
+          <h3>📚 {{ 'networking.seminariosTitulo' | transloco }}</h3>
           <p>
-            🎯 Impulsa tu conocimiento y habilidades
-            Participa en sesiones de formación impartidas por expertos en diversas áreas empresariales. Mejora la
-            gestión de tu negocio, adquiere nuevas estrategias de mercado y prepárate para los desafíos del sector
-            industrial.</p>
+            {{ 'networking.seminariosDescripcion' | transloco }}
+          </p>
         </div>
       </div>
       <div class="col-md-4 d-flex">
         <div class="event-card flex-grow-1">
           <div class="image-container">
-            <img src="assets/evento2.jpg" alt="Foros y Congresos" class="event-image">
+            <img src="assets/evento2.jpg" alt="{{ 'networking.eventosCooperativos.alt' | transloco }}" class="event-image">
           </div>
-          <h3>🤝 Eventos Cooperativos</h3>
+          <h3>🤝 {{ 'networking.eventosCooperativosTitulo' | transloco }}</h3>
           <p>
-            🌍 Colaboración para el crecimiento empresarial
-            Estos encuentros están diseñados para fortalecer la cooperación entre empresas, promoviendo alianzas
-            estratégicas y proyectos conjuntos que impulsen la competitividad en la región.</p>
+            {{ 'networking.eventosCooperativosDescripcion' | transloco }}
+          </p>
         </div>
       </div>
       <div class="col-md-4 d-flex">
         <div class="event-card flex-grow-1">
           <div class="image-container">
-            <img src="assets/evento3.jpg" alt="Visitas Industriales" class="event-image">
+            <img src="assets/evento3.jpg" alt="{{ 'networking.networkingEnlaces.alt' | transloco }}" class="event-image">
           </div>
-          <h3>🔗 Networking y Enlaces Comerciales</h3>
+          <h3>🔗 {{ 'networking.networkingEnlacesTitulo' | transloco }}</h3>
           <p>
-            💼 Conéctate con líderes del sector industrial
-            Aprovecha estos eventos para expandir tu red de contactos, conocer proveedores y potenciales socios
-            comerciales, y descubrir nuevas oportunidades de negocio en un entorno dinámico y profesional.</p>
+            {{ 'networking.networkingEnlacesDescripcion' | transloco }}
+          </p>
         </div>
       </div>
     </div>
-
 
     <!-- Sección de contenido tipo blog -->
     <div class="row mt-5">
       <div class="col-md-8">
         <article class="blog-post">
-          <h3>Oportunidades de Networking</h3>
-          <p>El networking es una herramienta poderosa para el crecimiento empresarial. Conoce los eventos más
-            importantes en la industria.</p>
+          <h3>{{ 'networking.oportunidadesNetworking' | transloco }}</h3>
+          <p>{{ 'networking.oportunidadesDescripcion' | transloco }}</p>
           <blockquote class="blockquote">
-            <p>"El éxito en los negocios se basa en las relaciones que construyes."</p>
+            <p>"{{ 'networking.cita' | transloco }}"</p>
           </blockquote>
-          <p>Únete a nuestra comunidad y amplía tu red de contactos en eventos exclusivos.</p>
+          <p>{{ 'networking.unete' | transloco }}</p>
         </article>
       </div>
       <div class="col-md-4">
         <aside class="blog-sidebar">
-          <h4>Proximos Eventos</h4>
+          <h4>{{ 'networking.proximosEventos' | transloco }}</h4>
           <ul>
-            <li><a
-                onclick="window.open('https://docs.google.com/forms/d/1G87IGCYOGStTYYIdzijZiaXJxoAXpd4iMXhv9XqCMsI/edit', '_blank')">Conferencia:
-                Contrato de Inversión, Acuerdos Comerciales y Tratados de Libre Comercio - Capítulo Ecuador 2025 -
-                Jueves 3 de abril del 2025</a></li>
-            <li><a
-                onclick="window.open('https://docs.google.com/forms/d/1G87IGCYOGStTYYIdzijZiaXJxoAXpd4iMXhv9XqCMsI/edit', '_blank')">Prom
-                Perú - 10 de abril de 2025</a></li>
-            <li><a
-                onclick="window.open('https://docs.google.com/forms/d/1G87IGCYOGStTYYIdzijZiaXJxoAXpd4iMXhv9XqCMsI/edit', '_blank')">Tsáchila
-                Economic Fórum IV Edition #TEF2025 - Jueves 19 de junio de 2025</a></li>
-            <li><a
-                onclick="window.open('https://docs.google.com/forms/d/1G87IGCYOGStTYYIdzijZiaXJxoAXpd4iMXhv9XqCMsI/edit', '_blank')">Tsáchila
-                Business Convention #TBC2025 - Jueves 23 de octubre 2025</a></li>
+            <li><a onclick="window.open('https://docs.google.com/forms/d/1G87IGCYOGStTYYIdzijZiaXJxoAXpd4iMXhv9XqCMsI/edit', '_blank')">{{ 'networking.evento1' | transloco }}</a></li>
+            <li><a onclick="window.open('https://docs.google.com/forms/d/1G87IGCYOGStTYYIdzijZiaXJxoAXpd4iMXhv9XqCMsI/edit', '_blank')">{{ 'networking.evento2' | transloco }}</a></li>
+            <li><a onclick="window.open('https://docs.google.com/forms/d/1G87IGCYOGStTYYIdzijZiaXJxoAXpd4iMXhv9XqCMsI/edit', '_blank')">{{ 'networking.evento3' | transloco }}</a></li>
+            <li><a onclick="window.open('https://docs.google.com/forms/d/1G87IGCYOGStTYYIdzijZiaXJxoAXpd4iMXhv9XqCMsI/edit', '_blank')">{{ 'networking.evento4' | transloco }}</a></li>
             <!-- Botón para inscribirse -->
             <button class="btn btn-primary mb-2"
               onclick="window.open('https://docs.google.com/forms/d/1G87IGCYOGStTYYIdzijZiaXJxoAXpd4iMXhv9XqCMsI/edit', '_blank')">
-              Inscribirse a este evento
+              {{ 'networking.inscribirseEvento' | transloco }}
             </button>
           </ul>
         </aside>

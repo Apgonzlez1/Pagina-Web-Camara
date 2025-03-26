@@ -1,25 +1,25 @@
 {
-    "inicio": {
-      "proximosEventos": "Próximos Eventos",
-      "eventoTef": {
-        "titulo": "Tsáchila Economic Fórum IV Edition",
-        "link": "TEF2025",
-        "descripcion": "¡No te pierdas esta oportunidad única de crecimiento y colaboración! ¡Te esperamos!",
-        "cargandoContador": "Cargando contador...",
-        "inscribete": "Inscribirse a este evento"
-      },
-      "eventoTbc": {
-        "titulo": "Tsáchila Business Convention",
-        "link": "TBC2025",
-        "descripcion": "¡Únete al mayor encuentro empresarial del año y crea nuevas oportunidades de negocio!",
-        "cargandoContador": "Cargando contador...",
-        "inscribete": "Inscribirse a este evento"
-      }
+  "inicio": {
+    "proximosEventos": "Próximos Eventos",
+    "eventoTef": {
+      "titulo": "Tsáchila Economic Fórum IV Edition",
+      "link": "TEF2025",
+      "descripcion": "¡No te pierdas esta oportunidad única de crecimiento y colaboración! ¡Te esperamos!",
+      "cargandoContador": "Cargando contador...",
+      "inscribete": "Inscribirse a este evento"
     },
-    "mainBanner": {
-        "bienvenida": "Bienvenidos a la Cámara de Industrias y Producción de Santo Domingo"
-      },
-    "quienesSomos": {
+    "eventoTbc": {
+      "titulo": "Tsáchila Business Convention",
+      "link": "TBC2025",
+      "descripcion": "¡Únete al mayor encuentro empresarial del año y crea nuevas oportunidades de negocio!",
+      "cargandoContador": "Cargando contador...",
+      "inscribete": "Inscribirse a este evento"
+    }
+  },
+  "mainBanner": {
+    "bienvenida": "Bienvenidos a la Cámara de Industrias y Producción de Santo Domingo"
+  },
+  "quienesSomos": {
     "titulo": "Quiénes Somos",
     "historiaTitulo": "📜 Nuestra Historia",
     "historia": "La Cámara de Industriales y Producción de Santo Domingo se fundó con el objetivo de organizar a los diferentes entes productivos de la región. Desde su creación, ha promovido la unión de sus miembros y ha representado activamente sus intereses, fomentando el desarrollo y progreso industrial en la región.",
@@ -29,7 +29,7 @@
     "vision": "Posicionar nuestra institución como un ente influyente, eficiente y organizado a nivel regional, convirtiéndose en un referente en el desarrollo nacional a mediano plazo y promoviendo la competitividad de empresarios, sectores y el Estado.",
     "conoceEquipo": "Conoce a Nuestra Presidenta, Socio Fundador y Equipo",
     "descripcionEquipo": "En esta sección te presentamos a la presidenta de la Cámara de Industrias y Producción de Santo Domingo, Magaly Marcela García Sánchez, quien lidera con visión y compromiso. Además, te invitamos a conocer al equipo directivo que la acompaña en esta labor, cada uno de ellos con un rol crucial para el éxito de nuestra organización.",
-    "descripcionEquipo2": " El éxito de nuestra organización no solo depende de la visión de nuestra presidenta, sino también del trabajo,conjunto de un equipo comprometido y altamente capacitado. A continuación, te presentamos a los miembros del equipo directivo que, junto a la presidenta, hacen posible el desarrollo y crecimiento de la Cámara de Industrias de Santo Domingo.",
+    "descripcionEquipo2": "El éxito de nuestra organización no solo depende de la visión de nuestra presidenta, sino también del trabajo conjunto de un equipo comprometido y altamente capacitado. A continuación, te presentamos a los miembros del equipo directivo que, junto a la presidenta, hacen posible el desarrollo y crecimiento de la Cámara de Industrias de Santo Domingo.",
     "equipo": "Equipo",
     "features": {
       "presidenta": {
@@ -54,7 +54,6 @@
         "correo": "edgnog@hotmail.com"
       }
     }
-
   },
   "miembros": {
     "cargo": {
@@ -64,7 +63,74 @@
       "Socio Colaborador": "Socio Colaborador",
       "Coordinadora Ejecutiva": "Coordinadora Ejecutiva"
     }
+  },
+  "servicios": {
+    "seccionTitulo": "Servicios de la Cámara de Industrias",
+    "seccionDescripcion": "Ofrecemos un portafolio integral de servicios para fortalecer la industria, facilitando conexiones estratégicas, capacitación especializada y representación gremial.",
+    "conexionesTitulo": "Conexiones Empresariales",
+    "conexionesDescripcion": "Facilitamos el networking entre empresas e industrias, generando oportunidades de negocio tanto en el ámbito B2B como B2B2C.",
+    "marketingTitulo": "Marketing y Promoción Empresarial",
+    "marketingDescripcion": "Apoyamos a las empresas en la visibilidad de sus productos y servicios a través de estrategias de marketing y eventos promocionales.",
+    "seminariosTitulo": "Seminarios y Capacitaciones",
+    "seminariosDescripcion": "Organizamos cursos y talleres especializados para fortalecer las competencias empresariales y mejorar la productividad.",
+    "asesoriaTitulo": "Asesoría Empresarial",
+    "asesoriaDescripcion": "Brindamos orientación en normativas, financiamiento y estrategias de crecimiento para impulsar el desarrollo empresarial.",
+    "innovacionTitulo": "Innovación y Transformación Digital",
+    "innovacionDescripcion": "Apoyamos la adopción de nuevas tecnologías y la digitalización de procesos para mejorar la competitividad.",
+    "representacionTitulo": "Representación Gremial",
+    "representacionDescripcion": "Defendemos los intereses del sector industrial ante entidades gubernamentales y organismos reguladores.",
+    "comercioTitulo": "Oficina de Comercio Exterior",
+    "comercioDescripcion": "Facilitamos exportaciones e importaciones, brindando asesoría en tratados comerciales y oportunidades internacionales.",
+    "certificadoTitulo": "Emisión de Certificado de Origen",
+    "certificadoDescripcion": "Gestionamos la certificación del origen de productos para facilitar el comercio internacional."
+  },
+  "empleo": {
+    "logros": "En el último año logramos:",
+    "vacantes": "Vacantes publicadas",
+    "empresas": "Empresas asociadas",
+    "contratados": "Candidatos contratados",
+    "ofrecemosTitulo": "¿Qué ofrecemos?",
+    "publicacionVacantes": "Publicación de vacantes en el sector industrial.",
+    "accesoExclusivo": "Acceso exclusivo para empresas y postulantes.",
+    "capacitacionEmpleabilidad": "Capacitación en empleabilidad y manufactura.",
+    "contacto": "Contacto",
+    "abrirFormulario": "Abrir Formulario",
+    "formularioVacante": "Formulario de Vacante",
+    "nombreInstitucion": "Nombre o Institución",
+    "tiempoCompleto": "Tiempo Completo",
+    "independiente": "Independiente",
+    "practicas": "Prácticas",
+    "medioTiempo": "Medio Tiempo",
+    "temporal": "Temporal",
+    "tipoVacante": "Seleccione tipo de vacante",
+    "bolsaEmpleo": "Bolsa de empleo",
+    "bolsaPracticas": "Bolsa de prácticas profesionales",
+    "bolsaVinculacion": "Bolsa de vinculación con la sociedad",
+    "bolsaProyectos": "Proyectos",
+    "areaInteres": "Área de interés",
+    "envioCV": "Adicional, por favor envía tu CV actualizado a",
+    "correo": "Correo",
+    "enviar": "Enviar",
+    "cerrar": "Cerrar"
+  },
+  "networking": {
+    "titulo": "Networking y Eventos",
+    "descripcion": "En un mundo empresarial en constante evolución, las conexiones estratégicas son clave para el crecimiento y la innovación. Nuestros espacios de networking y eventos están diseñados para fomentar la colaboración entre empresarios, emprendedores y profesionales de diversas industrias.",
+    "verEventos": "Ver Todos los Eventos",
+    "eventosPrincipales": "Eventos Principales",
+    "tef": "Tsáchila Economic Forum (TEF)",
+    "tbc": "Tsáchila Business Convention (TBC)",
+    "eventos": "Eventos",
+    "seminarios": "📚 Seminarios y Capacitaciones",
+    "seminariosDescripcion": "🎯 Impulsa tu conocimiento y habilidades. Participa en sesiones de formación impartidas por expertos en diversas áreas empresariales. Mejora la gestión de tu negocio, adquiere nuevas estrategias de mercado y prepárate para los desafíos del sector industrial.",
+    "eventosCooperativos": "🤝 Eventos Cooperativos",
+    "eventosCooperativosDescripcion": "🌍 Colaboración para el crecimiento empresarial. Estos encuentros están diseñados para fortalecer la cooperación entre empresas, promoviendo alianzas estratégicas y proyectos conjuntos que impulsen la competitividad en la región.",
+    "networking": "🔗 Networking y Enlaces Comerciales",
+    "networkingDescripcion": "💼 Conéctate con líderes del sector industrial. Aprovecha estos eventos para expandir tu red de contactos, conocer proveedores y potenciales socios comerciales, y descubrir nuevas oportunidades de negocio en un entorno dinámico y profesional.",
+    "oportunidadesNetworking": "Oportunidades de Networking",
+    "exitoCita": "\"El éxito en los negocios se basa en las relaciones que construyes.\"",
+    "uneteComunidad": "Únete a nuestra comunidad y amplía tu red de contactos en eventos exclusivos.",
+    "proximosEventos": "Próximos Eventos",
+    "inscribirseEvento": "Inscribirse a este evento"
   }
-  
-  }
-  
+}

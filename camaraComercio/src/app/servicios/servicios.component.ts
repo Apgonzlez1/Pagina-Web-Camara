@@ -3,11 +3,12 @@ import { MatCardModule } from '@angular/material/card';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faHandshake, faBullhorn, faChalkboardTeacher, faBriefcase, faMicrochip, faUsers, faGlobe, faCertificate } from '@fortawesome/free-solid-svg-icons';
+import { TranslocoModule } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-servicios',
   standalone: true,
-  imports: [MatCardModule, SlickCarouselModule, FontAwesomeModule],
+  imports: [MatCardModule, SlickCarouselModule, FontAwesomeModule,TranslocoModule],
   templateUrl: './servicios.component.html',
   styleUrls: ['./servicios.component.css']
 })

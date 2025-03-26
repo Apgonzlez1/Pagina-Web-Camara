@@ -1,22 +1,22 @@
 {
-    "inicio": {
-      "proximosEventos": "Upcoming Events",
-      "eventoTef": {
-        "titulo": "Tsáchila Economic Forum IV Edition",
-        "link": "TEF2025",
-        "descripcion": "Don't miss this unique opportunity for growth and collaboration! Join us!",
-        "cargandoContador": "Loading countdown...",
-        "inscribete": "Register for this event"
-      },
-      "eventoTbc": {
-        "titulo": "Tsáchila Business Convention",
-        "link": "TBC2025",
-        "descripcion": "Join the biggest business gathering of the year and create new business opportunities!",
-        "cargandoContador": "Loading countdown...",
-        "inscribete": "Register for this event"
-      }
+  "inicio": {
+    "proximosEventos": "Upcoming Events",
+    "eventoTef": {
+      "titulo": "Tsáchila Economic Forum IV Edition",
+      "link": "TEF2025",
+      "descripcion": "Don't miss this unique opportunity for growth and collaboration! Join us!",
+      "cargandoContador": "Loading countdown...",
+      "inscribete": "Register for this event"
     },
-    "mainBanner": {
+    "eventoTbc": {
+      "titulo": "Tsáchila Business Convention",
+      "link": "TBC2025",
+      "descripcion": "Join the biggest business gathering of the year and create new business opportunities!",
+      "cargandoContador": "Loading countdown...",
+      "inscribete": "Register for this event"
+    }
+  },
+  "mainBanner": {
     "bienvenida": "Welcome to the Chamber of Industries and Production of Santo Domingo"
   },
   "quienesSomos": {
@@ -63,7 +63,115 @@
       "Socio Colaborador": "Collaborating Partner",
       "Coordinadora Ejecutiva": "Executive Coordinator"
     }
+  },
+  "servicios": {
+    "seccionTitulo": "Services of the Chamber of Industries",
+    "seccionDescripcion": "We offer a comprehensive portfolio of services to strengthen the industry, facilitating strategic connections, specialized training, and guild representation.",
+    "conexionesTitulo": "Business Connections",
+    "conexionesDescripcion": "We facilitate networking between companies and industries, generating business opportunities in both B2B and B2B2C environments.",
+    "marketingTitulo": "Marketing and Business Promotion",
+    "marketingDescripcion": "We support companies in increasing the visibility of their products and services through marketing strategies and promotional events.",
+    "seminariosTitulo": "Seminars and Training",
+    "seminariosDescripcion": "We organize specialized courses and workshops to strengthen business competencies and improve productivity.",
+    "asesoriaTitulo": "Business Consulting",
+    "asesoriaDescripcion": "We provide guidance on regulations, financing, and growth strategies to promote business development.",
+    "innovacionTitulo": "Innovation and Digital Transformation",
+    "innovacionDescripcion": "We support the adoption of new technologies and process digitalization to improve competitiveness.",
+    "representacionTitulo": "Guild Representation",
+    "representacionDescripcion": "We defend the interests of the industrial sector before government entities and regulatory organizations.",
+    "comercioTitulo": "Foreign Trade Office",
+    "comercioDescripcion": "We facilitate exports and imports, providing advice on trade agreements and international opportunities.",
+    "certificadoTitulo": "Issuance of Certificate of Origin",
+    "certificadoDescripcion": "We manage the certification of the origin of products to facilitate international trade."
+  }, 
+  "mainBanner": {
+    "bienvenida": "Welcome to the Employment Exchange"
+  },
+  "achievements": {
+    "titulo": "🎯 In the last year we achieved:",
+    "vacantesPublicadas": "Job openings published",
+    "empresasAsociadas": "Associated companies",
+    "candidatosContratados": "Hired candidates"
+  },
+  "infoSection": {
+    "titulo": "What do we offer?",
+    "oferta1": "✅ Job postings in the industrial sector.",
+    "oferta2": "✅ Exclusive access for companies and applicants.",
+    "oferta3": "✅ Training in employability and manufacturing.",
+    "contacto": "📩 Contact:",
+    "correo": "empleoindustria.com",
+    "abrirFormulario": "Open Form"
+  },
+  "formularioVacante": {
+    "titulo": "Job Vacancy Form",
+    "nombre": "Name or Institution",
+    "filtros": {
+      "tiempoCompleto": "Full-time",
+      "independiente": "Freelance",
+      "practicas": "Internship",
+      "medioTiempo": "Part-time",
+      "temporal": "Temporary"
+    },
+    "tipoVacante": "Select vacancy type",
+    "areaInteres": "Area of interest",
+    "mensajeCV": "Additionally, please send your updated CV to",
+    "correo1": "coordinacionejecutiva@industriassdt.org",
+    "correo2": "Presidencia@industriassdt.org",
+    "enviar": "Submit",
+    "mensajeExito": "Form submitted successfully.",
+    "cerrarFormulario": "Close"
+  },
+  "whatsapp": {
+    "texto": "📲 Floating WhatsApp button"
+  }, 
+  "empleo": {
+    "logros": "Achievements in the last year:",
+    "vacantes": "Job vacancies published",
+    "empresas": "Partner companies",
+    "contratados": "Candidates hired",
+    "ofrecemosTitulo": "What do we offer?",
+    "publicacionVacantes": "Job vacancy publications in the industrial sector.",
+    "accesoExclusivo": "Exclusive access for companies and applicants.",
+    "capacitacionEmpleabilidad": "Training in employability and manufacturing.",
+    "contacto": "Contact",
+    "abrirFormulario": "Open Form",
+    "formularioVacante": "Job Vacancy Form",
+    "nombreInstitucion": "Name or Institution",
+    "tiempoCompleto": "Full-Time",
+    "independiente": "Freelance",
+    "practicas": "Internships",
+    "medioTiempo": "Part-Time",
+    "temporal": "Temporary",
+    "tipoVacante": "Select vacancy type",
+    "bolsaEmpleo": "Job Board",
+    "bolsaPracticas": "Internship Board",
+    "bolsaVinculacion": "Social Outreach Board",
+    "bolsaProyectos": "Projects",
+    "areaInteres": "Area of interest",
+    "envioCV": "Additionally, please send your updated CV to",
+    "correo": "Email",
+    "enviar": "Submit",
+    "cerrar": "Close"
+  },
+  "networking": {
+    "titulo": "Networking and Events",
+    "descripcion": "In a constantly evolving business world, strategic connections are key to growth and innovation. Our networking spaces and events are designed to foster collaboration among entrepreneurs, business owners, and professionals from various industries.",
+    "verEventos": "View All Events",
+    "eventosPrincipales": "Main Events",
+    "tef": "Tsáchila Economic Forum (TEF)",
+    "tbc": "Tsáchila Business Convention (TBC)",
+    "eventos": "Events",
+    "seminarios": "📚 Seminars and Training",
+    "seminariosDescripcion": "🎯 Boost your knowledge and skills. Participate in training sessions led by experts in various business areas. Improve your business management, acquire new market strategies, and prepare for industry challenges.",
+    "eventosCooperativos": "🤝 Cooperative Events",
+    "eventosCooperativosDescripcion": "🌍 Collaboration for business growth. These events are designed to strengthen cooperation between companies, promoting strategic alliances and joint projects that boost regional competitiveness.",
+    "networking": "🔗 Networking and Business Links",
+    "networkingDescripcion": "💼 Connect with industry leaders. Take advantage of these events to expand your network, meet suppliers and potential business partners, and discover new business opportunities in a dynamic and professional environment.",
+    "oportunidadesNetworking": "Networking Opportunities",
+    "exitoCita": "\"Success in business is based on the relationships you build.\"",
+    "uneteComunidad": "Join our community and expand your network at exclusive events.",
+    "proximosEventos": "Upcoming Events",
+    "inscribirseEvento": "Sign up for this event"
   }
-  
-  }
-  
+
+}

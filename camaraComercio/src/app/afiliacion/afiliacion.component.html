@@ -1,60 +1,57 @@
-<div class="container mt-5 ">
-  <!-- Logo y Título -->
-  <section>
-    <h3 class="fw-bold titulo-seccion text-center flex-grow-1">Empresas Asociadas</h3>
-    <div class="directory-header d-flex justify-content-between align-items-center mb-4">
-
-      <div class="text-center mb-4">
-        <h3><strong>Nuestros socios no solo crecen, sino que transforman el desarrollo económico del país.</strong>
-        </h3>
-      </div>
-
+<section class="container mt-5">
+  <!-- Título -->
+  <h3 class="fw-bold titulo-seccion text-center flex-grow-1">{{ 'afiliacion.empresasAsociadas' | transloco }}</h3>
+  <div class="directory-header d-flex justify-content-between align-items-center mb-4">
+    <div class="text-center mb-4">
+      <h3><strong>{{ 'afiliacion.descripcionSocios' | transloco }}</strong></h3>
     </div>
-    <!-- Introducción sobre los Socios -->
-    <input type="text" class="form-control search-bar ms-3" placeholder="Buscar por sector industrial..."
-      [(ngModel)]="searchQuery" (input)="filterCompanies()">
+  </div>
 
-    <!-- Nueva grilla de empresas -->
-    <div class="companies-grid">
-      <div class="card" *ngFor="let company of visibleCompanies" style="width: 18rem;">
-        <img [src]="company.logo" class="card-img-top" alt="Logo de {{ company.name }}">
-        <div class="card-body">
-          <h5 class="card-title">{{ company.name }}</h5>
-          <a href="#" class="btn btn-primary-banner" (click)="sendEmail(company.contact)">Contactar</a>
-          <a href="#" class="btn btn-secondary" (click)="goToCompanyWebsite(company.website)">Visitar</a>
-        </div>
+  <!-- Barra de búsqueda -->
+  <input type="text" class="form-control search-bar ms-3" placeholder="{{ 'afiliacion.buscarSector' | transloco }}"
+    [(ngModel)]="searchQuery" (input)="filterCompanies()">
+
+  <!-- Grilla de empresas -->
+  <div class="companies-grid">
+    <div class="card" *ngFor="let company of visibleCompanies" style="width: 18rem;">
+      <img [src]="company.logo" class="card-img-top" alt="{{ 'afiliacion.logoEmpresa' | transloco: { empresa: company.name } }}">
+      <div class="card-body">
+        <h5 class="card-title">{{ company.name }}</h5>
+        <a href="#" class="btn btn-primary-banner" (click)="sendEmail(company.contact)">{{ 'afiliacion.contactar' | transloco }}</a>
+        <a href="#" class="btn btn-secondary" (click)="goToCompanyWebsite(company.website)">{{ 'afiliacion.visitar' | transloco }}</a>
       </div>
     </div>
+  </div>
 
-    <!-- Botón "Ver todas las empresas" -->
-    <div class="text-center mt-3">
-      <button class="btn-primary-banner" (click)="toggleShowAll()">
-        {{ showAllCompanies ? 'Ver menos empresas' : 'Ver todas las empresas' }}
-      </button>
-    </div>
-  </section>
-</div>
+  <!-- Botón "Ver todas las empresas" -->
+  <div class="text-center mt-3">
+    <button class="btn-primary-banner" (click)="toggleShowAll()">
+      {{ showAllCompanies ? ('afiliacion.verMenos' | transloco) : ('afiliacion.verTodas' | transloco) }}
+    </button>
+  </div>
+</section>
 
-<!-- Sección de Beneficios y Requisitos -->
-<!-- Carrusel de beneficios -->
+<!-- Beneficios de ser Socios -->
 <section class="mb-8 mt-3">
-
-  <h3 class="text-center mb-3 titulo-seccion"><br>Beneficios de ser Socios</h3>
-  <h4 class="directory-header d-flex justify-content-between align-items-center mb-4">Únete a la Cámara de Industrias y
-    Producción de Santo Domingo y accede a múltiples beneficios</h4>
+  <h3 class="text-center mb-3 titulo-seccion">{{ 'afiliacion.beneficiosTitulo' | transloco }}</h3>
+  <h4 class="directory-header d-flex justify-content-between align-items-center mb-4">
+    {{ 'afiliacion.beneficiosDescripcion' | transloco }}
+  </h4>
+  
+  <!-- Carrusel de Beneficios -->
   <div id="benefitsCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="2000">
-        <img src="assets/beneficio1.jpg" class="d-block w-100" alt="Asesorías especializadas">
+        <img src="assets/beneficio1.jpg" class="d-block w-100" alt="{{ 'afiliacion.beneficio1' | transloco }}">
       </div>
       <div class="carousel-item" data-bs-interval="2000">
-        <img src="assets/beneficio2.JPG" class="d-block w-100" alt="Mayor visibilidad">
+        <img src="assets/beneficio2.JPG" class="d-block w-100" alt="{{ 'afiliacion.beneficio2' | transloco }}">
       </div>
       <div class="carousel-item" data-bs-interval="2000">
-        <img src="assets/beneficio3.jpg" class="d-block w-100" alt="Eventos y networking">
+        <img src="assets/beneficio3.jpg" class="d-block w-100" alt="{{ 'afiliacion.beneficio3' | transloco }}">
       </div>
       <div class="carousel-item" data-bs-interval="2000">
-        <img src="assets/beneficio4.JPG" class="d-block w-100" alt="Eventos y networking">
+        <img src="assets/beneficio4.JPG" class="d-block w-100" alt="{{ 'afiliacion.beneficio4' | transloco }}">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#benefitsCarousel" data-bs-slide="prev">
@@ -64,65 +61,70 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
     </button>
   </div>
+</section>
 
-  <div class="text-center mt-4 p-4  rounded shadow-sm tex">
-    <h4 class="fw-bold text-primary">📢 Una Red de Socios que Deja Huella</h4>
-    <p class="text-muted"><strong>Cada empresa afiliada no solo gana posicionamiento, sino que también
-        abre puertas a nuevas inversiones, alianzas estratégicas y expansión empresarial.</strong>
-    </p>
-    <ul class="list-unstyled mt-3">
-      <li class="mb-2">🏆 <strong>Únete</strong> a una comunidad de empresas que lideran el cambio.</li>
-      <li class="mb-2">🔹 <strong>Expande</strong> tu influencia y accede a oportunidades únicas.</li>
-      <li class="mb-2">🔹 <strong>Forma parte</strong> de un foro con impacto nacional e internacional.</li>
-    </ul>
-    <p class="fw-bold mt-3">💼 <strong>¿Listo para llevar tu empresa al siguiente nivel?</strong></p>
-    <button class="btn btn-primary mb-3 px-4 py-2 fw-bold shadow" (click)="showForm = !showForm">Afíliate</button>
-    <p class="text-secondary">📩 <em>Contáctanos para más información.</em></p>
+<!-- Sección de mensaje antes del botón de WhatsApp -->
+<div class="text-center mt-4 p-4 rounded shadow-sm">
+  <h4 class="fw-bold text-primary">📢 {{ 'afiliacion.redSocios' | transloco }}</h4>
+  <p class="text-muted">
+    <strong>{{ 'afiliacion.mensajePosicionamiento' | transloco }}</strong>
+  </p>
+  <ul class="list-unstyled mt-3">
+    <li class="mb-2">🏆 <strong>{{ 'afiliacion.uneteComunidad' | transloco }}</strong></li>
+    <li class="mb-2">🔹 <strong>{{ 'afiliacion.expandeInfluencia' | transloco }}</strong></li>
+    <li class="mb-2">🔹 <strong>{{ 'afiliacion.formaParteForo' | transloco }}</strong></li>
+  </ul>
+  <p class="fw-bold mt-3">💼 <strong>{{ 'afiliacion.listoParaNivel' | transloco }}</strong></p>
+  <button class="btn btn-primary mb-3 px-4 py-2 fw-bold shadow" (click)="showForm = !showForm">
+    {{ 'afiliacion.afiliate' | transloco }}
+  </button>
+  <p class="text-secondary">📩 <em>{{ 'afiliacion.contactanos' | transloco }}</em></p>
+</div>
+
+
+<!-- Sección de formulario de inscripción -->
+<section *ngIf="showForm" class="content">
+  <br>
+  <div class="form-container">
+    <h2>{{ 'afiliacion.formularioInscripcion' | transloco }}</h2>
+
+    <form #inscriptionForm="ngForm" (ngSubmit)="submitForm()">
+
+      <!-- Nombre Completo -->
+      <label for="name" class="form-label">{{ 'afiliacion.nombreCompleto' | transloco }}</label>
+      <input type="text" id="name" name="name" [(ngModel)]="name" required class="form-control">
+
+      <!-- Correo Electrónico -->
+      <label for="email" class="form-label">{{ 'afiliacion.correoElectronico' | transloco }}</label>
+      <input type="email" id="email" name="email" [(ngModel)]="email" required class="form-control">
+
+      <!-- Nombre de la Empresa -->
+      <label for="company" class="form-label">{{ 'afiliacion.nombreEmpresa' | transloco }}</label>
+      <input type="text" id="company" name="company" [(ngModel)]="company" required class="form-control">
+
+      <!-- Número de Teléfono -->
+      <label for="phone" class="form-label">{{ 'afiliacion.numeroTelefono' | transloco }}</label>
+      <input type="text" id="phone" name="phone" [(ngModel)]="phone" required class="form-control">
+      <br>
+      <p>
+        {{ 'afiliacion.adicionalCV' | transloco }}
+      </p>
+      <strong>{{ 'afiliacion.correoContacto' | transloco }}</strong><br>
+      <span>{{ 'afiliacion.contactoCorreo1' | transloco }}</span><br>
+      <span>{{ 'afiliacion.contactoCorreo2' | transloco }}</span>
+
+      <!-- Botón de envío -->
+      <button type="submit" class="btn btn-primary-banner w-100 py-2" [disabled]="!inscriptionForm.form.valid">
+        {{ 'afiliacion.enviarInscripcion' | transloco }}
+      </button> <br> <!-- Botón para cerrar el formulario -->
+      <!-- Botón para cerrar el formulario -->
+      <button (click)="closeForm()" class="btn-primary-banner">{{ 'afiliacion.cerrar' | transloco }}</button>
+    </form>
   </div>
+  <br>
+</section>
 
-  <!-- Sección de formulario de inscripción -->
-  <section *ngIf="showForm" class="content">
-    <br>
-    <div class="form-container ">
-      <h2>Formulario de Inscripción</h2>
-
-      <form #inscriptionForm="ngForm" (ngSubmit)="submitForm()">
-
-        <!-- Nombre Completo -->
-        <label for="name" class="form-label">Nombre Completo</label>
-        <input type="text" id="name" name="name" [(ngModel)]="name" required class="form-control">
-
-        <!-- Correo Electrónico -->
-        <label for="email" class="form-label">Correo Electrónico</label>
-        <input type="email" id="email" name="email" [(ngModel)]="email" required class="form-control">
-
-        <!-- Nombre de la Empresa -->
-        <label for="company" class="form-label">Nombre de la Empresa</label>
-        <input type="text" id="company" name="company" [(ngModel)]="company" required class="form-control">
-
-        <!-- Número de Teléfono -->
-        <label for="phone" class="form-label">Número de Teléfono</label>
-        <input type="text" id="phone" name="phone" [(ngModel)]="phone" required class="form-control">
-        <br>
-        <p>
-          Adicional, por favor envía tu CV actualizado a
-        <p>
-          <strong>Correo: </strong>coordinacionejecutiva&#64;industriassdt.org <br>
-          Presidencia&#64;industriassdt.org .
-        </p>
-
-        <!-- Botón de envío -->
-        <button type="submit" class="btn btn-primary-banner w-100 py-2" [disabled]="!inscriptionForm.form.valid">
-          Enviar Inscripción
-        </button> <br> <!-- Botón para cerrar el formulario -->
-        <!-- Botón para cerrar el formulario -->
-        <button (click)="closeForm()" class="btn-primary-banner">Cerrar</button>
-      </form>
-    </div>
-    <br>
-  </section>
+<!-- Botón flotante de WhatsApp -->
 <div class="whatsapp-button" (click)="openWhatsApp()">
   <img src="assets/icono.png" alt="WhatsApp">
 </div>
-</section>
-<!-- 📲 Botón flotante de WhatsApp -->

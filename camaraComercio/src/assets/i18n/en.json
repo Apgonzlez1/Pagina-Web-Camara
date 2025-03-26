@@ -116,22 +116,20 @@
   "networking": {
     "titulo": "Networking and Events",
     "descripcion": "In a constantly evolving business world, strategic connections are key to growth and innovation. Our networking spaces and events are designed to foster collaboration among entrepreneurs, business owners, and professionals from various industries.",
-    "verEventos": "View All Events",
+    "verEventos": "See All Events",
     "eventosPrincipales": "Main Events",
-    "tef": "Tsáchila Economic Forum (TEF)",
-    "tbc": "Tsáchila Business Convention (TBC)",
-    "eventos": "Events",
-    "seminarios": "📚 Seminars and Training",
-    "seminariosDescripcion": "🎯 Boost your knowledge and skills. Participate in training sessions led by experts in various business areas. Improve your business management, acquire new market strategies, and prepare for industry challenges.",
-    "eventosCooperativos": "🤝 Cooperative Events",
-    "eventosCooperativosDescripcion": "🌍 Collaboration for business growth. These events are designed to strengthen cooperation between companies, promoting strategic alliances and joint projects that boost regional competitiveness.",
-    "networking": "🔗 Networking and Business Links",
-    "networkingDescripcion": "💼 Connect with industry leaders. Take advantage of these events to expand your network, meet suppliers and potential business partners, and discover new business opportunities in a dynamic and professional environment.",
+    "seminariosCapacitaciones": "Seminars and Training",
+    "eventosCooperativos": "Cooperative Events",
+    "networkingEnlaces": "Networking and Business Links",
     "oportunidadesNetworking": "Networking Opportunities",
-    "exitoCita": "\"Success in business is based on the relationships you build.\"",
-    "uneteComunidad": "Join our community and expand your network at exclusive events.",
+    "exitoEnNegocios": "Success in business is based on the relationships you build.",
+    "Slogan":"Join our community and expand your network at exclusive events.",
     "proximosEventos": "Upcoming Events",
-    "inscribirseEvento": "Sign up for this event"
+    "inscribirse": "Register for this Event",
+    "descripcionSeminarios": "🎯 Boost your knowledge and skills. Participate in training sessions led by experts in various business areas. Improve your business management, acquire new market strategies, and prepare for the challenges of the industrial sector.",
+    "descripcionEventosCooperativos": "🌍 Collaboration for business growth. These meetings are designed to strengthen cooperation between companies, promoting strategic alliances and joint projects that drive competitiveness in the region.",
+    "descripcionNetworking": "💼 Connect with industry leaders. Take advantage of these events to expand your network, meet suppliers and potential business partners, and discover new business opportunities in a dynamic and professional environment.",
+    "descripcionBlog": "Networking is a powerful tool for business growth. Discover the most important events in the industry."
   },
   "tbc": {
     "carousel": {

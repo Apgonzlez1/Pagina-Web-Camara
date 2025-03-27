@@ -412,3 +412,36 @@ button:hover {
   }
 }
 
+.language-selector .btn {
+  background: #7a2cff;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+}
+
+.language-selector .btn:hover {
+  background: #5c1fb9;
+}
+
+.language-selector .dropdown-menu {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.language-selector .dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.language-selector .dropdown-item:hover {
+  background: #f1f1f1;
+}

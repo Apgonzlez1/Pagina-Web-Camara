@@ -39,12 +39,12 @@
   </button>
 </div>
 
-<div class="text-center mt-3">
+<div class="text-center mt-3 ">
   <h1>{{ 'tef.titulo' | transloco }}</h1>
   <p>{{ 'tef.descripcion' | transloco }}</p>
 </div>
 
-<section class="tef-content">
+<section class="tef-content ">
   <div class="container">
     <div class="tef-layout">
       <!-- 📌 Sección Izquierda: Descripción -->
@@ -56,6 +56,7 @@
             <img src="assets/logo Tsachila Economic.jpg" class="float tef" alt="Logo TEF">
             {{ 'tef.descripcionTef' | transloco }}
           </p>
+
         </div>
       </div>
 
@@ -77,8 +78,17 @@
         </div>
       </div>
     </div>
+    <!-- 📌 Mensaje motivador -->
+    <p class="tef-highlight tef-card mt-3">
+      🌟 {{'tef.info' | transloco}} 📄✨ <br>
+      <!-- 📌 Botón para descargar el PDF -->
+      <button class="tef-button mt-3" (click)="descargarPDF()">
+        📥 {{ 'tef.descargarInfo' | transloco }}
+      </button>
+    </p>
   </div>
 </section>
+
 
 <!-- 📲 Botón flotante de WhatsApp -->
 <div class="whatsapp-button" (click)="openWhatsApp()">

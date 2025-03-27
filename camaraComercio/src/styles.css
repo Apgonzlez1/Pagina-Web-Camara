@@ -1,4 +1,13 @@
 
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background: linear-gradient(135deg, #004c7a 0%, #0088a8 100%);
+    /* Azul oscuro a celeste */
+}

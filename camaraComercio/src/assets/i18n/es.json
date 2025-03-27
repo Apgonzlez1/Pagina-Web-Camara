@@ -115,21 +115,21 @@
     "correo": "Correo",
     "enviar": "Enviar",
     "cerrar": "Cerrar",
-    "cambio":"Sé parte del cambio",
-    "Registro":"Regístrate hoy y únete a la red de empresarios y líderes que están transformando Ecuador."
+    "cambio": "Sé parte del cambio",
+    "Registro": "Regístrate hoy y únete a la red de empresarios y líderes que están transformando Ecuador."
   },
   "networking": {
     "titulo": "Networking y Eventos",
     "descripcion": "En un mundo empresarial en constante evolución, las conexiones estratégicas son clave para el crecimiento y la innovación. Nuestros espacios de networking y eventos están diseñados para fomentar la colaboración entre empresarios, emprendedores y profesionales de diversas industrias.",
     "verEventos": "Ver Todos los Eventos",
     "eventosPrincipales": "Eventos Principales",
-    "eventos":"Conoce sobre nuestros eventos",
+    "eventos": "Conoce sobre nuestros eventos",
     "seminariosCapacitaciones": "Seminarios y Capacitaciones",
     "eventosCooperativos": "Eventos Cooperativos",
     "networkingEnlaces": "Networking y Enlaces Comerciales",
     "oportunidadesNetworking": "Oportunidades de Networking",
     "exitoEnNegocios": "El éxito en los negocios se basa en las relaciones que construyes.",
-    "Slogan":"Únete a nuestra comunidad y amplía tu red de contactos en eventos exclusivos.",
+    "Slogan": "Únete a nuestra comunidad y amplía tu red de contactos en eventos exclusivos.",
     "proximosEventos": "Próximos Eventos",
     "inscribirse": "Inscribirse a este evento",
     "descripcionSeminarios": "🎯 Impulsa tu conocimiento y habilidades. Participa en sesiones de formación impartidas por expertos en diversas áreas empresariales. Mejora la gestión de tu negocio, adquiere nuevas estrategias de mercado y prepárate para los desafíos del sector industrial.",
@@ -177,7 +177,9 @@
     "casosDeExito": "🚀 Casos de Éxito",
     "casosDeExitoDescripcion": "Presentación de dos casos de éxito nacionales y un tercer caso sobre productos de exportación no tradicionales cultivados en tierras Tsáchilas.",
     "networking": "🤝 Networking Empresarial & Festival Cultural",
-    "networkingDescripcion": "Espacio B2B para conexiones estratégicas, acompañado de una feria empresarial, parrilla libre y música en vivo."
+    "networkingDescripcion": "Espacio B2B para conexiones estratégicas, acompañado de una feria empresarial, parrilla libre y música en vivo.",
+    "descargarInfo": "TEF 2025",
+    "info":"¡Descubre oportunidades únicas de crecimiento empresarial y conecta con líderes del sector! No te pierdas la información clave del evento."
   },
   "navbar": {
     "inicio": "Inicio",
@@ -187,7 +189,7 @@
     "noticias": "Noticias",
     "bolsaEmpleo": "Bolsa de Empleo",
     "contacto": "Contacto"
-  }, 
+  },
   "footer": {
     "queHacemos": "¿Qué Hacemos?",
     "asesoria": "Asesoría en desarrollo empresarial",

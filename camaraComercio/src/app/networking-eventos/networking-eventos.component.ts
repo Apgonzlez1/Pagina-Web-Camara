@@ -29,7 +29,7 @@ export class NetworkingEventosComponent {
   eventos = [
     { nombre: 'Conferencia:Contrato de Inversión, Acuerdos Comerciales y Tratados de Libre Comercio - Capítulo Ecuador 2025', lugar: 'Instituto Tsáchila, Santo Domingo', fecha: 'Jueves 3 de abril del 2025', imagen: 'assets/evento1.jpg' },
     { nombre: 'Prom Perú', lugar: 'Hotel Golden Vista', fecha: '10 de abril de 2025', imagen: 'assets/evento2.jpg' },
-    { nombre: 'Tsáchila Economic Fórum IV Edition #TEF2025', lugar: '-', fecha: 'Jueves 19 de junio de 2025', imagen: 'assets/Forum1.png' },
+    { nombre: 'Tsáchila Economic Fórum IV Edition #TEF2025', lugar: 'Hotel Zaracay', fecha: 'Jueves 19 de junio de 2025', imagen: 'assets/Forum1.png' },
     { nombre: 'Tsáchila Business Convention #TBC2025', lugar: '-', fecha: 'Jueves 23 de octubre 2025', imagen: 'assets/congresos.jpg' }
   ];
 

@@ -38,4 +38,11 @@ export class TefComponent {
   openWhatsApp() {
     window.open('https://api.whatsapp.com/send/?phone=593999989256&text&type=phone_number&app_absent=0', '_blank');
   }
+  descargarPDF() {
+    const link = document.createElement('a');
+    link.href = 'assets/documentos/TEF_IV.pdf'; // Ruta del PDF
+    link.download = 'TEF_IV.pdf';
+    link.click();
+  }
+
 }

@@ -1,55 +1,67 @@
-<section class="contact-section">
-  <div class="contact-card">
-    <h2>Contacto</h2>
-
-    <div class="contact-container">
-      <!-- 🏠 Información de Contacto -->
-      <div class="contact-info">
-        <div class="info-item">
-          <fa-icon [icon]="icons.mapMarker"></fa-icon>          <p>
-            <a href="https://www.google.com.ec/maps/dir//QR6X%2B54P+ESTACION+DE+SERVICIO+PEGOCENTRO,+Av.+de+los+Colonos,+Santo+Domingo/" 
-              target="_blank">
-              Avenida de los Colonos, Santo Domingo
-            </a>
-          </p>
-        </div>
-        <div class="info-item">
-          <fa-icon [icon]="icons.phone"></fa-icon>
-          <p>+593 99 998 9256</p>
-        </div>
-        <div class="info-item">
-          <fa-icon [icon]="icons.envelope"></fa-icon>
-          <p>coordinacionejecutiva&#64;industriassdt.org <br>
-            Presidencia&#64;industriassdt.org </p>
-        </div>
-      </div>
-
-      <!-- 🗺️ Mapa y Formulario en 2 Columnas -->
-      <div class="contact-grid">
-        <!-- 📍 Mapa Interactivo -->
-        <div class="map-container">
-          <iframe width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d997.295782370617!2d-79.152186!3d-0.239538!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5470024cc90e5%3A0x6368f20c4e0635c6!2sCámara%20de%20Industrias!5e0!3m2!1ses!2sec!4v1710612345678">
-          </iframe>
-        </div>
-
-        <!-- 📝 Formulario de Contacto -->
-        <div class="form-container">
-          <h3>Envíanos un mensaje</h3>
-          <form (submit)="submitForm($event)" class="contact-form">
-            <input type="text" name="name" placeholder="Tu Nombre" required />
-            <input type="email" name="email" placeholder="Tu Correo" required />
-            <textarea name="message" placeholder="Tu Mensaje" required></textarea>
-            <button type="submit">Enviar Mensaje</button>
-          </form>
-        </div>
-      </div>
+<section class="container mt-5">
+  <!-- Título -->
+  <h3 class="fw-bold titulo-seccion text-center flex-grow-1">{{ 'contacto.titulo' | transloco }}</h3>
+  <div class="directory-header d-flex justify-content-between align-items-center mb-4">
+    <div class="text-center mb-4">
+      <h3><strong>{{ 'contacto.descripcion' | transloco }}</strong></h3>
     </div>
   </div>
-</section>
 
-<!-- 📲 Botón flotante de WhatsApp -->
-<div class="whatsapp-button" (click)="openWhatsApp()">
-  <img src="assets/icono.png" alt="WhatsApp">
-</div>
+  <!-- Información de Contacto -->
+  <div class="contact-info">
+    <div class="info-item">
+      <fa-icon [icon]="icons.mapMarker"></fa-icon>
+      <p>
+        <a href="https://www.google.com.ec/maps/dir//QR6X%2B54P+ESTACION+DE+SERVICIO+PEGOCENTRO,+Av.+de+los+Colonos,+Santo+Domingo/" 
+          target="_blank">
+          {{ 'contacto.direccion' | transloco }}
+        </a>
+      </p>
+    </div>
+    <div class="info-item">
+      <fa-icon [icon]="icons.phone"></fa-icon>
+      <p>{{ 'contacto.telefono' | transloco }}: +593 99 998 9256</p>
+    </div>
+    <div class="info-item">
+      <fa-icon [icon]="icons.envelope"></fa-icon>
+      <p>{{ 'contacto.email1' | transloco }}: coordinacionejecutiva&#64;industriassdt.org <br>
+        {{ 'contacto.email2' | transloco }}: Presidencia&#64;industriassdt.org
+      </p>
+    </div>
+  </div>
+
+  <!-- Mapa y Formulario en 2 Columnas -->
+  <div class="contact-grid">
+    <!-- Mapa Interactivo -->
+    <div class="map-container">
+      <iframe width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d997.295782370617!2d-79.152186!3d-0.239538!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5470024cc90e5%3A0x6368f20c4e0635c6!2sCámara%20de%20Industrias!5e0!3m2!1ses!2sec!4v1710612345678">
+      </iframe>
+    </div>
+
+    <!-- Formulario de Contacto -->
+    <div class="form-container">
+      <h3>{{ 'contacto.formularioTitulo' | transloco }}</h3>
+      <form (submit)="submitForm($event)" class="contact-form">
+        <label for="name" class="form-label">{{ 'contacto.nombre' | transloco }}</label>
+        <input type="text" id="name" name="name" placeholder="{{ 'contacto.nombrePlaceholder' | transloco }}" required class="form-control">
+
+        <label for="email" class="form-label">{{ 'contacto.email' | transloco }}</label>
+        <input type="email" id="email" name="email" placeholder="{{ 'contacto.emailPlaceholder' | transloco }}" required class="form-control">
+
+        <label for="message" class="form-label">{{ 'contacto.mensaje' | transloco }}</label>
+        <textarea name="message" id="message" placeholder="{{ 'contacto.mensajePlaceholder' | transloco }}" required class="form-control"></textarea>
+
+        <button type="submit" class="btn btn-primary-banner w-100 py-2">
+          {{ 'contacto.enviar' | transloco }}
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Botón flotante de WhatsApp -->
+  <div class="whatsapp-button" (click)="openWhatsApp()">
+    <img src="assets/icono.png" alt="WhatsApp">
+  </div>
+</section>

@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faMapMarkerAlt, faPhoneAlt, faEnvelope, } from '@fortawesome/free-solid-svg-icons'; // Iconos de FontAwesome
+import { TranslocoModule } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-contacto',
   standalone: true,
-  imports: [CommonModule, FormsModule, FontAwesomeModule], // Incluye FontAwesomeModule
+  imports: [CommonModule, FormsModule, FontAwesomeModule, TranslocoModule], // Incluye FontAwesomeModule
   templateUrl: './contacto.component.html',
   styleUrls: ['./contacto.component.css']
 })

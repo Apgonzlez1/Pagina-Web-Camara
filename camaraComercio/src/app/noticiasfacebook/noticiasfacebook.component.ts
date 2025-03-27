@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { TranslocoModule } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-noticiasfacebook',
-  imports: [],
+  imports: [TranslocoModule],
   templateUrl: './noticiasfacebook.component.html',
   styleUrl: './noticiasfacebook.component.css'
 })

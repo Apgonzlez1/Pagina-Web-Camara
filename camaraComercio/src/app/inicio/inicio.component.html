@@ -4,36 +4,67 @@
 <section class="event-banner">
   <h1 class="titulo-general">{{ 'inicio.proximosEventos' | transloco }}</h1>
   <div class="banner-content grid-layout">
-    <!-- Evento TEF2025 -->
-    <div class="event-column">
-      <h2 class="titulo">
-        {{ 'inicio.eventoTef.titulo' | transloco }}
-        <a [routerLink]="['/tef']">{{ 'inicio.eventoTef.link' | transloco }}</a>
-      </h2>
-      <p>{{ 'inicio.eventoTef.descripcion' | transloco }}</p>
-      <div id="countdown-tef" class="countdown-animation">
-        {{ 'inicio.eventoTef.cargandoContador' | transloco }}
-      </div><br>
-      <button (click)="openForm('https://docs.google.com/forms/d/1G87IGCYOGStTYYIdzijZiaXJxoAXpd4iMXhv9XqCMsI/edit')">
-        {{ 'inicio.eventoTef.inscribete' | transloco }}
-      </button>
+<!-- Evento TEF2025 -->
+<div class="event-column">
+  <h2 class="titulo">
+    {{ 'inicio.eventoTef.titulo' | transloco }}
+    <a [routerLink]="['/tef']">{{ 'inicio.eventoTef.link' | transloco }}</a>
+  </h2>
+  <p>{{ 'inicio.eventoTef.descripcion' | transloco }}</p>
+
+  <!-- Contenedor del contador -->
+  <div class="countdown-container">
+    <div class="countdown-item">
+      <span class="countdown-number">{{ tefMonths }}</span>
+      <span class="countdown-label">{{ 'contador.meses' | transloco }}</span>
     </div>
+    <strong>:</strong>
+    <div class="countdown-item">
+      <span class="countdown-number">{{ tefDays }}</span>
+      <span class="countdown-label">{{ 'contador.dias' | transloco }}</span>
+    </div>
+    <strong>:</strong>
+    <div class="countdown-item">
+      <span class="countdown-number">{{ tefHours }}</span>
+      <span class="countdown-label">{{ 'contador.horas' | transloco }}</span>
+    </div>
+  </div><br>
+  <button (click)="openForm('https://docs.google.com/forms/d/1G87IGCYOGStTYYIdzijZiaXJxoAXpd4iMXhv9XqCMsI/edit')">
+    {{ 'inicio.eventoTef.inscribete' | transloco }}
+  </button>
+</div>
     
-    <!-- Evento TBC2025 -->
-    <div class="event-column">
-      <h2 class="titulo">
-        {{ 'inicio.eventoTbc.titulo' | transloco }}
-        <a [routerLink]="['/tbc']">{{ 'inicio.eventoTbc.link' | transloco }}</a>
-      </h2>
-      <p>{{ 'inicio.eventoTbc.descripcion' | transloco }}</p>
-      <div id="countdown-tbc" class="countdown-animation">
-        {{ 'inicio.eventoTbc.cargandoContador' | transloco }}
-      </div><br>
-      <button (click)="openForm('https://docs.google.com/forms/d/1G87IGCYOGStTYYIdzijZiaXJxoAXpd4iMXhv9XqCMsI/edit')">
-        {{ 'inicio.eventoTbc.inscribete' | transloco }}
-      </button>
+  <!-- Evento TBC2025 -->
+<div class="event-column">
+  <h2 class="titulo">
+    {{ 'inicio.eventoTbc.titulo' | transloco }}
+    <a [routerLink]="['/tbc']">{{ 'inicio.eventoTbc.link' | transloco }}</a>
+  </h2>
+  <p>{{ 'inicio.eventoTbc.descripcion' | transloco }}</p>
+
+  <!-- Contenedor del contador para TBC2025 -->
+  <div class="countdown-container">
+    <div class="countdown-item">
+      <span class="countdown-number">{{ tbcMonths }}</span>
+      <span class="countdown-label">{{ 'contador.meses' | transloco }}</span>
     </div>
-  </div>
+    <strong>:</strong>
+    <div class="countdown-item">
+      <span class="countdown-number">{{ tbcDays }}</span>
+      <span class="countdown-label">{{ 'contador.dias' | transloco }}</span>
+    </div>
+    <strong>:</strong>
+    <div class="countdown-item">
+      <span class="countdown-number">{{ tbcHours }}</span>
+      <span class="countdown-label">{{ 'contador.horas' | transloco }}</span>
+    </div>
+  </div><br>
+
+  <button (click)="openForm('https://docs.google.com/forms/d/1G87IGCYOGStTYYIdzijZiaXJxoAXpd4iMXhv9XqCMsI/edit')">
+    {{ 'inicio.eventoTbc.inscribete' | transloco }}
+  </button>
+</div>
+</div>
 </section>
 
 

@@ -3,14 +3,14 @@
     "proximosEventos": "Upcoming Events",
     "eventoTef": {
       "titulo": "Tsáchila Economic Forum IV Edition",
-      "link": "TEF2025",
+      "link": "#TEF2025",
       "descripcion": "Don't miss this unique opportunity for growth and collaboration! Join us!",
       "cargandoContador": "Loading countdown...",
       "inscribete": "Register for this event"
     },
     "eventoTbc": {
       "titulo": "Tsáchila Business Convention",
-      "link": "TBC2025",
+      "link": "#TBC2025",
       "descripcion": "Join the biggest business gathering of the year and create new business opportunities!",
       "cargandoContador": "Loading countdown...",
       "inscribete": "Register for this event"
@@ -21,6 +21,11 @@
   },
   "noticias": {
     "titulo": "📢 News"
+  },
+  "contador": {
+    "meses": "months",
+    "dias": "days",
+    "horas": "hours"
   },
   "quienesSomos": {
     "titulo": "About Us",

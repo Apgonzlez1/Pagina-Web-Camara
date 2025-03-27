@@ -13,42 +13,72 @@ import { TranslocoModule } from '@jsverse/transloco';
 })
 export class InicioComponent implements OnInit {
   mostrarEquipo = false;
+ // Variables para TEF2025
+ tefMonths: string = '00';
+ tefDays: string = '00';
+ tefHours: string = '00';
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+ // Variables para TBC2025
+ tbcMonths: string = '00';
+ tbcDays: string = '00';
+ tbcHours: string = '00';
 
-  ngOnInit(): void {
-    if (isPlatformBrowser(this.platformId)) {
-      this.startCountdown('countdown-tef', new Date("2025-06-19T00:00:00").getTime());
-      this.startCountdown('countdown-tbc', new Date("2025-10-23T00:00:00").getTime()); // Fecha para TBC2025
-    }
-  }
+ constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
-  startCountdown(elementId: string, targetDate: number): void {
-    const countdownElement = document.getElementById(elementId);
+ ngOnInit(): void {
+   if (isPlatformBrowser(this.platformId)) {
+     // TEF2025
+     this.startCountdown(
+       new Date("2025-06-19T00:00:00").getTime(),
+       (months, days, hours) => {
+         this.tefMonths = months.toString().padStart(2, '0');
+         this.tefDays = days.toString().padStart(2, '0');
+         this.tefHours = hours.toString().padStart(2, '0');
+       }
+     );
 
-    if (!countdownElement) {
-      console.error(`Elemento con ID '${elementId}' no encontrado.`);
-      return;
-    }
+     // TBC2025
+     this.startCountdown(
+       new Date("2025-10-23T00:00:00").getTime(),
+       (months, days, hours) => {
+         this.tbcMonths = months.toString().padStart(2, '0');
+         this.tbcDays = days.toString().padStart(2, '0');
+         this.tbcHours = hours.toString().padStart(2, '0');
+       }
+     );
+   }
+ }
 
-    const interval = setInterval(() => {
-      const now = new Date().getTime();
-      const distance = targetDate - now;
+ // Recibe la fecha objetivo y una función callback para asignar los valores
+ startCountdown(targetDate: number, callback: (m: number, d: number, h: number) => void): void {
+   const interval = setInterval(() => {
+     const now = Date.now();
+     let distance = targetDate - now;
 
-      if (distance < 0) {
-        countdownElement.innerHTML = "¡El evento ha comenzado!";
-        clearInterval(interval);
-        return;
-      }
+     if (distance < 0) {
+       // Si el evento ya empezó, paramos el contador
+       callback(0, 0, 0);
+       clearInterval(interval);
+       return;
+     }
 
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+     // Cálculo de meses, días y horas
+     const months = Math.floor(distance / (1000 * 60 * 60 * 24 * 30));
+     distance -= months * (1000 * 60 * 60 * 24 * 30);
 
-      countdownElement.innerHTML = `${days}D | ${hours}H | ${minutes}M | ${seconds}S`;
-    }, 1000);
-  }
+     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+     distance -= days * (1000 * 60 * 60 * 24);
+
+     const hours = Math.floor(distance / (1000 * 60 * 60));
+
+     // Actualiza las variables del contador
+     callback(months, days, hours);
+   }, 1000);
+ }
+
+ openForm(url: string): void {
+   window.open(url, '_blank');
+ }
 
 
   // Método a ejecutar al hacer clic en el botón de inscripción
@@ -71,10 +101,7 @@ export class InicioComponent implements OnInit {
   onWindowScroll() {
     this.showScrollButton = window.scrollY > 300; // Aparece cuando el usuario baja 300px
   }
-  // En tu componente (por ejemplo, InicioComponent)
-openForm(url: string): void {
-  window.open(url, '_blank');
-}
+
 
 
   // Método para regresar al inicio

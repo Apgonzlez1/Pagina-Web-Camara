@@ -10,7 +10,6 @@
           <p>
             {{ 'networking.descripcion' | transloco }}
           </p>
-          <button class="btn btn-primary mb-2" [routerLink]="['/eventos']">{{ 'networking.verEventos' | transloco }}</button>
         </div>
 
         <!-- 📌 Sección de Eventos -->
@@ -46,7 +45,7 @@
 
     <!-- Tarjetas de eventos -->
     <div class="row mt-4">
-      <h2 class="featured-title" style="text-align: center;">{{ 'networking.eventosPrincipales' | transloco }}</h2>
+      <h2 class="featured-title" style="text-align: center;">{{ 'networking.eventos' | transloco }}</h2>
       <div class="col-md-4 d-flex">
         <div class="event-card flex-grow-1">
           <div class="image-container">
@@ -84,7 +83,36 @@
 
     <!-- Sección de contenido tipo blog -->
     <div class="row mt-5">
-      <div class="col-md-8">
+      <div class="col-md-9">
+        <div class="buscador text-center my-4">
+          <div class="directory-header">
+            <h2 class="featured-title">🌐 {{ 'networking.proximosEventos' | transloco }}</h2>
+            <input [(ngModel)]="searchText" type="text" class="form-control search-input"
+              placeholder="🔍 Buscar evento...">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-4 col-xl-4 mt-4" *ngFor="let evento of filteredEventos">
+            <div class="card event-card1">
+              <div class="image-container">
+                <img [src]="evento.imagen" class="card-img-top" alt="{{evento.nombre}}">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title ">{{evento.nombre}}</h5>
+                <p class="event-location"><i class="fas fa-map-marker-alt"></i> {{evento.lugar}}</p>
+                <p class="event-date"><i class="fas fa-calendar-alt"></i> {{evento.fecha}}</p>
+                <button class="btn btn-primary mb-2"
+                  onclick="window.open('https://docs.google.com/forms/d/1G87IGCYOGStTYYIdzijZiaXJxoAXpd4iMXhv9XqCMsI/edit', '_blank')">
+                  {{ 'networking.inscribirse' | transloco }}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
         <article class="blog-post">
           <h3>{{ 'networking.oportunidadesNetworking' | transloco }}</h3>
           <p>{{ 'networking.descripcionBlog' | transloco }}</p>
@@ -94,21 +122,8 @@
           <p>"{{ 'networking.Slogan' | transloco }}"</p>
         </article>
       </div>
-      <div class="col-md-4">
-        <aside class="blog-sidebar">
-          <h4>{{ 'networking.proximosEventos' | transloco }}</h4>
-          <ul>
-            <li><a onclick="window.open('https://docs.google.com/forms/d/1G87IGCYOGStTYYIdzijZiaXJxoAXpd4iMXhv9XqCMsI/edit', '_blank')">Conferencia: Contrato de Inversión, Acuerdos Comerciales y Tratados de Libre Comercio - Capítulo Ecuador 2025 - Jueves 3 de abril del 2025</a></li>
-            <li><a onclick="window.open('https://docs.google.com/forms/d/1G87IGCYOGStTYYIdzijZiaXJxoAXpd4iMXhv9XqCMsI/edit', '_blank')">Prom Perú - 10 de abril de 2025</a></li>
-            <li><a onclick="window.open('https://docs.google.com/forms/d/1G87IGCYOGStTYYIdzijZiaXJxoAXpd4iMXhv9XqCMsI/edit', '_blank')">Tsáchila Economic Fórum IV Edition #TEF2025 - Jueves 19 de junio de 2025</a></li>
-            <li><a onclick="window.open('https://docs.google.com/forms/d/1G87IGCYOGStTYYIdzijZiaXJxoAXpd4iMXhv9XqCMsI/edit', '_blank')">Tsáchila Business Convention #TBC2025 - Jueves 23 de octubre 2025</a></li>
-            <button class="btn btn-primary mb-2" onclick="window.open('https://docs.google.com/forms/d/1G87IGCYOGStTYYIdzijZiaXJxoAXpd4iMXhv9XqCMsI/edit', '_blank')">
-              {{ 'networking.inscribirse' | transloco }}
-            </button>
-          </ul>
-        </aside>
-      </div>
     </div>
+
   </div>
 
   <!-- 📲 Botón flotante de WhatsApp -->

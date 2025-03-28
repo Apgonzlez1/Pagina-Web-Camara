@@ -101,47 +101,5 @@ showForm: any;
   closeForm() {
     this.showForm = false;
   }
-  submitForm() {
-      const formData = {
-        name: this.name,
-        email: this.email,
-        company: this.company,
-        phone: this.phone
-      };
-    
-      fetch('https://formspree.io/f/mqapbnpj', { // Reemplaza YOUR_FORM_ID con tu ID de Formspree
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-      })
-      .then(response => {
-        if (response.ok) {
-          alert('Formulario enviado con éxito. ¡Nos pondremos en contacto pronto!');
-          this.resetForm();
-        } else {
-          alert('Hubo un error al enviar el formulario. Inténtalo de nuevo.');
-        }
-      })
-      .catch(error => {
-        console.error('Error al enviar el formulario:', error);
-        alert('Ocurrió un error inesperado.');
-      });
-  }
-    
-    resetForm() {
-      this.name = '';
-      this.email = '';
-      this.company = '';
-      this.phone = '';
-    }
-    
-
-  onFileSelected(event: any) {
-    const file = event.target.files[0];
-    if (file) {
-      this.document = file;
-    }
-  }
+ 
 }

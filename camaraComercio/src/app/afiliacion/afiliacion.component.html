@@ -33,7 +33,7 @@
 
 <!-- Beneficios de ser Socios -->
 <section class="mb-8 mt-3">
-  <h3 class="text-center mb-3 titulo-seccion">{{ 'afiliacion.beneficiosTitulo' | transloco }}</h3>
+  <h4 class="text-center mb-3 titulo-seccion">{{ 'afiliacion.beneficiosTitulo' | transloco }}</h4>
   <h4 class="directory-header d-flex justify-content-between align-items-center mb-4">
     {{ 'afiliacion.beneficiosDescripcion' | transloco }}
   </h4>
@@ -64,65 +64,43 @@
 </section>
 
 <!-- Sección de mensaje antes del botón de WhatsApp -->
-<div class="text-center mt-4 p-4 rounded shadow-sm">
-  <h4 class="fw-bold text-primary">📢 {{ 'afiliacion.redSocios' | transloco }}</h4>
-  <p class="text-muted">
-    <strong>{{ 'afiliacion.mensajePosicionamiento' | transloco }}</strong>
+<div class="afiliacion-container text-center mt-4 p-4 rounded shadow-lg">
+  <!-- Título principal -->
+  <h3 class="fw-bold text-white">🌟 {{ 'afiliacion.redSocios' | transloco }}</h3>
+  
+  <!-- Mensaje de posicionamiento -->
+  <p class="mensaje-destacado">
+    {{ 'afiliacion.mensajePosicionamiento' | transloco }}
   </p>
-  <ul class="list-unstyled mt-3">
-    <li class="mb-2">🏆 <strong>{{ 'afiliacion.uneteComunidad' | transloco }}</strong></li>
-    <li class="mb-2">🔹 <strong>{{ 'afiliacion.expandeInfluencia' | transloco }}</strong></li>
-    <li class="mb-2">🔹 <strong>{{ 'afiliacion.formaParteForo' | transloco }}</strong></li>
-  </ul>
-  <p class="fw-bold mt-3">💼 <strong>{{ 'afiliacion.listoParaNivel' | transloco }}</strong></p>
-  <button class="btn btn-primary mb-3 px-4 py-2 fw-bold shadow" (click)="showForm = !showForm">
-    {{ 'afiliacion.afiliate' | transloco }}
-  </button>
-  <p class="text-secondary">📩 <em>{{ 'afiliacion.contactanos' | transloco }}</em></p>
+
+  <!-- Beneficios de unirse -->
+  <div class="beneficios-container">
+    <h5 class="fw-bold text-white">🎯 {{ 'Afiliacion por que ser parte de nosotros' | transloco }}</h5>
+    <ul class="list-unstyled mt-3 text-white">
+      <li class="mb-2">🤝 {{ 'afiliacion.uneteComunidad' | transloco }}</li>
+      <li class="mb-2">🚀 {{ 'afiliacion.expandeInfluencia' | transloco }}</li>
+      <li class="mb-2">💡 {{ 'afiliacion.formaParteForo' | transloco }}</li>
+    </ul>
+  </div>
+
+  <!-- Llamado a la acción -->
+  <div class="cta-container mt-4">
+    <p class="fw-bold">💼 {{ 'afiliacion.listoParaNivel' | transloco }}</p>
+    <a href="https://forms.gle/pN78M88MhxHCtydNA" target="_blank" class="btn btn-warning px-4 py-2 fw-bold shadow-lg">
+      🚀 {{ 'afiliacion.afiliate' | transloco }}
+    </a>
+  </div>
+
+<!-- Mensaje de contacto -->
+<!-- Mensaje de contacto -->
+<p class="text-light mt-3">📩 <em>{{ 'afiliacion.contactanos' | transloco }}</em></p>
+<p class="text-light">
+  <a href="mailto:coordinacionejecutiva@industriassdt.org" class="text-light">
+    coordinacionejecutiva&#64;industriassdt.org
+  </a>
+</p>
 </div>
 
-
-<!-- Sección de formulario de inscripción -->
-<section *ngIf="showForm" class="content">
-  <br>
-  <div class="form-container">
-    <h2>{{ 'afiliacion.formularioInscripcion' | transloco }}</h2>
-
-    <form #inscriptionForm="ngForm" (ngSubmit)="submitForm()">
-
-      <!-- Nombre Completo -->
-      <label for="name" class="form-label">{{ 'afiliacion.nombreCompleto' | transloco }}</label>
-      <input type="text" id="name" name="name" [(ngModel)]="name" required class="form-control">
-
-      <!-- Correo Electrónico -->
-      <label for="email" class="form-label">{{ 'afiliacion.correoElectronico' | transloco }}</label>
-      <input type="email" id="email" name="email" [(ngModel)]="email" required class="form-control">
-
-      <!-- Nombre de la Empresa -->
-      <label for="company" class="form-label">{{ 'afiliacion.nombreEmpresa' | transloco }}</label>
-      <input type="text" id="company" name="company" [(ngModel)]="company" required class="form-control">
-
-      <!-- Número de Teléfono -->
-      <label for="phone" class="form-label">{{ 'afiliacion.numeroTelefono' | transloco }}</label>
-      <input type="text" id="phone" name="phone" [(ngModel)]="phone" required class="form-control">
-      <br>
-      <p>
-        {{ 'afiliacion.adicionalCV' | transloco }}
-      </p>
-      <strong>{{ 'afiliacion.correoContacto' | transloco }}</strong><br>
-      <span>{{ 'afiliacion.contactoCorreo1' | transloco }}</span><br>
-      <span>{{ 'afiliacion.contactoCorreo2' | transloco }}</span>
-
-      <!-- Botón de envío -->
-      <button type="submit" class="btn btn-primary-banner w-100 py-2" [disabled]="!inscriptionForm.form.valid">
-        {{ 'afiliacion.enviarInscripcion' | transloco }}
-      </button> <br> <!-- Botón para cerrar el formulario -->
-      <!-- Botón para cerrar el formulario -->
-      <button (click)="closeForm()" class="btn-primary-banner">{{ 'afiliacion.cerrar' | transloco }}</button>
-    </form>
-  </div>
-  <br>
-</section>
 
 <!-- Botón flotante de WhatsApp -->
 <div class="whatsapp-button" (click)="openWhatsApp()">

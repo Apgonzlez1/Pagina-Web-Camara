@@ -1,58 +1,39 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslocoModule } from '@jsverse/transloco';
+import { FormsModule } from '@angular/forms'; // ✅ Importar FormsModule
+
 
 @Component({
   selector: 'app-bolsa-empleo',
   standalone: true,
-  imports: [CommonModule, TranslocoModule],
+  imports: [CommonModule, TranslocoModule, FormsModule],
   templateUrl: './bolsa-empleo.component.html',
   styleUrls: ['./bolsa-empleo.component.css']
 })
 export class BolsaEmpleoComponent {
   backgroundImage = 'assets/fondo.jpg';
-  showForm = false;
-  successMessage = '';
 
+  searchText: string = '';
+  isFullTime: boolean = false;
+  isPartTime: boolean = false;
+  isInternship: boolean = false;
 
-  openForm() {
-    this.showForm = true;
-  }
+  vacantes = [
+    { titulo: 'Recepcionsita', ubicacion: 'Golden Vista', tipo: 'Tiempo completo'},
+    { titulo: 'Desarrollador Backend', ubicacion: 'Ciudad', tipo: 'Medio Tiempo' },
+    { titulo: 'Prácticas de Marketing', ubicacion: 'Remoto', tipo: 'Prácticas' },
+    { titulo: 'Diseñador UX/UI', ubicacion: 'Remoto', tipo: 'Tiempo completo'},
+  ];
 
-  closeForm() {
-    this.showForm = false;
-    this.successMessage = ''; // Borra el mensaje al cerrar
-  }
-  enviarFormulario(event: Event) {
-    event.preventDefault(); // Evita la redirección a Formspree
+  get filteredVacantes() {
+    return this.vacantes.filter(vacante => {
+      const matchesSearchText = this.searchText ? vacante.titulo.toLowerCase().includes(this.searchText.toLowerCase()) : true;
+      const matchesFullTime = this.isFullTime ? vacante.tipo === 'Tiempo completo' : true;
+      const matchesPartTime = this.isPartTime ? vacante.tipo === 'Medio Tiempo' : true;
+      const matchesInternship = this.isInternship ? vacante.tipo === 'Prácticas' : true;
 
-    const form = event.target as HTMLFormElement;
-    const formData = new FormData(form);
-
-    // Convertir FormData a un objeto JSON
-    const jsonData: { [key: string]: string } = {};
-    formData.forEach((value, key) => {
-      jsonData[key] = value.toString();
-    });
-
-    fetch("https://formspree.io/f/mldjbjqg", {
-      method: "POST",
-      body: JSON.stringify(jsonData), // Enviar como JSON
-      headers: { 
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-      }
-    })
-    .then(response => {
-      if (response.ok) {
-        alert("Formulario enviado correctamente");
-        form.reset(); // Limpia el formulario
-      } else {
-        alert("Hubo un error al enviar el formulario");
-      }
-    })
-    .catch(error => {
-      alert("Error de conexión, intenta nuevamente.");
+      return matchesSearchText && matchesFullTime && matchesPartTime && matchesInternship;
     });
   }
 

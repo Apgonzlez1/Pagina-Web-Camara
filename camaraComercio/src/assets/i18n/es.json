@@ -85,7 +85,11 @@
     "comercioTitulo": "Oficina de Comercio Exterior",
     "comercioDescripcion": "Facilitamos exportaciones e importaciones, brindando asesoría en tratados comerciales y oportunidades internacionales.",
     "certificadoTitulo": "Emisión de Certificado de Origen",
-    "certificadoDescripcion": "Gestionamos la certificación del origen de productos para facilitar el comercio internacional."
+    "certificadoDescripcion": "Gestionamos la certificación del origen de productos para facilitar el comercio internacional.",
+    "descubreMas": "Descubre Más Sobre Nuestros Servicios",
+    "impulsa": "✨ Impulsa tu empresa al siguiente nivel ✨",
+    "descripcion": "Descubre nuestras soluciones diseñadas para fortalecer tu negocio. Desde asesoría especializada hasta transformación digital, te acompañamos en cada paso hacia el éxito. 🚀",
+    "contactanos": "Contáctanos"
   },
   "empleo": {
     "logros": "En el último año logramos:",
@@ -116,7 +120,18 @@
     "enviar": "Enviar",
     "cerrar": "Cerrar",
     "cambio": "Sé parte del cambio",
-    "Registro": "Regístrate hoy y únete a la red de empresarios y líderes que están transformando Ecuador."
+    "Registro": "Regístrate hoy y únete a la red de empresarios y líderes que están transformando Ecuador.",
+    "vacantesDisponibles": "Vacantes Disponibles",
+    "cargo": "Cargo",
+    "lugar": "Lugar",
+    "horario": "Horario",
+    "postularse": "Postúlate",
+    "filtrarVacantes": "Filtrar Vacantes",
+    "filtrarUbicacion": "Filtrar por Ubicación",
+    "filtrarHorario": "Filtrar por Horario",
+    "oficinaCentral": "Oficina Central",
+    "sedePrincipal": "Sede Principal",
+    "recursosHumanos": "Recursos Humanos"
   },
   "networking": {
     "titulo": "Networking y Eventos",
@@ -179,7 +194,7 @@
     "networking": "🤝 Networking Empresarial & Festival Cultural",
     "networkingDescripcion": "Espacio B2B para conexiones estratégicas, acompañado de una feria empresarial, parrilla libre y música en vivo.",
     "descargarInfo": "TEF 2025",
-    "info":"¡Descubre oportunidades únicas de crecimiento empresarial y conecta con líderes del sector! No te pierdas la información clave del evento."
+    "info": "¡Descubre oportunidades únicas de crecimiento empresarial y conecta con líderes del sector! No te pierdas la información clave del evento."
   },
   "navbar": {
     "inicio": "Inicio",

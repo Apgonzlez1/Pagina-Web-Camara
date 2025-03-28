@@ -8,6 +8,8 @@ body {
 body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    background: linear-gradient(135deg, #004c7a 0%, #0088a8 100%);
-    /* Azul oscuro a celeste */
+    background: linear-gradient(135deg, #004c7a 0%, #0088a8 70%);
+    background-attachment: fixed; /* Fija el fondo para que no se corte */
+    background-size: cover; /* Asegura que el fondo cubra todo */
+    min-height: 100vh; /* Mínimo alto igual al viewport */
 }

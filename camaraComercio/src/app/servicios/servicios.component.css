@@ -2,7 +2,7 @@
 .services-section {
   background: linear-gradient(135deg, #004c7a 0%, #0088a8 100%); /* Azul oscuro a celeste */
   color: white;
-  padding: 60px 20px;
+  padding: 30px 20px;
   text-align: center;
 }
 
@@ -105,4 +105,22 @@
 .whatsapp-button img {
   width: 35px;
   height: 35px;
+}
+
+.card {
+  border-radius: 12px;
+  color: #333;
+
+}
+
+.btn-primary {
+  background-color: #004a99;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #003366;
 }

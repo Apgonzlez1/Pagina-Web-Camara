@@ -85,7 +85,11 @@
     "comercioTitulo": "Foreign Trade Office",
     "comercioDescripcion": "We facilitate exports and imports, providing advice on trade agreements and international opportunities.",
     "certificadoTitulo": "Issuance of Certificate of Origin",
-    "certificadoDescripcion": "We manage the certification of the origin of products to facilitate international trade."
+    "certificadoDescripcion": "We manage the certification of the origin of products to facilitate international trade.",
+    "descubreMas": "Discover More About Our Services",
+    "impulsa": "✨ Take your business to the next level ✨",
+    "descripcion": "Explore our solutions designed to strengthen your business. From specialized advice to digital transformation, we accompany you every step of the way to success. 🚀",
+    "contactanos": "Contact Us"
   },
   "empleo": {
     "logros": "Achievements in the last year:",
@@ -116,7 +120,18 @@
     "enviar": "Submit",
     "cerrar": "Close",
     "cambio": "Be part of the change.",
-    "Registro": "Register today and join the network of entrepreneurs and leaders transforming Ecuador."
+    "Registro": "Register today and join the network of entrepreneurs and leaders transforming Ecuador.",
+    "vacantesDisponibles": "Available Job Vacancies",
+    "cargo": "Position",
+    "lugar": "Location",
+    "horario": "Schedule",
+    "postularse": "Apply",
+    "filtrarVacantes": "Filter Vacancies",
+    "filtrarUbicacion": "Filter by Location",
+    "filtrarHorario": "Filter by Schedule",
+    "oficinaCentral": "Central Office",
+    "sedePrincipal": "Headquarters",
+    "recursosHumanos": "Human Resources"
   },
   "networking": {
     "titulo": "Networking and Events",
@@ -179,7 +194,7 @@
     "networking": "🤝 Business Networking & Cultural Festival",
     "networkingDescripcion": "B2B space for strategic connections, accompanied by a business fair, open barbecue, and live music.",
     "descargarInfo": "TEF 2025",
-    "info":"Discover unique opportunities for business growth and connect with industry leaders! Don't miss the key information about the event."
+    "info": "Discover unique opportunities for business growth and connect with industry leaders! Don't miss the key information about the event."
   },
   "navbar": {
     "inicio": "Home",

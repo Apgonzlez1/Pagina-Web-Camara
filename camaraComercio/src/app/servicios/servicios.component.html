@@ -15,7 +15,7 @@
       <!-- 🔹 Conexiones Empresariales (B2B & B2B2C) -->
       <div class="service-card">
         <div class="service-icon">
-          <fa-icon [icon]="icons.handshake"></fa-icon>        
+          <fa-icon [icon]="icons.handshake"></fa-icon>
         </div>
         <h3 class="service-title">{{ 'servicios.conexionesTitulo' | transloco }}</h3>
         <p class="service-description">
@@ -26,7 +26,7 @@
       <!-- 🔹 Marketing y Promoción Empresarial -->
       <div class="service-card">
         <div class="service-icon">
-          <fa-icon [icon]="icons.bullhorn"></fa-icon>        
+          <fa-icon [icon]="icons.bullhorn"></fa-icon>
         </div>
         <h3 class="service-title">{{ 'servicios.marketingTitulo' | transloco }}</h3>
         <p class="service-description">
@@ -37,7 +37,7 @@
       <!-- 🔹 Seminarios y Capacitaciones -->
       <div class="service-card">
         <div class="service-icon">
-          <fa-icon [icon]="icons.chalkboardTeacher"></fa-icon>        
+          <fa-icon [icon]="icons.chalkboardTeacher"></fa-icon>
         </div>
         <h3 class="service-title">{{ 'servicios.seminariosTitulo' | transloco }}</h3>
         <p class="service-description">
@@ -102,6 +102,21 @@
 
     </div>
   </div>
+  <div class="container my-5">
+    <div class="card shadow-lg border-0">
+      <div class="card-body text-center p-4">
+        <h3 class="fw-bold">{{ 'servicios.descubreMas' | transloco }}</h3>
+        <p class="text-muted">
+          <strong>{{ 'servicios.impulsa' | transloco }}</strong> <br>
+          {{ 'servicios.descripcion' | transloco }}
+        </p>
+        <a [routerLink]="['/contacto']" class="btn btn-primary btn-lg mt-3">
+          {{ 'servicios.contactanos' | transloco }}
+        </a>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 <!-- 📲 Botón flotante de WhatsApp -->

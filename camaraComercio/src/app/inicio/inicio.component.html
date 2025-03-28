@@ -67,8 +67,6 @@
 </div>
 </section>
 
-
-
 <section class="main-banner"
   [ngStyle]="{'background-image': 'url(' + backgroundImage + ')', 'background-size': 'cover', 'background-position': 'top'}">
   <div class="overlay">
@@ -84,11 +82,11 @@
     <div class="info-grid">
       <div class="info-card">
         <h2>{{ 'quienesSomos.historiaTitulo' | transloco }}</h2>
-        <p>{{ 'quienesSomos.historia' | transloco }}</p>
+        <p class="contenido-card">{{ 'quienesSomos.historia' | transloco }}</p>
       </div>
       <div class="info-card">
         <h2>{{ 'quienesSomos.misionTitulo' | transloco }}</h2>
-        <p>{{ 'quienesSomos.mision' | transloco }}</p>
+        <p class="contenido-card">{{ 'quienesSomos.mision' | transloco }}</p>
       </div>
       <div class="info-card">
         <h2>{{ 'quienesSomos.visionTitulo' | transloco }}</h2>
@@ -111,7 +109,7 @@
           </div>
           <div class="col-md-8">
             <h2 class="featured-title" style="text-align: center;">
-              {{ 'quienesSomos.features.presidenta.nombre' | transloco }}
+              {{ 'quienesSomos.features.presidenta.nombre1' | transloco }}
             </h2>
             <h3 style="text-align: center;">
               <strong>{{ 'quienesSomos.features.presidenta.cargo' | transloco }}</strong>
@@ -120,7 +118,7 @@
               <em>{{ 'quienesSomos.features.presidenta.cita' | transloco }}</em>
             </p>
             <p><strong>{{ 'quienesSomos.features.presidenta.detalle1' | transloco }}</strong></p>
-            <p><strong>{{ 'quienesSomos.features.presidenta.detalle2' | transloco }}</strong></p>
+            <!--<p><strong>{{ 'quienesSomos.features.presidenta.detalle2' | transloco }}</strong></p>-->
             <p><strong>{{ 'quienesSomos.features.presidenta.detalle3' | transloco }}</strong></p>
             <p>
               <strong>{{ 'quienesSomos.features.presidenta.correoTitulo' | transloco }}</strong>
@@ -135,12 +133,12 @@
         <div class="row">
           <div class="col-md-4">
             <div>
-              <img src="assets/Edgar_Nogales.jpg" alt="{{ 'quienesSomos.features.fundador.alt' | transloco }}">
+              <img src="assets/VicePres.jpg" alt="{{ 'quienesSomos.features.fundador.alt' | transloco }}">
             </div>
           </div>
           <div class="col-md-8">
             <h2 class="featured-title" style="text-align: center;">
-              {{ 'quienesSomos.features.fundador.nombre' | transloco }}
+              {{ 'quienesSomos.features.fundador.nombre1' | transloco }}
             </h2>
             <h3 style="text-align: center;">
               <strong>{{ 'quienesSomos.features.fundador.cargo' | transloco }}</strong>
@@ -148,7 +146,7 @@
             <p>
               <em>{{ 'quienesSomos.features.fundador.cita' | transloco }}</em>
             </p>
-            <p><strong>{{ 'quienesSomos.features.fundador.detalle1' | transloco }}</strong></p>
+           
             <p><strong>{{ 'quienesSomos.features.fundador.detalle2' | transloco }}</strong></p>
             <p>
               <strong>{{ 'quienesSomos.features.fundador.correoTitulo' | transloco }}</strong>
@@ -169,8 +167,8 @@
       <div class="contenedor-miembros" *ngIf="mostrarEquipo">
         <p class="descripcion-equipo">{{ 'quienesSomos.descripcionEquipo2' | transloco }}</p>
         <div *ngFor="let miembro of quienesSomos.equipoDirectivo" class="tarjeta-equipo">
-          <div class="icono-usuario">
-            <i class="fas fa-user-circle"></i>
+          <div class="tarjeta-imagen">
+            <img [src]="miembro.imagen">
           </div>
           <div class="tarjeta-info">
             <h3>{{ miembro.nombre }}</h3>

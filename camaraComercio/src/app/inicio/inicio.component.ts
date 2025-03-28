@@ -6,7 +6,7 @@ import { TranslocoModule } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-inicio',
-  imports: [RouterModule, CommonModule, TranslocoModule],
+  imports: [RouterModule, CommonModule, TranslocoModule ],
   standalone: true,
   templateUrl: './inicio.component.html',
   styleUrls: ['./inicio.component.css']
@@ -23,9 +23,11 @@ export class InicioComponent implements OnInit {
  tbcDays: string = '00';
  tbcHours: string = '00';
 
+
  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
  ngOnInit(): void {
+
    if (isPlatformBrowser(this.platformId)) {
      // TEF2025
      this.startCountdown(
@@ -119,36 +121,37 @@ export class InicioComponent implements OnInit {
     equipoDirectivo: [
 
       {
-        nombre: "QUEZADA CABRERA MARCOS VINICIO",
-        cargo: "Vicepresidente",
-
-        funciones: ["Responsable de comercio exterior", "Fomentar la creación de nuevas industrias"],
-        correo: "gerencia@hotelgoldenvista.com.ec"
+        nombre: "Edgar",
+        cargo: "Fundador",
+        correo: "edgnog@hotmail.com",
+        imagen: "assets/Edgar_Nogales.jpg"
       },
       {
-        nombre: "ALDEAN JARAMILLO JUAN FRANCISCO",
+        nombre: "Francisco",
         cargo: "Director Comercial",
-
-        correo: "aldeanf@gmail.com"
+        correo: "aldeanf@gmail.com",
+        imagen: ""
       },
       {
-        nombre: "VILLACIS BALAREZO JORGE ISRAEL",
+        nombre: "Jorge",
         cargo: "Director Industrial",
-
-        correo: "Jivb2020@hotmail.com"
+        correo: "Jivb2020@hotmail.com",
+        imagen: ""
       },
       
       {
-        nombre: "CEVALLOS ASTUDILLO ÁNGEL FERNANDO",
-        cargo: "Socio Colaborador",
+        nombre: "Roy",
+        cargo: "Director Financiero",
 
-        correo: "angel_cevallos832002@hotmail.com"
+        correo: "royccc@hotmail.com",
+        imagen: ""
       },
       {
-        nombre: "ARAÚZ ZAMBRANO MARÍA JOSÉ",
+        nombre: "María José",
         cargo: "Coordinadora Ejecutiva",
        
-        correo: "coordinacionejecutiva@industriassdt.org"
+        correo: "coordinacionejecutiva@industriassdt.org",
+        imagen: " "
       }
     ]
     

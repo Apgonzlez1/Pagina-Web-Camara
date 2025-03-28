@@ -6,14 +6,14 @@
       "link": "#TEF2025",
       "descripcion": "Don't miss this unique opportunity for growth and collaboration! Join us!",
       "cargandoContador": "Loading countdown...",
-      "inscribete": "Register for this event"
+      "inscribete": "Sign up"
     },
     "eventoTbc": {
       "titulo": "Tsáchila Business Convention",
       "link": "#TBC2025",
       "descripcion": "Join the biggest business gathering of the year and create new business opportunities!",
       "cargandoContador": "Loading countdown...",
-      "inscribete": "Register for this event"
+      "inscribete": "Sign up"
     }
   },
   "mainBanner": {
@@ -35,40 +35,38 @@
     "mision": "To promote productivity and regional development of the Chamber of Industries as an institution that leads the industrial and production sectors, with proactive representation before the state through strengthening research, entrepreneurship, development, formalization, competitiveness, and business innovation, always aiming for job creation and social welfare.",
     "visionTitulo": "🌍 Vision",
     "vision": "To position our institution as an influential, efficient, and well-organized entity regionally, becoming a benchmark in national development in the medium term and promoting the competitiveness of entrepreneurs, sectors, and the state.",
-    "conoceEquipo": "Meet Our President, Founding Partner and Team",
-    "descripcionEquipo": "In this section, we introduce our president and founding partner along with the management team that supports them in achieving our organizational goals.",
+    "conoceEquipo": "Meet Our President, Vice President and Directory",
+    "descripcionEquipo": "In this section, we introduce our president and vice president along with the management team that supports them in achieving our organizational goals.",
     "descripcionEquipo2": "The success of our organization depends not only on the vision of our president, but also on the work of a committed and highly trained team. Below, we introduce you to the members of the management team who, together with the president, make the development and growth of the Santo Domingo Chamber of Industries possible.",
-    "equipo": "Team",
+    "equipo": "Directory",
     "features": {
       "presidenta": {
         "alt": "President Image",
-        "nombre": "GARCÍA SÁNCHEZ MAGALY MARCELA",
+        "nombre1": "Marcela García",
         "cargo": "President",
         "cita": "''All the people I know are superior to me in some way, and in that sense, I learn from them. I do not stay long in a place where I don't learn or grow a little more than the day before.''",
         "detalle1": "President of the Chamber of Industries of Santo Domingo",
-        "detalle2": "CEO of Ecuaspices",
         "detalle3": "University Lecturer",
         "correoTitulo": "Email:",
         "correo": "Presidencia@industriassdt.org"
       },
       "fundador": {
-        "alt": "Founder Image",
-        "nombre": "NOGALES JAMI EDGAR ORLANDO",
-        "cargo": "Founding Partner",
-        "cita": "''Being grateful honors you. It is important to give back to society a part of all that we have received from it. Gratitude is about knowing and demonstrating it.''",
-        "detalle1": "CEO of RHINOPLAST",
-        "detalle2": "Founder of the Chamber of Industries of Santo Domingo",
+        "alt": "Vice President Image",
+        "nombre1": "Marcos Quezada",
+        "cargo": "Vice President",
+        "cita": "''Being grateful honors you. It is important to give back to society a part of all that we have received from it. Gratitude is about knowing and demonstrating it.''", 
+        "detalle2": "Vice President of the Chamber of Industries of Santo Domingo",
         "correoTitulo": "Email:",
-        "correo": "edgnog@hotmail.com"
+        "correo": "gerencia@hotelgoldenvista.com.ec"
       }
     }
   },
   "miembros": {
     "cargo": {
-      "Vicepresidente": "Vice President",
+      "Founder": "Founder",
       "Director Comercial": "Commercial Director",
       "Director Industrial": "Industrial Director",
-      "Socio Colaborador": "Collaborating Partner",
+      "Chief Financial Officer": "Chief Financial Officer",
       "Coordinadora Ejecutiva": "Executive Coordinator"
     }
   },

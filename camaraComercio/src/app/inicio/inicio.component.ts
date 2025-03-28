@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { isPlatformBrowser } from '@angular/common';
 import { TranslocoModule } from '@jsverse/transloco';
 
+
 @Component({
   selector: 'app-inicio',
   imports: [RouterModule, CommonModule, TranslocoModule ],

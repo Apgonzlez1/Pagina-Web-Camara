@@ -13,7 +13,6 @@
   margin-bottom: 20px;
   text-align: center;
 }
-
 /* 📌 Tarjeta con sombra */
 .contact-card {
   background: white;
@@ -109,21 +108,12 @@
   gap: 30px;
 }
 
-/* Añadir un máximo para las columnas */
-.contact-grid .map-container,
-.contact-grid .form-container {
-  max-width: 100%;
-  height: 400px; /* Establece una altura consistente para ambos */
-}
-
 /* 🗺️ Mapa */
 .map-container {
-  height: 100%; /* Establece la altura al 100% para que ambas tarjetas tengan la misma altura */
+  height: 400px;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
 }
 
 /* 📝 Formulario */
@@ -132,9 +122,6 @@
   padding: 25px;
   border-radius: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  height: 100%; /* Asegura que el formulario ocupe toda la altura disponible */
 }
 
 .form-container h3 {
@@ -206,9 +193,7 @@
 /* 📱 Responsividad para dispositivos pequeños */
 @media (max-width: 768px) {
   .contact-grid {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+    grid-template-columns: 1fr;
   }
 
   .map-container {

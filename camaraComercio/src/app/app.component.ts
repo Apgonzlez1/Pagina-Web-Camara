@@ -4,7 +4,7 @@ import { NetworkingEventosComponent } from './networking-eventos/networking-even
 import { ServiciosComponent } from './servicios/servicios.component';
 import { BolsaEmpleoComponent } from './bolsa-empleo/bolsa-empleo.component';
 import { RouterOutlet } from '@angular/router';
-import { FooterComponent } from './footer/footer.component'; // <-- Importa el footer
+import { FooterComponent } from './inicio/footer/footer.component'; // <-- Importa el footer
 import { AfiliacionComponent } from './afiliacion/afiliacion.component';
 import { DirectorioComponent } from './directorio/directorio.component';
 import { ContactoComponent } from './contacto/contacto.component';

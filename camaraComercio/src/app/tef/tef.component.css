@@ -1,25 +1,20 @@
-/* 📌 Carrusel */
-.carousel img {
+/* Contenedor principal con fondo blanco y bordes redondeados */
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Carrusel */
+.carousel-item img {
+  filter: brightness(70%);
+  border-radius: 10px;
   width: 100%;
   height: 650px;
   object-fit: cover;
   object-position: center;
 }
-
-.benefitsCarousel {
-  margin-bottom: 2px;
-  margin-top: 20px;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  width: 5%;
-}
-
-.carousel-item {
-  position: relative;
-}
-
 .overlay {
   position: absolute;
   bottom: 20px;
@@ -39,28 +34,12 @@
 .overlay p {
   font-size: 16px;
 }
-
-/* 📌 Flechas del carrusel */
-.carousel-control-prev,
-.carousel-control-next {
-  z-index: 3;
-  filter: brightness(0.8);
+/* Estilos para títulos */
+h1, h2, h3 {
+  color: #ffffff;
 }
 
-/* 📌 Contenido */
-.tef-content {
-  padding: 60px 10px;
-  background: #ffffff;
-}
-
-/* 📌 Contenedor de dos columnas */
-.tef-layout {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 40px;
-}
-
+/* Tarjetas */
 /* 📌 Sección Izquierda (Texto) */
 .tef-text {
   width: 50%;
@@ -109,119 +88,6 @@
   transform: translateY(-5px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
-
-/* 📲 Botón flotante de WhatsApp */
-.whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
-  background: #25d366;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.whatsapp-button:hover {
-  background: #1ebe5d;
-}
-
-.whatsapp-button img {
-  width: 35px;
-  height: 35px;
-}
-
-/* 📱 RESPONSIVE */
-@media (max-width: 1024px) {
-  .tef-layout {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .tef-text,
-  .tef-grid {
-    width: 100%;
-  }
-
-  .tef-banner {
-    height: 60vh;
-  }
-}
-
-@media (max-width: 768px) {
-  .carousel-item img {
-    object-position: top center;
-    /* Prioriza la parte superior en móviles */
-  }
-
-  .carousel-control-prev,
-  .carousel-control-next {
-    width: 8%;
-  }
-
-  .overlay h1 {
-    font-size: 20px;
-  }
-
-  .overlay p {
-    font-size: 14px;
-  }
-
-  .tef-text h2 {
-    font-size: 2rem;
-  }
-
-  .tef-text p {
-    font-size: 1rem;
-  }
-
-  .tef-grid {
-    width: 100%;
-  }
-
-  .tef-card {
-    padding: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .tef-text h2 {
-    font-size: 1.8rem;
-  }
-
-  .tef-text p {
-    font-size: 0.9rem;
-  }
-
-  .tef-card {
-    padding: 10px;
-  }
-
-  .tef-card h3 {
-    font-size: 1.3rem;
-  }
-
-  .tef-card p {
-    font-size: 0.9rem;
-  }
-
-  .whatsapp-button {
-    width: 50px;
-    height: 50px;
-  }
-
-  .whatsapp-button img {
-    width: 25px;
-    height: 25px;
-  }
-}
-
 .float {
   float: left;
   margin-right: 15px;
@@ -259,20 +125,44 @@
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Aumenta la sombra al hacer hover */
 }
 
-/* Responsividad */
-@media (max-width: 768px) {
-  .tef {
-    max-width: 250px; /* Ajusta el tamaño máximo para pantallas más pequeñas */
-    margin-right: 2; /* Elimina el margen a la derecha en pantallas pequeñas */
-    margin-left: 0;
-    margin-bottom: 2px; /* Reduce el margen inferior */
-  }
+/* 📌 Contenedor de dos columnas */
+.tef-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
 }
 
-@media (max-width: 480px) {
-  .tef {
-    max-width: 200px; /* Reduce aún más el tamaño máximo en dispositivos muy pequeños */
-  }
+/* 📲 Botón flotante de WhatsApp */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.whatsapp-button:hover {
+  background: #1ebe5d;
+}
+
+.whatsapp-button img {
+  width: 35px;
+  height: 35px;
+}
+
+/* Asegurar que las imágenes dentro de las tarjetas no desborden */
+.tef-card img {
+  max-width: 100%;
+  border-radius: 5px;
 }
 
 .tef-button {
@@ -292,4 +182,109 @@
 .tef-button:hover {
   background-color: #0056b3;
 }
+/* Ajustes responsivos */
+@media (max-width: 1024px) {
+  .tef-layout {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
+  .tef-text,
+  .tef-grid {
+    width: 100%;
+  }
+
+  .tef-banner {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+      padding: 15px;
+  }
+  .tef-card {
+      padding: 10px;
+  }
+  .whatsapp-button {
+      bottom: 15px;
+      right: 15px;
+  }
+  .tef {
+    max-width: 250px; /* Ajusta el tamaño máximo para pantallas más pequeñas */
+    margin-right: 2; /* Elimina el margen a la derecha en pantallas pequeñas */
+    margin-left: 0;
+    margin-bottom: 2px; /* Reduce el margen inferior */
+  }
+  .carousel-item img {
+    object-position: top center;
+    /* Prioriza la parte superior en móviles */
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 8%;
+  }
+
+  .overlay h1 {
+    font-size: 20px;
+  }
+
+  .overlay p {
+    font-size: 14px;
+  }
+
+  .tef-text h2 {
+    font-size: 2rem;
+  }
+
+  .tef-text p {
+    font-size: 1rem;
+  }
+
+  .tef-grid {
+    width: 100%;
+  }
+
+  .tef-card {
+    padding: 15px;
+  }
+
+
+}
+@media (max-width: 480px) {
+  .tef {
+    max-width: 200px; /* Reduce aún más el tamaño máximo en dispositivos muy pequeños */
+  }
+  .tef-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .tef-text p {
+    font-size: 0.9rem;
+  }
+
+  .tef-card {
+    padding: 10px;
+  }
+
+  .tef-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .tef-card p {
+    font-size: 0.9rem;
+  }
+
+  .whatsapp-button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .whatsapp-button img {
+    width: 25px;
+    height: 25px;
+  }
+
+}

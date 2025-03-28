@@ -5,106 +5,91 @@
 
 <!-- Sección principal de la página -->
 <div class="employment-section">
-
-  <!-- Sección de logros -->
-  <div class="achievements">
-    <h2>🎯 {{ 'empleo.logros' | transloco }}</h2>
-    <div class="achievements-grid">
-      <div class="achievement-card">
-        <h2>200+</h2>
-        <p>{{ 'empleo.vacantes' | transloco }}</p>
-      </div>
-      <div class="achievement-card">
-        <h2>150+</h2>
-        <p>{{ 'empleo.empresas' | transloco }}</p>
-      </div>
-      <div class="achievement-card">
-        <h2>50+</h2>
-        <p>{{ 'empleo.contratados' | transloco }}</p>
-      </div>
-    </div>
-  </div>
-
-<!-- Llamado a la Acción -->
-<div class="container text-center my-5">
-  <h2>🚀{{ 'empleo.cambio' | transloco }}</h2>
-  <p>{{ 'empleo.Registro' | transloco }}</p>
-</div>
-
-  <!-- Sección informativa -->
-  <div class="info-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <img src="assets/congresos.jpg" alt="Personas buscando empleo" class="info-image">
+  <div class=" text-center ">
+    <!-- Sección de logros -->
+    <div class="achievements">
+      <h2>🎯 {{ 'empleo.logros' | transloco }}</h2>
+      <div class="achievements-grid">
+        <div class="achievement-card">
+          <h2>100+</h2>
+          <p>{{ 'empleo.vacantes' | transloco }}</p>
         </div>
-        <div class="col-md-6">
-          <h3>{{ 'empleo.ofrecemosTitulo' | transloco }}</h3>
-          <ul class="info-list">
-            <li>✅ {{ 'empleo.publicacionVacantes' | transloco }}</li>
-            <li>✅ {{ 'empleo.accesoExclusivo' | transloco }}</li>
-            <li>✅ {{ 'empleo.capacitacionEmpleabilidad' | transloco }}</li>
-            <li> 📩 <strong>{{ 'empleo.contacto' | transloco }}:</strong> <a href="mailto:empleo@industria.com">empleoindustria.com</a></li>
-            <button (click)="openForm()" class="btn-primary-banner">{{ 'empleo.abrirFormulario' | transloco }}</button>
-          </ul>
+        <div class="achievement-card">
+          <h2>70+</h2>
+          <p>{{ 'empleo.empresas' | transloco }}</p>
+        </div>
+        <div class="achievement-card">
+          <h2>30+</h2>
+          <p>{{ 'empleo.contratados' | transloco }}</p>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Formulario visible cuando showForm es true -->
-  <div class="form-container" *ngIf="showForm">
-    <h2>{{ 'empleo.formularioVacante' | transloco }}</h2>
+    <!-- Llamado a la Acción -->
+    <div class="info-section">
+      <h2 style="color: aliceblue;">🚀{{ 'empleo.cambio' | transloco }}</h2>
+      <p style="color: aliceblue;">{{ 'empleo.Registro' | transloco }}</p>
+      <div class="container ">
 
-    <form (submit)="enviarFormulario($event)" enctype="multipart/form-data">
-      <label for="nombre">{{ 'empleo.nombreInstitucion' | transloco }}</label>
-      <input type="text" id="nombre" name="nombre" required>
 
-      <div class="filter-options">
-        <label>
-          <input type="checkbox" name="Tiempo_Completo">{{ 'empleo.tiempoCompleto' | transloco }}
-        </label>
-        <label>
-          <input type="checkbox" name="Independiente">{{ 'empleo.independiente' | transloco }}
-        </label>
-        <label>
-          <input type="checkbox" name="Prácticas">{{ 'empleo.practicas' | transloco }}
-        </label>
-        <label>
-          <input type="checkbox" name="Medio_Tiempo">{{ 'empleo.medioTiempo' | transloco }}
-        </label>
-        <label>
-          <input type="checkbox" name="Temporal">{{ 'empleo.temporal' | transloco }}
-        </label>
+        <!-- Sección informativa -->
+        <div class="row">
+          <div class="col-md-6">
+            <img src="assets/congresos.jpg" alt="Personas buscando empleo" class="info-image">
+          </div>
+          <div class="col-md-6" style="text-align: left;">
+            <h3>{{ 'empleo.ofrecemosTitulo' | transloco }}</h3>
+            <ul class="info-list">
+              <li>✅ {{ 'empleo.publicacionVacantes' | transloco }}</li>
+              <li>✅ {{ 'empleo.accesoExclusivo' | transloco }}</li>
+              <li>✅ {{ 'empleo.capacitacionEmpleabilidad' | transloco }}</li>
+              <li>✅ Prácticas Académicas: Oportunidades para estudiantes.</li>
+              <li> 📩 <strong>{{ 'empleo.contacto' | transloco }}:</strong> <a
+                  href="mailto:coordinacionejecutiva@industriassdt.org">coordinacionejecutiva&#64;industriassdt.org</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr>
+        <br>
+        <!-- vacantes.component.html -->
+        <div class="container">
+          <div class="vacantes-section">
+            <h2>📌 Vacantes Disponibles</h2>
+
+            <!-- Buscador y filtros -->
+            <div class="vacantes-filters">
+              <input type="text" [(ngModel)]="searchText" placeholder="Buscar vacante..."
+                class="form-control search-input" />
+
+              <div class="tipo-filtro">
+                <label><input type="checkbox" [(ngModel)]="isFullTime" /> Tiempo completo</label>
+                <label><input type="checkbox" [(ngModel)]="isPartTime" /> Medio Tiempo</label>
+                <label><input type="checkbox" [(ngModel)]="isInternship" /> Prácticas</label>
+              </div>
+            </div>
+
+            <div class="vacantes-container">
+              <!-- Vacante filtrada -->
+              <div *ngFor="let vacante of filteredVacantes" class="vacante-card">
+                <img src="assets/golden_Vista.png" alt="Oferta de trabajo" class="vacante-image">
+                <div class="vacante-info">
+                  <h3>{{ vacante.titulo }}</h3>
+                  <p><strong>📍 Ubicación:</strong> {{ vacante.ubicacion }}</p>
+                  <p><strong>🕒 Tipo:</strong> {{ vacante.tipo }}</p>
+                  <button class="apply-button">Aplicar ahora</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <label for="vacante">{{ 'empleo.tipoVacante' | transloco }}</label>
-      <select id="vacante" name="vacante" required>
-        <option value="Empleo">{{ 'empleo.bolsaEmpleo' | transloco }}</option>
-        <option value="Practicas_Profesionales">{{ 'empleo.bolsaPracticas' | transloco }}</option>
-        <option value="Vinculacion_Social">{{ 'empleo.bolsaVinculacion' | transloco }}</option>
-        <option value="Proyectos">{{ 'empleo.bolsaProyectos' | transloco }}</option>
-      </select>
+    </div>
 
-      <label for="area">{{ 'empleo.areaInteres' | transloco }}</label>
-      <input type="text" id="area" name="area" required>
-
-      <div class="cv-message">
-        <p>{{ 'empleo.envioCV' | transloco }}</p>
-        <p><strong>{{ 'empleo.correo' | transloco }}:</strong>coordinacionejecutiva&#64;industriassdt.org <br>Presidencia&#64;industriassdt.org</p>
-      </div>
-
-      <button type="submit">{{ 'empleo.enviar' | transloco }}</button>
-    </form>
-
-    <p *ngIf="successMessage" class="success-message">{{ successMessage }}</p>
-
-    <button (click)="closeForm()" class="btn-primary-banner">{{ 'empleo.cerrar' | transloco }}</button>
+    <!-- 📲 Botón flotante de WhatsApp -->
+    <div class="whatsapp-button" (click)="openWhatsApp()">
+      <img src="assets/icono.png" alt="WhatsApp">
+    </div>
   </div>
-
-  <!-- 📲 Botón flotante de WhatsApp -->
-  <div class="whatsapp-button" (click)="openWhatsApp()">
-    <img src="assets/icono.png" alt="WhatsApp">
-  </div>
-
-</div>

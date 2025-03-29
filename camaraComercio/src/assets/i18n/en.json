@@ -42,7 +42,7 @@
     "features": {
       "presidenta": {
         "alt": "President Image",
-        "nombre1": "Marcela García",
+        "nombre": "Marcela García",
         "cargo": "President",
         "cita": "''All the people I know are superior to me in some way, and in that sense, I learn from them. I do not stay long in a place where I don't learn or grow a little more than the day before.''",
         "detalle1": "President of the Chamber of Industries of Santo Domingo",
@@ -52,7 +52,7 @@
       },
       "fundador": {
         "alt": "Vice President Image",
-        "nombre1": "Marcos Quezada",
+        "nombre": "Marcos Quezada",
         "cargo": "Vice President",
         "cita": "''Being grateful honors you. It is important to give back to society a part of all that we have received from it. Gratitude is about knowing and demonstrating it.''", 
         "detalle2": "Vice President of the Chamber of Industries of Santo Domingo",

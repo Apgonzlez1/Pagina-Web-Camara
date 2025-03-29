@@ -403,6 +403,12 @@
     font-weight: bold;
     color: #ffffff;
   }
+  .featured-title2 {
+    margin-top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #020202d2;
+  }
   
   .featured-thumbnail {
     color: white;

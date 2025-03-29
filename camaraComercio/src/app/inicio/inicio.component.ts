@@ -131,13 +131,13 @@ export class InicioComponent implements OnInit {
         nombre: "Francisco",
         cargo: "Director Comercial",
         correo: "aldeanf@gmail.com",
-        imagen: ""
+        imagen: "assets/Edgar_Nogales.jpg"
       },
       {
         nombre: "Jorge",
         cargo: "Director Industrial",
         correo: "Jivb2020@hotmail.com",
-        imagen: ""
+        imagen: "assets/Edgar_Nogales.jpg"
       },
       
       {
@@ -145,14 +145,14 @@ export class InicioComponent implements OnInit {
         cargo: "Director Financiero",
 
         correo: "royccc@hotmail.com",
-        imagen: ""
+        imagen: "assets/Edgar_Nogales.jpg"
       },
       {
         nombre: "María José",
         cargo: "Coordinadora Ejecutiva",
        
         correo: "coordinacionejecutiva@industriassdt.org",
-        imagen: " "
+        imagen: "assets/Edgar_Nogales.jpg "
       }
     ]
     

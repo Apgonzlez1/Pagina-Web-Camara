@@ -131,7 +131,7 @@ export class InicioComponent implements OnInit {
         nombre: "Francisco",
         cargo: "Director Comercial",
         correo: "aldeanf@gmail.com",
-        imagen: "assets/Edgar_Nogales.jpg"
+        imagen: "assets/Francisco.jpg"
       },
       {
         nombre: "Jorge",
@@ -143,14 +143,18 @@ export class InicioComponent implements OnInit {
       {
         nombre: "Roy",
         cargo: "Director Financiero",
-
         correo: "royccc@hotmail.com",
         imagen: "assets/Edgar_Nogales.jpg"
       },
       {
+        nombre: "Sandra",
+        cargo: "Directora Jurídica",
+        correo: "legalservicio2014@hotmail.com",
+        imagen: "assets/Edgar_Nogales.jpg "
+      },
+      {
         nombre: "María José",
         cargo: "Coordinadora Ejecutiva",
-       
         correo: "coordinacionejecutiva@industriassdt.org",
         imagen: "assets/Edgar_Nogales.jpg "
       }

@@ -23,9 +23,9 @@
     "titulo": "📢 News"
   },
   "contador": {
-    "meses": "months",
-    "dias": "days",
-    "horas": "hours"
+    "meses": "Months",
+    "dias": "Days",
+    "horas": "Hours"
   },
   "quienesSomos": {
     "titulo": "About Us",

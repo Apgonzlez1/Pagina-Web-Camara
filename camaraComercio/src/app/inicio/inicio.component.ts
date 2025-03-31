@@ -24,10 +24,17 @@ export class InicioComponent implements OnInit {
   tbcDays: string = '00';
   tbcHours: string = '00';
 
+
+
+
   showInfo = false;
   showVicepresidenteInfo: boolean = false;
   titulos: string[] = [];
   titulos1: string[] = [];
+
+  showTef: boolean = true;
+  showTbc: boolean = true;
+
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object, private translocoService: TranslocoService) { }
 
@@ -41,7 +48,8 @@ export class InicioComponent implements OnInit {
           this.tefMonths = months.toString().padStart(2, '0');
           this.tefDays = days.toString().padStart(2, '0');
           this.tefHours = hours.toString().padStart(2, '0');
-        }
+        },
+        'TEF'
       );
 
       // TBC2025
@@ -51,36 +59,44 @@ export class InicioComponent implements OnInit {
           this.tbcMonths = months.toString().padStart(2, '0');
           this.tbcDays = days.toString().padStart(2, '0');
           this.tbcHours = hours.toString().padStart(2, '0');
-        }
+        },
+        'TBC'
       );
     }
   }
 
   // Recibe la fecha objetivo y una función callback para asignar los valores
-  startCountdown(targetDate: number, callback: (m: number, d: number, h: number) => void): void {
+  startCountdown(targetDate: number, callback: (m: number, d: number, h: number) => void, eventType: string): void {
     const interval = setInterval(() => {
       const now = Date.now();
       let distance = targetDate - now;
-
+  
       if (distance < 0) {
-        // Si el evento ya empezó, paramos el contador
+        // Oculta el evento si ya ha pasado la fecha
         callback(0, 0, 0);
         clearInterval(interval);
+  
+        if (eventType === 'TEF') {
+          this.showTef = false;
+        } else if (eventType === 'TBC') {
+          this.showTbc = false;
+        }
         return;
       }
-
+  
       // Cálculo de meses, días y horas
       const months = Math.floor(distance / (1000 * 60 * 60 * 24 * 30));
       distance -= months * (1000 * 60 * 60 * 24 * 30);
-
+  
       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
       distance -= days * (1000 * 60 * 60 * 24);
-
+  
       const hours = Math.floor(distance / (1000 * 60 * 60));
-
+  
       // Actualiza las variables del contador
       callback(months, days, hours);
     }, 1000);
+  
   }
 
   openForm(url: string): void {

@@ -4,7 +4,7 @@
     "eventoTef": {
       "titulo": "Tsáchila Economic Fórum IV Edition",
       "link": "#TEF2025",
-      "descripcion": "¡No te pierdas esta oportunidad única de crecimiento y colaboración! ¡Te esperamos!",
+      "descripcion": "El punto de encuentro para el desarrollo empresarial.",
       "cargandoContador": "Cargando contador...",
       "inscribete": "Inscríbete"
     },
@@ -43,7 +43,11 @@
       "presidenta": {
         "alt": "Imagen de la Presidente",
         "nombre": "Marcela García Sánchez",
+<<<<<<< HEAD
         "cargo": "Presidente Ejecutiva",
+=======
+        "cargo": "Presidente Ejecutivo",
+>>>>>>> a5e18f3ead73be24782cc53679417cc95fbee276
         "cita": "''Todas las personas que conozco son superiores a mí en algún sentido, y en ese sentido, aprendo de ellas. No me quedo mucho tiempo en un sitio donde no aprendo o no crezco un poco más que el día anterior.''",
         "detalle1": "Presidente Ejecutiva de la Cámara de Industrias de Santo Domingo",
         "detalle3": "Docente Universitaria",
@@ -59,7 +63,6 @@
       "fundador": {
         "alt": "Imagen del Vice",
         "nombre": "Marcos Quezada Cabrera",
-        
         "cargo": "Vicepresidente",
         "cita": "''Ser agradecido te honra. Es importante devolver a la sociedad una parte de lo mucho que hemos recibido de ella. Gratitud de saber y saberlo demostrar.''",  
         "detalle2": "Vicepresidente de la Cámara de Industrias de Santo Domingo",

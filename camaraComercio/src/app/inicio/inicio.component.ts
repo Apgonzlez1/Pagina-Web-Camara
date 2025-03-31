@@ -142,7 +142,7 @@ export class InicioComponent implements OnInit {
       },
 
       {
-        nombre: "Roy Cisneros Megía",
+        nombre: "Roy Cisneros Mejía",
         cargo: "Director Financiero",
         correo: "royccc@hotmail.com",
         imagen: "assets/Roy.jpeg"

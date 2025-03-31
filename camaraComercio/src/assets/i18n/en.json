@@ -49,15 +49,14 @@
         "detalle3": "University Lecturer",
         "correoTitulo": "Email:",
         "correo": "Presidencia@industriassdt.org",
+        "ubicacion_titulo": "Location:",
+        "titulo_titulos": "Titles:",
         "ubicacion": "Santo Domingo, Ecuador",
         "ver_mas": "See more",
         "ver_menos": "See less",
         "titulos": [
           "Master's Degree in Foreign Trade Management and Business Internationalization",
           "Engineer in Foreign Trade, Integration, and Customs"
-        ],
-        "titulos1": [
-          "Telecommunications Engineer with a specialization in Business Management in Telecommunications"
         ]
       },
       "fundador": {
@@ -68,18 +67,22 @@
         "detalle2": "Vice President of the Chamber of Industries of Santo Domingo",
         "correoTitulo": "Email:",
         "correo": "gerencia@hotelgoldenvista.com.ec",
+        "ubicacion_titulo": "Location:",
+        "titulo_titulos": "Titles:",
+        "ubicacion": "Santo Domingo, Ecuador",
         "ver_mas": "See more",
-        "ver_menos": "See less"
+        "ver_menos": "See less",
+        "titulos1": "Telecommunications Engineer with a major in Telecommunications Business Management"
       }
     }
   },
   "miembros": {
     "cargo": {
-      "Founder": "Founder",
+      "Fundador": "Founder",
       "Director Comercial": "Commercial Director",
       "Director Industrial": "Industrial Director",
-      "Chief Financial Officer": "Chief Financial Officer",
-      "Legal Director": "Legal Director",
+      "Director Financiero": "Financial Director",
+      "Directora Jurídica": "Legal Director",
       "Coordinadora Ejecutiva": "Executive Coordinator"
     }
   },

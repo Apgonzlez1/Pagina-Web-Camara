@@ -109,7 +109,7 @@
 
 
 <section class="quienes-somos">
-  
+
   <div class="container">
     <h1 class="titulo-seccion">{{ 'quienesSomos.titulo' | transloco }}</h1>
 
@@ -159,12 +159,13 @@
 
             <!-- Botón para mostrar información adicional -->
             <button class="btn btn-primary" (click)="toggleInfo()">
-              {{ (showInfo ? 'quienesSomos.features.presidenta.ver_menos' : 'quienesSomos.features.presidenta.ver_mas') | transloco }}
+              {{ 'quienesSomos.features.presidenta.ver_mas' | transloco }}>>>>>>> 3e47394 (Cambios F)
             </button>
-            
+
             <!-- Contenido oculto -->
             <div *ngIf="showInfo" style="margin-top: 10px;">
-              <p><strong>{{ 'quienesSomos.features.presidenta.ubicacion_titulo' | transloco }}</strong> {{ 'quienesSomos.features.presidenta.ubicacion' | transloco }}</p>
+              <p><strong>{{ 'quienesSomos.features.presidenta.ubicacion_titulo' | transloco }}</strong> {{
+                'quienesSomos.features.presidenta.ubicacion' | transloco }}</p>
               <p><strong>{{ 'quienesSomos.features.presidenta.titulo_titulos' | transloco }}</strong></p>
               <ul>
                 <li *ngFor="let titulo of titulos">{{ titulo }}</li>
@@ -200,13 +201,15 @@
             </p>
             <!-- Botón para mostrar información adicional -->
             <button class="btn btn-primary" (click)="toggleVicepresidenteInfo()">
-              {{ (showVicepresidenteInfo ? 'quienesSomos.features.fundador.ver_menos' : 'quienesSomos.features.fundador.ver_mas') | transloco }}
+              {{ 'quienesSomos.features.fundador.ver_mas' | transloco }}
+
             </button>
-            
+
 
             <!-- Contenido oculto -->
             <div *ngIf="showVicepresidenteInfo" style="margin-top: 10px;">
-              <p><strong>{{ 'quienesSomos.features.fundador.ubicacion_titulo' | transloco }}</strong> {{ 'quienesSomos.features.fundador.ubicacion' | transloco }}</p>
+              <p><strong>{{ 'quienesSomos.features.fundador.ubicacion_titulo' | transloco }}</strong> {{
+                'quienesSomos.features.fundador.ubicacion' | transloco }}</p>
               <p><strong>{{ 'quienesSomos.features.fundador.titulo_titulos' | transloco }}</strong></p>
               <ul>
                 <li>

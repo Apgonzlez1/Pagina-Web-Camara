@@ -184,3 +184,14 @@ h1, h2, h3 {
     max-width: 200px; /* Reduce aún más el tamaño máximo en dispositivos muy pequeños */
   }
 }
+.tbc-text-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tbc-text-content p {
+  text-align: justify;
+  max-width: 550px;
+  margin-bottom: 20px;
+}

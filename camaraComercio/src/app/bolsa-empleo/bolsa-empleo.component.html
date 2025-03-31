@@ -74,14 +74,18 @@
             <div class="vacantes-container">
               <!-- Vacante filtrada -->
               <div *ngFor="let vacante of filteredVacantes" class="vacante-card">
-                <img src="assets/golden_Vista.png" alt="Oferta de trabajo" class="vacante-image">
+                <img [src]="vacante.imagen" alt="Oferta de trabajo" class="vacante-image">
                 <div class="vacante-info">
                   <h3>{{ vacante.titulo }}</h3>
                   <p><strong>📍 {{ 'empleo.ubicacion' | transloco }}:</strong> {{ vacante.ubicacion }}</p>
                   <p><strong>🕒 {{ 'empleo.tipo' | transloco }}:</strong> {{ vacante.tipo }}</p>
-                  <button class="btn btn-primary">{{ 'empleo.aplicar' | transloco }}</button>
+                  <p *ngIf="vacante.requisitos"><strong>✅ Requisito:</strong> {{ vacante.requisitos }}</p>
+                  <a class="btn btn-primary" [href]="'mailto:' + vacante.contacto">
+                    {{ 'empleo.aplicar' | transloco }}
+                  </a>
                 </div>
               </div>
+              
             </div>
           </div>
         </div>

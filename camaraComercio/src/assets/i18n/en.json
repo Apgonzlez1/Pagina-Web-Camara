@@ -48,13 +48,19 @@
         "detalle1": "President of the Chamber of Industries of Santo Domingo",
         "detalle3": "University Lecturer",
         "correoTitulo": "Email:",
-        "correo": "Presidencia@industriassdt.org"
+        "correo": "Presidencia@industriassdt.org",
+        "ubicacion": "Santo Domingo, Ecuador",
+        "titulos": [
+          "Master's Degree in Foreign Trade Management and Business Internationalization",
+          "Engineer in Foreign Trade, Integration, and Customs"
+        ],
+        "titulos1": ["Telecommunications Engineer with a specialization in Business Management in Telecommunications"]
       },
       "fundador": {
         "alt": "Vice President Image",
         "nombre": "Marcos Quezada",
         "cargo": "Vice President",
-        "cita": "''Being grateful honors you. It is important to give back to society a part of all that we have received from it. Gratitude is about knowing and demonstrating it.''", 
+        "cita": "''Being grateful honors you. It is important to give back to society a part of all that we have received from it. Gratitude is about knowing and demonstrating it.''",
         "detalle2": "Vice President of the Chamber of Industries of Santo Domingo",
         "correoTitulo": "Email:",
         "correo": "gerencia@hotelgoldenvista.com.ec"
@@ -121,13 +127,9 @@
     "areaInteres": "Area of interest",
     "envioCV": "Additionally, please send your updated CV to",
     "correo": "Email",
-    "enviar": "Submit",
-    "cerrar": "Close",
     "cambio": "Be part of the change.",
     "Registro": "Register today and join the network of entrepreneurs and leaders transforming Ecuador.",
     "vacantesDisponibles": "Available Job Vacancies",
-    "cargo": "Position",
-    "lugar": "Location",
     "horario": "Schedule",
     "postularse": "Apply",
     "filtrarVacantes": "Filter Vacancies",
@@ -135,7 +137,12 @@
     "filtrarHorario": "Filter by Schedule",
     "oficinaCentral": "Central Office",
     "sedePrincipal": "Headquarters",
-    "recursosHumanos": "Human Resources"
+    "recursosHumanos": "Human Resources",
+    "practicas1": "Academic Internships: Opportunities for students.",
+    "buscar": "Search for a job...",
+    "ubicacion": "Location",
+    "tipo": "Type",
+    "aplicar": "Apply now"
   },
   "networking": {
     "titulo": "Networking and Events",

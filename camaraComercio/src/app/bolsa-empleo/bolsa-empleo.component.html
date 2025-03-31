@@ -43,7 +43,7 @@
               <li>✅ {{ 'empleo.publicacionVacantes' | transloco }}</li>
               <li>✅ {{ 'empleo.accesoExclusivo' | transloco }}</li>
               <li>✅ {{ 'empleo.capacitacionEmpleabilidad' | transloco }}</li>
-              <li>✅ Prácticas Académicas: Oportunidades para estudiantes.</li>
+              <li>✅ {{ 'empleo.practicas1' | transloco }}</li>
               <li> 📩 <strong>{{ 'empleo.contacto' | transloco }}:</strong> <a
                   href="mailto:coordinacionejecutiva@industriassdt.org">coordinacionejecutiva&#64;industriassdt.org</a>
               </li>
@@ -56,17 +56,18 @@
         <!-- vacantes.component.html -->
         <div class="container">
           <div class="vacantes-section">
-            <h2>📌 Vacantes Disponibles</h2>
+            <h2>📌 {{ 'empleo.vacantesDisponibles' | transloco }}</h2>
 
             <!-- Buscador y filtros -->
             <div class="vacantes-filters">
-              <input type="text" [(ngModel)]="searchText" placeholder="Buscar vacante..."
+              <input type="text" [(ngModel)]="searchText" [placeholder]="'empleo.buscar' | transloco"
                 class="form-control search-input" />
 
               <div class="tipo-filtro">
-                <label><input type="checkbox" [(ngModel)]="isFullTime" /> Tiempo completo</label>
-                <label><input type="checkbox" [(ngModel)]="isPartTime" /> Medio Tiempo</label>
-                <label><input type="checkbox" [(ngModel)]="isInternship" /> Prácticas</label>
+                <label><input type="checkbox" [(ngModel)]="isFullTime" /> {{ 'empleo.tiempoCompleto' | transloco
+                  }}</label>
+                <label><input type="checkbox" [(ngModel)]="isPartTime" /> {{ 'empleo.medioTiempo' | transloco }}</label>
+                <label><input type="checkbox" [(ngModel)]="isInternship" /> {{ 'empleo.practicas' | transloco }}</label>
               </div>
             </div>
 
@@ -76,9 +77,9 @@
                 <img src="assets/golden_Vista.png" alt="Oferta de trabajo" class="vacante-image">
                 <div class="vacante-info">
                   <h3>{{ vacante.titulo }}</h3>
-                  <p><strong>📍 Ubicación:</strong> {{ vacante.ubicacion }}</p>
-                  <p><strong>🕒 Tipo:</strong> {{ vacante.tipo }}</p>
-                  <button class="apply-button">Aplicar ahora</button>
+                  <p><strong>📍 {{ 'empleo.ubicacion' | transloco }}:</strong> {{ vacante.ubicacion }}</p>
+                  <p><strong>🕒 {{ 'empleo.tipo' | transloco }}:</strong> {{ vacante.tipo }}</p>
+                  <button class="btn btn-primary">{{ 'empleo.aplicar' | transloco }}</button>
                 </div>
               </div>
             </div>

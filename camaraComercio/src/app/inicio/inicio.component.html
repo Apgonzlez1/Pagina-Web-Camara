@@ -4,67 +4,67 @@
 <section class="event-banner">
   <h1 class="titulo-general">{{ 'inicio.proximosEventos' | transloco }}</h1>
   <div class="banner-content grid-layout">
-<!-- Evento TEF2025 -->
-<div class="event-column">
-  <h2 class="titulo">
-    {{ 'inicio.eventoTef.titulo' | transloco }}
-    <a [routerLink]="['/tef']">{{ 'inicio.eventoTef.link' | transloco }}</a>
-  </h2>
-  <p>{{ 'inicio.eventoTef.descripcion' | transloco }}</p>
+    <!-- Evento TEF2025 -->
+    <div class="event-column">
+      <h2 class="titulo">
+        {{ 'inicio.eventoTef.titulo' | transloco }}
+        <a [routerLink]="['/tef']">{{ 'inicio.eventoTef.link' | transloco }}</a>
+      </h2>
+      <p>{{ 'inicio.eventoTef.descripcion' | transloco }}</p>
 
-  <!-- Contenedor del contador -->
-  <div class="countdown-container">
-    <div class="countdown-item">
-      <span class="countdown-number">{{ tefMonths }}</span>
-      <span class="countdown-label">{{ 'contador.meses' | transloco }}</span>
+      <!-- Contenedor del contador -->
+      <div class="countdown-container">
+        <div class="countdown-item">
+          <span class="countdown-number">{{ tefMonths }}</span>
+          <span class="countdown-label">{{ 'contador.meses' | transloco }}</span>
+        </div>
+        <strong>:</strong>
+        <div class="countdown-item">
+          <span class="countdown-number">{{ tefDays }}</span>
+          <span class="countdown-label">{{ 'contador.dias' | transloco }}</span>
+        </div>
+        <strong>:</strong>
+        <div class="countdown-item">
+          <span class="countdown-number">{{ tefHours }}</span>
+          <span class="countdown-label">{{ 'contador.horas' | transloco }}</span>
+        </div>
+      </div><br>
+      <button (click)="openForm('https://docs.google.com/forms/d/1G87IGCYOGStTYYIdzijZiaXJxoAXpd4iMXhv9XqCMsI/edit')">
+        {{ 'inicio.eventoTef.inscribete' | transloco }}
+      </button>
     </div>
-    <strong>:</strong>
-    <div class="countdown-item">
-      <span class="countdown-number">{{ tefDays }}</span>
-      <span class="countdown-label">{{ 'contador.dias' | transloco }}</span>
-    </div>
-    <strong>:</strong>
-    <div class="countdown-item">
-      <span class="countdown-number">{{ tefHours }}</span>
-      <span class="countdown-label">{{ 'contador.horas' | transloco }}</span>
-    </div>
-  </div><br>
-  <button (click)="openForm('https://docs.google.com/forms/d/1G87IGCYOGStTYYIdzijZiaXJxoAXpd4iMXhv9XqCMsI/edit')">
-    {{ 'inicio.eventoTef.inscribete' | transloco }}
-  </button>
-</div>
-    
-  <!-- Evento TBC2025 -->
-<div class="event-column">
-  <h2 class="titulo">
-    {{ 'inicio.eventoTbc.titulo' | transloco }}
-    <a [routerLink]="['/tbc']">{{ 'inicio.eventoTbc.link' | transloco }}</a>
-  </h2>
-  <p>{{ 'inicio.eventoTbc.descripcion' | transloco }}</p>
 
-  <!-- Contenedor del contador para TBC2025 -->
-  <div class="countdown-container">
-    <div class="countdown-item">
-      <span class="countdown-number">{{ tbcMonths }}</span>
-      <span class="countdown-label">{{ 'contador.meses' | transloco }}</span>
-    </div>
-    <strong>:</strong>
-    <div class="countdown-item">
-      <span class="countdown-number">{{ tbcDays }}</span>
-      <span class="countdown-label">{{ 'contador.dias' | transloco }}</span>
-    </div>
-    <strong>:</strong>
-    <div class="countdown-item">
-      <span class="countdown-number">{{ tbcHours }}</span>
-      <span class="countdown-label">{{ 'contador.horas' | transloco }}</span>
-    </div>
-  </div><br>
+    <!-- Evento TBC2025 -->
+    <div class="event-column">
+      <h2 class="titulo">
+        {{ 'inicio.eventoTbc.titulo' | transloco }}
+        <a [routerLink]="['/tbc']">{{ 'inicio.eventoTbc.link' | transloco }}</a>
+      </h2>
+      <p>{{ 'inicio.eventoTbc.descripcion' | transloco }}</p>
 
-  <button (click)="openForm('https://docs.google.com/forms/d/1G87IGCYOGStTYYIdzijZiaXJxoAXpd4iMXhv9XqCMsI/edit')">
-    {{ 'inicio.eventoTbc.inscribete' | transloco }}
-  </button>
-</div>
-</div>
+      <!-- Contenedor del contador para TBC2025 -->
+      <div class="countdown-container">
+        <div class="countdown-item">
+          <span class="countdown-number">{{ tbcMonths }}</span>
+          <span class="countdown-label">{{ 'contador.meses' | transloco }}</span>
+        </div>
+        <strong>:</strong>
+        <div class="countdown-item">
+          <span class="countdown-number">{{ tbcDays }}</span>
+          <span class="countdown-label">{{ 'contador.dias' | transloco }}</span>
+        </div>
+        <strong>:</strong>
+        <div class="countdown-item">
+          <span class="countdown-number">{{ tbcHours }}</span>
+          <span class="countdown-label">{{ 'contador.horas' | transloco }}</span>
+        </div>
+      </div><br>
+
+      <button (click)="openForm('https://docs.google.com/forms/d/1G87IGCYOGStTYYIdzijZiaXJxoAXpd4iMXhv9XqCMsI/edit')">
+        {{ 'inicio.eventoTbc.inscribete' | transloco }}
+      </button>
+    </div>
+  </div>
 </section>
 
 <section class="main-banner"
@@ -76,10 +76,11 @@
 
 
 <section class="quienes-somos">
+  
   <div class="container">
     <h1 class="titulo-seccion">{{ 'quienesSomos.titulo' | transloco }}</h1>
 
-    <div class="info-grid">
+    <div class="info-grid" style="margin-left: 60px;">
       <div class="info-card">
         <h2>{{ 'quienesSomos.historiaTitulo' | transloco }}</h2>
         <p class="contenido-card">{{ 'quienesSomos.historia' | transloco }}</p>
@@ -108,25 +109,39 @@
             </div>
           </div>
           <div class="col-md-8">
-            <h2 class="featured-title2" style="text-align: center;">
+            <h2 class="featured-title2 text-center">
               {{ 'quienesSomos.features.presidenta.nombre' | transloco }}
             </h2>
-            <h3 style="text-align: center;">
+            <h3 class="text-center">
               <strong>{{ 'quienesSomos.features.presidenta.cargo' | transloco }}</strong>
             </h3>
             <p>
               <em>{{ 'quienesSomos.features.presidenta.cita' | transloco }}</em>
             </p>
             <p><strong>{{ 'quienesSomos.features.presidenta.detalle1' | transloco }}</strong></p>
-            <!--<p><strong>{{ 'quienesSomos.features.presidenta.detalle2' | transloco }}</strong></p>-->
-            <p><strong>{{ 'quienesSomos.features.presidenta.detalle3' | transloco }}</strong></p>
             <p>
               <strong>{{ 'quienesSomos.features.presidenta.correoTitulo' | transloco }}</strong>
               {{ 'quienesSomos.features.presidenta.correo' | transloco }}
             </p>
+
+            <!-- Botón para mostrar información adicional -->
+            <button class="btn btn-primary" (click)="toggleInfo()">
+              {{ showInfo ? 'Ver menos' : 'Ver más' | transloco }}
+            </button>
+
+            <!-- Contenido oculto -->
+            <div *ngIf="showInfo" style="margin-top: 10px;">
+              <p><strong>{{ 'Ubicación:' | transloco }}</strong> {{ 'quienesSomos.features.presidenta.ubicacion' |
+                transloco }}</p>
+              <p><strong>{{ 'Títulos:' | transloco }}</strong></p>
+              <ul>
+                <li *ngFor="let titulo of titulos">{{ titulo }}</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
+
 
       <!-- Tarjeta destacada: Socio Fundador -->
       <div class="featured-event">
@@ -146,12 +161,29 @@
             <p>
               <em>{{ 'quienesSomos.features.fundador.cita' | transloco }}</em>
             </p>
-           
+
             <p><strong>{{ 'quienesSomos.features.fundador.detalle2' | transloco }}</strong></p>
             <p>
               <strong>{{ 'quienesSomos.features.fundador.correoTitulo' | transloco }}</strong>
               {{ 'quienesSomos.features.fundador.correo' | transloco }}
             </p>
+            <!-- Botón para mostrar información adicional -->
+            <button class="btn btn-primary" (click)="toggleVicepresidenteInfo()">
+              {{ showVicepresidenteInfo ? 'Ver menos' : 'Ver más' | transloco }}
+            </button>
+
+            <!-- Contenido oculto -->
+            <div *ngIf="showVicepresidenteInfo" style="margin-top: 10px;">
+              <p><strong>{{ 'Ubicación:' | transloco }}</strong> {{ 'quienesSomos.features.presidenta.ubicacion' |
+                transloco }}</p>
+              <p><strong>{{ 'Títulos:' | transloco }}</strong></p>
+              <ul>
+                <li>
+                  <p>{{ 'quienesSomos.features.presidenta.titulos1' |
+                    transloco }}</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -174,7 +206,7 @@
             <h3>{{ miembro.nombre }}</h3>
             <h4>{{ ('miembros.cargo.' + miembro.cargo) | transloco }}</h4>
             <p><strong>Correo:</strong> <a [href]="'mailto:' + miembro.correo">{{ miembro.correo }}</a></p>
-          </div>          
+          </div>
         </div>
       </div>
     </div>

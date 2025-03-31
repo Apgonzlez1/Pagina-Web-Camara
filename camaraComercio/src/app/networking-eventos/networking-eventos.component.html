@@ -1,24 +1,25 @@
 <section class="networking-section">
-  
+
   <div class="container">
+
     <!-- Tarjeta destacada -->
-    <div class="featured-event">
+    <div class="featured-event container">
       <div class="row align-items-center">
         <!-- 📌 Sección de Texto -->
-        <div class="col-lg-4 text-center text-lg-start">
-          <h2 class="featured-title">{{ 'networking.titulo' | transloco }}</h2>
+        <div class="col-12 col-lg-4 text-center text-lg-start mb-4 mb-lg-0 ">
+          <h2 style="text-align: center;" class="featured-title">{{ 'networking.titulo' | transloco }}</h2>
           <hr class="custom-divider">
-          <p>
+          <p class="text-muted">
             {{ 'networking.descripcion' | transloco }}
           </p>
         </div>
 
         <!-- 📌 Sección de Eventos -->
-        <div class="col-lg-8 d-flex flex-column align-items-center">
+        <div class="col-12 col-lg-8 d-flex flex-column align-items-center">
           <h2 class="text-center featured-title">{{ 'networking.eventosPrincipales' | transloco }}</h2>
           <br>
           <div class="row g-4">
-            <div class="col-md-6">
+            <div class="col-12 col-sm-6 d-flex justify-content-center">
               <div class="card event-card">
                 <div class="image-container">
                   <img src="assets/logo Tsachila Economic.jpg" class="card-img-top" alt="Logo TEF">
@@ -29,7 +30,7 @@
               </div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-12 col-sm-6 d-flex justify-content-center ">
               <div class="card event-card">
                 <div class="image-container">
                   <img src="assets/LOGO_TSÁCHILA Business.jpg" class="card-img-top" alt="Logo TBC">
@@ -46,7 +47,7 @@
 
     <!-- Tarjetas de eventos -->
     <div class="row mt-4">
-      <h2 class="featured-title" style="text-align: center;">{{ 'networking.eventos' | transloco }}</h2>
+      <h2 class="mb-4" style="text-align: center;">{{ 'networking.eventos' | transloco }}</h2>
       <div class="col-md-4 d-flex">
         <div class="event-card flex-grow-1">
           <div class="image-container">
@@ -58,7 +59,7 @@
           </p>
         </div>
       </div>
-      <div class="col-md-4 d-flex">
+      <div class="col-md-4 d-flex mt-2">
         <div class="event-card flex-grow-1">
           <div class="image-container">
             <img src="assets/evento2.jpg" alt="Foros y Congresos" class="event-image">
@@ -69,7 +70,7 @@
           </p>
         </div>
       </div>
-      <div class="col-md-4 d-flex">
+      <div class="col-md-4 d-flex mt-2">
         <div class="event-card flex-grow-1">
           <div class="image-container">
             <img src="assets/evento3.jpg" alt="Visitas Industriales" class="event-image">
@@ -81,15 +82,13 @@
         </div>
       </div>
     </div>
-
     <!-- Sección de contenido tipo blog -->
     <div class="row mt-5">
       <div class="col-md-9">
         <div class="buscador text-center my-4">
           <div class="directory-header">
-            <h2 class="featured-title">🌐 {{ 'networking.proximosEventos' | transloco }}</h2>
-            <input [(ngModel)]="searchText" type="text" class="form-control search-input"
-              placeholder="🔍 Buscar evento...">
+            <h2 class="mb-3">🌐 {{ 'networking.proximosEventos' | transloco }}</h2>
+            <input [(ngModel)]="searchText" type="text" class="form-control search-input">
           </div>
         </div>
 

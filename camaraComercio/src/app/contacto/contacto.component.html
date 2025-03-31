@@ -1,12 +1,6 @@
 <section class="container mt-5">
   <!-- Título -->
   <h3 class="fw-bold titulo-seccion text-center flex-grow-1">{{ 'contacto.titulo' | transloco }}</h3>
-  <div class="directory-header d-flex justify-content-between align-items-center mb-4">
-    <div class="text-center mb-4">
-      <h3><strong>{{ 'contacto.descripcion' | transloco }}</strong></h3>
-    </div>
-  </div>
-
   <!-- Información de Contacto -->
   <div class="contact-info">
     <div class="info-item">
@@ -32,7 +26,6 @@
   </div>
   <br>
 
-
   <!-- Mapa y Formulario en 2 Columnas -->
   <div class="contact-grid">
     <!-- Mapa Interactivo -->
@@ -45,7 +38,7 @@
 
     <!-- Formulario de Contacto -->
     <div class="form-container">
-      <h3>{{ 'contacto.formularioTitulo' | transloco }}</h3>
+      <h3 style="text-align: center;">{{ 'contacto.formularioTitulo' | transloco }}</h3>
       <form (submit)="submitForm($event)" class="contact-form">
         <label for="name" class="form-label">{{ 'contacto.nombre' | transloco }}</label>
         <input type="text" id="name" name="name" placeholder="{{ 'contacto.nombrePlaceholder' | transloco }}" required class="form-control">

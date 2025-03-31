@@ -6,14 +6,14 @@
       "link": "#TEF2025",
       "descripcion": "¡No te pierdas esta oportunidad única de crecimiento y colaboración! ¡Te esperamos!",
       "cargandoContador": "Cargando contador...",
-      "inscribete": "Inscribirse a este evento"
+      "inscribete": "Inscríbete"
     },
     "eventoTbc": {
       "titulo": "Tsáchila Business Convention",
       "link": "#TBC2025",
       "descripcion": "¡Únete al mayor encuentro empresarial del año y crea nuevas oportunidades de negocio!",
       "cargandoContador": "Cargando contador...",
-      "inscribete": "Inscribirse a este evento"
+      "inscribete": "Inscríbete"
     }
   },
   "mainBanner": {
@@ -41,18 +41,24 @@
     "equipo": "Directorio",
     "features": {
       "presidenta": {
-        "alt": "Imagen de la Presidenta",
-        "nombre": "Marcela García",
-        "cargo": "Presidenta",
+        "alt": "Imagen de la Presidente",
+        "nombre": "Marcela García Sánches",
+        "cargo": "Presidente Ejecutivo",
         "cita": "''Todas las personas que conozco son superiores a mí en algún sentido, y en ese sentido, aprendo de ellas. No me quedo mucho tiempo en un sitio donde no aprendo o no crezco un poco más que el día anterior.''",
         "detalle1": "Presidenta de la Cámara de Industrias de Santo Domingo",
         "detalle3": "Docente Universitaria",
         "correoTitulo": "Correo:",
-        "correo": "Presidencia@industriassdt.org"
+        "correo": "Presidencia@industriassdt.org",
+        "ubicacion": "Santo Domingo, Ecuador",
+        "titulos": [
+          "Máster Universitario en Dirección del Comercio Exterior e Internacionalización de Empresas",
+          "Ingeniera en Comercio Exterior, Integración y Aduanas"
+        ],
+        "titulos1":"Ingeniero en Telecomunicaciones con mención en Gestión Empresarial en Telecomunicaciones"
       },
       "fundador": {
         "alt": "Imagen del Vice",
-        "nombre": "Marcos Quezada",
+        "nombre": "Marcos Quezada Cabrera",
         
         "cargo": "Vicepresidente",
         "cita": "''Ser agradecido te honra. Es importante devolver a la sociedad una parte de lo mucho que hemos recibido de ella. Gratitud de saber y saberlo demostrar.''",  
@@ -122,12 +128,9 @@
     "areaInteres": "Área de interés",
     "envioCV": "Adicional, por favor envía tu CV actualizado a",
     "correo": "Correo",
-    "enviar": "Enviar",
-    "cerrar": "Cerrar",
     "cambio": "Sé parte del cambio",
     "Registro": "Regístrate hoy y únete a la red de empresarios y líderes que están transformando Ecuador.",
     "vacantesDisponibles": "Vacantes Disponibles",
-    "cargo": "Cargo",
     "lugar": "Lugar",
     "horario": "Horario",
     "postularse": "Postúlate",
@@ -136,7 +139,12 @@
     "filtrarHorario": "Filtrar por Horario",
     "oficinaCentral": "Oficina Central",
     "sedePrincipal": "Sede Principal",
-    "recursosHumanos": "Recursos Humanos"
+    "recursosHumanos": "Recursos Humanos",
+    "practicas1": "Prácticas Académicas: Oportunidades para estudiantes.",
+    "buscar": "Buscar vacante...",
+    "ubicacion": "Ubicación",
+    "tipo": "Tipo",
+    "aplicar": "Aplicar ahora"
   },
   "networking": {
     "titulo": "Networking y Eventos",

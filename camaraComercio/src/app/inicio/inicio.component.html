@@ -1,6 +1,3 @@
-<!-- Banner dinámico para el evento -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
 <section class="event-banner">
   <h1 class="titulo-general">{{ 'inicio.proximosEventos' | transloco }}</h1>
   <div class="banner-content grid-layout">
@@ -14,26 +11,45 @@
 
       <!-- Contenedor del contador -->
       <div class="countdown-container">
+        <!-- TEF 2025 -->
         <div class="countdown-item">
-          <span class="countdown-number">{{ tefMonths }}</span>
+          <div class="countdown-box-container">
+            <div class="countdown-box" *ngFor="let digit of getDigits(tefMonths)">
+              {{ digit }}
+            </div>
+          </div>
           <span class="countdown-label">{{ 'contador.meses' | transloco }}</span>
         </div>
-        <strong>:</strong>
+
+        <strong style=" font-size: 1.6rem;">:</strong>
+
         <div class="countdown-item">
-          <span class="countdown-number">{{ tefDays }}</span>
+          <div class="countdown-box-container">
+            <div class="countdown-box" *ngFor="let digit of getDigits(tefDays)">
+              {{ digit }}
+            </div>
+          </div>
           <span class="countdown-label">{{ 'contador.dias' | transloco }}</span>
         </div>
-        <strong>:</strong>
+
+        <strong style="font-size: 1.6rem;">:</strong>
+
         <div class="countdown-item">
-          <span class="countdown-number">{{ tefHours }}</span>
+          <div class="countdown-box-container">
+            <div class="countdown-box" *ngFor="let digit of getDigits(tefHours)">
+              {{ digit }}
+            </div>
+          </div>
           <span class="countdown-label">{{ 'contador.horas' | transloco }}</span>
         </div>
-      </div><br>
+      </div>
+      <br>
       <button (click)="openForm('https://docs.google.com/forms/d/1G87IGCYOGStTYYIdzijZiaXJxoAXpd4iMXhv9XqCMsI/edit')">
         {{ 'inicio.eventoTef.inscribete' | transloco }}
       </button>
     </div>
 
+    <!-- Evento TBC2025 -->
     <!-- Evento TBC2025 -->
     <div class="event-column">
       <h2 class="titulo">
@@ -45,28 +61,46 @@
       <!-- Contenedor del contador para TBC2025 -->
       <div class="countdown-container">
         <div class="countdown-item">
-          <span class="countdown-number">{{ tbcMonths }}</span>
+          <div class="countdown-box-container">
+            <div class="countdown-box" *ngFor="let digit of getDigits(tbcMonths)">
+              {{ digit }}
+            </div>
+          </div>
           <span class="countdown-label">{{ 'contador.meses' | transloco }}</span>
         </div>
-        <strong>:</strong>
+
+        <strong style="font-size: 1.6rem;">:</strong>
+
         <div class="countdown-item">
-          <span class="countdown-number">{{ tbcDays }}</span>
+          <div class="countdown-box-container">
+            <div class="countdown-box" *ngFor="let digit of getDigits(tbcDays)">
+              {{ digit }}
+            </div>
+          </div>
           <span class="countdown-label">{{ 'contador.dias' | transloco }}</span>
         </div>
-        <strong>:</strong>
+
+        <strong style="font-size: 1.6rem;">:</strong>
+
         <div class="countdown-item">
-          <span class="countdown-number">{{ tbcHours }}</span>
+          <div class="countdown-box-container">
+            <div class="countdown-box" *ngFor="let digit of getDigits(tbcHours)">
+              {{ digit }}
+            </div>
+          </div>
           <span class="countdown-label">{{ 'contador.horas' | transloco }}</span>
         </div>
-      </div><br>
+      </div>
+
+      <br>
 
       <button (click)="openForm('https://docs.google.com/forms/d/1G87IGCYOGStTYYIdzijZiaXJxoAXpd4iMXhv9XqCMsI/edit')">
         {{ 'inicio.eventoTbc.inscribete' | transloco }}
       </button>
     </div>
+
   </div>
 </section>
-
 <section class="main-banner"
   [ngStyle]="{'background-image': 'url(' + backgroundImage + ')', 'background-size': 'cover', 'background-position': 'top'}">
   <div class="overlay">

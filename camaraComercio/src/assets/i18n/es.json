@@ -23,9 +23,9 @@
     "titulo": "📢 Noticias"
   },
   "contador": {
-    "meses": "meses",
-    "dias": "días",
-    "horas": "horas"
+    "meses": "Meses",
+    "dias": "Días",
+    "horas": "Horas"
   },
   "quienesSomos": {
     "titulo": "Quiénes Somos",
@@ -35,17 +35,17 @@
     "mision": "Propiciar la productividad y desarrollo regional de la Cámara de Industrias como institución que lidere a los gremios industriales y de producción, con representación proactiva del sistema ante el Estado, a través del fortalecimiento en investigación, emprendimiento, desarrollo, formalización, competitividad e innovación empresarial buscando siempre la generación de empleo y el bienestar social.",
     "visionTitulo": "🌍 Visión",
     "vision": "Posicionar a nuestra institución como un ente influyente, eficiente y organizado a nivel regional, convirtiéndose en un referente dentro del desarrollo nacional a mediano plazo, siendo promotora de la competitividad de los empresarios, gremios y el Estado.",
-    "conoceEquipo": "Conoce a Nuestra Presidenta, Vicepresidente y Directorio",
-    "descripcionEquipo": "En esta sección te presentamos a la presidenta de la Cámara de Industrias y Producción de Santo Domingo, Marcela García, quien lidera con visión y compromiso. Además, te invitamos a conocer al equipo directivo que la acompaña en esta labor, cada uno de ellos con un rol crucial para el éxito de nuestra organización.",
-    "descripcionEquipo2": "El éxito de nuestra organización no solo depende de la visión de nuestra presidenta, sino también del trabajo conjunto de un equipo comprometido y altamente capacitado. A continuación, te presentamos a los miembros del equipo directivo que, junto a la presidenta, hacen posible el desarrollo y crecimiento de la Cámara de Industrias de Santo Domingo.",
+    "conoceEquipo": "Conoce a Nuestra Presidente Ejecutiva, Vicepresidente y Directorio",
+    "descripcionEquipo": "En esta sección te presentamos a la Presidente Ejecutiva de la Cámara de Industrias y Producción de Santo Domingo, Marcela García Sánchez, quien lidera con visión y compromiso. Además, te invitamos a conocer al equipo directivo que la acompaña en esta labor, cada uno de ellos con un rol crucial para el éxito de nuestra organización.",
+    "descripcionEquipo2": "El éxito de nuestra organización no solo depende de la visión de nuestra Presidente Ejecutiva, sino también del trabajo conjunto de un equipo comprometido y altamente capacitado. A continuación, te presentamos a los miembros del equipo directivo que, junto a la Presidente Ejecutiva, hacen posible el desarrollo y crecimiento de la Cámara de Industrias de Santo Domingo.",
     "equipo": "Directorio",
     "features": {
       "presidenta": {
         "alt": "Imagen de la Presidente",
-        "nombre": "Marcela García Sánches",
-        "cargo": "Presidente Ejecutivo",
+        "nombre": "Marcela García Sánchez",
+        "cargo": "Presidente Ejecutiva",
         "cita": "''Todas las personas que conozco son superiores a mí en algún sentido, y en ese sentido, aprendo de ellas. No me quedo mucho tiempo en un sitio donde no aprendo o no crezco un poco más que el día anterior.''",
-        "detalle1": "Presidenta de la Cámara de Industrias de Santo Domingo",
+        "detalle1": "Presidente Ejecutiva de la Cámara de Industrias de Santo Domingo",
         "detalle3": "Docente Universitaria",
         "correoTitulo": "Correo:",
         "correo": "Presidencia@industriassdt.org",

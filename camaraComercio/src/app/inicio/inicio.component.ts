@@ -151,7 +151,7 @@ export class InicioComponent implements OnInit {
         nombre: "Sandra Tenorio Quilo",
         cargo: "Directora Jurídica",
         correo: "legalservicio2014@hotmail.com",
-        imagen: "assets/Sandra.jpg "
+        imagen: "assets/Sandra.png "
       },
       {
         nombre: "María José Aráuz Zambrano",
@@ -186,5 +186,9 @@ export class InicioComponent implements OnInit {
     toggleFundadorInfo(): void {
       this.showFundadorInfo = !this.showFundadorInfo; // Cambia el estado de showFundadorInfo
     }
-
+    getDigits(value: string): string[] {
+      return value.split('');
+    }
+    
+   
 }

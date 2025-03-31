@@ -1,8 +1,8 @@
-<section class="event-banner">
+<section class="event-banner"  *ngIf="showTef || showTbc">
   <h1 class="titulo-general">{{ 'inicio.proximosEventos' | transloco }}</h1>
   <div class="banner-content grid-layout">
     <!-- Evento TEF2025 -->
-    <div class="event-column">
+    <div class="event-column" *ngIf="showTef">
       <h2 class="titulo">
         {{ 'inicio.eventoTef.titulo' | transloco }}
         <a [routerLink]="['/tef']">{{ 'inicio.eventoTef.link' | transloco }}</a>
@@ -50,7 +50,7 @@
     </div>
 
     <!-- Evento TBC2025 -->
-    <div class="event-column">
+    <div class="event-column" *ngIf="showTbc">
       <h2 class="titulo">
         {{ 'inicio.eventoTbc.titulo' | transloco }}
         <a [routerLink]="['/tbc']">{{ 'inicio.eventoTbc.link' | transloco }}</a>

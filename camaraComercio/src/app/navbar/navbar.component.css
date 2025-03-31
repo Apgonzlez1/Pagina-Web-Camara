@@ -80,7 +80,7 @@
 
   .navbar-nav {
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
   }
 
   .nav-link {

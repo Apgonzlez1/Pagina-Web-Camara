@@ -1,13 +1,7 @@
-/* ========================
-   ESTILOS GENERALES
-   ======================== */
-
 .titulo a {
   text-decoration: none;
-  /* Elimina el subrayado predeterminado */
   font-weight: bold;
   color: #45f4fd;
-  /* Color base llamativo */
   position: relative;
   transition: color 0.3s;
 }
@@ -27,13 +21,11 @@
 
 .titulo a:hover {
   color: #00d4ff;
-  /* Cambia de color al pasar el mouse */
 }
 
 .titulo a:hover::after {
   transform: scaleX(1);
 }
-
 
 a {
   text-decoration: none;
@@ -44,9 +36,6 @@ a {
   box-sizing: border-box;
 }
 
-/* ========================
-     ESTILOS PARA BANNER
-     ======================== */
 .main-banner {
   position: relative;
   width: 100%;
@@ -69,9 +58,6 @@ a {
   left: 0;
 }
 
-/* ========================
-     SECCIÓN QUIÉNES SOMOS
-     ======================== */
 .quienes-somos {
   padding: 40px 20px;
   background: linear-gradient(135deg, #004c7a 0%, #0088a8 70%);
@@ -81,7 +67,6 @@ a {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-/* Contenido dentro de la sección */
 .quienes-somos .contenido {
   max-width: 900px;
   margin: 0 auto;
@@ -97,10 +82,6 @@ a {
   margin-bottom: 30px;
 }
 
-
-/* ========================
-     TARJETAS INTERACTIVAS
-     ======================== */
 .info-grid {
   display: flex;
   gap: 20px;
@@ -134,17 +115,11 @@ a {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* ========================
-     GALERÍA
-     ======================== */
 .galeria {
   text-align: center;
   padding: 50px 20px;
 }
 
-/* ========================
-     SECCIÓN DE MIEMBROS
-     ======================== */
 .contenedor-miembros {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -190,9 +165,6 @@ a {
   margin-bottom: 5px;
 }
 
-/* ========================
-     BOTONES
-     ======================== */
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
@@ -245,17 +217,10 @@ a {
   pointer-events: none;
 }
 
-/* ========================
-     SECCIÓN DE EVENTOS
-     ======================== */
 .event-banner {
   background: linear-gradient(135deg, #004c7a 0%, #0088a8 70%);
   background-attachment: fixed;
-  /* Fija el fondo para que no se corte */
   background-size: cover;
-  /* Asegura que el fondo cubra todo */
-
-
   color: white;
   padding: 40px;
   text-align: center;
@@ -305,14 +270,12 @@ a {
   align-items: center;
   justify-content: center;
   gap: 15px;
-  /* Espacio entre cada grupo de conteo */
   border-radius: 5px;
 }
 
 .countdown-item {
   display: flex;
   flex-direction: column;
-  /* Asegura que los números y el texto se apilen */
   align-items: center;
   text-align: center;
 }
@@ -321,7 +284,6 @@ a {
   margin-top: 15px;
   display: flex;
   gap: 5px;
-  /* Espacio entre los cuadros de dígitos */
 }
 
 .countdown-box {
@@ -341,7 +303,6 @@ a {
 
 .countdown-label {
   margin-top: 5px;
-  /* Espacio entre los cuadros y el texto */
   font-size: 1rem;
   font-weight: bold;
   color: #ffffff;
@@ -382,9 +343,6 @@ button:hover {
   }
 }
 
-/* ========================
-     RESPONSIVE
-     ======================== */
 @media (max-width: 1024px) {
 
   .contenedor-miembros,
@@ -460,14 +418,12 @@ button:hover {
   border-radius: 8px;
 }
 
-/* Asegurar que la imagen se adapte bien */
 .featured-event img {
   width: 100%;
   height: 100%;
   max-height: 330px;
   object-fit: cover;
   object-position: top;
-  /* Mueve la imagen hacia arriba */
   border-radius: 8px;
 }
 
@@ -491,9 +447,6 @@ button:hover {
   margin-right: auto;
 }
 
-/* ========================
-     SECCIÓN DE EQUIPO
-   ======================== */
 .icono-usuario {
   font-size: 3rem;
 }
@@ -524,11 +477,10 @@ button:hover {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-
 .tarjeta-imagen {
-  width: 250px; /* Ajusta según el tamaño que prefieras */
+  width: 250px; 
   height: 250px;
-  overflow: hidden; /* Evita que la imagen sobresalga */
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -537,10 +489,9 @@ button:hover {
 .tarjeta-imagen img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ajusta la imagen para que llene el contenedor sin deformarse */
-  border-radius: 8px; /* Opcional, si quieres imágenes redondas */
+  object-fit: cover;
+  border-radius: 8px; 
   object-position: top;
-  /* Mueve la imagen hacia arriba */
 }
 
 .tarjeta-info {
@@ -571,7 +522,6 @@ button:hover {
   margin-bottom: 5px;
 }
 
-/* Botón de Ver Más para cada miembro */
 .btn-toggle {
   background: #0f0f0f;
   border: none;
@@ -587,10 +537,6 @@ button:hover {
   background: #474747;
   transform: scale(1.05);
 }
-
-/* ========================
-       RESPONSIVE EQUIPO
-     ======================== */
 
 @media (max-width: 1024px) {
   .contenedor-miembros {
@@ -611,7 +557,6 @@ button:hover {
   .quienes-somos {
     padding: 30px 15px;
     background-attachment: scroll;
-    /* Evita cortes en fondos fijos */
   }
 
   .quienes-somos .contenido {

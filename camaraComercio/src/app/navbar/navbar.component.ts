@@ -7,7 +7,7 @@ import { TranslocoService } from '@jsverse/transloco'; // Importa TranslocoServi
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [CommonModule, RouterModule,TranslocoModule], // ✅ Asegúrate de importar RouterModule
+  imports: [ RouterModule,CommonModule,TranslocoModule], // ✅ Asegúrate de importar RouterModule
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })

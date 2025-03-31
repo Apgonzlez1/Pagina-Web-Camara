@@ -20,10 +20,8 @@ export class BolsaEmpleoComponent {
   isInternship: boolean = false;
 
   vacantes = [
-    { titulo: 'Recepcionsita', ubicacion: 'Golden Vista', tipo: 'Tiempo completo'},
+    { titulo: 'Recepcionsita Nocturno', ubicacion: 'Golden Vista', tipo: 'Medio Tiempo'},
     { titulo: 'Desarrollador Backend', ubicacion: 'Ciudad', tipo: 'Medio Tiempo' },
-    { titulo: 'Prácticas de Marketing', ubicacion: 'Remoto', tipo: 'Prácticas' },
-    { titulo: 'Diseñador UX/UI', ubicacion: 'Remoto', tipo: 'Tiempo completo'},
   ];
 
   get filteredVacantes() {

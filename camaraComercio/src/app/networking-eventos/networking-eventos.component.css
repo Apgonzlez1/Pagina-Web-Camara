@@ -18,6 +18,7 @@
   background: #00748a;
   border: none;
   padding: 10px 20px;
+  border-radius: 8px;
   transition: background 0.3s ease;
 }
 
@@ -53,28 +54,14 @@
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* 📌 Imagen dentro de la tarjeta */
-/* 📌 Imágenes de la sección featured-event */
-.featured-event .image-container img {
-  width: 100%;
-  max-height: 200px;
-  /* Ajusta la altura máxima */
-  object-fit: contain;
-  /* Mantiene la proporción sin recorte */
-  border-radius: 8px;
-}
-
 /* 📌 Imágenes dentro de event-card */
-.event-card .image-container img {
+.image-container img {
   width: 100%;
   height: 280px;
-  /* Altura fija para uniformidad */
   object-fit: cover;
-  /* Recorta para llenar el espacio */
   border-radius: 8px;
   margin-bottom: 20px;
 }
-
 
 /* 📌 Títulos y texto en tarjetas */
 .event-card h3 {
@@ -94,7 +81,6 @@
   border-radius: 2px;
 }
 
-/* 📌 Bloques de cita */
 .blockquote {
   font-style: italic;
   color: #555;
@@ -103,7 +89,6 @@
   border-left: 3px solid #001f3f;
 }
 
-/* 📌 Barra lateral del blog */
 .blog-sidebar {
   background: #f8f9fa;
   padding: 20px;
@@ -151,87 +136,24 @@
   height: 35px;
 }
 
-/* 📌 Contenedor principal */
-.featured-event {
-  background: #ffffff;
-  padding: 40px 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* 📌 Título destacado */
-.featured-title {
-  font-size: 2rem;
-  color: #000000;
-  font-weight: bold;
-}
-
-/* 📌 Separador */
-.custom-divider {
-  width: 60%;
-  height: 4px;
-  background: #01181d;
-  border: none;
-  margin: 10px auto;
-}
-
 /* 📌 Ajustes generales para pantallas pequeñas */
-@media (max-width: 1024px) {
-  .featured-event {
-    padding: 40px 20px;
-    text-align: center;
-  }
-
-  .featured-title {
-    font-size: 1.8rem;
-  }
-
-  .custom-divider {
-    width: 80%;
-  }
-
-  .btn-primary {
-    width: 100%;
-  }
-
-  .event-card {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-}
-
-/* 📌 Ajustes para tablets y dispositivos medianos */
 @media (max-width: 768px) {
-  .networking-section {
-    padding: 15px 0;
-  }
-
   .featured-title {
     font-size: 1.6rem;
   }
 
-  .featured-event {
-    padding: 30px 15px;
-  }
-
   .event-card {
-    margin-bottom: 20px;
+    width: 100%;
     padding: 15px;
   }
 
   .event-card .image-container img {
     height: 200px;
-    /* Reduce el tamaño de las imágenes en tarjetas */
   }
 
   .whatsapp-button {
     width: 50px;
     height: 50px;
-  }
-
-  .whatsapp-button img {
-    width: 30px;
-    height: 30px;
   }
 }
 
@@ -239,10 +161,6 @@
 @media (max-width: 576px) {
   .featured-title {
     font-size: 1.4rem;
-  }
-
-  .custom-divider {
-    width: 90%;
   }
 
   .event-card h3 {
@@ -253,58 +171,13 @@
     font-size: 14px;
   }
 
-  .event-card .image-container img {
-    height: 180px;
-  }
-
-  .blog-sidebar {
-    padding: 15px;
-  }
-
-  .blog-sidebar h4 {
-    font-size: 1rem;
-  }
-
   .whatsapp-button {
-    bottom: 15px;
-    right: 15px;
     width: 45px;
     height: 45px;
   }
-
-  .whatsapp-button img {
-    width: 25px;
-    height: 25px;
-  }
 }
 
-/* 📌 Ajustes para móviles extra pequeños */
-@media (max-width: 400px) {
-  .featured-title {
-    font-size: 1.2rem;
-  }
-
-  .event-card .image-container img {
-    height: 160px;
-  }
-
-  .btn-primary {
-    font-size: 14px;
-    padding: 8px 15px;
-  }
-
-  .whatsapp-button {
-    width: 40px;
-    height: 40px;
-  }
-
-  .whatsapp-button img {
-    width: 22px;
-    height: 22px;
-  }
-}
-
-/* Botón animado con efecto de hover */
+/* 📌 Botón animado */
 button {
   background-color: #ff5722;
   color: white;
@@ -336,143 +209,6 @@ button:hover {
 .search-input:focus {
   border-color: #00748a;
   box-shadow: 0 2px 8px rgba(0, 116, 138, 0.3);
-}
-
-/* 📌 Diseño de las tarjetas */
-.event-card1 {
-  background-color: white;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 400px;
-  width: 25c0px;
-}
-
-.event-card1:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-}
-
-/* 📌 Imagen dentro de la tarjeta */
-.image-container {
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-  border-radius: 12px 12px 0 0;
-}
-
-.image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.event-card1:hover .image-container img {
-  transform: scale(1.05);
-}
-
-/* 📌 Títulos y texto */
-.card-title {
-  font-size: 18px;
-  color: #333;
-  font-weight: bold;
-}
-
-.event-location,
-.event-date {
-  font-size: 14px;
-  color: #555;
-  margin: 5px 0;
-}
-
-/* 📌 Botón de información */
-.btn-primary {
-  background: #00748a;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 8px;
-  transition: background 0.3s ease;
-}
-
-.btn-primary:hover {
-  background: #00556b;
-}
-
-/* 📌 Responsividad: ajuste de columnas */
-
-/* 3 tarjetas por fila en pantallas grandes (≥1200px) */
-@media (min-width: 1200px) {
-  .col-xl-4 {
-    flex: 1 1 calc(33.33% - 20px);
-    max-width: calc(33.33% - 20px);
-  }
-  
-}
-
-/* 2 tarjetas por fila en pantallas medianas (768px - 1199px) */
-@media (max-width: 1199px) {
-  .col-lg-4 {
-    flex: 1 1 calc(50% - 20px);
-    max-width: calc(50% - 20px);
-  }
-
-  .featured-event .col-12 {
-    max-width: 90%;
-    /* Evita que el texto sea demasiado estrecho */
-    margin: 0 auto;
-    /* Centra el contenido */
-  }
-
-  .custom-divider {
-    width: 60%;
-    /* Ajusta el tamaño del divisor en móviles */
-  }
-
-  .event-card {
-    width: 100%;
-    /* Asegura que las tarjetas ocupen todo el ancho disponible */
-    max-width: 320px;
-    /* Limita el tamaño máximo */
-    margin: 0 auto;
-    /* Centra las tarjetas */
-  }
-}
-
-/* 1 tarjeta por fila en pantallas pequeñas (≤768px) */
-@media (max-width: 768px) {
-  .col-md-6 {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-
-  .featured-event {
-    padding: 20px;
-    /* Reduce el padding en móviles */
-  }
-
-  .featured-event .col-12 {
-    max-width: 90%;
-    /* Evita que el texto sea demasiado estrecho */
-    margin: 0 auto;
-    /* Centra el contenido */
-  }
-
-  .custom-divider {
-    width: 60%;
-    /* Ajusta el tamaño del divisor en móviles */
-  }
-
-  .event-card {
-    width: 100%;
-    /* Asegura que las tarjetas ocupen todo el ancho disponible */
-    max-width: 320px;
-    /* Limita el tamaño máximo */
-    margin: 0 auto;
-    /* Centra las tarjetas */
-  }
 }
 
 .language-selector .btn {

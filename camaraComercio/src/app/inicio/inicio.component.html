@@ -160,8 +160,9 @@
 
             <!-- Botón para mostrar información adicional -->
             <button class="btn btn-primary" (click)="toggleInfo()">
-              {{ showInfo ? 'Ver menos' : 'Ver más' | transloco }}
+              {{ showInfo ? 'quienesSomos.features.presidenta.ver_menos' : 'quienesSomos.features.presidenta.ver_mas' | transloco }}
             </button>
+            
 
             <!-- Contenido oculto -->
             <div *ngIf="showInfo" style="margin-top: 10px;">
@@ -202,7 +203,7 @@
             </p>
             <!-- Botón para mostrar información adicional -->
             <button class="btn btn-primary" (click)="toggleVicepresidenteInfo()">
-              {{ showVicepresidenteInfo ? 'Ver menos' : 'Ver más' | transloco }}
+              {{ showVicepresidenteInfo ? 'quienesSomos.features.fundador.ver_menos' : 'quienesSomos.features.fundador.ver_mas' | transloco }}
             </button>
 
             <!-- Contenido oculto -->

@@ -50,11 +50,15 @@
         "correoTitulo": "Email:",
         "correo": "Presidencia@industriassdt.org",
         "ubicacion": "Santo Domingo, Ecuador",
+        "ver_mas": "See more",
+        "ver_menos": "See less",
         "titulos": [
           "Master's Degree in Foreign Trade Management and Business Internationalization",
           "Engineer in Foreign Trade, Integration, and Customs"
         ],
-        "titulos1": ["Telecommunications Engineer with a specialization in Business Management in Telecommunications"]
+        "titulos1": [
+          "Telecommunications Engineer with a specialization in Business Management in Telecommunications"
+        ]
       },
       "fundador": {
         "alt": "Vice President Image",
@@ -63,7 +67,9 @@
         "cita": "''Being grateful honors you. It is important to give back to society a part of all that we have received from it. Gratitude is about knowing and demonstrating it.''",
         "detalle2": "Vice President of the Chamber of Industries of Santo Domingo",
         "correoTitulo": "Email:",
-        "correo": "gerencia@hotelgoldenvista.com.ec"
+        "correo": "gerencia@hotelgoldenvista.com.ec",
+        "ver_mas": "See more",
+        "ver_menos": "See less"
       }
     }
   },

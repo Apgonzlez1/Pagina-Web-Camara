@@ -49,14 +49,15 @@
         "detalle3": "Docente Universitaria",
         "correoTitulo": "Correo:",
         "correo": "Presidencia@industriassdt.org",
+        "ubicacion_titulo": "Ubicación:",
+        "titulo_titulos": "Títulos:",
         "ubicacion": "Santo Domingo, Ecuador",
         "ver_mas": "Ver más",
          "ver_menos": "Ver menos",
         "titulos": [
           "Máster Universitario en Dirección del Comercio Exterior e Internacionalización de Empresas",
           "Ingeniera en Comercio Exterior, Integración y Aduanas"
-        ],
-        "titulos1": "Ingeniero en Telecomunicaciones con mención en Gestión Empresarial en Telecomunicaciones"
+        ]
       },
       "fundador": {
         "alt": "Imagen del Vice",
@@ -65,9 +66,13 @@
         "cita": "''Ser agradecido te honra. Es importante devolver a la sociedad una parte de lo mucho que hemos recibido de ella. Gratitud de saber y saberlo demostrar.''",
         "detalle2": "Vicepresidente de la Cámara de Industrias de Santo Domingo",
         "correoTitulo": "Correo:",
+        "ubicacion_titulo": "Ubicación:",
+        "titulo_titulos": "Títulos:",
+        "ubicacion": "Santo Domingo, Ecuador",
         "correo": "gerencia@hotelgoldenvista.com.ec",
         "ver_mas": "Ver más",
-        "ver_menos": "Ver menos"
+        "ver_menos": "Ver menos",
+        "titulos1": "Ingeniero en Telecomunicaciones con mención en Gestión Empresarial en Telecomunicaciones"
       }
     }
   },

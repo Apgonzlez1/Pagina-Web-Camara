@@ -12,6 +12,7 @@ import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
   styleUrls: ['./inicio.component.css']
 })
 export class InicioComponent implements OnInit {
+  
   mostrarEquipo = false;
   // Variables para TEF2025
   tefMonths: string = '00';
@@ -174,7 +175,7 @@ export class InicioComponent implements OnInit {
     this.showVicepresidenteInfo = !this.showVicepresidenteInfo; // Cambia el estado de showVicepresidenteInfo
     if (this.showVicepresidenteInfo) {
       // Aquí estamos cargando los títulos para el vicepresidente
-      this.titulos1 = this.translocoService.translate('quienesSomos.features.vicepresidente.titulos1');
+      this.titulos1 = this.translocoService.translate('quienesSomos.features.fundador.titulos1');
     }
   }
 

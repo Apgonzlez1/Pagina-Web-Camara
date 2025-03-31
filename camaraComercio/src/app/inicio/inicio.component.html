@@ -7,7 +7,7 @@
         {{ 'inicio.eventoTef.titulo' | transloco }}
         <a [routerLink]="['/tef']">{{ 'inicio.eventoTef.link' | transloco }}</a>
       </h2>
-      <p>{{ 'inicio.eventoTef.descripcion' | transloco }}</p>
+      <p><em>{{ 'inicio.eventoTef.descripcion' | transloco }}</em></p>
 
       <!-- Contenedor del contador -->
       <div class="countdown-container">
@@ -50,13 +50,12 @@
     </div>
 
     <!-- Evento TBC2025 -->
-    <!-- Evento TBC2025 -->
     <div class="event-column">
       <h2 class="titulo">
         {{ 'inicio.eventoTbc.titulo' | transloco }}
         <a [routerLink]="['/tbc']">{{ 'inicio.eventoTbc.link' | transloco }}</a>
       </h2>
-      <p>{{ 'inicio.eventoTbc.descripcion' | transloco }}</p>
+      <p><em>{{ 'inicio.eventoTbc.descripcion' | transloco }}</em></p>
 
       <!-- Contenedor del contador para TBC2025 -->
       <div class="countdown-container">
@@ -160,15 +159,13 @@
 
             <!-- Botón para mostrar información adicional -->
             <button class="btn btn-primary" (click)="toggleInfo()">
-              {{ showInfo ? 'quienesSomos.features.presidenta.ver_menos' : 'quienesSomos.features.presidenta.ver_mas' | transloco }}
+              {{ (showInfo ? 'quienesSomos.features.presidenta.ver_menos' : 'quienesSomos.features.presidenta.ver_mas') | transloco }}
             </button>
             
-
             <!-- Contenido oculto -->
             <div *ngIf="showInfo" style="margin-top: 10px;">
-              <p><strong>{{ 'Ubicación:' | transloco }}</strong> {{ 'quienesSomos.features.presidenta.ubicacion' |
-                transloco }}</p>
-              <p><strong>{{ 'Títulos:' | transloco }}</strong></p>
+              <p><strong>{{ 'quienesSomos.features.presidenta.ubicacion_titulo' | transloco }}</strong> {{ 'quienesSomos.features.presidenta.ubicacion' | transloco }}</p>
+              <p><strong>{{ 'quienesSomos.features.presidenta.titulo_titulos' | transloco }}</strong></p>
               <ul>
                 <li *ngFor="let titulo of titulos">{{ titulo }}</li>
               </ul>
@@ -203,18 +200,17 @@
             </p>
             <!-- Botón para mostrar información adicional -->
             <button class="btn btn-primary" (click)="toggleVicepresidenteInfo()">
-              {{ showVicepresidenteInfo ? 'quienesSomos.features.fundador.ver_menos' : 'quienesSomos.features.fundador.ver_mas' | transloco }}
+              {{ (showVicepresidenteInfo ? 'quienesSomos.features.fundador.ver_menos' : 'quienesSomos.features.fundador.ver_mas') | transloco }}
             </button>
+            
 
             <!-- Contenido oculto -->
             <div *ngIf="showVicepresidenteInfo" style="margin-top: 10px;">
-              <p><strong>{{ 'Ubicación:' | transloco }}</strong> {{ 'quienesSomos.features.presidenta.ubicacion' |
-                transloco }}</p>
-              <p><strong>{{ 'Títulos:' | transloco }}</strong></p>
+              <p><strong>{{ 'quienesSomos.features.fundador.ubicacion_titulo' | transloco }}</strong> {{ 'quienesSomos.features.fundador.ubicacion' | transloco }}</p>
+              <p><strong>{{ 'quienesSomos.features.fundador.titulo_titulos' | transloco }}</strong></p>
               <ul>
                 <li>
-                  <p>{{ 'quienesSomos.features.presidenta.titulos1' |
-                    transloco }}</p>
+                  <p>{{ 'quienesSomos.features.fundador.titulos1' | transloco }}</p>
                 </li>
               </ul>
             </div>

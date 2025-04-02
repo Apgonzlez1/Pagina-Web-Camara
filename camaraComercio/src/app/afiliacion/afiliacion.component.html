@@ -13,7 +13,7 @@
 
   <!-- Grilla de empresas -->
   <div class="companies-grid">
-    <div class="card" *ngFor="let company of visibleCompanies" style="width: 18rem;">
+    <div class="card" *ngFor="let company of visibleCompanies" >
       <img [src]="company.logo" class="card-img-top" alt="{{ 'afiliacion.logoEmpresa' | transloco: { empresa: company.name } }}">
       <div class="card-body">
         <h5 class="card-title">{{ company.name }}</h5>
@@ -45,13 +45,13 @@
         <img src="assets/beneficio1.jpg" class="d-block w-100" alt="{{ 'afiliacion.beneficio1' | transloco }}">
       </div>
       <div class="carousel-item" data-bs-interval="2000">
-        <img src="assets/beneficio2.JPG" class="d-block w-100" alt="{{ 'afiliacion.beneficio2' | transloco }}">
+        <img src="assets/beneficio2.jpg" class="d-block w-100" alt="{{ 'afiliacion.beneficio2' | transloco }}">
       </div>
       <div class="carousel-item" data-bs-interval="2000">
         <img src="assets/beneficio3.jpg" class="d-block w-100" alt="{{ 'afiliacion.beneficio3' | transloco }}">
       </div>
       <div class="carousel-item" data-bs-interval="2000">
-        <img src="assets/beneficio4.JPG" class="d-block w-100" alt="{{ 'afiliacion.beneficio4' | transloco }}">
+        <img src="assets/beneficio4.jpg" class="d-block w-100" alt="{{ 'afiliacion.beneficio4' | transloco }}">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#benefitsCarousel" data-bs-slide="prev">

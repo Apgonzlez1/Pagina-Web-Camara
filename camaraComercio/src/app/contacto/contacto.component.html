@@ -6,7 +6,7 @@
     <div class="info-item">
       <fa-icon [icon]="icons.mapMarker"></fa-icon>
       <p>
-        <a href="https://www.google.com.ec/maps/dir//QR6X%2B54P+ESTACION+DE+SERVICIO+PEGOCENTRO,+Av.+de+los+Colonos,+Santo+Domingo/" 
+        <a href="https://www.google.com.ec/maps/dir//QR6X%2B54P+ESTACION+DE+SERVICIO+PEGOCENTRO,+Av.+de+los+Colonos,+Santo+Domingo/"
           target="_blank">
           {{ 'contacto.direccion' | transloco }}
         </a>
@@ -16,10 +16,10 @@
       <fa-icon [icon]="icons.phone"></fa-icon>
       <p>{{ 'contacto.telefono' | transloco }}: +593 99 998 9256</p>
     </div>
-    
-    <div class="info-item">       
-      <fa-icon [icon]="icons.envelope"></fa-icon> 
-      <p>{{ 'contacto.email' | transloco }}: coordinacionejecutiva&#64;industriassdt.org 
+
+    <div class="info-item">
+      <fa-icon [icon]="icons.envelope"></fa-icon>
+      <p class="p1">{{ 'contacto.email' | transloco }}: coordinacionejecutiva&#64;industriassdt.org
       </p>
     </div>
     <br>
@@ -41,13 +41,16 @@
       <h3 style="text-align: center;">{{ 'contacto.formularioTitulo' | transloco }}</h3>
       <form (submit)="submitForm($event)" class="contact-form">
         <label for="name" class="form-label">{{ 'contacto.nombre' | transloco }}</label>
-        <input type="text" id="name" name="name" placeholder="{{ 'contacto.nombrePlaceholder' | transloco }}" required class="form-control">
+        <input type="text" id="name" name="name" placeholder="{{ 'contacto.nombrePlaceholder' | transloco }}" required
+          class="form-control">
 
         <label for="email" class="form-label">{{ 'contacto.email' | transloco }}</label>
-        <input type="email" id="email" name="email" placeholder="{{ 'contacto.emailPlaceholder' | transloco }}" required class="form-control">
+        <input type="email" id="email" name="email" placeholder="{{ 'contacto.emailPlaceholder' | transloco }}" required
+          class="form-control">
 
         <label for="message" class="form-label">{{ 'contacto.mensaje' | transloco }}</label>
-        <textarea name="message" id="message" placeholder="{{ 'contacto.mensajePlaceholder' | transloco }}" required class="form-control"></textarea>
+        <textarea name="message" id="message" placeholder="{{ 'contacto.mensajePlaceholder' | transloco }}" required
+          class="form-control"></textarea>
 
         <button type="submit" class="btn btn-primary-banner w-100 py-2">
           {{ 'contacto.enviar' | transloco }}
@@ -56,8 +59,8 @@
     </div>
   </div>
 
-  <!-- Botón flotante de WhatsApp -->
-  <div class="whatsapp-button" (click)="openWhatsApp()">
-    <img src="assets/icono.png" alt="WhatsApp">
-  </div>
+<!-- 📲 Botón flotante de WhatsApp -->
+<div class="whatsapp-button" (click)="openWhatsApp()">
+  <img src="assets/icono.png" alt="WhatsApp">
+</div>
 </section>

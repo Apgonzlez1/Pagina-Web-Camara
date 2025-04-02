@@ -20,8 +20,7 @@ export class BolsaEmpleoComponent {
   isInternship: boolean = false;
 
   vacantes = [
-    { titulo: 'Recepcionista Nocturno', ubicacion: 'Hotel Golden Vista', tipo: 'Medio Tiempo', imagen: 'assets/golden_Vista.png', contacto: 'reservas@hotelgoldenvista.com.ec', requisitos: 'Masculino' },
-    { titulo: 'Gerente de Eventos', ubicacion: 'Hotel Zaracay', tipo: 'Tiempo completo', imagen: 'assets/evento2.jpg', contacto: '', requisitos: '-' }
+    { titulo: 'Recepcionista Nocturno', ubicacion: 'Hotel Golden Vista', tipo: 'Medio Tiempo', imagen: 'assets/golden_Vista.png', contacto: 'reservas@hotelgoldenvista.com.ec', requisitos: 'Masculino' }
   ];
 
   get filteredVacantes() {

@@ -58,7 +58,7 @@ export class AfiliacionComponent {
     { name: 'BALSEBOT CORP', contact: 'info@gmail.com', logo: 'assets/logos/logo35.jpeg', website: 'www.infor.com', sector: 'Corporativo' },
     { name: 'KUBIEC S.A', contact: 'paul.jaramillo@kubiec.com', logo: 'assets/logos/logo36.png', website: 'www.infor.com', sector: 'Tecnología' },
     { name: 'BANCO PROCREDIT', contact: 'miguel.ebenberger@procredit-group.com', logo: 'assets/logos/logo38.jpg', website: 'www.infor.com', sector: 'Finanzas' },
-    { name: 'IMPORTCEN', contact: 'info@gmail.com', logo: 'assets/logos/logo44.png', website: 'www.infor.com', sector: 'Importación' },
+    { name: 'IMPORTCEN', contact: 'info@gmail.com', logo: 'assets/logos/logo44.jpg', website: 'www.infor.com', sector: 'Importación' },
     { name: 'SYSTENWORK - CONTAMATIC', contact: 'systemworksa@gmail.com', logo: 'assets/logos/logo49.jpeg', website: 'www.infor.com', sector: 'Tecnología' },
     { name: 'DISLICOR', contact: 'dislicor.distribuciones@gmail.com', logo: 'assets/logos/logo50.jpg', website: 'www.infor.com', sector: 'Licor' },
     { name: 'AGROTORCA', contact: 'info@gmail.com', logo: 'assets/logos/logo51.png', website: 'www.infor.com', sector: 'Agricultura' }

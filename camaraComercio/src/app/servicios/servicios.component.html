@@ -110,9 +110,9 @@
           <strong>{{ 'servicios.impulsa' | transloco }}</strong> <br>
           {{ 'servicios.descripcion' | transloco }}
         </p>
-        <a [routerLink]="['/contacto']" class="btn btn-primary btn-lg mt-3">
-          {{ 'servicios.contactanos' | transloco }}
-        </a>
+        <button class="tef-button mt-3" (click)="descargarPDF()">
+          📥 {{ 'servicios.descargarBene' | transloco }}
+        </button>
       </div>
     </div>
   </div>

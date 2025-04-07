@@ -21,7 +21,7 @@ export class AfiliacionComponent {
   showAllCompanies: boolean = false;
 
    companies = [
-    { name: 'FGENTERPRISE S.A.', contact: 'fgenterprise@hotmail.com', logo: 'assets/logos/logo1.jpg', website: 'https://fgenterprise.ec/', sector: 'Manufactura' },
+    { name: 'FGENTERPRISE S.A.', contact: 'fgenterprise@hotmail.com', logo: 'assets/logos/logo1.jpg', website: 'https://fgenterprise.ec/inicio', sector: 'Manufactura' },
     { name: 'FRUGALP S.A.', contact: 'recepcion.frugalp@gmail.com', logo: 'assets/logos/logo2.jpg', website: 'www.infor.com', sector: 'Logística' },
     { name: 'LACTEOS LA POLACA GUSTALAC S.A.', contact: 'contabilidad@avenapolaca.com.ec', logo: 'assets/logos/logo3.jpg', website: 'https://avenapolaca.com.ec/nosotros/', sector: 'Alimentos' },
     { name: 'BURNEO EXPORT', contact: 'burneoexport@hotmail.com', logo: 'assets/logos/logo4.jpg', website: 'http://burneoexport.com/', sector: 'Exportación' },

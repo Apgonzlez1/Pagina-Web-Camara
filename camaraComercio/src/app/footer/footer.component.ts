@@ -14,6 +14,7 @@ import { TranslocoModule } from '@jsverse/transloco';
 
 
 export class FooterComponent {
+  currentYear: number = new Date().getFullYear();
   redes = [
     { nombre: 'Facebook', icono: 'fa-brands fa-facebook', url: 'https://www.facebook.com' },
     { nombre: 'Instagram', icono: 'fa-brands fa-instagram', url: 'https://www.instagram.com' },

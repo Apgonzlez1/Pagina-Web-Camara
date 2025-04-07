@@ -288,13 +288,11 @@ h3 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 10px;
   }
   
   .tef-video {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    max-width: 360px; /* Se ajusta a pantallas pequeñas */
-    height: 202px; /* Mantiene proporción 16:9 */
+    width: 80%;
+    max-width: 800px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   }

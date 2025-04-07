@@ -46,7 +46,7 @@ export class AfiliacionComponent {
     { name: 'COVERTOSA COVERTURA TOTAL S.A.', contact: 'rrhh@covertosa.com', logo: 'assets/logos/logo23.jpg', website: 'www.infor.com', sector: 'Construcción' },
     { name: 'COPETO CIA. LTDA.', contact: 'trajanor@copeto.com.ec', logo: 'assets/logos/logo24.png', website: 'www.infor.com', sector: 'Construcción' },
     { name: 'WORKTRYMEC ELECTROMECANICA CIA LTDA', contact: 'info@worktrymec.com', logo: 'assets/logos/logo25.jpeg', website: 'www.infor.com', sector: 'Electromecánica' },
-    { name: 'EMPROSERVIS CIA. LTDA', contact: 'diego@emproservis.com', logo: 'assets/logos/logo26.jpeg', website: 'www.infor.com', sector: 'Servicios' },
+    { name: 'EMPROSERVIS CIA. LTDA', contact: 'diego@emproservis.com', logo: 'assets/logos/logo26.jpg', website: 'www.infor.com', sector: 'Servicios' },
     { name: 'CORPROSEG CA AGENCIA ASESORA PRODUCTORA DE SEGUROS', contact: 'gerencia@corproseg.com', logo: 'assets/logos/logo27.jpg', website: 'www.infor.com', sector: 'Seguros' },
     { name: 'MEGAPROELEC CIA LTDA', contact: 'gerencia@megaproelec.com', logo: 'assets/logos/logo28.jpeg', website: 'www.infor.com', sector: 'Electrónica' },
     { name: 'CRITERIUM CRITERIA & FINANCIAL CIA LTDA', contact: 'andres@criterium.com.ec', logo: 'assets/logos/logo29.png', website: 'www.infor.com', sector: 'Finanzas' },

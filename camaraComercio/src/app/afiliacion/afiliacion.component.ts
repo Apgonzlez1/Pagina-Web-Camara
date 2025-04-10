@@ -59,7 +59,7 @@ export class AfiliacionComponent {
     { name: 'KUBIEC S.A', contact: 'paul.jaramillo@kubiec.com', logo: 'assets/logos/logo36.png', website: 'https://kubiec.com/cubiertas-y-revestimientos/residenciales/kubiteja/?gad_source=1&gclid=Cj0KCQjw782_BhDjARIsABTv_JB22A83XXmrYT7CS97QuvkE1DxWg2aEpO2Y1mVnIvob48nGoWpe1WYaAsgPEALw_wcB', sector: 'Tecnología' },
     { name: 'BANCO PROCREDIT', contact: 'miguel.ebenberger@procredit-group.com', logo: 'assets/logos/logo38.jpg', website: 'https://bancoprocredit.com.ec/', sector: 'Finanzas' },
     { name: 'IMPORCENT', contact: 'info@gmail.com', logo: 'assets/logos/logo44.jpg', website: 'www.infor.com', sector: 'Importación' },
-    { name: 'SYSTENWORK - CONTAMATIC', contact: 'systemworksa@gmail.com', logo: 'assets/logos/logo49.jpeg', website: 'https://contamatic.ec/', sector: 'Tecnología' },
+    { name: 'SYSTEMWORK - CONTAMATIC', contact: 'systemworksa@gmail.com', logo: 'assets/logos/logo49.jpeg', website: 'https://contamatic.ec/', sector: 'Tecnología' },
     { name: 'DISLICOR', contact: 'dislicor.distribuciones@gmail.com', logo: 'assets/logos/logo50.jpg', website: 'https://www.facebook.com/DISLICOR/?locale=es_LA', sector: 'Licor' },
     { name: 'AGROTORCA', contact: 'info@gmail.com', logo: 'assets/logos/logo51.png', website: 'https://ppfam.com/AGROTORCA/3918/', sector: 'Agricultura' },
     { name: 'SAMAI', contact: 'hola@samaisalud.com', logo: 'assets/logos/logo52.jpg', website: 'www.infor.com', sector: 'Salud' },

@@ -61,7 +61,10 @@ export class AfiliacionComponent {
     { name: 'IMPORTCEN', contact: 'info@gmail.com', logo: 'assets/logos/logo44.jpg', website: 'www.infor.com', sector: 'Importación' },
     { name: 'SYSTENWORK - CONTAMATIC', contact: 'systemworksa@gmail.com', logo: 'assets/logos/logo49.jpeg', website: 'https://contamatic.ec/', sector: 'Tecnología' },
     { name: 'DISLICOR', contact: 'dislicor.distribuciones@gmail.com', logo: 'assets/logos/logo50.jpg', website: 'https://www.facebook.com/DISLICOR/?locale=es_LA', sector: 'Licor' },
-    { name: 'AGROTORCA', contact: 'info@gmail.com', logo: 'assets/logos/logo51.png', website: 'https://ppfam.com/AGROTORCA/3918/', sector: 'Agricultura' }
+    { name: 'AGROTORCA', contact: 'info@gmail.com', logo: 'assets/logos/logo51.png', website: 'https://ppfam.com/AGROTORCA/3918/', sector: 'Agricultura' },
+    { name: 'SAMAI', contact: 'hola@samaisalud.com', logo: 'assets/logos/logo52.jpg', website: 'www.infor.com', sector: 'Salud' },
+    { name: 'SEGUROS ORION', contact: 'enaranjo@orionseguros.com.ec', logo: 'assets/logos/logo53.jpg', website: 'www.infor.com', sector: 'Seguros' },
+    { name: 'RADIO ZARACAY', contact: 'areyes@sayce.com.ec', logo: 'assets/logos/logo54.png', website: 'www.infor.com', sector: 'Medios' }
 ];
 
 

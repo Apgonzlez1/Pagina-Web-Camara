@@ -20,7 +20,7 @@ export class AfiliacionComponent {
   searchQuery: string = '';
   showAllCompanies: boolean = false;
 
-   companies = [
+  companies = [
     { name: 'FGENTERPRISE S.A.', contact: 'fgenterprise@hotmail.com', logo: 'assets/logos/logo1.jpg', website: 'https://fgenterprise.ec/inicio', sector: 'Manufactura' },
     { name: 'FRUGALP S.A.', contact: 'recepcion.frugalp@gmail.com', logo: 'assets/logos/logo2.jpg', website: 'www.infor.com', sector: 'Logística' },
     { name: 'LACTEOS LA POLACA GUSTALAC S.A.', contact: 'contabilidad@avenapolaca.com.ec', logo: 'assets/logos/logo3.jpg', website: 'https://avenapolaca.com.ec/nosotros/', sector: 'Alimentos' },
@@ -51,21 +51,32 @@ export class AfiliacionComponent {
     { name: 'MEGAPROELEC CIA LTDA', contact: 'gerencia@megaproelec.com', logo: 'assets/logos/logo28.jpeg', website: 'www.infor.com', sector: 'Electrónica' },
     { name: 'CRITERIUM CRITERIA & FINANCIAL CIA LTDA', contact: 'andres@criterium.com.ec', logo: 'assets/logos/logo29.png', website: 'www.infor.com', sector: 'Finanzas' },
     { name: 'CAMPUESA S.A', contact: 'info@gmail.com', logo: 'assets/logos/logo30.jpg', website: 'https://campuesa.com.ec/', sector: 'Industria' },
-    { name: 'GS360 COMUNICACION INTEGRAL S.A.S.', contact: 'sanchezcgus@gmail.com', logo: 'assets/logos/logo31.png', website: 'www.infor.com', sector: 'Publicidad' },
+    { name: 'AGENCIA DE PUBLICIDAD, MARKETING DIGITAL Y MEDIOS GS360 COMUNICACIÓ N INTEGRAL S.A.S.', contact: 'sanchezcgus@gmail.com', logo: 'assets/logos/logo31.png', website: 'www.infor.com', sector: 'Publicidad' },
     { name: 'PUNTO MADERA ESPINOZA LUGO WOODPOINT CIA LTDA', contact: 'mfespinoza@woodpoint.biz', logo: 'assets/logos/logo32.jpg', website: 'https://woodpoint.biz/', sector: 'Madera' },
     { name: 'D - ORLAND- CASVIMOR CIA. LTDA.', contact: 'info@gmail.com', logo: 'assets/logos/logo33.png', website: 'https://www.facebook.com/grupodorland/?locale=es_LA', sector: 'Servicios' },
     { name: 'IMPORTADORA CASTRO', contact: 'juan@importadoracastro.com', logo: 'assets/logos/logo34.jpg', website: 'https://www.importadoracastro.com/', sector: 'Importación' },
     { name: 'BALSEBOT CORP', contact: 'info@gmail.com', logo: 'assets/logos/logo35.jpeg', website: 'https://www.facebook.com/grupobalsebot/?locale=es_LA', sector: 'Corporativo' },
     { name: 'KUBIEC S.A', contact: 'paul.jaramillo@kubiec.com', logo: 'assets/logos/logo36.png', website: 'https://kubiec.com/cubiertas-y-revestimientos/residenciales/kubiteja/?gad_source=1&gclid=Cj0KCQjw782_BhDjARIsABTv_JB22A83XXmrYT7CS97QuvkE1DxWg2aEpO2Y1mVnIvob48nGoWpe1WYaAsgPEALw_wcB', sector: 'Tecnología' },
+    { name: 'COMPAÑÍA AMBIENTAL GREENCOAST NOGTAC C.L', contact: 'montana-56@hotmail.com', logo: 'assets/logos/logo37.jpeg', website: 'https://greencoast.ec/', sector: 'Ambiental' },
     { name: 'BANCO PROCREDIT', contact: 'miguel.ebenberger@procredit-group.com', logo: 'assets/logos/logo38.jpg', website: 'https://bancoprocredit.com.ec/', sector: 'Finanzas' },
+    { name: 'CERAMICAS AL COSTO', contact: 'jenny1macias@yahoo.es', logo: 'assets/logos/logo39.jpg', website: 'https://www.instagram.com/ceramicasalcostooficial/?hl=es', sector: 'Cerámicas' },
+    { name: 'CONCRETHOR S.A.S', contact: 'concrethorgerencia@gmail.com', logo: 'assets/logos/logo40.jpg', website: 'https://www.facebook.com/kasiller/', sector: 'Construcción' },
+    { name: 'CORP SARCH S.A.S.', contact: 'sarch.gerencia@gmail.com', logo: 'assets/logos/logo41.jpg', website: 'www.infor.com', sector: 'Corporativo' },
+    { name: 'ELECTROCENTER', contact: 'gerencia.electrocenter.ec', logo: 'assets/logos/logo42.jpg', website: 'https://electrocenter.ec/', sector: 'Electrónica' },
+    { name: 'GREEN PLATINUM S.A.', contact: 'greenplatiniumsa@gmail.com', logo: 'assets/logos/logo43.jpeg', website: 'www.infor.com', sector: 'Corporativo' },
     { name: 'IMPORCENT', contact: 'info@gmail.com', logo: 'assets/logos/logo44.jpg', website: 'www.infor.com', sector: 'Importación' },
+    { name: 'JORGE CUENCA AGRESTE', contact: 'agresteventas23@gmail.com', logo: 'assets/logos/logo45.jpg', website: 'www.infor.com', sector: 'Agricultura' },
+    { name: 'LOVERSOFT -SAP', contact: 'luisalexgarrido@yahoo.com', logo: 'assets/logos/logo46.jpg', website: 'www.infor.com', sector: 'Tecnología' },
+    { name: 'LUBRIFER', contact: 'info@gmail.com', logo: 'assets/logos/logo47.jpg', website: 'https://www.facebook.com/dlubriferr/?locale=es_LA', sector: 'Lubricantes' },
+    { name: 'TRAMACO', contact: 'antonio.cedeno@tramaco.com.ec', logo: 'assets/logos/logo48.jpg', website: 'https://www.tramaco.com.ec/', sector: 'Construcción' },
     { name: 'SYSTEMWORK - CONTAMATIC', contact: 'systemworksa@gmail.com', logo: 'assets/logos/logo49.jpeg', website: 'https://contamatic.ec/', sector: 'Tecnología' },
     { name: 'DISLICOR', contact: 'dislicor.distribuciones@gmail.com', logo: 'assets/logos/logo50.jpg', website: 'https://www.facebook.com/DISLICOR/?locale=es_LA', sector: 'Licor' },
-    { name: 'AGROTORCA', contact: 'info@gmail.com', logo: 'assets/logos/logo51.png', website: 'https://ppfam.com/AGROTORCA/3918/', sector: 'Agricultura' },
+    { name: 'AGROTORCA', contact: 'info@gmail.com', logo: 'assets/logos/logo51.png', website: 'https://ppfam.com/AGROTORCA/3918/', sector: 'Agricultura' },
     { name: 'SAMAI', contact: 'hola@samaisalud.com', logo: 'assets/logos/logo52.jpg', website: 'www.infor.com', sector: 'Salud' },
     { name: 'SEGUROS ORION', contact: 'enaranjo@orionseguros.com.ec', logo: 'assets/logos/logo53.jpg', website: 'https://orionseguros.com.ec/', sector: 'Seguros' },
     { name: 'RADIO ZARACAY', contact: 'areyes@sayce.com.ec', logo: 'assets/logos/logo54.png', website: 'https://www.zaracayradio.com/', sector: 'Medios' }
-];
+  ];
+  
 
 
   filteredCompanies = [...this.companies];
